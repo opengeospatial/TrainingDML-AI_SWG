@@ -1,0 +1,75 @@
+== Terms and Definitions
+This document used the terms defined in OGC Policy Directive 49, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+For the purposes of this document, the following additional terms and definitions apply.
+
+[[artificial-intelligence-definition]]
+=== Artificial Intelligence (AI) 
+
+refers to a set of methods and technologies that can empower machines or software to learn and perform tasks like humans.
+
+[[machine-learning-definition]]
+=== Machine Learning (ML)
+
+is an important branch of artificial intelligence. ML processes create models from training data by using a set of learning algorithms, and then can use these models to make predictions. Depending on whether the training data include labels, the learning algorithms can be divided into supervised and unsupervised learning.
+
+[[deep-learning-definition]]
+=== Deep Learning (DL)
+
+is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks.
+
+SOURCE:  https://machinelearningmastery.com/what-is-deep-learning
+
+[[training-dataset-definition]]
+=== Training Dataset
+
+a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model. 
+
+[[label-definition]]
+=== Label
+
+refers to known or expected results annotated as values of a dependent variable in training samples. A training sample label is different from those on a geographical map, which are known as map labels or annotations.
+
+[[provenance-definition]]
+=== Provenance
+
+information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.  In this standard provenance is a record of how training data were prepared.
+
+SOURCE: W3C (https://www.w3.org/TR/prov-overview/)
+
+[[quality-definition]]
+=== Quality
+
+degree to which a set of inherent characteristics fulfils requirements [ISO 9000:2005, definition3.1.1]. Quality of training data (such as data imbalance and mislabeling) can impact the performance of AI/ML models.
+
+[[earth-obervation-definition]]
+=== Earth Observation
+
+data and information collected about our planet, whether atmospheric, oceanic or terrestrial. This includes space-based or remotely-sensed data, as well as ground-based or in situ data.
+
+SOURCE: GEO (https://earthobservations.org/geo_wwd.php)
+
+[[scene-classification-definition]]
+=== Scene Classification
+
+task of identifying scene categories of images, on the basis of a training set of images whose scene categories are known.
+
+[[object-detection-definition]]
+=== Object Detection
+
+task of recognizing objects such as cars from images. The objects are often localized using bounding boxes.
+
+[[semantic-segmentation-definition]]
+=== Semantic Segmentation
+
+task of assigning class labels to pixels of images or points of point clouds.
+
+[[change-detection-definition]]
+=== Change Detection
+
+task that finds the changes in an area between images taken at different times.
+
+[[treed-model-reconstruction-definition]]
+=== 3D Model Reconstruction
+
+task that builds 3D objects and scenes from multi-view images.

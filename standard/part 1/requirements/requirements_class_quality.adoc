@@ -1,0 +1,8 @@
+[width="100%",cols="50%,50%",options="header",]
+|===
+2+|*Requirements class 7*
+2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/req-class-aidataquality
+|Target type |Implementation Standard
+|Dependency |ISO 19157-1
+|Dependency |/req/req-class-aitrainingdataset
+|===

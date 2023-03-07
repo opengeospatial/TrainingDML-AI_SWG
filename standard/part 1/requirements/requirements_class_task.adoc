@@ -1,0 +1,7 @@
+[width="100%",cols="50%,50%",options="header",]
+|===
+2+|*Requirements class 3*
+2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/req-class-aitask
+|Target type |Implementation Standard
+|Dependency |/req/req-class-aitrainingdataset
+|===

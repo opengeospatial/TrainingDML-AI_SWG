@@ -1,0 +1,72 @@
+[[abstract]]
+[big]*i.     Abstract*
+
+The Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Standard aims to develop the UML model and encodings for geospatial machine learning training data. Training data plays a fundamental role in Earth Observation (EO) Artificial Intelligence Machine Learning (AI/ML), especially Deep Learning (DL). It is used to train, validate, and test AI/ML models. This Standard defines a UML model and encodings consistent with the OGC Standards baseline to exchange and retrieve the training data in the Web environment.
+
+The TrainingDML-AI Standard provides detailed metadata for formalizing the information model of training data. This includes but is not limited to the following aspects: 
+
+* How the training data is prepared, such as provenance or quality;
+* How to specify different metadata used for different ML tasks such as scene/object/pixel levels; 
+* How to differentiate the high-level training data information model and extended information models specific to various ML applications; 
+* How to introduce external classification schemes and flexible means for representing ground truth labeling.
+
+[[keywords]]
+[big]*ii.    Keywords*
+
+The following are keywords to be used by search engines and document catalogues.
+
+ogcdoc, OGC document, artificial intelligence, machine learning, deep learning, earth observation, remote sensing, training data, training sample, UML
+
+[[preface]]
+[big]*iii.   Preface*
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+[[security_considerations]]
+[big]*iv.    Security Considerations*
+
+No security considerations have been made for this Standard.
+
+[[submitting_organizations]]
+[big]*v.    Submitting organizations*
+
+The following organizations submitted this Document to the Open Geospatial Consortium (OGC): 
+
+* Wuhan University
+* Pixalytics Ltd
+* National Geospatial-Intelligence Agency
+* George Mason University
+* Laboratoire d'Informatique de Grenoble
+* South Digital Technology Co., Ltd
+* Wuhan University of Technology
+* Hubei University
+* Chongqing Changan Automobile Co., Ltd
+
+
+[[submitters]]
+[big]*vi.     Submitters*
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+|===
+|*Name* |*Affiliation*
+| Peng Yue | Wuhan University
+| Jianya Gong | Wuhan University
+| Ruixiang Liu | Wuhan University
+| Dayu Yu | Wuhan University
+| Samantha Lavender | Pixalytics Ltd
+| Jim Antonisse | National Geospatial-Intelligence Agency
+| Liping Di | George Mason University
+| Eugene Yu | George Mason University
+| Danielle Ziébelin | Laboratoire d'Informatique de Grenoble
+| Boyi Shangguan | South Digital Technology Co., Ltd
+| Lei Hu | South Digital Technology Co., Ltd
+| Liangcun Jiang | Wuhan University of Technology
+| Mingda Zhang | Hubei University
+| Kai Yan | Chongqing Changan Automobile Co., Ltd
+|===
+
+[[acknowledgments]]
+[big]*vii.    Acknowledgments*
+
+Thanks to the members of the TrainingDML-AI Standards Working Group of the OGC as well as all contributors of change requests and comments. In particular: Scott Simmons, Carl Reed, Ivana Ivánová, Emily Daemen, Jon Duckworth, Zheheng Liang, Jibo Xie, Yuqi Bai, Winnie Shiu, Ignacio Correas, Chenxiao Zhang, Zhipeng Cao, Haofeng Tan, Yinyin Pan, Hanwen Xu, Shuaiqi Liu, Hao Li, Ming Wang, Kaixuan Wang, Haipeng Deng.

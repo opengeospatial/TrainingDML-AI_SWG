@@ -1,0 +1,10 @@
+== Scope
+
+Training data is the building block of machine learning models. These models now constitute the majority of machine learning applications in Earth science. Training data is used to train AI/ML models, and to then validate model results. Formalizing and documenting the training data by characterizing the training data content, metadata, data quality, and provenance, and so forth is essential.
+
+This OGC Training Data Standard (draft) describes work actions around training data:
+
+* Documents the UML model with a target of maximizing the interoperability and usability of geospatial training data;
+* Defines different AI/ML tasks and labels in earth observation, including scene level, object level and pixel level tasks;
+* Describes the description of the permanent identifier, version, license, training data size, measurement or imagery used for annotation, and so on;
+* Defines the description of quality (e.g., training data errors, training data unrepresentativeness) and the provenance (labeling, labeler, and labeling procedure).
