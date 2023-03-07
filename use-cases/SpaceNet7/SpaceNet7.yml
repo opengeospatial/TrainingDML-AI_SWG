@@ -1,0 +1,36 @@
+dataset_type: EOTrainingDataset
+id: spacenet_7
+name: SpaceNet 7 Multi-Temporal Urban Development Challenge
+description: The SpaceNet 7 Multi-Temporal Urban Development Challenge aims to help address this deficit and develop novel computer vision methods for non-video time series data.
+version: 1.0
+created_time: 2020
+updated_time: 2020
+license: CC-BY-SA-4.0
+providers:
+  - SpaceNet LLC
+keywords:
+  - Building Footprints
+classes:
+  - Building
+tasks:
+  - description: Identify and track buildings in satellite imagery time series
+    task_type: Building Object Change Detection
+data_sources:
+  - id: mosaic-image
+    data_type: Optical Image
+    format: tif
+bands:
+  - red
+  - green
+  - blue
+image_size: 1024x1023
+data:
+  task_type: ObjectDetection
+  label_type: ObjectLabel
+  data_path:
+    - type: image
+      format: stac
+      root_path: D:\TrainingDatasets\SpaceNet7\sn7_train_source
+    - type: label
+      format: stac
+      root_path: D:\TrainingDatasets\SpaceNet7\sn7_train_labels
