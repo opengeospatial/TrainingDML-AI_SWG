@@ -1,0 +1,35 @@
+{
+  "type": "DataQuality",
+  "scope": {
+    "level": "dataset",
+    "levelDescription": {
+      "dataset": "whu_rs19"
+    }
+  },
+  "report": [
+    {
+      "type": "FormatConsistency",
+      "measure": "Percentage of training samples with inconsistent image format",
+      "evaluationMethod": "Full test method to calculate the percentage of training samples with inconsistent format",
+      "result": "0"
+    },
+    {
+      "type": "CompletenessOmission",
+      "measure": "Percentage of missing scene labels",
+      "evaluationMethod": "Full test method to calculate the percentage of training samples with missing labels",
+      "result": "0"
+    },
+    {
+      "type": "ThematicClassificationCorrectness",
+      "measure": "Percentage of error scene labels",
+      "evaluationMethod": "Full test method to calculate the percentage of training samples with incorrect scene labels",
+      "result": "0"
+    },
+    {
+      "type": "ClassBalanceDegree",
+      "measure": "Balance degree of label classes",
+      "evaluationMethod": "Counting the number of training samples belonging to each class and calculating the balance degree",
+      "result": "0.935"
+    }
+  ]
+}

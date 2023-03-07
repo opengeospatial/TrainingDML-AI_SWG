@@ -1,0 +1,66 @@
+{
+  "type": "EOTrainingDataset",
+  "id": "uit_hcd_california_2017",
+  "name": "UiT HCD California 2017",
+  "description": "This dataset is composed of two images and a label image.",
+  "license": "CC BY-SA 4.0",
+  "version": "1.0",
+  "amountOfTrainingData": 1,
+  "createdTime": "2017-01-01",
+  "providers": [
+    "LP DAAC",
+    "ESA"
+  ],
+  "classes": [
+    {
+      "change": 1
+    },
+    {
+      "unchanged": 0
+    }
+  ],
+  "numberOfClasses": 2,
+  "bands": [
+      "red",
+      "green",
+      "blue",
+      "VH",
+      "VV",
+      "VV/VH"
+  ],
+  "imageSize": "2000x3500",
+  "tasks": [
+    {
+      "type": "EOTask",
+      "id": "uit_hcd_california_2017-task",
+      "description": "Multi-source images change detection",
+      "taskType": "http://demo#change_detection"
+    }
+  ],
+  "data": [
+    {
+      "type": "EOTrainingData",
+      "id": "0",
+      "dataTime": [
+        "2017-01-05",
+        "2017-02-18"
+      ],
+      "dataURL": [
+        "t1_L8.png",
+        "t2_SAR.png"
+      ],
+      "dataSources": [
+        "Landsat-8",
+        "Sentinel-1A"
+      ],
+      "numberOfLabels": 1,
+      "labels": [
+        {
+          "type": "PixelLabel",
+          "imageUrl": "change_label.png",
+          "imageFormat": "PNG"
+        }
+      ]
+    }
+  ]
+}
