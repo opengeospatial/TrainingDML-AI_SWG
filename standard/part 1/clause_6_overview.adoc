@@ -26,7 +26,7 @@ The TrainingDML-AI conceptual model provides models for the most important eleme
 .TrainingDML-AI module overview.
 image::figures/overview_modularization.jpg[width="50%", align="center"]
 
-As shown in Figure 2, the TrainingDML-AI conceptual model is thematically decomposed into a Basic module, a Provenance module and a Quality module. The Basic module comprises the basic concepts and elements, including AI_TrainingDataset, AI_TrainingData, AI_Label, and AI_Task, of the TrainingDML-AI, and thus, must be implemented by any conformant system. The Provenance module provides a comprehensive definition of provenance by AI_Labeling, AI_Labeler, and AI_Labeling Procedure. The Quality module offers quality description of TD with AI_DataQuality elements. And the Changeset module defines AI_TDChangeset between versions of datasets.
+As shown in Figure 2, the TrainingDML-AI conceptual model is thematically decomposed into a Basic module, a Provenance module, a Quality module and a Changeset module. The Basic module comprises the basic concepts and elements, including AI_TrainingDataset, AI_TrainingData, AI_Label, and AI_Task, of the TrainingDML-AI, and thus, must be implemented by any conformant system. The Provenance module provides a comprehensive definition of provenance by AI_Labeling, AI_Labeler, and AI_Labeling Procedure. The Quality module offers quality description of TD with AI_DataQuality elements. And the Changeset module defines AI_TDChangeset between versions of datasets.
 
 === General modeling principles
 
