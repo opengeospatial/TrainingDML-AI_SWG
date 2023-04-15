@@ -1,7 +1,13 @@
 [width="100%",cols="20%,80%",options="header",]
 |===
+2+|*Conformance class 7*
+2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/conf/aidataquality
+|Requirements class |/req/aidataquality
+|===
+
+|===
 2+|*Abstract test A.7*
-2+|/ats/aidataquality/classes
+2+|/conf/aidataquality/classes
 |Requirement |/req/aidataquality/classes
 |Test purpose |To validate that the implementation standard correctly implements the UML Classes defined in the Conceptual Model.
 |Test method type |Manual Inspection
