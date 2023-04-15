@@ -1,10 +1,11 @@
-[width="100%",cols="20%,80%",options="header",]
+[width="100%",cols="33%,67%",options="header",]
 |===
 2+|*Conformance class 5*
 2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/conf/ailabeling
 |Requirements class |/req/ailabeling
 |===
 
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Abstract test A.5*
 2+|/conf/ailabeling/classes
