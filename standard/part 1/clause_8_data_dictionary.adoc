@@ -297,9 +297,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |Definition |AI_AbstractLabel defines a set of informative tags or metadata obtained by labelling training data. AI_AbstractLabel can be represented using a feature, coverage, or a semantic class from ontologies or shared vocabularies.
 |Subclass of |None
 |Stereotype |\<<Class>>
-|Constraint |
-valueBetween0and1:
-inv: 0≤confidence≤1.0
+.2+|Constraint |valueBetween0and1: |inv: 0≤confidence≤1.0
 |===
 
 .Attributes of AI_AbstractLabel (Class)
