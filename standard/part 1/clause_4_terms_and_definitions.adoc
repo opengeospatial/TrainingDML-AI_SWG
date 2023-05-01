@@ -11,14 +11,14 @@ refers to a set of methods and technologies that can empower machines or softwar
 [[machine-learning-definition]]
 === Machine Learning (ML)
 
-is an important branch of artificial intelligence. ML processes create models from training data by using a set of learning algorithms, and then can use these models to make predictions. Depending on whether the training data include labels, the learning algorithms can be divided into supervised and unsupervised learning.
+is an important branch of artificial intelligence that gives computers the ability to improve their performance without explicitly being programmed to do so. ML processes create models from training data by using a set of learning algorithms, and then can use these models to make predictions. Depending on whether the training data include labels, the learning algorithms can be divided into supervised and unsupervised learning.
 
 [[deep-learning-definition]]
 === Deep Learning (DL)
 
-is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks.
+is a subset of machine learning, which is essentially a neural network with three or more layers. The number of layers is referred to as depth. While a neural network with a single layer can still make approximate predictions, additional hidden layers can help to optimize and refine for accuracy.
 
-SOURCE:  https://machinelearningmastery.com/what-is-deep-learning
+SOURCE: https://www.ibm.com/topics/deep-learning
 
 [[training-dataset-definition]]
 === Training Dataset
@@ -69,7 +69,12 @@ task of assigning class labels to pixels of images or points of point clouds.
 
 task that finds the changes in an area between images taken at different times.
 
-[[treed-model-reconstruction-definition]]
+[[threed-model-reconstruction-definition]]
 === 3D Model Reconstruction
 
 task that builds 3D objects and scenes from multi-view images.
+
+[[generative-model-definition]]
+=== Generative model
+
+is one of the methods of large model training, which improve model performance through unsupervised pre-training. In the fine-tuning phase, labelled data plays a critical role in optimizing the model for specific vertical domains or tasks. By incorporating labelled data, the model can learn to accurately identify and extract relevant features, leading to better performance on specific downstream tasks. Overall, the combination of generative models and fine-tuning with labelled data can significantly improve the performance of large models in specialized domains or tasks.

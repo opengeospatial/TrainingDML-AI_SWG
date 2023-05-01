@@ -297,6 +297,9 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |Definition |AI_AbstractLabel defines a set of informative tags or metadata obtained by labelling training data. AI_AbstractLabel can be represented using a feature, coverage, or a semantic class from ontologies or shared vocabularies.
 |Subclass of |None
 |Stereotype |\<<Class>>
+|Constraint |
+valueBetween0and1:
+inv: 0≤confidence≤1.0
 |===
 
 .Attributes of AI_AbstractLabel (Class)
@@ -341,7 +344,6 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |object |Feature [1..1] |Feature that represents the position and attributes of the object.
 |bboxType |CharacterString [0..1] |Type of the bbox.
 |class |CharacterString [1..1] |Class that records the semantic of the object type.
-|isDiffDetectable |Bool [0..1] |Whether the object is difficult to detect.
 |dateTime |DateTime [0..1] |Created time of the object label.
 |===
 

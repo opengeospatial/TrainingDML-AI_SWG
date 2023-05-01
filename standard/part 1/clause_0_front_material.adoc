@@ -69,4 +69,4 @@ All questions regarding this submission should be directed to the editor or the 
 [[acknowledgments]]
 [big]*vii.    Acknowledgments*
 
-Thanks to the members of the TrainingDML-AI Standards Working Group of the OGC as well as all contributors of change requests and comments. In particular: Scott Simmons, Carl Reed, Ivana Ivánová, Emily Daemen, Jon Duckworth, Zheheng Liang, Jibo Xie, Yuqi Bai, Winnie Shiu, Ignacio Correas, Chenxiao Zhang, Zhipeng Cao, Haofeng Tan, Yinyin Pan, Hanwen Xu, Shuaiqi Liu, Hao Li, Ming Wang, Kaixuan Wang, Haipeng Deng.
+Thanks to the members of the TrainingDML-AI Standards Working Group of the OGC as well as all contributors of change requests and comments. In particular: Scott Simmons, Carl Reed, Ivana Ivánová, Emily Daemen, Jon Duckworth, Zheheng Liang, Jibo Xie, Yuqi Bai, Winnie Shiu, Ignacio Correas, Chenxiao Zhang, Zhipeng Cao, Haofeng Tan, Yinyin Pan, Hanwen Xu, Shuaiqi Liu, Hao Li, Ming Wang, Kaixuan Wang, Haipeng Deng, Gobe Hobona, Chris Little, Kathi Schleidt, Rodolfo Orozco.
