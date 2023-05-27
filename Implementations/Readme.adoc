@@ -1,2 +1,0 @@
-## Implementations
-This page will list software packages that implement approved or draft OGC TrainingDML-AI standards. 
