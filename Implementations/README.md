@@ -1,3 +1,11 @@
+<!--
+ * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
+ * @Date: 2023-05-30 09:57:22
+ * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
+ * @LastEditTime: 2023-05-30 09:59:54
+ * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # Implementations
 
 work-in-progress
@@ -17,6 +25,7 @@ Additionally, PyTDML is currently in the process of designing and implementing a
 ## TrainingDML-AI STAC Extension Implementation
 
 [TrainingDML-AI STAC Extension](https://github.com/TrainingDML/trainingdml-ai-extension) is designed as an extension to the SpatioTemporal Asset Catalog (STAC) specification. It builds upon the STAC specification and specifically addresses the requirements for geospatial machine learning training data and introduces additional fields and metadata concepts to formalize the information model of training data within the STAC framework.The extension expands upon the core STAC specification to accommodate the specific needs of training data, enabling interoperability and facilitating effective management and utilization of geospatial machine learning training datasets within the STAC ecosystem.
+Now you can find the TrainingDML-AI Extension in the [STAC GitHub repository](https://stac-extensions.github.io/). The current maturity level is WIP (Work In Progress).
 
 ## LuojiaSet TrainingDML-AI Server Implementation
 
