@@ -391,6 +391,7 @@ Table 55. Metadata of AI_Labeling (Class)
 |===
 |*Attribute* |*Value type and multiplicity* |*Definition*
 |id |CharacterString [1..1] |Identifier of the labeling.
+|scope |MD_Scope [1..1] |Description of the scope of the labeling.
 |===
 
 ===== AI_Labeler
