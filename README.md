@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-06-05 17:28:24
+ * @LastEditTime: 2023-07-28 20:06:48
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,7 +18,7 @@ Please visit the [Wiki Home page](https://gitlab.ogc.org/ogc/TrainingDML-AI/-/wi
 
 ### Standard and Specifications
 
-The Master Branch is the latest version of the standard, currently V1.0 for public review:
+The Master Branch is the latest version of the standard, currently V1.0:
 
 - HTML [TrainingDML-AI Part1: Conceptual Model Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part%201/standard_document.html)
 - PDF [TrainingDML-AI Part1: Conceptual Model Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part%201/standard_document.pdf)
