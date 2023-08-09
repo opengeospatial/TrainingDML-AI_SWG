@@ -38,3 +38,7 @@ This implementation allows for retrieving the complete encoded content of the co
 [The PIE engine](https://engine.piesat.cn/)'s online model training module has implemented support for TrainingDML-AI encoding format in dataset import, as well as dataset export using the TrainingDML-AI format allowing users to easily upload their datasets to the platform for training purposes.
 
 This implementation also ensures the integrity and effectiveness of the datasets used for training. By validating the data format, the platform can confirm that the datasets adhere to the required structure and standards. You can find the introduction [here](https://github.com/TrainingDML/ImplementationCaseOfPIE).
+
+## Pixalytics Plastics Detection Dataset Implementation
+
+The implementation is based on work undertaken as part of the OGC Testbed activities, where Python code was developed to catalog a Machine Learning dataset that has been extended to use the [PyTDML](https://github.com/TrainingDML/pytdml) to store the metadata in the TrainingDML-AI format.
