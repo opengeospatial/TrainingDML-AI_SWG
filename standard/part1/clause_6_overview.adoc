@@ -4,7 +4,7 @@ The TrainingDML-AI Conceptual Model Standard defines how to represent and exchan
 
 The TrainingDML-AI conceptual model (Clause 7) is formally specified using UML class diagrams, complemented by a data dictionary (Clause 8) providing the definitions and explanations of the object classes and attributes. This conceptual model provides the basis for specifying encoding implemented in languages such as JSON, or XML.
 
-=== AI tasks for EO
+=== AI Tasks for EO
 
 In recent years AI/ML is increasingly used in the EO domain. The new AI/ML algorithms frequently require large training datasets as benchmarks. AI/ML TD have been used in many EO applications to calibrate the performance of AI/ML models. Many efforts have been made to produce training datasets to make accurate predictions. As a result, a number of training datasets are publicly available, with new datasets being constantly released. In the EO domain, examples of AI/ML training datasets have been developed in various tasks including the following typical scenarios:
 
@@ -28,9 +28,9 @@ image::figures/overview_modularization.jpg[width="50%", align="center"]
 
 As shown in Figure 2, the TrainingDML-AI conceptual model is thematically decomposed into a Basic module, a Provenance module, a Quality module and a Changeset module. The Basic module comprises the basic concepts and elements, including AI_TrainingDataset, AI_TrainingData, AI_Label, and AI_Task, of the TrainingDML-AI, and thus, must be implemented by any conformant system. The Provenance module provides a comprehensive definition of provenance by AI_Labeling, AI_Labeler, and AI_Labeling Procedure. The Quality module offers quality description of TD with AI_DataQuality elements. And the Changeset module defines AI_TDChangeset between versions of datasets.
 
-=== General modeling principles
+=== General Modeling Principles
 
-==== Element modeling
+==== Element Modeling
 
 The modeling of all elements in the TrainingDML-AI conceptual model has the following principles (Reference [7]):
 

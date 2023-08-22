@@ -28,7 +28,7 @@ Attention is drawn to the possibility that some of the elements of this document
 No security considerations have been made for this Standard.
 
 [[submitting_organizations]]
-[big]*v.    Submitting organizations*
+[big]*v.    Submitting Organizations*
 
 The following organizations submitted this Document to the Open Geospatial Consortium (OGC): 
 
@@ -46,7 +46,7 @@ The following organizations submitted this Document to the Open Geospatial Conso
 [[submitters]]
 [big]*vi.     Submitters*
 
-All questions regarding this submission should be directed to the editor or the submitters:
+All questions regarding this submission should be directed to the editors or the submitters:
 
 |===
 |*Name* |*Affiliation*

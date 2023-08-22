@@ -2,7 +2,7 @@
 
 The TrainingDML-AI UML model is the normative definition of the TrainingDML-AI Conceptual Model. The tables and figures in this section were software generated from the UML model. As such, this section provides a normative representation of the TrainingDML-AI Conceptual Model.
 
-=== ISO dependencies
+=== ISO Dependencies
 
 TrainingDML-AI builds on the ISO 19100 family of standards. The applicable standards are identified in Figure 3. Data dictionaries are included for all the ISO-defined classes explicitly referenced in the TrainingDML-AI UML model. These data dictionaries are provided for the convenience of the user. The ISO standards are the normative source.
 
@@ -25,7 +25,7 @@ The ISO classes explicitly used in the TrainingDML-AI UML model are introduced i
 |QualityElement |Aspect of quantitative quality information.
 |===
 
-=== Overview of the UML model
+=== Overview of the UML Model
 
 The UML model is presented with core concepts in Figure 4, followed by the concrete classes in Figure 5. The following describes the core concepts:
 
@@ -67,7 +67,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_trainingdataset.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_TrainingDataset
 [width="100%",cols="34%,66%",options="header",]
@@ -113,7 +113,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_trainingdata.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_TrainingData
 [width="100%",cols="34%,66%",options="header",]
@@ -150,7 +150,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_task.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_Task
 [width="100%",cols="34%,66%",options="header",]
@@ -178,7 +178,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_label.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_Label
 [width="100%",cols="34%,66%",options="header",]
@@ -212,7 +212,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_labeling.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_Labeling
 [width="100%",cols="34%,66%",options="header",]
@@ -241,7 +241,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_changeset.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_TDChangeset
 [width="100%",cols="34%,66%",options="header",]
@@ -271,7 +271,7 @@ The following requirement defines the rules governing the implementation of the 
 
 include::requirements/requirement_quality.adoc[]
 
-==== Class definitions
+==== Class Definitions
 
 .Classes defined in AI_DataQuality
 [width="100%",cols="30%,70%",options="header",]

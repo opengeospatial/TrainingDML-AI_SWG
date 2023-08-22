@@ -113,7 +113,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |amountOfTrainingData |Int [1..1] |Total number of training samples in the AI training dataset.
 |createdTime |DateTime [0..1] |Time when the AI training dataset was created.
 |updatedTime |DateTime [0..1] |Time when the AI training dataset was updated.
-|license |CharacterString [0..1] |License description of the AI training dataset.
+|license |CharacterString [1..1] |License description of the AI training dataset.
 |providers |CharacterString [0..*] |People or organizations who provide the AI training dataset.
 |keywords |CharacterString [0..*] |Keywords of the AI training dataset.
 |metricsInLIT |AI_MetricsInLiterature [0..*] |Results of performance metrics achieved by AI/ML algorithms in the peer-reviewed literature.

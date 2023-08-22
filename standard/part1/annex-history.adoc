@@ -5,10 +5,13 @@
 [width="100%",cols="15%,15%,15%,15%,40%",options="header"]
 |===
 |Date |Release |Editor | Primary clauses modified |Description
-|2022-08-01 |0.1 |Peng Yue, Boyi Shangguan |all |Draft for internal review
-|2022-09-09 |0.2 |Peng Yue, Boyi Shangguan, Carl Reed |all |Merge edits and comments from Carl Reed.
-|2022-11-10 |0.3 |Peng Yue, Boyi Shangguan |all |Revision based on comments from Testbed-18 TrainingDataset.
-|2023-01-13 |0.8 |Peng Yue, Boyi Shangguan |all |Revision based on comments from Testbed-18 ML TD ER.
-|2023-01-29 |0.9 |Peng Yue, Boyi Shangguan, Ruixiang Liu |all |Internal review done and submission to request OAB review.
-|2023-04-23 |1.0 |Peng Yue, Boyi Shangguan, Ruixiang Liu |all |Public comment done.
+|2022-08-01 |0.1 |Peng Yue, Boyi Shangguan |All |Draft for internal review.
+|2022-09-09 |0.2 |Peng Yue, Boyi Shangguan, Carl Reed |Most |Merge edits and comments from Carl Reed.
+|2022-11-10 |0.3 |Peng Yue, Boyi Shangguan |Most |Revisions based on comments from Testbed-18 participants.
+|2023-01-13 |0.6 |Peng Yue, Boyi Shangguan |Most |Revisions based on comments from Testbed-18 ML TD ER.
+|2023-01-29 |0.7 |Peng Yue, Boyi Shangguan, Ruixiang Liu |General editorial |Internal review done and submission to request OAB review.
+|2023-04-23 |0.8 |Peng Yue, Boyi Shangguan, Ruixiang Liu |Chapter 6.3.4, 7.9, Annex A |Revisions after OGC-NA review and OAB review.
+|2023-05-17 |0.9 |Peng Yue, Boyi Shangguan, Ruixiang Liu |Chapter 3, 4, Annex D |Revisions after public comments and submission for TC vote.
+|2023-08-04 |1.0 |Peng Yue, Boyi Shangguan, Ruixiang Liu |General editorial |Revisions before publishing.
+
 |===
