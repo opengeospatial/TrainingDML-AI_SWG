@@ -1,0 +1,65 @@
+== Overview
+
+The TrainingDML-AI Conceptual Model Standard defines how to represent and exchange ML training data. The conceptual model includes the most relevant training data entities from datasets, to instances (i.e. individual training samples), to labels. The conceptual schema specifies how and into which parts of the training data should be decomposed and classified.
+
+The TrainingDML-AI conceptual model (Clause 7) is formally specified using UML class diagrams, complemented by a data dictionary (Clause 8) providing the definitions and explanations of the object classes and attributes. This conceptual model provides the basis for specifying encoding implemented in languages such as JSON, or XML.
+
+=== AI tasks for EO
+
+In recent years AI/ML is increasingly used in the EO domain. The new AI/ML algorithms frequently require large training datasets as benchmarks. AI/ML TD have been used in many EO applications to calibrate the performance of AI/ML models. Many efforts have been made to produce training datasets to make accurate predictions. As a result, a number of training datasets are publicly available, with new datasets being constantly released. In the EO domain, examples of AI/ML training datasets have been developed in various tasks including the following typical scenarios:
+
+* Scene classification. These algorithms determine image categories from numerous pictures (e.g., agricultural, forest, and beach scenes). The training samples are a series of labelled pictures. The data can be either from satellite, drones, or aircrafts. The metadata of the datasets often includes the number of training samples, the number of classes, and the image size.
+
+* Object detection. These algorithms detect and localize different objects (e.g., airplanes, cars and building) in a single image. The image can be optical or non-optical, such as Synthetic Aperture Radar (SAR). Recent work also suggests an increasing focus on object detection from street view imagery. Objects can be labelled with two forms of bounding boxes, i.e., oriented and horizontal bounding boxes. The geometry of a bounding box can be expressed using top-left/bottom-right coordinates, coordinates of four corners, or center coordinates along with the length and width of the box.
+
+* Semantic segmentation. In terms of Land cover (LC) and land use (LU) classification, this process assigns a LC/LU class label to a pixel (or groups of pixels) of RS imagery. Considering semantic segmentation of 3D point clouds, it is to classify points of a 3D point cloud into categories. TDs are usually composed of RS images/point clouds, and the corresponding labelled value of each pixel/point recording its class.
+
+* Change detection. These algorithms identify the difference between images acquired over the same geographical area but taken at different times. The TD comprise a set of pre-change and post-change RS images, with the corresponding ground truth map labelled changed and unchanged pixels. The image can be optical or SAR images.
+
+* 3D model reconstruction. These algorithms infer the 3D geometry and structure of objects and scenes, mainly realized from the dense matching of multi-view images. The TD are usually composed of two-view or multi-view images, with the corresponding disparity map or depth maps as ground truth respectively.
+
+=== Modularization
+
+The TrainingDML-AI conceptual model provides models for the most important elements within TD. These elements have been identified to be either required or important in many different AI/ML tasks. However, implementations are not required to support the complete TrainingDML-AI model in order to be conformant to the Standard. Implementations may employ a subset of constructs according to their specific information needs. For this purpose, modularization is applied to the TrainingDML-AI.
+
+[[figure-modularization]]
+.TrainingDML-AI module overview.
+image::figures/overview_modularization.jpg[width="50%", align="center"]
+
+As shown in Figure 2, the TrainingDML-AI conceptual model is thematically decomposed into a Basic module, a Provenance module, a Quality module and a Changeset module. The Basic module comprises the basic concepts and elements, including AI_TrainingDataset, AI_TrainingData, AI_Label, and AI_Task, of the TrainingDML-AI, and thus, must be implemented by any conformant system. The Provenance module provides a comprehensive definition of provenance by AI_Labeling, AI_Labeler, and AI_Labeling Procedure. The Quality module offers quality description of TD with AI_DataQuality elements. And the Changeset module defines AI_TDChangeset between versions of datasets.
+
+=== General modeling principles
+
+==== Element modeling
+
+The modeling of all elements in the TrainingDML-AI conceptual model has the following principles (Reference [7]):
+
+* Granularity. Two levels of granularity are differentiated in the conceptual model: The Training Dataset is used to refer to the collection level, and the Training Data is used to refer to the individual level.
+
+* Label semantics. The training dataset will not be limited to one classification scheme. External classification schemes should be allowed to be linked into the Training Dataset to accommodate different cases in practice.
+
+* Light-weight design. The lightweight designed conceptual model has a minimum set of metadata elements, provenance, or quality measures at the collection level instead of at the individual level. This is to facilitate the understanding of the dataset and improve the scalability for communicating large training datasets.
+
+* Alignment. The modelling of elements in TDs can leverage existing efforts for wide adoption, such as for ISO 19109 Geographic information — Rules for application schema, ISO 19115-1 Geographic information — Metadata — Part 1: Fundamentals, ISO 19157-1 Geographic information — Data quality — Part 1: General requirements, and the OGC Geography Markup Language (GML) Standard. The conceptual model can be aligned with these existing standards and leverage capabilities fulfilled in part by other standards.
+
+* Quality, bias, and ethics. Elements related to quality, or more specifically, bias that can be used to reduce the errors when using AI/ML. For example, any knowledge of the TD imbalance and mislabeling can be stored in TD quality. In addition, data ethics aims to safeguard the responsible use of TD, and it can be addressed by using the license property in the TD.
+
+* Changeset. This will be an optional module in TD modelling. Changeset addresses how to capture changes in TD datasets. The change model considers the trend in TD collections to use the crowdsourcing platforms and borrow the change representation from the platforms such as OpenStreetMap.
+
+==== Class Hierarchy and Inheritance of Properties and Relations
+
+In the TrainingDML-AI conceptual model, the specific elements such as EO training datasets, EO training data, scene label, object label, and pixel label are defined as subclasses of more general higher-level classes. Hence, elements build a hierarchy along specialization / generalization relationships where more specialized elements inherit the properties and relationships of all their super classes along the entire generalization path to the topmost element.
+
+==== Definition of the Semantics for all Classes, Properties, and Relations
+
+The meanings of all elements defined in the TrainingDML-AI conceptual model are normatively specified in the data dictionary in Clause 8.
+
+==== Data Integrity, Authenticity, and Non-repudiation
+
+Sometimes training datasets can be downloaded, disseminated, and changed by anyone. The data integrity, authenticity, and non-repudiation are important to ensure unexpected bias propagation and distorted results. Currently the standard focuses on the information modelling, while data dissemination can be enriched with strategies from the general information domain by publishing hashes (e.g., MD5) and public-keys (e.g., RSA) after signing and encrypting.
+
+=== Extending TrainingDML-AI
+
+The TrainingDML-AI conceptual model is designed as a universal information model that defines elements and attributes which are useful for a broad range of AI/ML applications. In practical AI/ML applications, the elements within specific TDs will most likely contain attributes which are not explicitly modeled in TrainingDML-AI. Moreover, there might be TD elements which are not covered by the TrainingDML-AI thematic classes.
+
+The model provides an abstract class-based method to support the exchange of such data. Elements not represented by the predefined thematic classes of the model may be modeled and exchanged by extending abstract class.

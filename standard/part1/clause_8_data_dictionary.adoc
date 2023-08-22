@@ -1,0 +1,502 @@
+== TrainingDML-AI Data Dictionary
+
+The TrainingDML-AI UML model is the normative definition of the TrainingDML-AI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the TrainingDML-AI Conceptual Model.
+
+=== ISO Classes
+
+The following classes are defined in the ISO standards and used by the TrainingDML-AI Conceptual Model.
+
+==== Feature (from ISO 19107:2019)
+
+.Metadata of Feature (Class)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |Abstraction of real world phenomena
+|Subclass of |None
+|Stereotype |\<<Type>>
+|===
+
+==== MD_Band (from ISO 19115-1:2014)
+
+.Metadata of MD_Band (Class)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |MD_Band is the range of wavelengths in the electromagnetic spectrum.
+|Subclass of |MD_SampleDimension
+|Stereotype |\<<Class>>
+|===
+
+==== MD_Scope (from ISO 19115-1:2014)
+
+.Metadata of MD_Scope (DataType)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |The target resource and physical extent for which information is reported.
+|Subclass of |None
+|Stereotype |\<<DataType>>
+|===
+
+==== EX_Extent (from ISO 19115-1:2014)
+
+.Metadata of EX_Extent (DataType)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |EX_Extent is the extent of the resource electromagnetic spectrum.
+|Subclass of |None
+|Stereotype |\<<DataType>>
+|===
+
+==== CI_Citation (from ISO 19115-1:2014)
+
+.Metadata of CI_Citation (Class)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |CI_Citation is the standardized resource reference.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+==== DataQuality (from ISO 19157-1)
+
+.Metadata of DataQuality (Class)
+
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |DataQuality is the quality information for the data specified by a data quality scope.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+==== QualityElement (from ISO 19157-1)
+
+.Metadata of QualityElement (Class)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |QualityElement is the aspect of quantitative quality information.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+=== AI_TrainingDataset
+
+.Metadata of AI_TrainingDataset (ApplicationSchema)
+
+[width="100%",cols="34%,66%",options="",]
+|===
+|Description |The AI_TrainingDataset module supports the modelling of different kinds of training dataset.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_AbstractTrainingDataset
+
+.Metadata of AI_AbstractTrainingDataset (Class)
+[width="100%",cols="34%,66%",options="",]
+|===
+|Definition |AI_AbstractTrainingDataset defines the basic concepts and components of different kinds of training dataset.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_AbstractTrainingDataset (Class)
+[width="100%",cols="30%,30%,40%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identification of the AI training dataset.
+|doi |CharacterString [0..1] |Digital object identifier of the AI training dataset.
+|scope |MD_Scope [0..1] |Description of the scope of the training dataset.
+|name |CharacterString [1..1] |Name of the AI training dataset.
+|description |CharacterString [1..1] |Description of the AI training dataset.
+|version |CharacterString [0..1] |Version number of the AI training dataset.
+|amountOfTrainingData |Int [1..1] |Total number of training samples in the AI training dataset.
+|createdTime |DateTime [0..1] |Time when the AI training dataset was created.
+|updatedTime |DateTime [0..1] |Time when the AI training dataset was updated.
+|license |CharacterString [0..1] |License description of the AI training dataset.
+|providers |CharacterString [0..*] |People or organizations who provide the AI training dataset.
+|keywords |CharacterString [0..*] |Keywords of the AI training dataset.
+|metricsInLIT |AI_MetricsInLiterature [0..*] |Results of performance metrics achieved by AI/ML algorithms in the peer-reviewed literature.
+|statisticsInfo |NamedValue [0..*] |Statistics results of training samples in each class.
+|dataSources |CI_Citation [0..*] |Citation of data sources.
+|numberOfClasses |Int [1..1] |Total number of classes in the AI training dataset.
+|classificationSchema |CharacterString [0..1] |Classification schema for classes used in the AI training dataset.
+|classes |NamedValue [1..1] |Classes used in the AI training dataset.
+|===
+
+===== AI_EOTrainingDataset
+
+.Metadata of AI_EOTrainingDataset (Class)
+[width="100%",cols="21%,79%",options="",]
+|===
+|Definition |AI_EOTrainingDataset describes attributes specific to EO training dataset. For example, the data source, image size, band information, and spatial extent.
+|Subclass of |AI_AbstractTrainingDataset
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_EOTrainingDataset (Class)
+[width="100%",cols="20%,30%,50%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|extent |EX_Extent [0..1] |Spatial extent of the EO training dataset.
+|bands |MD_Bands [0..*] |Description of the image bands used in the EO training dataset.
+|imageSize |CharacterString [0..1] |Size of the images used in the EO training dataset.
+|===
+
+===== AI_MetricsInLiterature
+
+.Metadata of AI_MetricsInLiterature (DataType)
+[width="100%",cols="25%,75%",options="",]
+|===
+|Definition |AI_MetricsInLiterature records results of performance metrics achieved by AI/ML algorithms in the peer-reviewed literature.
+|Subclass of |None
+|Stereotype |\<<DataType>>
+|===
+
+.Attributes of AI_MetricsInLiterature (DataType)
+[width="100%",cols="23%,27%,50%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|doi |CharacterString [1..1] |Digital object identifier of the peer-reviewed literature.
+|algorithm |CharacterString [0..1] |AI/ML algorithms used in the peer-reviewed literature.
+|metrics |NamedValue [1..*] |Metrics and results of AI/ML algorithms in the peer-reviewed literature.
+|===
+
+=== AI_TrainingData
+
+.Metadata of AI_TrainingData (ApplicationSchema)
+[width="100%",cols="25%,75%",options="",]
+|===
+|Description |AI_TrainingData module supports the modelling of an individual AI training sample.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_AbstractTrainingData
+
+.Metadata of AI_AbstractTrainingData (Class)
+
+[width="100%",cols="25%,75%",options="",]
+|===
+|Definition |AI_AbstractTrainingData defines the basic concepts and components of different kinds of training data.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_AbstractTrainingData (Class)
+[width="100%",cols="20%,30%,50%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identification of the individual AI training sample.
+|datasetId |CharacterString [0..1] |Identification of the training dataset that the training sample belongs to.
+|trainingType |AI_TrainingTypeCode [0..1] |Training type of the individual AI training sample.
+|numberOfLables |Int [0..1] |Total number of labels in the individual AI training sample.
+|dataSources |CI_Citation [0..*] |Citation of inputs to prepare a training sample.
+|===
+
+===== AI_EOTrainingData
+
+.Metadata of AI_EOTrainingData (Class)
+
+[width="100%",cols="21%,79%",options="",]
+|===
+|Definition |AI_EOTrainingData describes attributes specific to EO training data. For example, spatial extent and date time of the source EO inputs.
+|Subclass of |AI_AbstractTrainingData
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_EOTrainingData (Class)
+[width="100%",cols="20%,30%,50%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|extent |EX_Extent [0..1] |Spatial extent of the individual EO training sample.
+|dateTime |DateTime [0..*] |Data times when the EO data were obtained.
+|dataURL |URL [1..*] |URLs of the EO data.
+|===
+
+===== AI_TrainingTypeCode
+
+.Metadata of AI_TrainingTypeCode (CodeList)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_TrainingTypeCode is a code list used to identify whether the individual is used for different purposes.
+|Subclass of |None
+|Stereotype |\<<CodeList>>
+|===
+
+=== AI_Task
+
+.Metadata of AI_Task (ApplicationSchema)
+
+[width="100%",cols="23%,77%",options="",]
+|===
+|Description |AI_Task module supports the modelling of different kinds of AI task.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_AbstractTask
+
+.Metadata of AI_AbstractTask (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_AbstractTask defines the AI/ML tasks in specific domains that have different organizing forms of TD.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_AbstractTask (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identification of the task.
+|datasetId |CharacterString [0..1] |Identification of the training dataset the training sample belongs to.
+|description |CharacterString [0..1] |Description of the AI task.
+|===
+
+===== AI_EOTask
+
+.Metadata of AI_EOTask (Class)
+
+[width="100%",cols="21%,79%",options="",]
+|===
+|Definition |AI_EOTask extends AI_AbstractTask to represent specific AI/ML tasks in the EO domain.
+|Subclass of |AI_AbstractTask
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_EOTask (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|taskType |CharacterString [1..1] |Type description of the EO task.
+|===
+
+=== AI_Label
+
+.Metadata of AI_Label (ApplicationSchema)
+
+[width="100%",cols="20%,80%",options="",]
+|===
+|Description |AI_Label module supports the modelling of different kinds of AI Label.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_AbstractLabel
+
+.Metadata of AI_AbstractLabel (Class)
+[width="100%",cols="20%,80%",options="header",]
+|===
+|Definition |AI_AbstractLabel defines a set of informative tags or metadata obtained by labelling training data. AI_AbstractLabel can be represented using a feature, coverage, or a semantic class from ontologies or shared vocabularies.
+|Subclass of |None
+|Stereotype |\<<Class>>
+.2+|Constraint |valueBetween0and1: |inv: 0≤confidence≤1.0
+|===
+
+.Attributes of AI_AbstractLabel (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|isNegative |Bool [0..1] |Whether the training sample related to the label is a positive or negative sample.
+|confidence |Float [0..1] |Confidence score of the labeler.
+|===
+
+===== AI_SceneLabel
+
+.Metadata of AI_SceneLabel (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_SceneLabel represents the scene level label using a semantic type from ontologies or shared vocabularies.
+|Subclass of |AI_AbstractLabel
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_SceneLabel (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|class |CharacterString [1..1] |Class name that records the semantic type of the scene of the training sample.
+|===
+
+===== AI_ObjectLabel
+
+.Metadata of AI_ObjectLabel (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_ObjectLabel represents the object level label using a feature.
+|Subclass of |AI_AbstractLabel
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_ObjectLabel (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|object |Feature [1..1] |Feature that represents the position and attributes of the object.
+|bboxType |CharacterString [0..1] |Type of the bbox.
+|class |CharacterString [1..1] |Class that records the semantic of the object type.
+|dateTime |DateTime [0..1] |Created time of the object label.
+|===
+
+===== AI_PixelLabel
+
+.Metadata of AI_PixelLabel (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_PixelLabel represents the pixel level label using a coverage.
+|Subclass of |AI_AbstractLabel
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_PixelLabel (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|imageURL |URL [1..*] |URL of the images representing the label information.
+|imageFormat |CharacterString [1..1] |Image data format.
+|===
+
+=== AI_Labeling
+
+.Metadata of AI_Labeling (ApplicationSchema)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Description |AI_Labeling module supports the modelling of provenance information of the training dataset.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_Labeling
+
+Table 55. Metadata of AI_Labeling (Class)
+
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_Labeling defines basic provenance information on how to create the training dataset. AI_Labeling includes the labeler and labeling procedure.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of Labeling (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identifier of the labeling.
+|scope |MD_Scope [1..1] |Description of the scope of the labeling.
+|===
+
+===== AI_Labeler
+
+.Metadata of AI_Labeler (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_Labeler identifies the agent that creates the labels and can be mapped to the agent in W3C PROV.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_Labeler (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identifier of the labeler.
+|name |CharacterString [1..1] |Name of the labeler.
+|===
+
+===== AI_LabelingProcedure
+
+.Metadata of AI_LabelingProcedure (Class)
+
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_LabelingProcedure represents the process for labeling and can be mapped to the activity in W3C PROV.
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_LabelingProcedure (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identifier of the labeling procedure
+|methods |CharacterString [1..*] |Methods used in the labeling procedure.
+|tools |CharacterString [0..1] |Tools or software used in the labeling procedure.
+|===
+
+
+=== AI_TDChangeset
+
+.Metadata of AI_TDChangeset (ApplicationSchema)
+
+[width="100%",cols="20%,80%",options="",]
+|===
+|Description |AI_TDChangeset module supports the modelling of change information of the training dataset.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_TDChangeset
+
+.Metadata of AI_TDChangeset (Class)
+[width="100%",cols="20%,80%",options="",]
+|===
+|Definition |AI_TDChangeset
+|Subclass of |None
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_TDChangeset (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|id |CharacterString [1..1] |Identifier of the changeset.
+|datasetId |CharacterString [0..1] |Identifier of the training dataset the changeset belongs to.
+|version |CharacterString [0..1] |Version of the training dataset that the changeset belongs to.
+|changeCount |Int [1..1] |Total number of changed training samples.
+|createdTime |DateTime [0..1] |Created time of the changeset.
+|add |AI_AbstractTrainingData [0..*] |Added training samples.
+|modify |AI_AbstractTrainingData [0..*] |Modified training samples.
+|delete |AI_AbstractTrainingData [0..*] |Deleted training samples.
+|===
+
+=== AI_DataQuality
+
+.Metadata of AI_DataQuality (ApplicationSchema)
+[width="100%",cols="20%,80%",options="header",]
+|===
+|Description |AI_DataQuality module supports the modelling of quality description of different kinds of training datasets.
+|Parent package |TrainingDML-AI
+|Stereotype |\<<ApplicationSchema>>
+|===
+
+==== Classes
+
+===== AI_ClassBalanceDegree
+
+.Metadata of AI_ClassBalanceDegree (Class)
+[width="100%",cols="20%,80%",options="header",]
+|===
+|Definition |AI_ClassBalanceDegree defines the quality elements for measuring degree of class balance of training datasets.
+|Subclass of |QualityElement
+|Stereotype |\<<Class>>
+|===
+
+.Attributes of AI_ClassBalanceDegree (Class)
+[width="100%",cols="20%,35%,45%",options="header",]
+|===
+|*Attribute* |*Value type and multiplicity* |*Definition*
+|measure |MeasureReference [1..1] |Reference to measure used
+|evaluationMethod |EvaluationMethod [1..1] |Evaluation information
+|result |QualityResult [1..*] |Value obtained from applying a data quality measure
+|===

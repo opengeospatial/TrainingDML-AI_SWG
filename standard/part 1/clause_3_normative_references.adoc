@@ -1,8 +1,0 @@
-== Normative References
-
-The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
-
-* http://www.iso.org/standard/56734.html[ISO 19103:2015 Geographic information — Conceptual schema language]
-* https://www.iso.org/standard/66175.html[ISO 19107:2019 Geographic information — Spatial schema]
-* https://www.iso.org/standard/53798.html[ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals]
-* https://www.iso.org/standard/78900.html[ISO 19157-1 Geographic information — Data quality — Part 1: General requirements]

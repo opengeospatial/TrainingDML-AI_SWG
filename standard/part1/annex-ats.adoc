@@ -1,0 +1,35 @@
+[appendix]
+[[annex-ats]]
+== Abstract Test Suite (Normative)
+
+=== Introduction
+
+The test method for TrainingDML-AI conceptual model specified in this ATS is manual inspection. Automated methods may be used where they exist.
+
+=== Conformance class AI_TrainingDataset
+
+include::abstract_tests/ats_class_trainingdataset.adoc[]
+
+=== Conformance class AI_TrainingData
+
+include::abstract_tests/ats_class_trainingdata.adoc[]
+
+=== Conformance class AI_Task
+
+include::abstract_tests/ats_class_task.adoc[]
+
+=== Conformance class AI_Label
+
+include::abstract_tests/ats_class_label.adoc[]
+
+=== Conformance class AI_Labeling
+
+include::abstract_tests/ats_class_labeling.adoc[]
+
+=== Conformance class AI_TDChangeset
+
+include::abstract_tests/ats_class_changeset.adoc[]
+
+=== Conformance class AI_DataQuality
+
+include::abstract_tests/ats_class_quality.adoc[]

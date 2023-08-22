@@ -1,0 +1,9 @@
+== Conformance
+
+This TrainingDML-AI Standard defines a conceptual model that is independent of any encoding or formatting technologies. The standardization targets for this Standard is:
+
+* TrainingDML-AI Conceptual Model
+
+Conformance with this Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and https://www.opengeospatial.org/cite[the OGC Compliance Testing web site].
+
+All requirements-classes and conformance-classes described in this document are owned by the standard identified.
