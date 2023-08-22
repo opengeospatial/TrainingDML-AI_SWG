@@ -1,6 +1,6 @@
 [appendix]
 [[annex-history]]
-== Revision History (Informative)
+== {appendix-title} C: Revision History (Informative)
 
 [width="100%",cols="15%,15%,15%,15%,40%",options="header"]
 |===

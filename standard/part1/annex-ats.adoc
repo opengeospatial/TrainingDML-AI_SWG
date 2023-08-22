@@ -1,6 +1,6 @@
 [appendix]
 [[annex-ats]]
-== Abstract Test Suite (Normative)
+== {appendix-title} A: Abstract Test Suite (Normative)
 
 === Introduction
 
