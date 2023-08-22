@@ -9,7 +9,7 @@
 :numbered:
 :sectanchors:
 :source-highlighter: pygments
-:appendix-title: Annex
+:appendix-caption: Annex
 
 <<<
 [cols = ">",frame = "none",grid = "none"]

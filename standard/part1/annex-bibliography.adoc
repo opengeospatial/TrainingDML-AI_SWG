@@ -1,6 +1,6 @@
 [appendix]
 [[ats-bibliography]]
-== {appendix-title} D: Bibliography
+== Bibliography
 
 [1] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. https://www.iso.org/standard/26012.html
 
