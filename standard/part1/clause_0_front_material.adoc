@@ -34,7 +34,7 @@ The following organizations submitted this Document to the Open Geospatial Conso
 
 * Wuhan University
 * Pixalytics Ltd
-* National Geospatial-Intelligence Agency
+* WiSC Enterprises
 * George Mason University
 * Laboratoire d'Informatique de Grenoble
 * South Digital Technology Co., Ltd
@@ -55,7 +55,7 @@ All questions regarding this submission should be directed to the editors or the
 | Ruixiang Liu | Wuhan University
 | Dayu Yu | Wuhan University
 | Samantha Lavender | Pixalytics Ltd
-| Jim Antonisse | National Geospatial-Intelligence Agency
+| Jim Antonisse | WiSC Enterprises
 | Liping Di | George Mason University
 | Eugene Yu | George Mason University
 | Danielle Ziébelin | Laboratoire d'Informatique de Grenoble
