@@ -10,15 +10,12 @@
       "$ref": "#/definitions/ai_eoTrainingDataset"
     },
     {
-      "$ref": "#/definitions/ai_eoTrainingData"
-    },
-    {
       "$ref": "#/definitions/ai_tdChangeset"
     }
   ],
   "definitions": {
     "ai_trainingDataset": {
-      "title": "AI_TrainingDataset",
+      "title": "AI_AbstractTrainingDataset",
       "type": "object",
       "required": [
         "id",
@@ -214,7 +211,7 @@
       }
     },
     "ai_trainingData": {
-      "title": "AI_TrainingData",
+      "title": "AI_AbstractTrainingData",
       "type": "object",
       "required": [
         "id",
@@ -303,7 +300,7 @@
       }
     },
     "ai_label": {
-      "title": "AI_Label",
+      "title": "AI_AbstractLabel",
       "type": "object",
       "properties": {
         "isNegative": {
@@ -506,7 +503,7 @@
       }
     },
     "ai_task": {
-      "title": "AI_Task",
+      "title": "AI_AbstractTask",
       "type": "object",
       "required": [
         "id"
