@@ -28,8 +28,8 @@ Each QualityElement value shall be encoded as a JSON object with properties show
 Example:
 
  {
-    “type”: “FormatConsistency”,
-    “measure”: “Percentage of training samples with inconsistent image format”,
-    “evaluationMethod”: “Full test method to calculate the percentage of training samples with inconsistent format”,
-    “result”: “0”
+    "type": "FormatConsistency",
+    "measure": "Percentage of training samples with inconsistent image format",
+    "evaluationMethod": "Full test method to calculate the percentage of training samples with inconsistent format",
+    "result": "0"
  }

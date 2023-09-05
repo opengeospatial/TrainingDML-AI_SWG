@@ -25,7 +25,7 @@ Each AI_TrainingData object shall implement the properties shown in Table 6.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the training data. |“AI_AbstractTrainingData” |Mandatory
+|type |Type of the training data. |"AI_AbstractTrainingData" |Mandatory
 |id |Identification of the AI training data. |CharacterString [1..1] |Mandatory
 |datasetId |Identification of the training dataset that the training sample belongs to. |CharacterString [0..1] |Optional
 |trainingType |Training type of the individual AI training sample. |AI_TrainingTypeCode [0..1] |Optional
@@ -39,27 +39,27 @@ Each AI_TrainingData object shall implement the properties shown in Table 6.
 Example:
 
  {
-    “type”: “AI_AbstractTrainingData”,
-    “id”: “airport_01”,
-    “dataSources”: [“googleEarth”],
-    “dataURL”: “image/Airport/airport_01.jpg”,
-    “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]
+    "type": "AI_AbstractTrainingData",
+    "id": "airport_01",
+    "dataSources": ["googleEarth"],
+    "dataURL": "image/Airport/airport_01.jpg",
+    "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
  }
 
-An AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.
+An AI_TrainingTypeCode is encoded as a text string whose value is one of "training", "validation" or "test".
 
 [width="100%",cols="15%,85%",]
 |===
 |Requirement |/req/aitrainingdataset/trainingtypecode
 
-Each AI_TrainingTypeCode value shall be a text string whose value is one of “training”, “validation” or “test”.
+Each AI_TrainingTypeCode value shall be a text string whose value is one of "training", "validation" or "test".
 |===
 
 Examples:
 
- a)	“training” 
- b)	“validation”
- c)	“test” 
+ a)	"training" 
+ b)	"validation"
+ c)	"test" 
 
 An AI_EOTrainingData object is encoded as a JSON object with properties both shown in Table 6 and Table 7.
 
@@ -74,7 +74,7 @@ Each AI_EOTrainingData object shall implement the properties both shown in Table
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the EO training data. |“AI_EOTrainingData” |Mandatory
+|type |Type of the EO training data. |"AI_EOTrainingData" |Mandatory
 |extent |Spatial extent of the individual EO training sample. |EX_Extent [0..1] |Optional
 |dateTime |Data time when the EO data was obtained. |DateTime [0..*] |Optional
 |dataURL |URL of the EO data. |URL [1..*] |Mandatory
@@ -83,9 +83,9 @@ Each AI_EOTrainingData object shall implement the properties both shown in Table
 Example:
 
  {
-    “type”: “AI_EOTrainingData”,
-    “id”: “airport_01”,
-    “dataSources”: [“googleEarth”],
-    “dataURL”: “image/Airport/airport_01.jpg”,
-    “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]
+    "type": "AI_EOTrainingData",
+    "id": "airport_01",
+    "dataSources": ["googleEarth"],
+    "dataURL": "image/Airport/airport_01.jpg",
+    "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
  }

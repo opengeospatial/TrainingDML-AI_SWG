@@ -23,7 +23,7 @@ Each AI_Labeling object shall implement the properties shown in Table 14.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the labeling object. |“AI_Labeling” |Mandatory
+|type |Type of the labeling object. |"AI_Labeling" |Mandatory
 |id |Identifier of the labeling. |CharacterString [1..1] |Mandatory
 |scope |Description of the scope of the labeling. |MD_Scope [1..1] |Mandatory
 |labelers |Labelers of the labeling activity. |AI_Labeler [0..*] |Optional
@@ -33,16 +33,16 @@ Each AI_Labeling object shall implement the properties shown in Table 14.
 Example:
 
  {
-    “type”: “AI_Labeling”,
-    “id”: “0”,
-    “scope”: {
-        “level”: “dataset”,
-        “levelDescription”: {
-            “dataset”: “whu_rs19”
+    "type": "AI_Labeling",
+    "id": "0",
+    "scope": {
+        "level": "dataset",
+        "levelDescription": {
+            "dataset": "whu_rs19"
         }
     },
-    “labelers”: [{..}],
-    “procedure”: {..}
+    "labelers": [{..}],
+    "procedure": {..}
  }
 
 An AI_Labeler object is encoded as a JSON object with properties shown in Table 15.
@@ -58,7 +58,7 @@ Each AI_Labeler object shall implement the properties shown in Table 15.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the labeler object. |“AI_Labeler” |Mandatory
+|type |Type of the labeler object. |"AI_Labeler" |Mandatory
 |id |Identifier of the labeler. |CharacterString [1..1] |Mandatory
 |name |Name of the labeler. |CharacterString [1..1] |Mandatory
 |===
@@ -66,9 +66,9 @@ Each AI_Labeler object shall implement the properties shown in Table 15.
 Example:
 
  {
-    “type”: “AI_Labeler”,
-    “id”: “0”,
-    “name”: “Tom”
+    "type": "AI_Labeler",
+    "id": "0",
+    "name": "Tom"
  }
 
 An AI_LabelingProcedure object is encoded as a JSON object with properties shown in Table 16.
@@ -84,7 +84,7 @@ Each AI_LabelingProcedure object shall implement the properties shown in Table 1
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the labeling procedure object. |“AI_LabelingProcedure” |Mandatory
+|type |Type of the labeling procedure object. |"AI_LabelingProcedure" |Mandatory
 |id |Identifier of the labeling procedure. |CharacterString [1..1] |Mandatory
 |methods |Methods used in the labeling procedure. |CharacterString [1..*] |Mandatory
 |tools |Tools or software used in the labeling procedure. |CharacterString [0..1] |Optional
@@ -93,8 +93,8 @@ Each AI_LabelingProcedure object shall implement the properties shown in Table 1
 Example:
 
  {
-    “type”: “AI_LabelingProcedure”,
-    “id”: “0”,
-    “methods”: [“manual”],
-    “tools”: [“ArcGIS”]
+    "type": "AI_LabelingProcedure",
+    "id": "0",
+    "methods": ["manual"],
+    "tools": ["ArcGIS"]
  }

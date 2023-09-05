@@ -23,9 +23,9 @@ https://schemas.isotc211.org/19115/-1/mrc/1.3#MD_Band
 
 Examples:
 
- a)	“red”
- b)	“B4”
- c)	{“boundMax”: 690, “boundMin”: 630, “boundUnits”: “nm”}
+ a)	"red"
+ b)	"B4"
+ c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}
 
 The encoding of EX_Extent follows GeoJSON for Bounding Box.
 
@@ -56,8 +56,8 @@ https://schemas.isotc211.org/19115/-1/cit/1.3#CI_Citation
 
 Examples:
 
- a)	“http://www.opengeospatial.org”
- b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC”], “identifier”: {“code”: “https://portal.ogc.org/files/?artifact_id=104605&version=1”}}
+ a)	"http://www.opengeospatial.org"
+ b)	{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifier": {"code": "https://portal.ogc.org/files/?artifact_id=104605&version=1"}}
 
 An MD_Scope is encoded as a JSON object.
 
@@ -73,8 +73,8 @@ https://schemas.isotc211.org/19115/-1/mcc/1.3#MD_Scope
 Example:
 
  {
-    “level”: “dataset”, 
-    “levelDescription”: {
-        “dataset”: “whu_rs19”
+    "level": "dataset", 
+    "levelDescription": {
+        "dataset": "whu_rs19"
     }
  }

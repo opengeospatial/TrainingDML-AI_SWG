@@ -4,7 +4,7 @@ This standard defines a JSON-based serialization syntax for geospatial training 
 
 When serialized, absent properties are represented by either (a) setting the property value to null, or (b) by omitting the property declaration altogether at the option of the publisher. These representations are semantically equivalent. If a property has an array value, the absence of any items in that array shall be represented by omitting the property entirely or by setting the value to null. The appropriate interpretation of an omitted or explicitly null value is that no value has been assigned, as opposed to the view that the given value is empty or nil.
 
-JSON does not have a formal class model. JSON objects are just sets of properties. However, the JSON encoding described in this standard features a “type” property on each JSON object.
+JSON does not have a formal class model. JSON objects are just sets of properties. However, the JSON encoding described in this standard features a "type" property on each JSON object.
 
 A training dataset document conforming to this standard is a JSON document whose root value is an AI_TrainingDataset object.
 

@@ -33,25 +33,25 @@ https://datatracker.ietf.org/doc/html/rfc3339#section-5.6
 
 Examples:
 
- a) “2022-08-08T08:08:00.00+08:00”
- b) “2022-08-08T08:08:00.00Z”
- c) “2022-08-08”
- d) “12:34:56”
- e) “12:34:56.123”
+ a) "2022-08-08T08:08:00.00+08:00"
+ b) "2022-08-08T08:08:00.00Z"
+ c) "2022-08-08"
+ d) "12:34:56"
+ e) "12:34:56.123"
 
-A NamedValue is encoded as a JSON object with two properties named “key” and “value”.
+A NamedValue is encoded as a JSON object with two properties named "key" and "value".
 
 [width="100%",cols="15%,85%",]
 |===
 |Requirement |/req/base/jsonbasetype/namedvalue
 
-Each NamedValue value shall be encoded as a JSON object with properties “key” and “value”, while the value of property “key” is a text string.
+Each NamedValue value shall be encoded as a JSON object with properties "key" and "value", while the value of property "key" is a text string.
 |===
 
 Examples:
 
- a) {“key”: “forest”, “value”: “RGB(0,255,255)”}
- b) {“key”: “precision”, “value”: 0.8}
+ a) {"key": "forest", "value": "RGB(0,255,255)"}
+ b) {"key": "precision", "value": 0.8}
 
 A URL is encoded as a text string.
 
@@ -66,5 +66,5 @@ https://datatracker.ietf.org/doc/html/rfc3986#section-4.1
 
 Examples:
 
- a)	“http://www.opengeospatial.org”
- b)	“/file.txt”
+ a)	"http://www.opengeospatial.org"
+ b)	"/file.txt"

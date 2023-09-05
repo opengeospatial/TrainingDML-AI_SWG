@@ -7,7 +7,7 @@
 |Requirement |/req/geospatialtype/feature
 |===
 
-The encoding of Feature follows GeoJSON for Feature, with object members of “type”, “geometry” and “properties”.
+The encoding of Feature follows GeoJSON for Feature, with object members of "type", "geometry" and "properties".
 
 [width="100%",cols="15%,85%",]
 |===
@@ -20,6 +20,6 @@ https://datatracker.ietf.org/doc/html/rfc7946#section-3.2
 
 Examples:
 
- a)	{“type”: “Feature”, “geometry”: {“type”: “Point”, “coordinates”: [120.0, 30.0]}, “properties”: {“class”: “station”}}
- b)	{“type”: “Feature”, “geometry”: {“type”: “LineString”, “coordinates”: [[120.0, 30.0], [130.0, 40.0]]}, “properties”: {“class”: “road”}}
- c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “coordinates”: [[[120.0, 30.0], [130.0, 30.0], [125.0, 40.0], [120.0, 30.0]]]}, “properties”: {“class”: “building”}}
+ a)	{"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.0, 30.0]}, "properties": {"class": "station"}}
+ b)	{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[120.0, 30.0], [130.0, 40.0]]}, "properties": {"class": "road"}}
+ c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 30.0], [130.0, 30.0], [125.0, 40.0], [120.0, 30.0]]]}, "properties": {"class": "building"}}

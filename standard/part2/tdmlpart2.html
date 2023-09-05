@@ -807,7 +807,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>4. Terms and Definitions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document used the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p>This document used the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "shall" (not "must") is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 </div>
 <div class="paragraph">
 <p>For the purposes of this document, the following additional terms and definitions apply.</p>
@@ -950,7 +950,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>When serialized, absent properties are represented by either (a) setting the property value to null, or (b) by omitting the property declaration altogether at the option of the publisher. These representations are semantically equivalent. If a property has an array value, the absence of any items in that array shall be represented by omitting the property entirely or by setting the value to null. The appropriate interpretation of an omitted or explicitly null value is that no value has been assigned, as opposed to the view that the given value is empty or nil.</p>
 </div>
 <div class="paragraph">
-<p>JSON does not have a formal class model. JSON objects are just sets of properties. However, the JSON encoding described in this standard features a “type” property on each JSON object.</p>
+<p>JSON does not have a formal class model. JSON objects are just sets of properties. However, the JSON encoding described in this standard features a "type" property on each JSON object.</p>
 </div>
 <div class="paragraph">
 <p>A training dataset document conforming to this standard is a JSON document whose root value is an AI_TrainingDataset object.</p>
@@ -1053,15 +1053,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a) “2022-08-08T08:08:00.00+08:00”
-b) “2022-08-08T08:08:00.00Z”
-c) “2022-08-08”
-d) “12:34:56”
-e) “12:34:56.123”</pre>
+<pre>a) "2022-08-08T08:08:00.00+08:00"
+b) "2022-08-08T08:08:00.00Z"
+c) "2022-08-08"
+d) "12:34:56"
+e) "12:34:56.123"</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>A NamedValue is encoded as a JSON object with two properties named “key” and “value”.</p>
+<p>A NamedValue is encoded as a JSON object with two properties named "key" and "value".</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1072,7 +1072,7 @@ e) “12:34:56.123”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/jsonbasetype/namedvalue</p>
-<p class="tableblock">Each NamedValue value shall be encoded as a JSON object with properties “key” and “value”, while the value of property “key” is a text string.</p></td>
+<p class="tableblock">Each NamedValue value shall be encoded as a JSON object with properties "key" and "value", while the value of property "key" is a text string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1081,8 +1081,8 @@ e) “12:34:56.123”</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a) {“key”: “forest”, “value”: “RGB(0,255,255)”}
-b) {“key”: “precision”, “value”: 0.8}</pre>
+<pre>a) {"key": "forest", "value": "RGB(0,255,255)"}
+b) {"key": "precision", "value": 0.8}</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1107,8 +1107,8 @@ b) {“key”: “precision”, “value”: 0.8}</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	“http://www.opengeospatial.org”
-b)	“/file.txt”</pre>
+<pre>a)	"http://www.opengeospatial.org"
+b)	"/file.txt"</pre>
 </div>
 </div>
 </div>
@@ -1179,9 +1179,9 @@ b)	“/file.txt”</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	“red”
-b)	“B4”
-c)	{“boundMax”: 690, “boundMin”: 630, “boundUnits”: “nm”}</pre>
+<pre>a)	"red"
+b)	"B4"
+c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1232,8 +1232,8 @@ b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	“http://www.opengeospatial.org”
-b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC”], “identifier”: {“code”: “https://portal.ogc.org/files/?artifact_id=104605&amp;version=1”}}</pre>
+<pre>a)	"http://www.opengeospatial.org"
+b)	{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifier": {"code": "https://portal.ogc.org/files/?artifact_id=104605&amp;version=1"}}</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1259,9 +1259,9 @@ b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “level”: “dataset”,
-   “levelDescription”: {
-       “dataset”: “whu_rs19”
+   "level": "dataset",
+   "levelDescription": {
+       "dataset": "whu_rs19"
    }
 }</pre>
 </div>
@@ -1361,10 +1361,10 @@ b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “FormatConsistency”,
-   “measure”: “Percentage of training samples with inconsistent image format”,
-   “evaluationMethod”: “Full test method to calculate the percentage of training samples with inconsistent format”,
-   “result”: “0”
+   "type": "FormatConsistency",
+   "measure": "Percentage of training samples with inconsistent image format",
+   "evaluationMethod": "Full test method to calculate the percentage of training samples with inconsistent format",
+   "result": "0"
 }</pre>
 </div>
 </div>
@@ -1403,7 +1403,7 @@ b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC
 </tbody>
 </table>
 <div class="paragraph">
-<p>The encoding of Feature follows GeoJSON for Feature, with object members of “type”, “geometry” and “properties”.</p>
+<p>The encoding of Feature follows GeoJSON for Feature, with object members of "type", "geometry" and "properties".</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1424,9 +1424,9 @@ b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	{“type”: “Feature”, “geometry”: {“type”: “Point”, “coordinates”: [120.0, 30.0]}, “properties”: {“class”: “station”}}
-b)	{“type”: “Feature”, “geometry”: {“type”: “LineString”, “coordinates”: [[120.0, 30.0], [130.0, 40.0]]}, “properties”: {“class”: “road”}}
-c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “coordinates”: [[[120.0, 30.0], [130.0, 30.0], [125.0, 40.0], [120.0, 30.0]]]}, “properties”: {“class”: “building”}}</pre>
+<pre>a)	{"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.0, 30.0]}, "properties": {"class": "station"}}
+b)	{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[120.0, 30.0], [130.0, 40.0]]}, "properties": {"class": "road"}}
+c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 30.0], [130.0, 30.0], [125.0, 40.0], [120.0, 30.0]]]}, "properties": {"class": "building"}}</pre>
 </div>
 </div>
 </div>
@@ -1532,7 +1532,7 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the training dataset.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_AbstractTrainingDataset”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_AbstractTrainingDataset"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -1687,18 +1687,18 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_AbstractTrainingDataset”,
-   “id”: “whu_rs19”,
-   “name”: “WHU-RS19”,
-   “description”: “Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth”,
-   “amountOfTrainingData”: 1013,
-   “createdTime”: “2010-01-01”,
-   “providers”: [“Wuhan University”],
-   “keywords”: [“Remote Sensing”, “Scene Classification”],
-   “numberOfClasses”: 19,
-   “classes”: [“Airport”, “Beach”, “Bridge”, “Commercial”, “Desert”, “Farmland”, “footballField”, “Forest”, “Industrial”, “Meadow”, “Mountain”, “Park”, “Parking”, “Pond”, “Port”, “railwayStation”, “Residential”, “River”, “Viaduct”],
-   “tasks”: [{“type”: “EOTask”,”id”: “whu_rs19-task”, “description”: “Structural high-resolution satellite image indexing”, “taskType”: “Scene Classification”}],
-   “data”: [{“type”: “EOTrainingData”, “id”: “airport_01”, “dataSources”: [“googleEarth”], “dataURL”: “image/Airport/airport_01.jpg”, “labels”: [{“type”: “SceneLabel”, “class”: “Airport”}]}, …]
+   "type": "AI_AbstractTrainingDataset",
+   "id": "whu_rs19",
+   "name": "WHU-RS19",
+   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "amountOfTrainingData": 1013,
+   "createdTime": "2010-01-01",
+   "providers": ["Wuhan University"],
+   "keywords": ["Remote Sensing", "Scene Classification"],
+   "numberOfClasses": 19,
+   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+   "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+   "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
 }</pre>
 </div>
 </div>
@@ -1761,9 +1761,9 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “doi”: “10.1109/TGRS.2019.2917161”,
-   “algorithm”: “FACNN”,
-   “metrics”: [{“key”: “Overall Accuracy”, “value”: 0.9881}]
+   "doi": "10.1109/TGRS.2019.2917161",
+   "algorithm": "FACNN",
+   "metrics": [{"key": "Overall Accuracy", "value": 0.9881}]
 }</pre>
 </div>
 </div>
@@ -1803,7 +1803,7 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the training dataset.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_EOTrainingDataset”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_EOTrainingDataset"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -1832,21 +1832,21 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_EOTrainingDataset”,
-   “id”: “whu_rs19”,
-   “name”: “WHU-RS19”,
-   “description”: “Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth”,
-   “amountOfTrainingData”: 1013,
-   “createdTime”: “2010-01-01”,
-   “providers”: [“Wuhan University”],
-   “keywords”: [“Remote Sensing”, “Scene Classification”],
-   “numberOfClasses”: 19,
-   “extent”: [-180, -90, 180, 90],
-   “bands”: [“red”, “green”, “blue”],
-   “imageSize”: “6000x7600”,
-   “classes”: [“Airport”, “Beach”, “Bridge”, “Commercial”, “Desert”, “Farmland”, “footballField”, “Forest”, “Industrial”, “Meadow”, “Mountain”, “Park”, “Parking”, “Pond”, “Port”, “railwayStation”, “Residential”, “River”, “Viaduct”],
-   “tasks”: [{“type”: “AI_EOTask”,”id”: “whu_rs19-task”, “description”: “Structural high-resolution satellite image indexing”, “taskType”: “Scene Classification”}],
-   “data”: [{“type”: “AI_EOTrainingData”, “id”: “airport_01”, “dataSources”: [“googleEarth”], “dataURL”: “image/Airport/airport_01.jpg”, “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]}, …]
+   "type": "AI_EOTrainingDataset",
+   "id": "whu_rs19",
+   "name": "WHU-RS19",
+   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "amountOfTrainingData": 1013,
+   "createdTime": "2010-01-01",
+   "providers": ["Wuhan University"],
+   "keywords": ["Remote Sensing", "Scene Classification"],
+   "numberOfClasses": 19,
+   "extent": [-180, -90, 180, 90],
+   "bands": ["red", "green", "blue"],
+   "imageSize": "6000x7600",
+   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+   "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+   "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
 }</pre>
 </div>
 </div>
@@ -1940,7 +1940,7 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the training data.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_AbstractTrainingData”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_AbstractTrainingData"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -1999,16 +1999,16 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_AbstractTrainingData”,
-   “id”: “airport_01”,
-   “dataSources”: [“googleEarth”],
-   “dataURL”: “image/Airport/airport_01.jpg”,
-   “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]
+   "type": "AI_AbstractTrainingData",
+   "id": "airport_01",
+   "dataSources": ["googleEarth"],
+   "dataURL": "image/Airport/airport_01.jpg",
+   "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
 }</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>An AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.</p>
+<p>An AI_TrainingTypeCode is encoded as a text string whose value is one of "training", "validation" or "test".</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2019,7 +2019,7 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aitrainingdataset/trainingtypecode</p>
-<p class="tableblock">Each AI_TrainingTypeCode value shall be a text string whose value is one of “training”, “validation” or “test”.</p></td>
+<p class="tableblock">Each AI_TrainingTypeCode value shall be a text string whose value is one of "training", "validation" or "test".</p></td>
 </tr>
 </tbody>
 </table>
@@ -2028,9 +2028,9 @@ c)	{“type”: “Feature”, “geometry”: {“type”: “Polygon”, “co
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	“training”
-b)	“validation”
-c)	“test”</pre>
+<pre>a)	"training"
+b)	"validation"
+c)	"test"</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2069,7 +2069,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the EO training data.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_EOTrainingData”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_EOTrainingData"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2098,11 +2098,11 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_EOTrainingData”,
-   “id”: “airport_01”,
-   “dataSources”: [“googleEarth”],
-   “dataURL”: “image/Airport/airport_01.jpg”,
-   “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]
+   "type": "AI_EOTrainingData",
+   "id": "airport_01",
+   "dataSources": ["googleEarth"],
+   "dataURL": "image/Airport/airport_01.jpg",
+   "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
 }</pre>
 </div>
 </div>
@@ -2184,7 +2184,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the task object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_AbstractTask”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_AbstractTask"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2213,9 +2213,9 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_AbstractTask”,
-   “id”: “image-indexing-task”,
-   “description”: “Structural high-resolution satellite image indexing”
+   "type": "AI_AbstractTask",
+   "id": "image-indexing-task",
+   "description": "Structural high-resolution satellite image indexing"
 }</pre>
 </div>
 </div>
@@ -2255,7 +2255,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the task object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_EOTask”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_EOTask"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2272,10 +2272,10 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_EOTask”,
-   “id”: “image-indexing-task”,
-   “description”: “Structural high-resolution satellite image indexing”
-   “taskType”: “Scene Classification”
+   "type": "AI_EOTask",
+   "id": "image-indexing-task",
+   "description": "Structural high-resolution satellite image indexing"
+   "taskType": "Scene Classification"
 }</pre>
 </div>
 </div>
@@ -2369,7 +2369,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the label object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_AbstractLabel”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_AbstractLabel"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2392,8 +2392,8 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_AbstractLabel”,
-   “isNegative”: false
+   "type": "AI_AbstractLabel",
+   "isNegative": false
 }</pre>
 </div>
 </div>
@@ -2433,7 +2433,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the label object at the scene level.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_SceneLabel”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_SceneLabel"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2450,8 +2450,8 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_SceneLabel”,
-   “class”: “Airport”
+   "type": "AI_SceneLabel",
+   "class": "Airport"
 }</pre>
 </div>
 </div>
@@ -2491,7 +2491,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the label object at the object level.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_ObjectLabel”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_ObjectLabel"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2526,10 +2526,10 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_ObjectLabel”,
-   “class”: “Truck”,
-   “object”: {“type”: “Feature”, “properties”: {“truncated”: 0.0, “occluded”: 0, “alpha”: -1.57}, “geometry”: {“type”: “Polygon”, “coordinates”: [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]},
-   “bboxType”: “Horizontal BBox”,
+   "type": "AI_ObjectLabel",
+   "class": "Truck",
+   "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]},
+   "bboxType": "Horizontal BBox",
 }</pre>
 </div>
 </div>
@@ -2569,7 +2569,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the label object at the pixel level.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_PixelLabel”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_PixelLabel"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2592,9 +2592,9 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_PixelLabel”,
-   “imageURL”: “/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif”,
-   “imageFormat”: “image/tiff”
+   "type": "AI_PixelLabel",
+   "imageURL": "/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif",
+   "imageFormat": "image/tiff"
 }</pre>
 </div>
 </div>
@@ -2680,7 +2680,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the labeling object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_Labeling”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_Labeling"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2715,16 +2715,16 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_Labeling”,
-   “id”: “0”,
-   “scope”: {
-       “level”: “dataset”,
-       “levelDescription”: {
-           “dataset”: “whu_rs19”
+   "type": "AI_Labeling",
+   "id": "0",
+   "scope": {
+       "level": "dataset",
+       "levelDescription": {
+           "dataset": "whu_rs19"
        }
    },
-   “labelers”: [{..}],
-   “procedure”: {..}
+   "labelers": [{..}],
+   "procedure": {..}
 }</pre>
 </div>
 </div>
@@ -2764,7 +2764,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the labeler object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_Labeler”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_Labeler"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2787,9 +2787,9 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_Labeler”,
-   “id”: “0”,
-   “name”: “Tom”
+   "type": "AI_Labeler",
+   "id": "0",
+   "name": "Tom"
 }</pre>
 </div>
 </div>
@@ -2829,7 +2829,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the labeling procedure object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_LabelingProcedure”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_LabelingProcedure"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2858,10 +2858,10 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_LabelingProcedure”,
-   “id”: “0”,
-   “methods”: [“manual”],
-   “tools”: [“ArcGIS”]
+   "type": "AI_LabelingProcedure",
+   "id": "0",
+   "methods": ["manual"],
+   "tools": ["ArcGIS"]
 }</pre>
 </div>
 </div>
@@ -2904,7 +2904,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the class balance degree object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_ClassBalanceDegree”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_ClassBalanceDegree"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2933,10 +2933,10 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_ClassBalanceDegree”,
-   “measure”: “Balance degree of label classes”,
-   “evaluationMethod”: “Counting the number of training samples belonging to each class and calculating the balance degree”,
-   “result”: “0.935”
+   "type": "AI_ClassBalanceDegree",
+   "measure": "Balance degree of label classes",
+   "evaluationMethod": "Counting the number of training samples belonging to each class and calculating the balance degree",
+   "result": "0.935"
 }</pre>
 </div>
 </div>
@@ -3018,7 +3018,7 @@ c)	“test”</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the TD changeset object.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">“AI_TDChangeset”</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_TDChangeset"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -3077,12 +3077,12 @@ c)	“test”</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   “type”: “AI_TDChangeset”,
-   “id”: “changeset-dota_v1.5”,
-   “datasetId”: “dota_v1.5”,
-   “createdTime”: “2019-01-01”,
-   “changeCount”: 9,
-   “modify”: [{“type”: “EOTrainingData”, “id”: “P1228”, “dataSources”: [“GF”], “dataURL”: “train/images/P1228.png”, “numberOfLabels”: 50, “trainingType”: “training”, “labels”: [{“type”: “ObjectLabel”, “class”: “ship”, “object”: {“type”: “Feature”, “geometry”: {“type”: “Polygon”, “coordinates”: [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},”bboxType”: “Horizontal BBox”}, …]}]
+   "type": "AI_TDChangeset",
+   "id": "changeset-dota_v1.5",
+   "datasetId": "dota_v1.5",
+   "createdTime": "2019-01-01",
+   "changeCount": 9,
+   "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": ["GF"], "dataURL": "train/images/P1228.png", "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
 }</pre>
 </div>
 </div>
@@ -3509,7 +3509,7 @@ c)	“test”</pre>
 <div class="sect3">
 <h4 id="_dota_v1_5_changeset"><a class="anchor" href="#_dota_v1_5_changeset"></a>B.3.1. DOTA-v1.5 Changeset</h4>
 <div class="paragraph">
-<p>DOTA-v1.5 uses the same images as DOTA-v1.0, but the extremely small instances (less than 10 pixels) are also annotated. Moreover, a new category “container crane” is added. It contains 403,318 instances in total. The number of images and dataset splits are the same as DOTA-v1.0. This version was released for the DOAI Challenge 2019 on Object Detection in Aerial Images in conjunction with IEEE CVPR 2019.</p>
+<p>DOTA-v1.5 uses the same images as DOTA-v1.0, but the extremely small instances (less than 10 pixels) are also annotated. Moreover, a new category "container crane" is added. It contains 403,318 instances in total. The number of images and dataset splits are the same as DOTA-v1.0. This version was released for the DOAI Challenge 2019 on Object Detection in Aerial Images in conjunction with IEEE CVPR 2019.</p>
 </div>
 <div class="paragraph">
 <p>An encoded changeset example between the DOTA-v1.0 and DOTA-v1.5 datasets following the TrainingDML-AI UML model can be found in <a href="https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/DOTA-v1.5-changeset.json" class="bare">https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/DOTA-v1.5-changeset.json</a>.</p>

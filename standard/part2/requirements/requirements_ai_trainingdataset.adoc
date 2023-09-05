@@ -28,7 +28,7 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the training dataset. |“AI_AbstractTrainingDataset” |Mandatory
+|type |Type of the training dataset. |"AI_AbstractTrainingDataset" |Mandatory
 |id |Identification of the AI training dataset. |CharacterString [1..1] |Mandatory
 |doi |Digital object identifier of the AI training dataset. |CharacterString [0..1] |Optional
 |scope |Description of the scope of the training dataset. |MD_Scope [0..1] |Optional
@@ -58,18 +58,18 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 Example:
 
  {
-    “type”: “AI_AbstractTrainingDataset”,
-    “id”: “whu_rs19”,
-    “name”: “WHU-RS19”,
-    “description”: “Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth”,
-    “amountOfTrainingData”: 1013,
-    “createdTime”: “2010-01-01”,
-    “providers”: [“Wuhan University”],
-    “keywords”: [“Remote Sensing”, “Scene Classification”],
-    “numberOfClasses”: 19,
-    “classes”: [“Airport”, “Beach”, “Bridge”, “Commercial”, “Desert”, “Farmland”, “footballField”, “Forest”, “Industrial”, “Meadow”, “Mountain”, “Park”, “Parking”, “Pond”, “Port”, “railwayStation”, “Residential”, “River”, “Viaduct”],
-    “tasks”: [{“type”: “EOTask”,”id”: “whu_rs19-task”, “description”: “Structural high-resolution satellite image indexing”, “taskType”: “Scene Classification”}],
-    “data”: [{“type”: “EOTrainingData”, “id”: “airport_01”, “dataSources”: [“googleEarth”], “dataURL”: “image/Airport/airport_01.jpg”, “labels”: [{“type”: “SceneLabel”, “class”: “Airport”}]}, …]
+    "type": "AI_AbstractTrainingDataset",
+    "id": "whu_rs19",
+    "name": "WHU-RS19",
+    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+    "amountOfTrainingData": 1013,
+    "createdTime": "2010-01-01",
+    "providers": ["Wuhan University"],
+    "keywords": ["Remote Sensing", "Scene Classification"],
+    "numberOfClasses": 19,
+    "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+    "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+    "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
  }
 
 An AI_MetricsInLiterature is encoded as JSON object with properties shown in Table 3.
@@ -93,9 +93,9 @@ Each AI_MetricsInLiterature value shall implement the properties shown in Table 
 Example:
 
  {
-    “doi”: “10.1109/TGRS.2019.2917161”,
-    “algorithm”: “FACNN”,
-    “metrics”: [{“key”: “Overall Accuracy”, “value”: 0.9881}]
+    "doi": "10.1109/TGRS.2019.2917161",
+    "algorithm": "FACNN",
+    "metrics": [{"key": "Overall Accuracy", "value": 0.9881}]
  }
 
 An AI_EOTrainingDataset object is encoded as a JSON object with properties shown in Table 2 and Table 4.
@@ -111,7 +111,7 @@ Each AI_EOTrainingDataset object shall implement the properties both shown in Ta
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the training dataset. |“AI_EOTrainingDataset” |Mandatory
+|type |Type of the training dataset. |"AI_EOTrainingDataset" |Mandatory
 |extent |Spatial extent of the EO training dataset. |EX_Extent [0..1] |Optional
 |bands |Bands description of the images used in the EO training dataset. |MD_Band [0..*] |Optional
 |imageSize |Size of the images used in the EO training dataset. |ChracterString [0..1] |Optional
@@ -120,19 +120,19 @@ Each AI_EOTrainingDataset object shall implement the properties both shown in Ta
 Example:
 
  {
-    “type”: “AI_EOTrainingDataset”,
-    “id”: “whu_rs19”,
-    “name”: “WHU-RS19”,
-    “description”: “Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth”,
-    “amountOfTrainingData”: 1013,
-    “createdTime”: “2010-01-01”,
-    “providers”: [“Wuhan University”],
-    “keywords”: [“Remote Sensing”, “Scene Classification”],
-    “numberOfClasses”: 19,
-    “extent”: [-180, -90, 180, 90],
-    “bands”: [“red”, “green”, “blue”],
-    “imageSize”: “6000x7600”,
-    “classes”: [“Airport”, “Beach”, “Bridge”, “Commercial”, “Desert”, “Farmland”, “footballField”, “Forest”, “Industrial”, “Meadow”, “Mountain”, “Park”, “Parking”, “Pond”, “Port”, “railwayStation”, “Residential”, “River”, “Viaduct”],
-    “tasks”: [{“type”: “AI_EOTask”,”id”: “whu_rs19-task”, “description”: “Structural high-resolution satellite image indexing”, “taskType”: “Scene Classification”}],
-    “data”: [{“type”: “AI_EOTrainingData”, “id”: “airport_01”, “dataSources”: [“googleEarth”], “dataURL”: “image/Airport/airport_01.jpg”, “labels”: [{“type”: “AI_SceneLabel”, “class”: “Airport”}]}, …]
+    "type": "AI_EOTrainingDataset",
+    "id": "whu_rs19",
+    "name": "WHU-RS19",
+    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+    "amountOfTrainingData": 1013,
+    "createdTime": "2010-01-01",
+    "providers": ["Wuhan University"],
+    "keywords": ["Remote Sensing", "Scene Classification"],
+    "numberOfClasses": 19,
+    "extent": [-180, -90, 180, 90],
+    "bands": ["red", "green", "blue"],
+    "imageSize": "6000x7600",
+    "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+    "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }
