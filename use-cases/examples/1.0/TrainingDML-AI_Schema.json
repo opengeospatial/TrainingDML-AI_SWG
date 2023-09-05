@@ -1,21 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "TrainingDML-AI.json",
+  "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_Schema.json",
   "title": "TrainingDML-AI JSON schema",
   "oneOf": [
     {
-      "$ref": "#/definitions/eoTrainingDataset"
+      "$ref": "#/definitions/ai_trainingDataset"
     },
     {
-      "$ref": "#/definitions/eoTrainingData"
+      "$ref": "#/definitions/ai_eoTrainingDataset"
     },
     {
-      "$ref": "#/definitions/tdChangeset"
+      "$ref": "#/definitions/ai_tdChangeset"
     }
   ],
   "definitions": {
-    "trainingDataset": {
-      "title": "AbstractTrainingDataset",
+    "ai_trainingDataset": {
+      "title": "AI_AbstractTrainingDataset",
       "type": "object",
       "required": [
         "id",
@@ -32,7 +32,7 @@
           "type": "string"
         },
         "scope": {
-          "$ref": "#/definitions/scope"
+          "$ref": "#/definitions/md_scope"
         },
         "name": {
           "type": "string"
@@ -50,36 +50,12 @@
           "type": "integer"
         },
         "createdTime": {
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "string",
-              "format": "time"
-            }
-          ]
+          "type": "string",
+          "$ref": "#/definitions/date_time"
         },
         "updatedTime": {
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "string",
-              "format": "time"
-            }
-          ]
+          "type": "string",
+          "$ref": "#/definitions/date_time"
         },
         "providers": {
           "type": "array",
@@ -96,7 +72,7 @@
         "metricsInLIT": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/metricsInLiterature"
+            "$ref": "#/definitions/ai_metricsInLiterature"
           }
         },
         "statisticsInfo": {
@@ -142,16 +118,16 @@
         "tasks": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/task"
+            "$ref": "#/definitions/ai_task"
           }
         },
         "quality": {
-          "$ref": "#/definitions/dataQuality"
+          "$ref": "#/definitions/ai_dataQuality"
         },
         "labeling": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/labeling"
+            "$ref": "#/definitions/ai_labeling"
           }
         },
         "data": {
@@ -159,7 +135,7 @@
             {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/trainingData"
+                "$ref": "#/definitions/ai_trainingData"
               },
               "minItems": 1
             },
@@ -171,22 +147,21 @@
         }
       }
     },
-    "eoTrainingDataset": {
-      "title": "EOTrainingDataset",
+    "ai_eoTrainingDataset": {
+      "title": "AI_EOTrainingDataset",
       "type": "object",
       "required": [
         "type"
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/trainingDataset"
+          "$ref": "#/definitions/ai_trainingDataset"
         }
       ],
       "properties": {
         "type": {
-          "type": "string",
           "enum": [
-            "EOTrainingDataset"
+            "AI_EOTrainingDataset"
           ]
         },
         "extent": {
@@ -199,7 +174,14 @@
         "bands": {
           "type": "array",
           "items": {
-            "type": "string"
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/definitions/md_band"
+              }
+            ]
           }
         },
         "imageSize": {
@@ -208,7 +190,7 @@
         "tasks": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/eoTask"
+            "$ref": "#/definitions/ai_eoTask"
           }
         },
         "data": {
@@ -216,7 +198,7 @@
             {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/eoTrainingData"
+                "$ref": "#/definitions/ai_trainingData"
               },
               "minItems": 1
             },
@@ -228,8 +210,8 @@
         }
       }
     },
-    "trainingData": {
-      "title": "AbstractTrainingData",
+    "ai_trainingData": {
+      "title": "AI_AbstractTrainingData",
       "type": "object",
       "required": [
         "id",
@@ -243,7 +225,7 @@
           "type": "string"
         },
         "trainingType": {
-          "$ref": "#/definitions/trainingTypeCode"
+          "$ref": "#/definitions/ai_trainingTypeCode"
         },
         "numberOfLabels": {
           "type": "integer"
@@ -257,25 +239,25 @@
           "minItems": 1
         },
         "quality": {
-          "$ref": "#/definitions/dataQuality"
+          "$ref": "#/definitions/ai_dataQuality"
         },
         "labeling": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/labeling"
+            "$ref": "#/definitions/ai_labeling"
           }
         },
         "labels": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/label"
+            "$ref": "#/definitions/ai_label"
           },
           "minItems": 1
         }
       }
     },
-    "eoTrainingData": {
-      "title": "EOTrainingData",
+    "ai_eoTrainingData": {
+      "title": "AI_EOTrainingData",
       "type": "object",
       "required": [
         "type",
@@ -283,14 +265,14 @@
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/trainingData"
+          "$ref": "#/definitions/ai_trainingData"
         }
       ],
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "EOTrainingData"
+            "AI_EOTrainingData"
           ]
         },
         "extent": {
@@ -304,20 +286,8 @@
       "dataTime": {
         "type": "array",
         "items": {
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "string",
-              "format": "time"
-            }
-          ]
+          "type": "string",
+          "$ref": "#/definitions/date_time"
         }
       },
       "dataURL": {
@@ -329,20 +299,24 @@
         "minItems": 1
       }
     },
-    "label": {
-      "title": "Label",
+    "ai_label": {
+      "title": "AI_AbstractLabel",
       "type": "object",
       "properties": {
         "isNegative": {
-          "type": "boolean"
+          "type": "boolean",
+          "default": false
         },
         "confidence": {
-          "type": "number"
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.0,
+          "maximum": 1.0
         }
       }
     },
-    "sceneLabel": {
-      "title": "SceneLabel",
+    "ai_sceneLabel": {
+      "title": "AI_SceneLabel",
       "type": "object",
       "required": [
         "type",
@@ -350,14 +324,14 @@
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/label"
+          "$ref": "#/definitions/ai_label"
         }
       ],
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "SceneLabel"
+            "AI_SceneLabel"
           ]
         },
         "class": {
@@ -365,8 +339,8 @@
         }
       }
     },
-    "objectLabel": {
-      "title": "ObjectLabel",
+    "ai_objectLabel": {
+      "title": "AI_ObjectLabel",
       "type": "object",
       "required": [
         "type",
@@ -375,14 +349,14 @@
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/label"
+          "$ref": "#/definitions/ai_label"
         }
       ],
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "ObjectLabel"
+            "AI_ObjectLabel"
           ]
         },
         "object": {
@@ -394,32 +368,17 @@
         "class": {
           "type": "string"
         },
-        "isDiffDetectable": {
-          "type": "boolean"
-        },
         "dateTime": {
           "type": "array",
           "items": {
-            "oneOf": [
-              {
-                "type": "string",
-                "format": "date-time"
-              },
-              {
-                "type": "string",
-                "format": "date"
-              },
-              {
-                "type": "string",
-                "format": "time"
-              }
-            ]
+            "type": "string",
+            "$ref": "#/definitions/date_time"
           }
         }
       }
     },
-    "pixelLabel": {
-      "title": "PixelLabel",
+    "ai_pixelLabel": {
+      "title": "AI_PixelLabel",
       "type": "object",
       "required": [
         "type",
@@ -428,14 +387,14 @@
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/label"
+          "$ref": "#/definitions/ai_label"
         }
       ],
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "PixelLabel"
+            "AI_PixelLabel"
           ]
         },
         "imageURL": {
@@ -455,8 +414,8 @@
         }
       }
     },
-    "labeler": {
-      "title": "Labeler",
+    "ai_labeler": {
+      "title": "AI_Labeler",
       "type": "object",
       "required": [
         "type",
@@ -467,7 +426,7 @@
         "type": {
           "type": "string",
           "enum": [
-            "Labeler"
+            "AI_Labeler"
           ]
         },
         "id": {
@@ -478,8 +437,8 @@
         }
       }
     },
-    "labelingProcedure": {
-      "title": "LabelingProcedure",
+    "ai_labelingProcedure": {
+      "title": "AI_LabelingProcedure",
       "type": "object",
       "required": [
         "type",
@@ -490,7 +449,7 @@
         "type": {
           "type": "string",
           "enum": [
-            "LabelingProcedure"
+            "AI_LabelingProcedure"
           ]
         },
         "id": {
@@ -511,8 +470,8 @@
         }
       }
     },
-    "labeling": {
-      "title": "Labeling",
+    "ai_labeling": {
+      "title": "AI_Labeling",
       "type": "object",
       "required": [
         "type",
@@ -523,28 +482,28 @@
         "type": {
           "type": "string",
           "enum": [
-            "Labeling"
+            "AI_Labeling"
           ]
         },
         "id": {
           "type": "string"
         },
         "scope": {
-          "$ref": "#/definitions/scope"
+          "$ref": "#/definitions/md_scope"
         },
-        "lablers": {
+        "labelers": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/labeler"
+            "$ref": "#/definitions/ai_labeler"
           }
         },
         "procedure": {
-          "$ref": "#/definitions/labelingProcedure"
+          "$ref": "#/definitions/ai_labelingProcedure"
         }
       }
     },
-    "task": {
-      "title": "AbstractTask",
+    "ai_task": {
+      "title": "AI_AbstractTask",
       "type": "object",
       "required": [
         "id"
@@ -561,8 +520,8 @@
         }
       }
     },
-    "eoTask": {
-      "title": "EOTask",
+    "ai_eoTask": {
+      "title": "AI_EOTask",
       "type": "object",
       "required": [
         "type",
@@ -570,14 +529,14 @@
       ],
       "oneOf": [
         {
-          "$ref": "#/definitions/task"
+          "$ref": "#/definitions/ai_task"
         }
       ],
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "EOTask"
+            "AI_EOTask"
           ]
         },
         "taskType": {
@@ -585,12 +544,11 @@
         }
       }
     },
-    "metricsInLiterature": {
-      "title": "MetricsInLiterature",
+    "ai_metricsInLiterature": {
+      "title": "AI_MetricsInLiterature",
       "type": "object",
       "required": [
         "doi",
-        "algroithm",
         "metrics"
       ],
       "properties": {
@@ -621,8 +579,8 @@
         }
       }
     },
-    "dataQuality": {
-      "title": "DataQuality",
+    "ai_dataQuality": {
+      "title": "AI_DataQuality",
       "type": "object",
       "required": [
         "type",
@@ -632,11 +590,11 @@
         "type": {
           "type": "string",
           "enum": [
-            "DataQuality"
+            "AI_DataQuality"
           ]
         },
         "scope": {
-          "$ref": "#/definitions/scope"
+          "$ref": "#/definitions/md_scope"
         },
         "report": {
           "type": "array",
@@ -651,16 +609,11 @@
       "type": "object",
       "required": [
         "type",
-        "measure",
-        "evaluationMethod",
         "result"
       ],
       "properties": {
         "type": {
-          "type": "string",
-          "enum": [
-            "QualityElement"
-          ]
+          "type": "string"
         },
         "measure": {
           "type": "string"
@@ -671,10 +624,23 @@
         "result": {
           "type": "string"
         }
+      },
+      "if": {
+        "properties": {
+          "type": {
+            "const": "AI_ClassBalanceDegree"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "measure",
+          "evaluationMethod"
+        ]
       }
     },
-    "tdChangeset": {
-      "title": "TDChangeset",
+    "ai_tdChangeset": {
+      "title": "AI_TDChangeset",
       "type": "object",
       "required": [
         "type",
@@ -685,7 +651,7 @@
         "type": {
           "type": "string",
           "enum": [
-            "TDChangeset"
+            "AI_TDChangeset"
           ]
         },
         "id": {
@@ -701,42 +667,30 @@
           "type": "number"
         },
         "createdTime": {
-          "oneOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "string",
-              "format": "time"
-            }
-          ]
+          "type": "string",
+          "$ref": "#/definitions/date_time"
         },
         "add": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/trainingData"
+            "$ref": "#/definitions/ai_trainingData"
           }
         },
         "modify": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/trainingData"
+            "$ref": "#/definitions/ai_trainingData"
           }
         },
         "delete": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/trainingData"
+            "$ref": "#/definitions/ai_trainingData"
           }
         }
       }
     },
-    "trainingTypeCode": {
+    "ai_trainingTypeCode": {
       "type": "string",
       "enum": [
         "training",
@@ -744,12 +698,176 @@
         "test"
       ]
     },
-    "scope": {
-      "title": "Scope",
+    "date_time": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "string",
+          "format": "time"
+        },
+        {
+          "type": "string",
+          "pattern": "^(19|20)\\d{2}$"
+        },
+        {
+          "type": "string",
+          "pattern": "^(19|20)\\d{2}-(0[1-9]|1[0-2])$"
+        }
+      ]
+    },
+    "ci_date": {
+      "title": "CI_Date",
       "type": "object",
       "required": [
-        "level",
-        "levelDescription"
+        "date",
+        "dateType"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "$ref": "#/definitions/date_time"
+        },
+        "dateType": {
+          "type": "string"
+        }
+      }
+    },
+    "ci_citation": {
+      "title": "CI_Citation",
+      "type": "object",
+      "required": [
+        "title"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "alternateTitle": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "date": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ci_date"
+          }
+        },
+        "edition": {
+          "type": "string"
+        },
+        "editionDate": {
+          "type": "string",
+          "$ref": "#/definitions/date_time"
+        },
+        "graphic": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "fileName"
+            ],
+            "properties": {
+              "fileName": {
+                "type": "string"
+              },
+              "fileDescription": {
+                "type": "string"
+              },
+              "fileType": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "identifier": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/md_identifier"
+          }
+        },
+        "ISBN": {
+          "type": "string"
+        },
+        "ISSN": {
+          "type": "string"
+        }
+      }
+    },
+    "md_identifier": {
+      "title": "MD_Identifier",
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "authority": {
+          "$ref": "#/definitions/ci_citation"
+        },
+        "codeSpace": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "md_band": {
+      "title": "MD_Band",
+      "type": "object",
+      "properties": {
+        "boundMax": {
+          "type": "number"
+        },
+        "boundMin": {
+          "type": "number"
+        },
+        "boundUnits": {
+          "type": "string",
+          "enum": [
+            "nm",
+            "um",
+            "cm",
+            "dm",
+            "m",
+            "km"
+          ]
+        },
+        "peakResponse": {
+          "type": "number"
+        },
+        "toneGradation": {
+          "type": "integer"
+        }
+      },
+      "dependentRequired": {
+        "boundMax": [
+          "boundUnits"
+        ],
+        "boundMin": [
+          "boundUnits"
+        ]
+      }
+    },
+    "md_scope": {
+      "title": "MD_Scope",
+      "type": "object",
+      "required": [
+        "level"
       ],
       "properties": {
         "level": {
