@@ -1,0 +1,63 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/ai-task
+|Dependency |JSON
+|Dependency |/req/base/json-base-type
+|Dependency |/req/base/iso-metadata-type
+|Requirement |/req/ai-task/task
+|Requirement |/req/ai-task/eo-task
+|===
+
+An AI_Task object is encoded as a JSON object with properties shown in Table 8.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ai-task/task
+
+Each AI_Task object shall implement the properties shown in Table 8.
+|===
+
+.AI_Task properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the task object. |“AI_Task” |Mandatory
+|id |Identification of the task. |CharacterString [1..1] |Mandatory
+|datasetId |Identification of the training dataset the training sample belongs to. |CharacterString [0..1] |Optional
+|description |Description of the AI task. |CharacterString [0..1] |Optional
+|===
+
+Example:
+
+ {
+    “type”: “AI_Task”,
+    “id”: “image-indexing-task”,
+    “description”: “Structural high-resolution satellite image indexing”
+ }
+
+An AI_EOTask object is encoded as a JSON object with properties both shown in Table 8 and Table 9.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ai-task/task
+
+Each AI_EOTask object shall implement the properties shown in Table 8 and Table 9.
+|===
+
+.AI_EOTask properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the task object. |“AI_EOTask” |Mandatory
+|taskType |Type of the EO task. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+ {
+    “type”: “AI_EOTask”,
+    “id”: “image-indexing-task”,
+    “description”: “Structural high-resolution satellite image indexing”
+    “taskType”: “Scene Classification”
+ }

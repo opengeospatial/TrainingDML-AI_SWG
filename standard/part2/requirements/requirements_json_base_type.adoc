@@ -1,0 +1,70 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/json-base-type 
+|Dependency |JSON
+|Requirement |/req/base/json-base-type/json
+|Requirement |/req/base/json-base-type/date-time
+|Requirement |/req/base/json-base-type/named-value
+|Requirement |/req/base/json-base-type/url
+|===
+
+The first requirement is that a TrainingDML-AI JSON document is a valid JSON document.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/json-base-type/json
+
+An instance shall be a conformant JSON document, as defined in ECMA-404
+|===
+
+JSON has a limited range of built-in types (http://json.org/). The following requirements provide standard JSON representations of additional types required across all requirements within this specification.
+
+A DateTime is encoded as a text string.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/json-base-type/date-time
+
+Each DateTime value shall be encoded as a text string defined in RFC 3339 Section 5.6:
+
+https://datatracker.ietf.org/doc/html/rfc3339#section-5.6
+|===
+
+Examples:
+
+ a) “2022-08-08T08:08:00.00+08:00”
+ b) “2022-08-08T08:08:00.00Z”
+ c) “2022-08-08”
+ d) “12:34:56”
+ e) “12:34:56.123”
+
+A NamedValue is encoded as a JSON object with two properties named “key” and “value”.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/json-base-type/named-value
+
+Each NamedValue value shall be encoded as a JSON object with properties “key” and “value”, while the value of property “key” is a text string.
+|===
+
+Examples:
+
+ a) {“key”: “forest”, “value”: “RGB(0,255,255)”}
+ b) {“key”: “precision”, “value”: 0.8}
+
+A URL is encoded as a text string.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/json-base-type/url
+
+Each URL value shall be encoded as a text string defined in RFC 3986 Section 4.1:
+
+https://datatracker.ietf.org/doc/html/rfc3986#section-4.1
+|===
+
+Examples:
+
+ a)	“http://www.opengeospatial.org”
+ b)	“/file.txt”

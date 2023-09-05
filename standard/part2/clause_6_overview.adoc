@@ -1,0 +1,15 @@
+== Overview
+
+This standard defines a JSON-based serialization syntax for geospatial training datasets. While other serialization forms are possible, such alternatives are not discussed in this document.
+
+When serialized, absent properties are represented by either (a) setting the property value to null, or (b) by omitting the property declaration altogether at the option of the publisher. These representations are semantically equivalent. If a property has an array value, the absence of any items in that array shall be represented by omitting the property entirely or by setting the value to null. The appropriate interpretation of an omitted or explicitly null value is that no value has been assigned, as opposed to the view that the given value is empty or nil.
+
+JSON does not have a formal class model. JSON objects are just sets of properties. However, the JSON encoding described in this standard features a “type” property on each JSON object.
+
+A training dataset document conforming to this standard is a JSON document whose root value is an AI_TrainingDataset object.
+
+=== JavaScript Object Notation
+
+JavaScript Object Notation (JSON) is a lightweight, text-based, language-independent data interchange format that defines a small set of formatting rules for the portable representation of structured data.  JSON is derived from the object literals of JavaScript, as defined in the ECMAScript Programming Language Standard and can represent four primitive types (strings, numbers, boolean values, and null) and two structured types (objects and arrays).  The ordering of the members or properties of any JSON object is considered irrelevant. Even though JSON is based on a subset of the JavaScript Programming Language it is currently well-supported by nearly all programming languages, including Java, Python, and C#.
+
+The JSON format is currently described by two competing standards, RFC7159 and ECMA-404. Both standards documents are consistent, but the latter defines mainly the grammatical syntax where the former provides some additional semantic and security points.

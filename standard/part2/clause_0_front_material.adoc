@@ -1,0 +1,47 @@
+[[abstract]]
+[big]*i.     Abstract*
+
+JavaScript Object Notation (JSON) is widely used for encoding data in Web-based applications. It consists of sets of objects described by name/value pairs.  This OGC Standard describes a JSON encoding for geospatial training datasets. It is based on OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard.
+
+[[keywords]]
+[big]*ii.    Keywords*
+
+The following are keywords to be used by search engines and document catalogues.
+
+ogcdoc, OGC document, artificial intelligence, machine learning, deep learning, earth observation, remote sensing, training data, training sample, encoding, JSON
+
+[[preface]]
+[big]*iii.   Preface*
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+[[security_considerations]]
+[big]*iv.    Security Considerations*
+
+No security considerations have been made for this Standard.
+
+[[submitting_organizations]]
+[big]*v.    Submitting organizations*
+
+The following organizations submitted this Document to the Open Geospatial Consortium (OGC): 
+
+Organization name(s)
+
+[[submitters]]
+[big]*vi.     Submitters*
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+|===
+|*Name* |*Affiliation*
+||
+||
+||
+|===
+
+[[acknowledgments]]
+[big]*vii.    Contributors*
+
+Additional contributors to this Standard include the following:
+
+Individual name(s), Organization

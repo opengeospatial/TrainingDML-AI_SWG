@@ -1,0 +1,80 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/iso-metadata-type
+|Dependency |JSON
+|Dependency |GeoJSON
+|Requirement |/req/base/iso-metadata-type/band
+|Requirement |/req/base/iso-metadata-type/extent
+|Requirement |/req/base/iso-metadata-type/citation
+|Requirement |/req/base/iso-metadata-type/scope
+|===
+
+An MD_Band is encoded as a text string or a JSON object.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/iso-metadata-type/band
+
+Each MD_Band value shall be encoded as a text string or a JSON object matching the XML Schema type:
+
+https://schemas.isotc211.org/19115/-1/mrc/1.3#MD_Band
+|===
+
+Examples:
+
+ a)	“red”
+ b)	“B4”
+ c)	{“boundMax”: 690, “boundMin”: 630, “boundUnits”: “nm”}
+
+The encoding of EX_Extent follows GeoJSON for Bounding Box.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/iso-metadata-type/extent
+
+Each EX_Extent value shall be encoded using the GeoJSON bounding box encoding defined in RFC 7946 Section 5:
+
+https://datatracker.ietf.org/doc/html/rfc7946#section-5
+|===
+
+Examples:
+
+ a)	[120.0, 30.0, 130.0, 40.0]
+ b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]
+
+A CI_Citation is encoded as a text string or a JSON object.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/iso-metadata-type/citation
+
+Each CI_Citation value shall be encoded as a text string or a JSON object matching the XML Schema type: 
+
+https://schemas.isotc211.org/19115/-1/cit/1.3#CI_Citation
+|===
+
+Examples:
+
+ a)	“http://www.opengeospatial.org”
+ b)	{“title”: “Open Geospatial Consortium”, “alternateTitle”: [“OGC”], “identifier”: {“code”: “https://portal.ogc.org/files/?artifact_id=104605&version=1”}}
+
+An MD_Scope is encoded as a JSON object.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/iso-metadata-type/scope
+
+Each MD_Scope value shall be encoded as a JSON object matching the XML Schema type: 
+
+https://schemas.isotc211.org/19115/-1/mcc/1.3#MD_Scope
+|===
+
+Example:
+
+ {
+    “level”: “dataset”, 
+    “levelDescription”: {
+        “dataset”: “whu_rs19”
+    }
+ }

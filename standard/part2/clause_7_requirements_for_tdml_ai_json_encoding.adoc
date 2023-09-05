@@ -1,0 +1,70 @@
+== Requirements for TrainingDML-AI JSON Encoding
+
+=== Requirements class: base
+
+==== Requirements class: JSON base type
+
+This requirements class defines the base requirements for JSON encodings, which includes definitions of common types used in the TrainingDML-AI JSON encoding.
+
+include::requirements/requirements_json_base_type.adoc[]
+
+==== Requirements class: ISO metadata type
+
+This requirement class defines the requirements for JSON encoding of ISO metadata types.
+
+include::requirements/requirements_iso_metadata_type.adoc[]
+
+==== Requirements class: ISO quality type
+
+This requirement class defines the requirements for JSON encoding of ISO quality types.
+
+include::requirements/requirements_iso_quality_type.adoc[]
+
+
+==== Requirements class: geospatial type
+
+This requirement class defines the requirements for JSON encoding of geospatial types.
+
+include::requirements/requirements_iso_geospatial_type.adoc[]
+
+=== Requirements class: AI_TrainingDataset
+
+This Requirements class defines a JSON encoding for AI_TrainingDataset module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_trainingdataset.adoc[]
+
+=== Requirements class: AI_TrainingData
+
+This Requirements class defines a JSON encoding for AI_TrainingData module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_trainingdata.adoc[]
+
+=== Requirements class: AI_Task
+
+This Requirements class defines a JSON encoding for AI_Task module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_task.adoc[]
+
+=== Requirements class: AI_Label
+
+This Requirements class defines a JSON encoding for AI_Label module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_label.adoc[]
+
+=== Requirements class: AI_Labeling
+
+This Requirements class defines a JSON encoding for AI_Labeling module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_labeling.adoc[]
+
+=== Requirements class: AI_DataQuality
+
+An AI_ClassBalanceDegree object is encoded as a JSON object with properties shown in Table 17.
+
+include::requirements/requirements_ai_dataquality.adoc[]
+
+=== Requirements class: AI_TDChangeset
+
+This Requirements class defines a JSON encoding for AI_TDChangeset module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_tdchangeset.adoc[]

@@ -1,0 +1,12 @@
+[width="100%",cols="25%,10%,55%",]
+|===
+|Conformance Class 2+|/conf/ai-task
+|Requirements 2+|/req/ai-task
+|Dependency 2+|A JSON Schema Validator
+.3+|Test
+|Test purpose |Verify that the task objects are encoded using the specified property names and structures.
+|Test method |Validate the JSON instance document using the appropriate object definition from the TraningDML-AI.json JSON Schema.
+
+Pass if no errors reported. Fail otherwise.
+|Test type |Capability
+|===

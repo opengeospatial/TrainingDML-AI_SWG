@@ -1,0 +1,27 @@
+== Conventions
+
+This section provides details and examples for any conventions used in the document.
+
+=== Identifiers
+
+The normative provisions in this specification are denoted by the URI:
+
+http://www.opengis.net/spec/TrainingDML-AI-2/1.0
+
+All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
+
+=== Abbreviated terms
+
+In this document the following abbreviations and acronyms are used or introduced:
+
+* AI -- Artificial Intelligence
+* DL -- Deep Learning
+* EO -- Earth Observation
+* ISO -- International Organization for Standardization
+* JSON -- JavaScript Object Notation
+* ML -- Machine Learning
+* OGC -- Open Geospatial Consortium
+* RS -- Remote Sensing
+* TD -- Training Data
+* UML -- Unified Modelling Language
+* XML -- Extensible Markup Language

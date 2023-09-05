@@ -1,0 +1,12 @@
+[width="100%",cols="25%,10%,55%",]
+|===
+|Conformance Class 2+|/conf/ai-labeling
+|Requirements 2+|/req/ai-labeling
+|Dependency 2+|A JSON Schema Validator
+.3+|Test
+|Test purpose |Verify that the labeling objects are encoded using the specified property names and structures.
+|Test method |Validate the JSON instance document using the appropriate object definition from the TraningDML-AI.json JSON Schema. 
+
+Pass if no errors reported. Fail otherwise.
+|Test type |Capability
+|===

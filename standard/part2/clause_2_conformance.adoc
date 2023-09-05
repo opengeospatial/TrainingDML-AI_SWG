@@ -1,0 +1,9 @@
+== Conformance
+
+This Standard defines a JSON encoding for AI training datasets. The standardization targets for this Standard is:
+
+* TrainingDML-AI JSON Encoding Schema
+
+Conformance with this Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and https://www.opengeospatial.org/cite[the OGC Compliance Testing website].
+
+All requirements-classes and conformance-classes described in this document are owned by the standard identified.

@@ -1,0 +1,45 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/ai-td-changeset
+|Dependency |JSON
+|Dependency |/req/base/json-base-type
+|Dependency |/req/base/iso-metadata-type
+|Dependency |/req/td-training-data
+|Requirement |/req/ai-td-changeset/td-changeset
+|===
+
+An AI_TDChangeset object is encoded as a JSON object with properties shown in Table 21.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ai-td-changeset/td-changeset
+
+Each AI_TDChangeset object shall implement the properties shown in Table 21.
+|===
+
+.AI_ TDChangeset properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |Type of the TD changeset object. |“AI_TDChangeset” |Mandatory
+|id |Identifier of the changeset. |CharacterString [1..1] |Mandatory
+|datasetId |Identifier of the training dataset the changeset belongs to. |CharacterString [0..1] |Optional
+|version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
+|changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
+|createdTime |Created time of the changeset. |DateTime [0..1] |Optional
+|add |Added training samples. |AI_TrainingData [0..*] |Optional
+|modify |Modified training samples. |AI_TrainingData [0..*] |Optional
+|delete |Deleted training samples. |AI_TrainingData [0..*] |Optional
+|===
+
+Example:
+
+ {
+    “type”: “AI_TDChangeset”,
+    “id”: “changeset-dota_v1.5”,
+    “datasetId”: “dota_v1.5”,
+    “createdTime”: “2019-01-01”,
+    “changeCount”: 9, 
+    “modify”: [{“type”: “EOTrainingData”, “id”: “P1228”, “dataSources”: [“GF”], “dataURL”: “train/images/P1228.png”, “numberOfLabels”: 50, “trainingType”: “training”, “labels”: [{“type”: “ObjectLabel”, “class”: “ship”, “object”: {“type”: “Feature”, “geometry”: {“type”: “Polygon”, “coordinates”: [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},”bboxType”: “Horizontal BBox”}, …]}]
+ }

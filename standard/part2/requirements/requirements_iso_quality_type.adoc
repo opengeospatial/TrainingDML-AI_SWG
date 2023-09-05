@@ -1,0 +1,35 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/iso-quality-type
+|Dependency |JSON
+|Requirement |/req/base/iso-quality-type/element
+|===
+
+A QualityElement object is encoded as a JSON object with properties shown in Table 1.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/iso-quality-type/element
+
+Each QualityElement value shall be encoded as a JSON object with properties shown in Table 1.
+|===
+
+.QualityElement properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|JSON Property |Definition |Data type and values |Obligation
+|type |The type of the quality element object. |CharacterString [1..1] |Mandatory
+|measure |The type of evaluation. |CharacterString [0..1] |Optional
+|evaluationMethod |The procedure used to evaluate the measure. |CharacterString [0..1] |Optional
+|result |The output of the evaluation. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+ {
+    “type”: “FormatConsistency”,
+    “measure”: “Percentage of training samples with inconsistent image format”,
+    “evaluationMethod”: “Full test method to calculate the percentage of training samples with inconsistent format”,
+    “result”: “0”
+ }
