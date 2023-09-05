@@ -1,22 +1,22 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/ai-training-data
+2+|/req/aitrainingdata
 |Dependency |JSON
-|Dependency |/req/base/json-base-type
-|Dependency |/req/base/iso-metadata-type
-|Dependency |/req/ai-label
-|Dependency |/req/ai-labeling
-|Dependency |/req/ai-data-quality
-|Requirement |/req/ai-training-data/training-data
-|Requirement |/req/ai-training-data/eo-training-data
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/ailabel
+|Dependency |/req/ailabeling
+|Dependency |/req/aidataquality
+|Requirement |/req/aitrainingdata/trainingdata
+|Requirement |/req/aitrainingdata/eotrainingdata
 |===
 
 An AI_TrainingData object is encoded as a JSON object with properties shown in Table 6.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-training-dataset/training-data
+|Requirement |/req/aitrainingdataset/trainingdata
 
 Each AI_TrainingData object shall implement the properties shown in Table 6.
 |===
@@ -25,7 +25,7 @@ Each AI_TrainingData object shall implement the properties shown in Table 6.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the training data. |“AI_TrainingData” |Mandatory
+|type |Type of the training data. |“AI_AbstractTrainingData” |Mandatory
 |id |Identification of the AI training data. |CharacterString [1..1] |Mandatory
 |datasetId |Identification of the training dataset that the training sample belongs to. |CharacterString [0..1] |Optional
 |trainingType |Training type of the individual AI training sample. |AI_TrainingTypeCode [0..1] |Optional
@@ -39,7 +39,7 @@ Each AI_TrainingData object shall implement the properties shown in Table 6.
 Example:
 
  {
-    “type”: “AI_TrainingData”,
+    “type”: “AI_AbstractTrainingData”,
     “id”: “airport_01”,
     “dataSources”: [“googleEarth”],
     “dataURL”: “image/Airport/airport_01.jpg”,
@@ -50,7 +50,7 @@ An AI_TrainingTypeCode is encoded as a text string whose value is one of “trai
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-training-dataset/training-type-code
+|Requirement |/req/aitrainingdataset/trainingtypecode
 
 Each AI_TrainingTypeCode value shall be a text string whose value is one of “training”, “validation” or “test”.
 |===
@@ -65,7 +65,7 @@ An AI_EOTrainingData object is encoded as a JSON object with properties both sho
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-training-dataset/eo-training-data
+|Requirement |/req/aitrainingdataset/eotrainingdata
 
 Each AI_EOTrainingData object shall implement the properties both shown in Table 6 and Table 7.
 |===

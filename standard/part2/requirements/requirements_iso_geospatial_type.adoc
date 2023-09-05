@@ -1,17 +1,17 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/base/geospatial-type
+2+|/req/base/geospatialtype
 |Dependency |JSON
 |Dependency |GeoJSON
-|Requirement |/req/geospatial-type/feature
+|Requirement |/req/geospatialtype/feature
 |===
 
 The encoding of Feature follows GeoJSON for Feature, with object members of “type”, “geometry” and “properties”.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/geospatial-type/feature
+|Requirement |/req/geospatialtype/feature
 
 Each Feature value shall be encoded using the GeoJSON feature encoding defined in RFC 7946 Section 3.2:
 

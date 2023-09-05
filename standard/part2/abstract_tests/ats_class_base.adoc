@@ -4,16 +4,16 @@
 |Requirements 2+|/req/base
 |Dependency 2+|A JSON Schema Validator
 .5+|Test 2+|/conf/base/json 
-|Requirement |/req/base/json-base-type/json
+|Requirement |/req/base/jsonbasetype/json
 |Test purpose |Verify that the document is well-formed JSON.
 |Test method |Load the document in a JSON validator.
 
 Pass if no errors reported. Fail otherwise.
 |Test type |Capability
 .5+|Test 2+|/conf/base/type
-|Requirement |/req/base/json-base-type/data-time, /req/base/json-base-type/named-value, /req/base/json-base-type/url, /req/base/json-base-type/generic-attribute, /req/base/iso-metadata-type, /req/base/iso-quality-type, /req/base/geospatial-type
+|Requirement |/req/base/jsonbasetype/datatime, /req/base/jsonbasetype/namedvalue, /req/base/jsonbasetype/url, /req/base/isometadatatype, /req/base/isoqualitytype, /req/base/geospatialtype
 |Test purpose |Verify that the related values and objects are encoded using the specified property names and structures.
-|Test method |Validate the JSON instance document using the appropriate object definition from the TraningDML-AI.json JSON Schema. 
+|Test method |Validate the JSON instance document using the appropriate object definition from the TraningDMLAI.json JSON Schema. 
 
 Pass if no errors reported. Fail otherwise.
 |Test type |Capability

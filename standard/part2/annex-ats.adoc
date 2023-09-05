@@ -6,43 +6,43 @@
 
 Conformance is tested using the JSON Schema document which formalize the requirements described above.
 
-=== Conformance class: base
+=== Conformance Class: base
 
 This conformance class tests that occurrences of the basic types are encoded according to the requirements.
 
 include::abstract_tests/ats_class_base.adoc[]
 
-=== Conformance class: AI_TrainingDataset
+=== Conformance Class: AI_TrainingDataset
 
 This conformance class tests the training dataset object is encoded according to the requirements.
 
 include::abstract_tests/ats_class_trainingdataset.adoc[]
 
-=== Conformance class: AI_TrainingData
+=== Conformance Class: AI_TrainingData
 
 This conformance class tests the training data objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_trainingdata.adoc[]
 
-=== Conformance class: AI_Task
+=== Conformance Class: AI_Task
 
 This conformance class tests the task objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_task.adoc[]
 
-=== Conformance class: AI_Label
+=== Conformance Class: AI_Label
 
 This conformance class tests the label objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_label.adoc[]
 
-=== Conformance class: AI_Labeling
+=== Conformance Class: AI_Labeling
 
 This conformance class tests the labeling objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_labeling.adoc[]
 
-=== Conformance class: AI_TDChangeset
+=== Conformance Class: AI_TDChangeset
 
 This conformance class tests the TD changeset objects are encoded according to the requirements.
 

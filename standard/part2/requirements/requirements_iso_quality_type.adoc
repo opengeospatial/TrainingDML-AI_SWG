@@ -1,16 +1,16 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/base/iso-quality-type
+2+|/req/base/isoqualitytype
 |Dependency |JSON
-|Requirement |/req/base/iso-quality-type/element
+|Requirement |/req/base/isoqualitytype/element
 |===
 
 A QualityElement object is encoded as a JSON object with properties shown in Table 1.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/iso-quality-type/element
+|Requirement |/req/base/isoqualitytype/element
 
 Each QualityElement value shall be encoded as a JSON object with properties shown in Table 1.
 |===

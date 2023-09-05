@@ -1,7 +1,7 @@
 [width="100%",cols="25%,10%,55%",]
 |===
-|Conformance Class 2+|/conf/ai-td-changeset
-|Requirements 2+|/req/ai-td-changeset
+|Conformance Class 2+|/conf/aitdchangeset
+|Requirements 2+|/req/aitdchangeset
 |Dependency 2+|A JSON Schema Validator
 .3+|Test
 |Test purpose |Verify that the TD changeset objects are encoded using the specified property names and structures.

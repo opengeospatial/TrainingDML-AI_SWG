@@ -1,20 +1,20 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/ai-labeling
+2+|/req/ailabeling
 |Dependency |JSON
-|Dependency |/req/base/json-base-type
-|Dependency |/req/base/iso-metadata-type
-|Requirement |/req/ai-labeling/labeling
-|Requirement |/req/ai-labeling/labeler
-|Requirement |/req/ai-labeling/labeling-procedure
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Requirement |/req/ailabeling/labeling
+|Requirement |/req/ailabeling/labeler
+|Requirement |/req/ailabeling/labelingprocedure
 |===
 
 An AI_Labeling object is encoded as a JSON object with properties shown in Table 14.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-labeling/labeling
+|Requirement |/req/ailabeling/labeling
 
 Each AI_Labeling object shall implement the properties shown in Table 14.
 |===
@@ -49,7 +49,7 @@ An AI_Labeler object is encoded as a JSON object with properties shown in Table 
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-labeling/labeler
+|Requirement |/req/ailabeling/labeler
 
 Each AI_Labeler object shall implement the properties shown in Table 15.
 |===
@@ -75,7 +75,7 @@ An AI_LabelingProcedure object is encoded as a JSON object with properties shown
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-labeling/labeling-procedure
+|Requirement |/req/ailabeling/labelingprocedure
 
 Each AI_LabelingProcedure object shall implement the properties shown in Table 16.
 |===

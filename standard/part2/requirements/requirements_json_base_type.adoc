@@ -1,19 +1,19 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/base/json-base-type 
+2+|/req/base/jsonbasetype 
 |Dependency |JSON
-|Requirement |/req/base/json-base-type/json
-|Requirement |/req/base/json-base-type/date-time
-|Requirement |/req/base/json-base-type/named-value
-|Requirement |/req/base/json-base-type/url
+|Requirement |/req/base/jsonbasetype/json
+|Requirement |/req/base/jsonbasetype/datetime
+|Requirement |/req/base/jsonbasetype/namedvalue
+|Requirement |/req/base/jsonbasetype/url
 |===
 
 The first requirement is that a TrainingDML-AI JSON document is a valid JSON document.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/json-base-type/json
+|Requirement |/req/base/jsonbasetype/json
 
 An instance shall be a conformant JSON document, as defined in ECMA-404
 |===
@@ -24,7 +24,7 @@ A DateTime is encoded as a text string.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/json-base-type/date-time
+|Requirement |/req/base/jsonbasetype/datetime
 
 Each DateTime value shall be encoded as a text string defined in RFC 3339 Section 5.6:
 
@@ -43,7 +43,7 @@ A NamedValue is encoded as a JSON object with two properties named “key” and
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/json-base-type/named-value
+|Requirement |/req/base/jsonbasetype/namedvalue
 
 Each NamedValue value shall be encoded as a JSON object with properties “key” and “value”, while the value of property “key” is a text string.
 |===
@@ -57,7 +57,7 @@ A URL is encoded as a text string.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/json-base-type/url
+|Requirement |/req/base/jsonbasetype/url
 
 Each URL value shall be encoded as a text string defined in RFC 3986 Section 4.1:
 

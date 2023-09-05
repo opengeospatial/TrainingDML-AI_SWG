@@ -1,19 +1,19 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/ai-td-changeset
+2+|/req/aitdchangeset
 |Dependency |JSON
-|Dependency |/req/base/json-base-type
-|Dependency |/req/base/iso-metadata-type
-|Dependency |/req/td-training-data
-|Requirement |/req/ai-td-changeset/td-changeset
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/tdtrainingdata
+|Requirement |/req/aitdchangeset/tdchangeset
 |===
 
 An AI_TDChangeset object is encoded as a JSON object with properties shown in Table 21.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-td-changeset/td-changeset
+|Requirement |/req/aitdchangeset/tdchangeset
 
 Each AI_TDChangeset object shall implement the properties shown in Table 21.
 |===

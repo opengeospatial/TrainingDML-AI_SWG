@@ -1,20 +1,20 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/base/iso-metadata-type
+2+|/req/base/isometadatatype
 |Dependency |JSON
 |Dependency |GeoJSON
-|Requirement |/req/base/iso-metadata-type/band
-|Requirement |/req/base/iso-metadata-type/extent
-|Requirement |/req/base/iso-metadata-type/citation
-|Requirement |/req/base/iso-metadata-type/scope
+|Requirement |/req/base/isometadatatype/band
+|Requirement |/req/base/isometadatatype/extent
+|Requirement |/req/base/isometadatatype/citation
+|Requirement |/req/base/isometadatatype/scope
 |===
 
 An MD_Band is encoded as a text string or a JSON object.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/iso-metadata-type/band
+|Requirement |/req/base/isometadatatype/band
 
 Each MD_Band value shall be encoded as a text string or a JSON object matching the XML Schema type:
 
@@ -31,7 +31,7 @@ The encoding of EX_Extent follows GeoJSON for Bounding Box.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/iso-metadata-type/extent
+|Requirement |/req/base/isometadatatype/extent
 
 Each EX_Extent value shall be encoded using the GeoJSON bounding box encoding defined in RFC 7946 Section 5:
 
@@ -47,7 +47,7 @@ A CI_Citation is encoded as a text string or a JSON object.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/iso-metadata-type/citation
+|Requirement |/req/base/isometadatatype/citation
 
 Each CI_Citation value shall be encoded as a text string or a JSON object matching the XML Schema type: 
 
@@ -63,7 +63,7 @@ An MD_Scope is encoded as a JSON object.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/iso-metadata-type/scope
+|Requirement |/req/base/isometadatatype/scope
 
 Each MD_Scope value shall be encoded as a JSON object matching the XML Schema type: 
 

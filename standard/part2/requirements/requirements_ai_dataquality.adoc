@@ -1,6 +1,6 @@
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-data-quality/class-balance-degree
+|Requirement |/req/aidataquality/classbalancedegree
 
 Each AI_ClassBalanceDegree object shall implement the properties shown in Table 17.
 |===

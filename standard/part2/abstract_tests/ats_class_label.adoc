@@ -1,7 +1,7 @@
 [width="100%",cols="25%,10%,55%",]
 |===
-|Conformance Class 2+|/conf/ai-label
-|Requirements 2+|/req/ai-label
+|Conformance Class 2+|/conf/ailabel
+|Requirements 2+|/req/ailabel
 |Dependency 2+|A JSON Schema Validator
 .3+|Test
 |Test purpose |Verify that the label objects are encoded using the specified property names and structures.

@@ -1,22 +1,22 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/ai-label
+2+|/req/ailabel
 |Dependency |JSON
-|Dependency |/req/base/json-base-type
-|Dependency |/req/base/iso-metadata-type
-|Dependency |/req/base/geospatial-type
-|Requirement |/req/ai-label/label
-|Requirement |/req/ai-label/scene-label
-|Requirement |/req/ai-label/object-label
-|Requirement |/req/ai-label/pixel-label
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/base/geospatialtype
+|Requirement |/req/ailabel/label
+|Requirement |/req/ailabel/scenelabel
+|Requirement |/req/ailabel/objectlabel
+|Requirement |/req/ailabel/pixellabel
 |===
 
 An AI_Label object is encoded as a JSON object with properties shown in Table 10.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-label/label
+|Requirement |/req/ailabel/label
 
 Each AI_Label object shall implement the properties shown in Table 10.
 |===
@@ -25,7 +25,7 @@ Each AI_Label object shall implement the properties shown in Table 10.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the label object. |“AI_Label” |Mandatory
+|type |Type of the label object. |“AI_AbstractLabel” |Mandatory
 |isNegative |Whether the training sample related to the label is a positive or negative sample. |bool [0..1] |Optional
 |confidence |Confidence score of the labeler.  |Float [0..1] |Optional
 |===
@@ -33,7 +33,7 @@ Each AI_Label object shall implement the properties shown in Table 10.
 Example:
 
  {
-    “type”: “AI_Label”,
+    “type”: “AI_AbstractLabel”,
     “isNegative”: false
  }
 
@@ -41,7 +41,7 @@ An AI_SceneLabel object is encoded as a JSON object with properties shown in Tab
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-label/scene-label
+|Requirement |/req/ailabel/scenelabel
 
 Each AI_SceneLabel object shall implement the properties shown in Table 11.
 |===
@@ -65,7 +65,7 @@ An AI_ObjectLabel object is encoded as a JSON object with properties shown in Ta
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-label/object-label
+|Requirement |/req/ailabel/objectlabel
 
 Each AI_ObjectLabel object shall implement the properties shown in Table 12.
 |===
@@ -94,7 +94,7 @@ An AI_PixelLabel object is encoded as a JSON object with properties shown in Tab
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-label/pixel-label
+|Requirement |/req/ailabel/pixellabel
 
 Each AI_PixelLabel object shall implement the properties shown in Table 13.
 |===

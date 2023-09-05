@@ -1,7 +1,7 @@
 [width="100%",cols="25%,10%,55%",]
 |===
-|Conformance Class 2+|/conf/ai-task
-|Requirements 2+|/req/ai-task
+|Conformance Class 2+|/conf/aitask
+|Requirements 2+|/req/aitask
 |Dependency 2+|A JSON Schema Validator
 .3+|Test
 |Test purpose |Verify that the task objects are encoded using the specified property names and structures.

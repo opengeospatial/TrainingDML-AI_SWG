@@ -27,7 +27,7 @@ SOURCE: https://www.ibm.com/topics/deep-learning
 [[training-dataset-definition]]
 === Training Dataset
 
-a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.
+is a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.
 
 SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
@@ -41,13 +41,13 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 [[javascript-object-notation-definition]]
 === JavaScript Object Notation (JSON)
 
-a lightweight, text-based, language-independent syntax for defining data interchange formats. It was derived from the ECMAScript programming language, but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.
+is a lightweight, text-based, language-independent syntax for defining data interchange formats. It was derived from the ECMAScript programming language, but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.
 
 SOURCE: ECMA-404 The JSON data interchange syntax 2nd edition, December 2017
 
 [[json-schema-definition]]
 === JSON Schema
 
-a vocabulary that allows you to annotate and validate JSON documents.
+is a vocabulary that allows you to annotate and validate JSON documents.
 
 SOURCE: https://json-schema.org/

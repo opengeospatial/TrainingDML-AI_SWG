@@ -1,7 +1,7 @@
 [width="100%",cols="25%,10%,55%",]
 |===
-|Conformance Class 2+|/conf/ai-training-dataset
-|Requirements 2+|/req/ai-training-dataset
+|Conformance Class 2+|/conf/aitrainingdataset
+|Requirements 2+|/req/aitrainingdataset
 |Dependency 2+|A JSON Schema Validator
 .3+|Test |Test purpose |Verify that the training dataset object is encoded using the specified property names and structures.
 |Test method |Validate the JSON instance document using the appropriate object definition from the TraningDML-AI.json JSON Schema. 

@@ -1,7 +1,7 @@
 [width="100%",cols="25%,10%,55%",]
 |===
-|Conformance Class 2+|/conf/ai-training-data
-|Requirements 2+|/req/ai-training-data
+|Conformance Class 2+|/conf/aitrainingdata
+|Requirements 2+|/req/aitrainingdata
 |Dependency 2+|A JSON Schema Validator
 .3+|Test
 |Test purpose |Verify that the training data objects are encoded using the specified property names and structures.

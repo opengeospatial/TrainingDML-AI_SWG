@@ -1,25 +1,25 @@
 [width="100%",cols="15%,85%",options="header",]
 |===
 2+|*Requirements class* 
-2+|/req/ai-training-dataset
+2+|/req/aitrainingdataset
 |Dependency |JSON
-|Dependency |/req/base/json-base-type
-|Dependency |/req/base/iso-metadata-type
-|Dependency |/req/ai-training-data
-|Dependency |/req/ai-task
-|Dependency |/req/ai-labeling
-|Dependency |/req/ai-data-quality
-|Dependency |/req/ai-td-changeset
-|Requirement |/req/ai-training-dataset/training-dataset
-|Requirement |/req/ai-training-dataset/metrics-in-literature
-|Requirement |/req/ai-training-dataset/eo-training-dataset
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/aitrainingdata
+|Dependency |/req/aitask
+|Dependency |/req/ailabeling
+|Dependency |/req/aidataquality
+|Dependency |/req/aitdchangeset
+|Requirement |/req/aitrainingdataset/trainingdataset
+|Requirement |/req/aitrainingdataset/metricsinliterature
+|Requirement |/req/aitrainingdataset/eotrainingdataset
 |===
 
 An AI_TrainingDataset object is encoded as a JSON object with properties shown in Table 2.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-training-dataset/training-dataset
+|Requirement |/req/aitrainingdataset/trainingdataset
 
 Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 |===
@@ -28,7 +28,7 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
-|type |Type of the training dataset. |“AI_TrainingDataset” |Mandatory
+|type |Type of the training dataset. |“AI_AbstractTrainingDataset” |Mandatory
 |id |Identification of the AI training dataset. |CharacterString [1..1] |Mandatory
 |doi |Digital object identifier of the AI training dataset. |CharacterString [0..1] |Optional
 |scope |Description of the scope of the training dataset. |MD_Scope [0..1] |Optional
@@ -58,7 +58,7 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 Example:
 
  {
-    “type”: “AI_TrainingDataset”,
+    “type”: “AI_AbstractTrainingDataset”,
     “id”: “whu_rs19”,
     “name”: “WHU-RS19”,
     “description”: “Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth”,
@@ -76,7 +76,7 @@ An AI_MetricsInLiterature is encoded as JSON object with properties shown in Tab
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ai-training-dataset/metrics-in-literature
+|Requirement |/req/aitrainingdataset/metricsinliterature
 
 Each AI_MetricsInLiterature value shall implement the properties shown in Table 3.
 |===
@@ -102,7 +102,7 @@ An AI_EOTrainingDataset object is encoded as a JSON object with properties shown
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitrainingdataset/eo-training-dataset
+|Requirement |/req/aitrainingdataset/eotrainingdataset
 
 Each AI_EOTrainingDataset object shall implement the properties both shown in Table 2 and Table 4.
 |===
