@@ -76,7 +76,7 @@ Each AI_EOTrainingData object shall implement the properties both shown in Table
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the EO training data. |"AI_EOTrainingData" |Mandatory
 |extent |Spatial extent of the individual EO training sample. |EX_Extent [0..1] |Optional
-|dateTime |Data time when the EO data was obtained. |DateTime [0..*] |Optional
+|dataTime |Data time when the EO data was obtained. |DateTime [0..*] |Optional
 |dataURL |URL of the EO data. |URL [1..*] |Mandatory
 |===
 
