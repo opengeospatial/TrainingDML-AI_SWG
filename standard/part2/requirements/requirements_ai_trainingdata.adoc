@@ -33,7 +33,7 @@ Each AI_TrainingData object shall implement the properties shown in Table 6.
 |dataSources |Citation of inputs to prepare a training sample. |CI_Citation [0..*] |Optional
 |labels |Labels in the training data. |AI_Label [1..*] |Mandatory
 |labeling |Provenance information of how the training data is labeled. |AI_Labeling [0..*] |Optional
-|quality |Quality information of the training data. |AI_DataQuality [0..*] |Optional
+|quality |Quality information of the training data. |DataQuality [0..*] |Optional
 |===
 
 Example:
