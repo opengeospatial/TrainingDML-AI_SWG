@@ -212,7 +212,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 |===
 |*Attribute* |*Value type and multiplicity* |*Definition*
 |extent |EX_Extent [0..1] |Spatial extent of the individual EO training sample.
-|dateTime |DateTime [0..*] |Data times when the EO data were obtained.
+|dataTime |DateTime [0..*] |Data times when the EO data were obtained.
 |dataURL |URL [1..*] |URLs of the EO data.
 |===
 
