@@ -49,7 +49,7 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 |classes |Classes used in the AI training dataset. |NamedValue [1..1] |Mandatory
 |tasks |Task description of the training dataset. |AI_Task [1..*] |Mandatory
 |labeling |Provenance information of how the training dataset is labeled. |AI_Labeling [0..*] |Optional
-|quality |Quality information of the training dataset. |AI_DataQuality [0..*] |Optional
+|quality |Quality information of the training dataset. |DataQuality [0..*] |Optional
 |changesets |Changeset between two versions of the training dataset. |AI_TDChangeset [0..*] |Optional
 |data |Training data in the training dataset. |AI_TrainingData [1..*] |Mandatory
 |genericAttributes |Attributes of the training dataset that are not defined. |GenericAttribute [0..*] |Optional
