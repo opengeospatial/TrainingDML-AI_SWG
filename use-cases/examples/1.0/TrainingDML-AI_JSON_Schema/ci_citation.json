@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ci_citation.json",
+    "title": "CI_Citation",
+    "type": "object",
+    "required": [
+        "title"
+    ],
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "alternateTitle": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ci_date.json"
+            }
+        },
+        "edition": {
+            "type": "string"
+        },
+        "editionDate": {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
+        },
+        "graphic": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "fileName"
+                ],
+                "properties": {
+                    "fileName": {
+                        "type": "string"
+                    },
+                    "fileDescription": {
+                        "type": "string"
+                    },
+                    "fileType": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "identifier": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/md_identifier.json"
+            }
+        },
+        "ISBN": {
+            "type": "string"
+        },
+        "ISSN": {
+            "type": "string"
+        }
+    }
+}

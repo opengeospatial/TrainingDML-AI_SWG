@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labelingProcedure.json",
+    "title": "AI_LabelingProcedure",
+    "type": "object",
+    "required": [
+        "type",
+        "id",
+        "methods"
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_LabelingProcedure"
+            ]
+        },
+        "id": {
+            "type": "string"
+        },
+        "methods": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "tools": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

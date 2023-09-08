@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_pixelLabel.json",
+    "title": "AI_PixelLabel",
+    "type": "object",
+    "required": [
+        "type",
+        "imageURL",
+        "imageFormat"
+    ],
+    "oneOf": [
+        {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_label.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_PixelLabel"
+            ]
+        },
+        "imageFormat": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "imageURL": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri-reference"
+            },
+            "minItems": 1
+        }
+    }
+}

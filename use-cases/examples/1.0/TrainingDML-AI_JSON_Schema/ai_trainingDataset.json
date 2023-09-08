@@ -1,0 +1,156 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingDataset.json",
+    "title": "AI_AbstractTrainingDataset",
+    "type": "object",
+    "required": [
+        "id",
+        "name",
+        "description",
+        "license",
+        "tasks",
+        "data"
+    ],
+    "properties": {
+        "amountOfTrainingData": {
+            "type": "integer"
+        },
+        "classes": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "type": "object"
+                    },
+                    {
+                        "type": "string"
+                    }
+                ]
+            },
+            "minItems": 1
+        },
+        "classificationScheme": {
+            "type": "string",
+            "format": "uri-reference"
+        },
+        "createdTime": {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
+        },
+        "dataSources": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference"
+                    },
+                    "minItems": 1
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ci_citation.json"
+                    }
+                }
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "doi": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "license": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "numberOfClasses": {
+            "type": "integer"
+        },
+        "providers": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "scope": {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/md_scope.json"
+        },
+        "statisticsInfo": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "class",
+                    "count"
+                ],
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "minItems": 1
+        },
+        "updatedTime": {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
+        },
+        "version": {
+            "type": "string"
+        },
+        "labeling": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeling.json"
+            }
+        },
+        "metricsInLIT": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_metricsInLiterature.json"
+            }
+        },
+        "tasks": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_task.json"
+            },
+            "minItems": 1
+        },
+        "quality": {
+            "type": "array",
+            "items": {
+                "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/dataQuality.json"
+            }
+        },
+        "data": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingData.json"
+                    },
+                    "minItems": 1
+                },
+                {
+                    "type": "string",
+                    "format": "uri-reference"
+                }
+            ]
+        }
+    }
+}

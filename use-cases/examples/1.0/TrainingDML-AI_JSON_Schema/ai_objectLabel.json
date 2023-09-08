@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_objectLabel.json",
+    "title": "AI_ObjectLabel",
+    "type": "object",
+    "required": [
+        "type",
+        "object",
+        "class"
+    ],
+    "oneOf": [
+        {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_label.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_ObjectLabel"
+            ]
+        },
+        "bboxType": {
+            "type": "string"
+        },
+        "class": {
+            "type": "string"
+        },
+        "object": {
+            "$ref": "https://geojson.org/schema/Feature.json"
+        },
+        "dateTime": {
+            "$ref": "https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
+        }
+    }
+}
