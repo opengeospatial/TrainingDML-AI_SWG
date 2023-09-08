@@ -35,7 +35,7 @@
   ],
   "tasks": [
     {
-      "type": "EOTask",
+      "type": "AI_EOTask",
       "id": "gid-5c-task",
       "description": "Land-cover classification for RS images",
       "taskType": "Land-cover Classification"
@@ -43,7 +43,7 @@
   ],
   "data": [
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000564539-MSS1",
       "dataSources": [
         "GF2"
@@ -52,14 +52,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000564539-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000575925-MSS1",
       "dataSources": [
         "GF2"
@@ -68,14 +68,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000575925-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000647767-MSS1",
       "dataSources": [
         "GF2"
@@ -84,14 +84,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000647768-MSS1",
       "dataSources": [
         "GF2"
@@ -100,14 +100,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000647768-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000647770-MSS1",
       "dataSources": [
         "GF2"
@@ -116,14 +116,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000647770-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000708367-MSS1",
       "dataSources": [
         "GF2"
@@ -132,14 +132,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000708367-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0000962382-MSS1",
       "dataSources": [
         "GF2"
@@ -148,14 +148,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0000962382-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001015646-MSS1",
       "dataSources": [
         "GF2"
@@ -164,14 +164,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001015646-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001015648-MSS1",
       "dataSources": [
         "GF2"
@@ -180,14 +180,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001015648-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001015649-MSS1",
       "dataSources": [
         "GF2"
@@ -196,14 +196,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001015649-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001037899-MSS1",
       "dataSources": [
         "GF2"
@@ -212,14 +212,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001037899-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001064454-MSS1",
       "dataSources": [
         "GF2"
@@ -228,14 +228,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001064454-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001064469-MSS1",
       "dataSources": [
         "GF2"
@@ -244,14 +244,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001064469-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001094941-MSS1",
       "dataSources": [
         "GF2"
@@ -260,14 +260,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001094941-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001104323-MSS1",
       "dataSources": [
         "GF2"
@@ -276,14 +276,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001104323-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001112719-MSS1",
       "dataSources": [
         "GF2"
@@ -292,14 +292,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001112719-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001118839-MSS1",
       "dataSources": [
         "GF2"
@@ -308,14 +308,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001118839-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001169100-MSS1",
       "dataSources": [
         "GF2"
@@ -324,14 +324,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001169100-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001217916-MSS1",
       "dataSources": [
         "GF2"
@@ -340,14 +340,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001217916-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001290139-MSS1",
       "dataSources": [
         "GF2"
@@ -356,14 +356,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001290139-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001293546-MSS1",
       "dataSources": [
         "GF2"
@@ -372,14 +372,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001293546-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001335463-MSS1",
       "dataSources": [
         "GF2"
@@ -388,14 +388,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001335463-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001344822-MSS1",
       "dataSources": [
         "GF2"
@@ -404,14 +404,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001344822-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001348919-MSS1",
       "dataSources": [
         "GF2"
@@ -420,14 +420,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001348919-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001366278-MSS1",
       "dataSources": [
         "GF2"
@@ -436,14 +436,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001366278-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001366284-MSS1",
       "dataSources": [
         "GF2"
@@ -452,14 +452,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001366284-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001395956-MSS1",
       "dataSources": [
         "GF2"
@@ -468,14 +468,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001395956-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001432972-MSS1",
       "dataSources": [
         "GF2"
@@ -484,14 +484,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001432972-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001471230-MSS1",
       "dataSources": [
         "GF2"
@@ -500,14 +500,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001471230-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001491417-MSS1",
       "dataSources": [
         "GF2"
@@ -516,14 +516,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001491417-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001491423-MSS1",
       "dataSources": [
         "GF2"
@@ -532,14 +532,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001491423-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001491484-MSS1",
       "dataSources": [
         "GF2"
@@ -548,14 +548,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001491484-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001517689-MSS1",
       "dataSources": [
         "GF2"
@@ -564,14 +564,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001517689-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001537716-MSS1",
       "dataSources": [
         "GF2"
@@ -580,14 +580,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001537716-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001553848-MSS1",
       "dataSources": [
         "GF2"
@@ -596,14 +596,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001553848-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001562063-MSS1",
       "dataSources": [
         "GF2"
@@ -612,14 +612,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001562063-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001625023-MSS1",
       "dataSources": [
         "GF2"
@@ -628,14 +628,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001625023-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001642566-MSS1",
       "dataSources": [
         "GF2"
@@ -644,14 +644,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001642566-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001647941-MSS1",
       "dataSources": [
         "GF2"
@@ -660,14 +660,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001647941-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001660727-MSS1",
       "dataSources": [
         "GF2"
@@ -676,14 +676,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001660727-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001668483-MSS1",
       "dataSources": [
         "GF2"
@@ -692,14 +692,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001668483-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001670888-MSS1",
       "dataSources": [
         "GF2"
@@ -708,14 +708,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001670888-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001680851-MSS1",
       "dataSources": [
         "GF2"
@@ -724,14 +724,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001680851-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001680853-MSS1",
       "dataSources": [
         "GF2"
@@ -740,14 +740,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001680853-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001680857-MSS1",
       "dataSources": [
         "GF2"
@@ -756,14 +756,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001680857-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001680858-MSS1",
       "dataSources": [
         "GF2"
@@ -772,14 +772,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001680858-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001734328-MSS1",
       "dataSources": [
         "GF2"
@@ -788,14 +788,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001734328-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001757429-MSS1",
       "dataSources": [
         "GF2"
@@ -804,14 +804,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001757429-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001765570-MSS1",
       "dataSources": [
         "GF2"
@@ -820,14 +820,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001765570-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001765572-MSS1",
       "dataSources": [
         "GF2"
@@ -836,14 +836,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001765572-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001765574-MSS1",
       "dataSources": [
         "GF2"
@@ -852,14 +852,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001765574-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001767953-MSS1",
       "dataSources": [
         "GF2"
@@ -868,14 +868,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001767953-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001791738-MSS1",
       "dataSources": [
         "GF2"
@@ -884,14 +884,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001791738-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001792971-MSS1",
       "dataSources": [
         "GF2"
@@ -900,14 +900,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001792971-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001793003-MSS1",
       "dataSources": [
         "GF2"
@@ -916,14 +916,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001793003-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001798942-MSS1",
       "dataSources": [
         "GF2"
@@ -932,14 +932,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001798942-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001798945-MSS1",
       "dataSources": [
         "GF2"
@@ -948,14 +948,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001798945-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001821711-MSS1",
       "dataSources": [
         "GF2"
@@ -964,14 +964,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001821711-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS1__L1A0001910522-MSS1",
       "dataSources": [
         "GF2"
@@ -980,14 +980,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS1__L1A0001910522-MSS1_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000564691-MSS2",
       "dataSources": [
         "GF2"
@@ -996,14 +996,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000564691-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000564692-MSS2",
       "dataSources": [
         "GF2"
@@ -1012,14 +1012,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000564692-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000607677-MSS2",
       "dataSources": [
         "GF2"
@@ -1028,14 +1028,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000607677-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000607681-MSS2",
       "dataSources": [
         "GF2"
@@ -1044,14 +1044,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000607681-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000635115-MSS2",
       "dataSources": [
         "GF2"
@@ -1060,14 +1060,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000635115-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000647892-MSS2",
       "dataSources": [
         "GF2"
@@ -1076,14 +1076,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000647892-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000658636-MSS2",
       "dataSources": [
         "GF2"
@@ -1092,14 +1092,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000658636-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000658637-MSS2",
       "dataSources": [
         "GF2"
@@ -1108,14 +1108,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000658637-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000718813-MSS2",
       "dataSources": [
         "GF2"
@@ -1124,14 +1124,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000718813-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000736601-MSS2",
       "dataSources": [
         "GF2"
@@ -1140,14 +1140,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000736601-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000788763-MSS2",
       "dataSources": [
         "GF2"
@@ -1156,14 +1156,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000788763-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000789259-MSS2",
       "dataSources": [
         "GF2"
@@ -1172,14 +1172,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000789259-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000851345-MSS2",
       "dataSources": [
         "GF2"
@@ -1188,14 +1188,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000851345-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000948183-MSS2",
       "dataSources": [
         "GF2"
@@ -1204,14 +1204,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000948183-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000958144-MSS2",
       "dataSources": [
         "GF2"
@@ -1220,14 +1220,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000958144-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0000958146-MSS2",
       "dataSources": [
         "GF2"
@@ -1236,14 +1236,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0000958146-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001015594-MSS2",
       "dataSources": [
         "GF2"
@@ -1252,14 +1252,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001015594-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001015596-MSS2",
       "dataSources": [
         "GF2"
@@ -1268,14 +1268,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001015596-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001015597-MSS2",
       "dataSources": [
         "GF2"
@@ -1284,14 +1284,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001015597-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001028977-MSS2",
       "dataSources": [
         "GF2"
@@ -1300,14 +1300,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001028977-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001035795-MSS2",
       "dataSources": [
         "GF2"
@@ -1316,14 +1316,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001035795-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001038935-MSS2",
       "dataSources": [
         "GF2"
@@ -1332,14 +1332,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001038935-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001038936-MSS2",
       "dataSources": [
         "GF2"
@@ -1348,14 +1348,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001038936-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001092725-MSS2",
       "dataSources": [
         "GF2"
@@ -1364,14 +1364,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001092725-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001116443-MSS2",
       "dataSources": [
         "GF2"
@@ -1380,14 +1380,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001116443-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001116444-MSS2",
       "dataSources": [
         "GF2"
@@ -1396,14 +1396,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001116444-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001119057-MSS2",
       "dataSources": [
         "GF2"
@@ -1412,14 +1412,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001119057-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001119060-MSS2",
       "dataSources": [
         "GF2"
@@ -1428,14 +1428,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001119060-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001140983-MSS2",
       "dataSources": [
         "GF2"
@@ -1444,14 +1444,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001140983-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001167480-MSS2",
       "dataSources": [
         "GF2"
@@ -1460,14 +1460,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001167480-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001206072-MSS2",
       "dataSources": [
         "GF2"
@@ -1476,14 +1476,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001206072-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001246644-MSS2",
       "dataSources": [
         "GF2"
@@ -1492,14 +1492,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001246644-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001246645-MSS2",
       "dataSources": [
         "GF2"
@@ -1508,14 +1508,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001246645-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001251799-MSS2",
       "dataSources": [
         "GF2"
@@ -1524,14 +1524,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001251799-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001251800-MSS2",
       "dataSources": [
         "GF2"
@@ -1540,14 +1540,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001251800-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001336975-MSS2",
       "dataSources": [
         "GF2"
@@ -1556,14 +1556,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001336975-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001367840-MSS2",
       "dataSources": [
         "GF2"
@@ -1572,14 +1572,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001367840-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001367842-MSS2",
       "dataSources": [
         "GF2"
@@ -1588,14 +1588,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001367842-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001378491-MSS2",
       "dataSources": [
         "GF2"
@@ -1604,14 +1604,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001378491-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001378501-MSS2",
       "dataSources": [
         "GF2"
@@ -1620,14 +1620,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001378501-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001389317-MSS2",
       "dataSources": [
         "GF2"
@@ -1636,14 +1636,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001389317-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001393716-MSS2",
       "dataSources": [
         "GF2"
@@ -1652,14 +1652,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001393716-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001396034-MSS2",
       "dataSources": [
         "GF2"
@@ -1668,14 +1668,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001396034-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001396036-MSS2",
       "dataSources": [
         "GF2"
@@ -1684,14 +1684,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001396036-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001396037-MSS2",
       "dataSources": [
         "GF2"
@@ -1700,14 +1700,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001396037-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001396040-MSS2",
       "dataSources": [
         "GF2"
@@ -1716,14 +1716,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001396040-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001416129-MSS2",
       "dataSources": [
         "GF2"
@@ -1732,14 +1732,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001416129-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001416140-MSS2",
       "dataSources": [
         "GF2"
@@ -1748,14 +1748,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001416140-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001433318-MSS2",
       "dataSources": [
         "GF2"
@@ -1764,14 +1764,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001433318-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001448894-MSS2",
       "dataSources": [
         "GF2"
@@ -1780,14 +1780,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001448894-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001457157-MSS2",
       "dataSources": [
         "GF2"
@@ -1796,14 +1796,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001457157-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001465929-MSS2",
       "dataSources": [
         "GF2"
@@ -1812,14 +1812,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001465929-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001471436-MSS2",
       "dataSources": [
         "GF2"
@@ -1828,14 +1828,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001471436-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001490885-MSS2",
       "dataSources": [
         "GF2"
@@ -1844,14 +1844,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001490885-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001517494-MSS2",
       "dataSources": [
         "GF2"
@@ -1860,14 +1860,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001517494-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001537636-MSS2",
       "dataSources": [
         "GF2"
@@ -1876,14 +1876,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001537636-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001537637-MSS2",
       "dataSources": [
         "GF2"
@@ -1892,14 +1892,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001537637-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001563129-MSS2",
       "dataSources": [
         "GF2"
@@ -1908,14 +1908,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001563129-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001566653-MSS2",
       "dataSources": [
         "GF2"
@@ -1924,14 +1924,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001566653-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001566654-MSS2",
       "dataSources": [
         "GF2"
@@ -1940,14 +1940,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001566654-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001573999-MSS2",
       "dataSources": [
         "GF2"
@@ -1956,14 +1956,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001573999-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001574001-MSS2",
       "dataSources": [
         "GF2"
@@ -1972,14 +1972,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001574001-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001577567-MSS2",
       "dataSources": [
         "GF2"
@@ -1988,14 +1988,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001577567-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001591676-MSS2",
       "dataSources": [
         "GF2"
@@ -2004,14 +2004,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001591676-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001633212-MSS2",
       "dataSources": [
         "GF2"
@@ -2020,14 +2020,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001633212-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001642620-MSS2",
       "dataSources": [
         "GF2"
@@ -2036,14 +2036,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001642620-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001668457-MSS2",
       "dataSources": [
         "GF2"
@@ -2052,14 +2052,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001668457-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001708230-MSS2",
       "dataSources": [
         "GF2"
@@ -2068,14 +2068,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001708230-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001708232-MSS2",
       "dataSources": [
         "GF2"
@@ -2084,14 +2084,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001708232-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001708259-MSS2",
       "dataSources": [
         "GF2"
@@ -2100,14 +2100,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001708259-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001708261-MSS2",
       "dataSources": [
         "GF2"
@@ -2116,14 +2116,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001708261-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001723989-MSS2",
       "dataSources": [
         "GF2"
@@ -2132,14 +2132,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001723989-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001723991-MSS2",
       "dataSources": [
         "GF2"
@@ -2148,14 +2148,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001723991-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001746797-MSS2",
       "dataSources": [
         "GF2"
@@ -2164,14 +2164,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001746797-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001757317-MSS2",
       "dataSources": [
         "GF2"
@@ -2180,14 +2180,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001757317-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001757320-MSS2",
       "dataSources": [
         "GF2"
@@ -2196,14 +2196,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001757320-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001757483-MSS2",
       "dataSources": [
         "GF2"
@@ -2212,14 +2212,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001757483-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001757484-MSS2",
       "dataSources": [
         "GF2"
@@ -2228,14 +2228,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001757484-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001768200-MSS2",
       "dataSources": [
         "GF2"
@@ -2244,14 +2244,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001768200-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001787080-MSS2",
       "dataSources": [
         "GF2"
@@ -2260,14 +2260,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001787080-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001787089-MSS2",
       "dataSources": [
         "GF2"
@@ -2276,14 +2276,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001787089-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001787564-MSS2",
       "dataSources": [
         "GF2"
@@ -2292,14 +2292,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001787564-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001787577-MSS2",
       "dataSources": [
         "GF2"
@@ -2308,14 +2308,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001787577-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001799009-MSS2",
       "dataSources": [
         "GF2"
@@ -2324,14 +2324,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001799009-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001799010-MSS2",
       "dataSources": [
         "GF2"
@@ -2340,14 +2340,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001799010-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001799015-MSS2",
       "dataSources": [
         "GF2"
@@ -2356,14 +2356,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001799015-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001821754-MSS2",
       "dataSources": [
         "GF2"
@@ -2372,14 +2372,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001821754-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001824765-MSS2",
       "dataSources": [
         "GF2"
@@ -2388,14 +2388,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001824765-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001838560-MSS2",
       "dataSources": [
         "GF2"
@@ -2404,14 +2404,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001838560-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001876775-MSS2",
       "dataSources": [
         "GF2"
@@ -2420,14 +2420,14 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001876775-MSS2_label.tif",
           "imageFormat": "Tiff"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "GF2_PMS2__L1A0001886305-MSS2",
       "dataSources": [
         "GF2"
@@ -2436,7 +2436,7 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "label_5classes/GF2_PMS2__L1A0001886305-MSS2_label.tif",
           "imageFormat": "Tiff"
         }

@@ -30,7 +30,7 @@
   "imageSize": "32507x15354",
   "tasks": [
     {
-      "type": "EOTask",
+      "type": "AI_EOTask",
       "id": "whu-building-task",
       "description": "Building change detection based on aerial images",
       "taskType": "Change Detection"
@@ -38,7 +38,7 @@
   ],
   "data": [
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "0",
       "bbox": [
         1560160,
@@ -57,7 +57,7 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageURL": "change label/change_label.tif",
           "imageFormat": "TIFF"
         }

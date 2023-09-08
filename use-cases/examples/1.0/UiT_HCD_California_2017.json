@@ -39,7 +39,7 @@
   ],
   "data": [
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "0",
       "dataTime": [
         "2017-01-05",
@@ -56,7 +56,7 @@
       "numberOfLabels": 1,
       "labels": [
         {
-          "type": "PixelLabel",
+          "type": "AI_PixelLabel",
           "imageUrl": "change_label.png",
           "imageFormat": "PNG"
         }

@@ -1,5 +1,5 @@
 {
-  "type": "AI_TrainingDataset",
+  "type": "AI_EOTrainingDataset",
   "id": "toronto_3d",
   "name": "Toronto-3D",
   "description": "The dataset is a large urban outdoor point cloud dataset for segmentation collected by the Mobile Laser Scanning System (MLSS)",
@@ -51,7 +51,7 @@
   ],
   "tasks": [
     {
-      "type": "AI_Task",
+      "type": "AI_EOTask",
       "id": "toronto_3d-task",
       "description": "Point Cloud Semantic Segmentation",
       "taskType": "http://demo#point_cloud_semantic_segmentation"
@@ -59,48 +59,48 @@
   ],
   "data": [
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "L001",
       "dataURL": "data/L001.ply",
       "labels": [
         {
-          "type": "PointLabel",
+          "type": "AI_PointLabel",
           "pointLabelURL": "data/L001.ply",
           "pointLabelField": "scalar_Label"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "L002",
       "dataURL": "data/L002.ply",
       "labels": [
         {
-          "type": "PointLabel",
+          "type": "AI_PointLabel",
           "pointLabelURL": "data/L002.ply",
           "pointLabelField": "scalar_Label"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "L003",
       "dataURL": "data/L003.ply",
       "labels": [
         {
-          "type": "PointLabel",
+          "type": "AI_PointLabel",
           "pointLabelURL": "data/L003.ply",
           "pointLabelField": "scalar_Label"
         }
       ]
     },
     {
-      "type": "EOTrainingData",
+      "type": "AI_EOTrainingData",
       "id": "L004",
       "dataURL": "data/L004.ply",
       "labels": [
         {
-          "type": "PointLabel",
+          "type": "AI_PointLabel",
           "pointLabelURL": "data/L004.ply",
           "pointLabelField": "scalar_Label"
         }

@@ -26,7 +26,7 @@
       "result": ["0"]
     },
     {
-      "type": "ClassBalanceDegree",
+      "type": "AI_ClassBalanceDegree",
       "measure": "Balance degree of label classes",
       "evaluationMethod": "Counting the number of training samples belonging to each class and calculating the balance degree",
       "result": ["0.935"]
