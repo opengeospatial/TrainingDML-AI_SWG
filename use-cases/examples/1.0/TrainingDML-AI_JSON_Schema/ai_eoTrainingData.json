@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_eoTrainingData.json",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_eoTrainingData.json",
     "title": "AI_EOTrainingData",
     "type": "object",
     "required": [
@@ -9,7 +9,7 @@
     ],
     "oneOf": [
         {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingData.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingData.json"
         }
     ],
     "properties": {
@@ -37,7 +37,7 @@
         "dataTime": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/date_time.json"
             }
         }
     }

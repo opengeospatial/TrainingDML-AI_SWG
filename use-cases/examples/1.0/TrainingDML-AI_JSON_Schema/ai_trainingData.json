@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingData.json",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingData.json",
     "title": "AI_AbstractTrainingData",
     "type": "object",
     "required": [
@@ -24,7 +24,7 @@
                 {
                     "type": "array",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ci_citation.json"
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ci_citation.json"
                     }
                 }
             ]
@@ -38,23 +38,23 @@
         "labels": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_label.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_label.json"
             },
             "minItems": 1
         },
         "labeling": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeling.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeling.json"
             }
         },
         "trainingType": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingTypeCode.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_trainingTypeCode.json"
         },
         "quality": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/dataQuality.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/dataQuality.json"
             }
         }
     }

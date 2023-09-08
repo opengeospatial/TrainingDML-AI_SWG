@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeling.json",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeling.json",
     "title": "AI_Labeling",
     "type": "object",
     "required": [
@@ -19,16 +19,16 @@
             "type": "string"
         },
         "scope": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/md_scope.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/md_scope.json"
         },
         "labelers": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeler.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labeler.json"
             }
         },
         "procedure": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/blob/main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labelingProcedure.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_labelingProcedure.json"
         }
     }
 }
