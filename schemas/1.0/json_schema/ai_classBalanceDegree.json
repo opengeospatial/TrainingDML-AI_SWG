@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_classBalanceDegree.json",
+    "title": "AI_ClassBalanceDegree",
+    "type": "object",
+    "oneOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/qualityElement.json"
+        }
+    ],
+    "properties": {}
+}

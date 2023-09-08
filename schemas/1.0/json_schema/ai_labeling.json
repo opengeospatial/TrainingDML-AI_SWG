@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labeling.json",
+    "title": "AI_Labeling",
+    "type": "object",
+    "required": [
+        "type",
+        "id",
+        "scope"
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_Labeling"
+            ]
+        },
+        "id": {
+            "type": "string"
+        },
+        "scope": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_scope.json"
+        },
+        "labelers": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labeler.json"
+            }
+        },
+        "procedure": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labelingProcedure.json"
+        }
+    }
+}

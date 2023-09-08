@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG//main/use-cases/examples/1.0/TrainingDML-AI_JSON_Schema/ai_metricsInLiterature.json",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_metricsInLiterature.json",
     "title": "AI_MetricsInLiterature",
     "type": "object",
     "required": [
