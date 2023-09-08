@@ -1,5 +1,5 @@
 {
-  "type": "EOTrainingDataset",
+  "type": "AI_EOTrainingDataset",
   "id": "whu_rs19",
   "name": "WHU-RS19",
   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
@@ -48,7 +48,7 @@
   ],
   "labeling": [
     {
-      "type": "Labeling",
+      "type": "AI_Labeling",
       "id": "whu_rs19-labeling1",
       "scope": {
         "level": "dataset",
@@ -58,13 +58,13 @@
       },
       "labelers": [
         {
-          "type": "Labeler",
+          "type": "AI_Labeler",
           "id": "whu_rs19-labeler1",
           "name": "demo-name"
         }
       ],
       "procedure": {
-        "type": "LabelingProcedure",
+        "type": "AI_LabelingProcedure",
         "id": "whu_rs19-procedure1",
         "methods": [
           "manual"

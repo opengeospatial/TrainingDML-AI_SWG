@@ -1,5 +1,5 @@
 {
-  "type": "EOTrainingDataset",
+  "type": "AI_EOTrainingDataset",
   "id": "whu_mvs",
   "name": "WHU MVS",
   "description": "The dataset is a synthetic aerial dataset created for large-scale and high-resolution Earth surface reconstruction",

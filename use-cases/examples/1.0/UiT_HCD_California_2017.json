@@ -1,5 +1,5 @@
 {
-  "type": "EOTrainingDataset",
+  "type": "AI_EOTrainingDataset",
   "id": "uit_hcd_california_2017",
   "name": "UiT HCD California 2017",
   "description": "This dataset is composed of two images and a label image.",
@@ -31,7 +31,7 @@
   "imageSize": "2000x3500",
   "tasks": [
     {
-      "type": "EOTask",
+      "type": "AI_EOTask",
       "id": "uit_hcd_california_2017-task",
       "description": "Multi-source images change detection",
       "taskType": "http://demo#change_detection"

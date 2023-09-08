@@ -1,5 +1,5 @@
 {
-  "type": "EOTrainingDataset",
+  "type": "AI_TrainingDataset",
   "id": "toronto_3d",
   "name": "Toronto-3D",
   "description": "The dataset is a large urban outdoor point cloud dataset for segmentation collected by the Mobile Laser Scanning System (MLSS)",
@@ -49,9 +49,9 @@
     "scalar_ScanAngleRank",
     "scalar_Label"
   ],
-  "task": [
+  "tasks": [
     {
-      "type": "EOTask",
+      "type": "AI_Task",
       "id": "toronto_3d-task",
       "description": "Point Cloud Semantic Segmentation",
       "taskType": "http://demo#point_cloud_semantic_segmentation"

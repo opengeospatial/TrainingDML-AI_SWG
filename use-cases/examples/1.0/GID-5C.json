@@ -1,5 +1,5 @@
 {
-  "type": "EOTrainingDataset",
+  "type": "AI_EOTrainingDataset",
   "id": "gid-5c",
   "name": "GID-Large-scale Classification",
   "description": "Gaofen Image Dataset (GID) is a large-scale land-cover dataset with Gaofen-2 (GF-2) satellite images, it has superiorities over the existing land-cover dataset because of its large coverage, wide distribution, and high spatial resolution.",
