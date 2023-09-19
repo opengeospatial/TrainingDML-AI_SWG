@@ -25,7 +25,7 @@ In this document the following abbreviations and acronyms are used or introduced
 * OGC -- Open Geospatial Consortium
 * RS -- Remote Sensing
 * TD -- Training Data
-* UML -- Unified Modelling Language
+* UML -- Unified Modeling Language
 * XML -- Extensible Markup Language
 
 === UML Notation

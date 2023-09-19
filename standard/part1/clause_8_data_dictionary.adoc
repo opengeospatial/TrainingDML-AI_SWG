@@ -83,7 +83,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 
 [width="100%",cols="34%,66%",options="",]
 |===
-|Description |The AI_TrainingDataset module supports the modelling of different kinds of training dataset.
+|Description |The AI_TrainingDataset module supports the modeling of different kinds of training dataset.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -167,7 +167,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 .Metadata of AI_TrainingData (ApplicationSchema)
 [width="100%",cols="25%,75%",options="",]
 |===
-|Description |AI_TrainingData module supports the modelling of an individual AI training sample.
+|Description |AI_TrainingData module supports the modeling of an individual AI training sample.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -232,7 +232,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 
 [width="100%",cols="23%,77%",options="",]
 |===
-|Description |AI_Task module supports the modelling of different kinds of AI task.
+|Description |AI_Task module supports the modeling of different kinds of AI task.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -282,7 +282,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 
 [width="100%",cols="20%,80%",options="",]
 |===
-|Description |AI_Label module supports the modelling of different kinds of AI Label.
+|Description |AI_Label module supports the modeling of different kinds of AI Label.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -368,7 +368,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 .Metadata of AI_Labeling (ApplicationSchema)
 [width="100%",cols="20%,80%",options="",]
 |===
-|Description |AI_Labeling module supports the modelling of provenance information of the training dataset.
+|Description |AI_Labeling module supports the modeling of provenance information of the training dataset.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -439,7 +439,7 @@ Table 55. Metadata of AI_Labeling (Class)
 
 [width="100%",cols="20%,80%",options="",]
 |===
-|Description |AI_TDChangeset module supports the modelling of change information of the training dataset.
+|Description |AI_TDChangeset module supports the modeling of change information of the training dataset.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===
@@ -475,7 +475,7 @@ Table 55. Metadata of AI_Labeling (Class)
 .Metadata of AI_DataQuality (ApplicationSchema)
 [width="100%",cols="20%,80%",options="header",]
 |===
-|Description |AI_DataQuality module supports the modelling of quality description of different kinds of training datasets.
+|Description |AI_DataQuality module supports the modeling of quality description of different kinds of training datasets.
 |Parent package |TrainingDML-AI
 |Stereotype |\<<ApplicationSchema>>
 |===

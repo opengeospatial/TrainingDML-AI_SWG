@@ -6,5 +6,5 @@ This OGC Training Data Standard describes work actions around training data:
 
 * Documents the UML model with a target of maximizing the interoperability and usability of EO imagery training data;
 * Defines different AI/ML tasks and labels in earth observation in terms of supervised learning, including scene level, object level and pixel level tasks;
-* Describes the description of the permanent identifier, version, license, training data size, measurement or imagery used for annotation, and so on;
+* Describes the description of the permanent identifier, version, license, training data size, measurement or imagery used for annotation, and so on; and
 * Defines the description of quality (e.g., training data errors, training data unrepresentativeness) and the provenance (labeling, labeler, and labeling procedure).

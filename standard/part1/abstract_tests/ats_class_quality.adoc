@@ -14,7 +14,7 @@
 |Test method type |Manual Inspection
 |Test method a|
 [loweralpha]
-. For each UML class defined or referenced in the AI_DataQuality Package:
+. For each UML class defined or referenced in the AI_DataQuality Package, validate as follows.
 [arabic]
 .. Validate that the implementation standard contains a data element which represents the same concept as that defined for the UML class.
 .. Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicity as those documented in the Conceptual Model.

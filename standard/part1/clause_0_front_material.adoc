@@ -7,7 +7,7 @@ The TrainingDML-AI Standard provides detailed metadata for formalizing the infor
 
 * How the training data is prepared, such as provenance or quality;
 * How to specify different metadata used for different ML tasks such as scene/object/pixel levels; 
-* How to differentiate the high-level training data information model and extended information models specific to various ML applications; 
+* How to differentiate the high-level training data information model and extended information models specific to various ML applications; and
 * How to introduce external classification schemes and flexible means for representing ground truth labeling.
 
 [[keywords]]

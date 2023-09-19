@@ -27,7 +27,7 @@ The ISO classes explicitly used in the TrainingDML-AI UML model are introduced i
 
 === Overview of the UML Model
 
-The UML model is presented with core concepts in Figure 4, followed by the concrete classes in Figure 5. The following describes the core concepts:
+The UML model is presented with core concepts in Figure 4, followed by the concrete classes in Figure 5. The following describes the core concepts.
 
 * AI_TrainingDataset: This concept represents a collection of training samples, i.e. a training dataset.
 * AI_TrainingData: This concept is an individual training sample in a training dataset.
@@ -91,7 +91,7 @@ AI_MetricsInLiterature
 
 include::requirements/requirements_class_trainingdata.adoc[]
 
-The AI_AbstractTrainingData includes the source data and its corresponding labels, which focus on a compact modelling of individual training samples. When there is a need to identify the different uses/purposes, an optional attribute, the training type (training, validation, or test types), can be added at the individual level. The attribute datasetId helps identify samples from different training datasets.
+The AI_AbstractTrainingData includes the source data and its corresponding labels, which focus on a compact modeling of individual training samples. When there is a need to identify the different uses/purposes, an optional attribute, the training type (training, validation, or test types), can be added at the individual level. The attribute datasetId helps identify samples from different training datasets.
 
 The AI_EOTrainingData is defined to convey attributes specific to EO. It provides additional attributes, including spatial extent and date/time of the source EO inputs.
 
@@ -196,7 +196,7 @@ include::requirements/requirements_class_labeling.adoc[]
 
 AI_Labeling can be associated with AI_AbstractTrainingDataset or AI_AbstractTrainingData to record basic provenance information on how the training dataset or training samples are created. For example, AI_LabelingProcedure can be used to record the sampling strategy, and dataSources from AI_AbstractTrainingDataset/ AI_AbstractTrainingData can refer to any additional geospatial data that was used as part of the sampling strategy.
 
-AI_Labeling includes the labeler and the labeling procedure, which can be mapped to the agent and activity respectively in W3C PROV model. The labeler identifies the agent that creates the training dataset or individual samples, and the labeling procedure represents the process for data generation. AI_Labeling can also describe how the input data of the TD has been manipulated, such as resampled, color corrected, atmospherically corrected, and terrain corrected. For example, imagery with 10cm and 15cm resolution was resampled to 20cm prior for labeling.
+AI_Labeling includes the labeler and the labeling procedure, which can be mapped to the agent and activity respectively in W3C PROV model. The labeler identifies the agent that creates the training dataset or individual samples, and the labeling procedure represents the process for data generation. AI_Labeling can also describe how the input data of the TD has been manipulated, such as resampled, color corrected, atmospherically corrected, and terrain corrected. For example, imagery with 10-cm and 15-cm resolution was resampled to 20-cm prior for labeling.
 
 Alternatively, despite the simple payload in this TrainingDML-AI Standard, providing a comprehensive definition of provenance using the ISO 19115 lineage model through a metadata association in the data is also applicable. 
 
@@ -255,7 +255,7 @@ include::requirements/requirement_changeset.adoc[]
 
 include::requirements/requirements_class_quality.adoc[]
 
-TD quality description can use DataQuality from ISO 19157-1 to align with the existing efforts on geographic data quality. Data quality can be evaluated in terms of either collection or individual levels of the TD. Although most data quality elements are designed for datasets, it is sometimes needed to know the data quality at the individual level. For example, how is the positional uncertainty of an individual training sample measured by a GPS device in the field? Also in terms of the object label, an individual training sample includes a source image and many object labels. In this case, the quality can be measured based on these labels, such as Completeness. Thus the scope of the data quality can be used to specify the level and extent that identify the data on which data quality is to be established and evaluated. For TrainingDML-AI, AI_TrainingDataset/AI_TrainingData can be mapped to dataset/feature in MD_ScopeCode.
+TD quality description can use DataQuality from ISO 19157-1 to align with the existing efforts on geographic data quality. Data quality can be evaluated in terms of either collection or individual levels of the TD. Although most data quality elements are designed for datasets, it is sometimes needed to know the data quality at the individual level. For example, how is the positional uncertainty of an individual training sample measured by a GPS device in the field? Also, in terms of the object label, an individual training sample includes a source image and many object labels. In this case, the quality can be measured based on these labels, such as Completeness. Thus, the scope of the data quality can be used to specify the level and extent that identify the data on which data quality is to be established and evaluated. For TrainingDML-AI, AI_TrainingDataset/AI_TrainingData can be mapped to dataset/feature in MD_ScopeCode.
 
 The quality description of the TD can also leverage the quality elements defined in QualityElement. For example, Completeness describes label commission and omission, Thematic accuracy describes class accuracy of labels. TD related quality elements like AI_ClassBalanceDegree can be defined by extending the QualityElement. AI_ClassBalanceDegree can help address the bias issue and evaluate whether the number of classes in the training dataset is imbalanced.
 
