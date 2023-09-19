@@ -378,8 +378,7 @@ The following classes are defined in the ISO standards and used by the TrainingD
 
 ===== AI_Labeling
 
-Table 55. Metadata of AI_Labeling (Class)
-
+.Metadata of AI_Labeling (Class)
 [width="100%",cols="20%,80%",options="",]
 |===
 |Definition |AI_Labeling defines basic provenance information on how to create the training dataset. AI_Labeling includes the labeler and labeling procedure.
