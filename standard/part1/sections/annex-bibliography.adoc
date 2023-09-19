@@ -1,0 +1,19 @@
+[appendix,obligation="informative"]
+[[ats-bibliography]]
+== Bibliography
+
+[1] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. https://www.iso.org/standard/26012.html
+
+[2] ISO, 2022. ISO 19157-1: 2022. Geographic information — Data quality. https://www.iso.org/standard/32575.html
+
+[3] ISO, 2014. ISO 19115-1: 2014, Geographic information — Metadata — Part 1: Fundamentals. https://www.iso.org/standard/53798.html
+
+[4] ISO, 2015. ISO 19103: 2015, Geographic information — Conceptual schema language. https://www.iso.org/standard/56734.html
+
+[5] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/18-038r2.html
+
+[6] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/19-027r2.html
+
+[7] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/20-015r2.html
+
+[8] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. https://doi.org/10.1080/13658816.2022.2087223

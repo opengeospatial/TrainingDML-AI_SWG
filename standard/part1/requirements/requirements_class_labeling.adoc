@@ -1,7 +1,7 @@
-[width="100%",cols="50%,50%",options="header",]
-|===
-2+|*Requirements class 5*
-2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/ailabeling
-|Target type |Implementation Standard
-|Dependency |/req/aitrainingdataset
-|===
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/ailabeling
+subject:: Implementation Standard
+inherit:: /req/aitrainingdataset
+====

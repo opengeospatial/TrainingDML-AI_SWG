@@ -1,0 +1,60 @@
+= OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+:doctype: standard
+:encoding: utf-8
+:lang: en
+:status: approved
+:committee: technical
+:draft: 1.0
+:external-id: http://www.opengis.net/doc/is/trainingdml-ai-1/1.0
+:docnumber: 23-008r3
+:received-date: 2023-01-27
+:issued-date: 2023-07-26
+:published-date: 2023-09-19
+:fullname: Peng Yue
+:fullname_2: Boyi Shangguan
+:docsubtype: conceptual-model
+:keywords: ogcdoc, OGC document, artificial intelligence, machine learning, deep learning, earth observation, remote sensing, training data, training sample, UML
+:submitting-organizations: Wuhan University; Pixalytics Ltd; WiSC Enterprises; George Mason University; Laboratoire d'Informatique de Grenoble; South Digital Technology Co., Ltd; Wuhan University of Technology; Hubei University; Chongqing Changan Automobile Co., Ltd
+:mn-document-class: ogc
+:mn-output-extensions: html,pdf
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./23-008r3.pdf
+:edition: 1.0
+
+
+////
+Make sure to complete each included document
+////
+include::sections/clause_0_front_material.adoc[]
+
+include::sections/clause_1_scope.adoc[]
+
+include::sections/clause_2_conformance.adoc[]
+
+include::sections/clause_3_references.adoc[]
+
+include::sections/clause_4_terms_and_definitions.adoc[]
+
+include::sections/clause_5_conventions.adoc[]
+
+include::sections/clause_6_overview.adoc[]
+
+include::sections/clause_7_uml_model.adoc[]
+
+include::sections/clause_8_data_dictionary.adoc[]
+
+////
+add or remove annexes after "A" as necessary
+////
+include::sections/annex-ats.adoc[]
+
+include::sections/annex-example.adoc[]
+
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+include::sections/annex-history.adoc[]
+
+include::sections/annex-bibliography.adoc[]

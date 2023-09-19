@@ -1,12 +1,19 @@
-[width="100%",cols="50%,50%",options="header",]
-|===
- 2+|*Requirements class 1*
- 2+|http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/aitrainingdataset
-|Target type |Implementation Standard
-|Dependency |ISO 19115-1:2014
-|Dependency |/req/aitrainingdata
-|Dependency |/req/aitask
-|Dependency |/req/ailabeling
-|Dependency |/req/aidataquality
-|Dependency |/req/aitdchangeset
-|===
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/TrainingDML-AI-1/1.0/req/aitrainingdataset
+
+subject:: Implementation Standard
+
+inherit:: ISO 19115-1:2014
+
+inherit:: /req/aitrainingdata
+
+inherit:: /req/aitask
+
+inherit:: /req/ailabeling
+
+inherit:: /req/aidataquality
+
+inherit:: /req/aitdchangeset
+====

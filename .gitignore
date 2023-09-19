@@ -1,2 +1,8 @@
 # PyCharm configuration
 .idea/
+.DS_Store
+iev/
+relaton/
+*.presentation.xml
+*.err
+*.rxl

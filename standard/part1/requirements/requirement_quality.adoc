@@ -1,23 +1,79 @@
-[width="100%",cols="10%,90%",options="header",]
-|===
-2+|*Requirement 7*
-2+|/req/aidataquality/classes
-2+|For each UML class defined or referenced in DataQuality
-|A |Any implementation standard SHALL contain an element which represents the same concept as that defined for the UML class.
-|B |Any implementation standard SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
-|C |Any implementation standard SHALL represent the attributes of the UML class, including the name, definition, type, and multiplicity.
-|D |Any implementation standard SHALL represent the attributes of all super classes of the UML class, including the name, definition, type, and multiplicity.
-|E |Any implementation standard SHALL represent the associations of all super classes of the UML class, including the source, target, direction, roles, and multiplicity.
-|F |Any implementation standard SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
-|===
+[requirement]
+====
+[%metadata]
+identifier:: /req/aidataquality/classes
 
-[width="100%",cols="10%,90%",options="header",]
-|===
-2+|*Permission 7*
-2+|/per/aidataquality/classes
-2+|For each UML class defined or referenced in DataQuality
-|A |An implementation standard MAY represent that class as a null class with no attributes, associations, or definition.
-|B |An implementation standard MAY represent an association of the UML class with a null association.
-|C |An implementation standard MAY represent an attribute of the UML class with a null attribute.
-|D |Whenever a null element is used to represent a concept from the DataQuality, the implementation standard SHOULD document that mapping and provide an explanation for why that concept was not implemented.
-|===
+For each UML class defined or referenced in DataQuality
+
+[.component,class=part]
+--
+Any implementation standard SHALL contain an element which
+represents the same concept as that defined for the UML class.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent associations with the
+same source, target, direction, roles, and multiplicities as those of
+the UML class.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the attributes of the
+UML class, including the name, definition, type, and multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the attributes of all
+super classes of the UML class, including the name, definition, type,
+and multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL represent the associations of all
+super classes of the UML class, including the source, target, direction,
+roles, and multiplicity.
+--
+
+[.component,class=part]
+--
+Any implementation standard SHALL specify how an implementation
+observes all constraints the Conceptual Model imposes on the UML class.
+====
+
+
+[permission]
+====
+[%metadata]
+identifier:: /per/aidataquality/classes
+
+For each UML class defined or referenced in DataQuality
+
+[.component,class=part]
+--
+An implementation standard MAY represent that class as a null class
+with no attributes, associations, or definition.
+--
+
+[.component,class=part]
+--
+An implementation standard MAY represent an association of the UML
+class with a null association.
+--
+
+[.component,class=part]
+--
+An implementation standard MAY represent an attribute of the UML
+class with a null attribute.
+--
+
+[.component,class=part]
+--
+Whenever a null element is used to represent a concept from the
+DataQuality, the implementation standard SHOULD document that mapping
+and provide an explanation for why that concept was not implemented.
+--
+====
