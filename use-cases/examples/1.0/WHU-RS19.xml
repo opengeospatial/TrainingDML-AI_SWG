@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<TrainingDML-AI xmlns="http://example.com"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://example.com YourSchemaLocation.xsd">
+    <AI_EOTrainingDataset>
+        <amountOfTrainingData>1013</amountOfTrainingData>
+        <classes>Airport</classes>
+        <classes>Beach</classes>
+        <classes>Bridge</classes>
+        <classes>Commercial</classes>
+        <classes>Desert</classes>
+        <classes>Farmland</classes>
+        <classes>footballField</classes>
+        <classes>Forest</classes>
+        <classes>Industrial</classes>
+        <classes>Meadow</classes>
+        <classes>Mountain</classes>
+        <classes>Park</classes>
+        <classes>Parking</classes>
+        <classes>Pond</classes>
+        <classes>Port</classes>
+        <classes>railwayStation</classes>
+        <classes>Residential</classes>
+        <classes>River</classes>
+        <classes>Viaduct</classes>
+        <createdTime>
+            <date>2010-01-01</date>
+        </createdTime>
+        <description>Wuhan University-Remote Sensing 19</description>
+        <id>whu_rs19</id>
+        <license>CC BY-SA 4.0</license>
+        <name>WHU-RS19</name>
+        <numberOfClasses>1013</numberOfClasses>
+        <providers>Wuhan University</providers>
+        <version>1.0</version>
+        <labeling>
+            <AI_Labeling>
+                <id>whu_rs19-labeling1</id>
+                <scope>
+                    <level>dataset</level>
+                    <levelDescription>
+                        <dataset>whu_rs19</dataset>
+                    </levelDescription>
+                </scope>
+                <labelers>
+                    <AI_Labeler>
+                        <id>whu_rs19-labeler1</id>
+                        <name>demo-name</name>
+                    </AI_Labeler>
+                </labelers>
+                <procedure>
+                    <AI_labelingProcedure>
+                        <id>whu_rs19-procedure1</id>
+                        <methods>manual</methods>
+                        <tools>ArcGIS 10.1</tools>
+                    </AI_labelingProcedure>
+                </procedure>
+            </AI_Labeling>
+        </labeling>
+        <tasks>
+            <AI_EOTask>
+                <description>Structural high-resolution satellite image indexing</description>
+                <id>whu_rs19-task</id>
+                <taskType>Scene Classification</taskType>
+            </AI_EOTask>
+        </tasks>
+        <data>
+            <AI_EOTrainingData>
+                <dataSources>googleEarth</dataSources>
+                <id>airport_01</id>
+                <dataURL>image/Airport/airport_01.jpg</dataURL>
+                <labels>
+                    <AI_SceneLabel>
+                        <class>Airport</class>
+                    </AI_SceneLabel>
+                </labels>
+            </AI_EOTrainingData>
+        </data>
+    </AI_EOTrainingDataset>
+</TrainingDML-AI>

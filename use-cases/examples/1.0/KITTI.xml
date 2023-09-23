@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<TrainingDML-AI xmlns="http://example.com"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://example.com YourSchemaLocation.xsd">
+    <AI_EOTrainingDataset>
+        <amountOfTrainingData>7481</amountOfTrainingData>
+        <classes>Pedestrian</classes>
+        <classes>Truck</classes>
+        <classes>Car</classes>
+        <classes>Cyclist</classes>
+        <classes>DontCare</classes>
+        <classes>Misc</classes>
+        <classes>Van</classes>
+        <classes>Tram</classes>
+        <classes>Person_sitting</classes>
+        <createdTime>
+            <date>2012-01-01</date>
+        </createdTime>
+        <description>This dataset is a novel open-access dataset and benchmark for road area and ego-lane detection</description>
+        <id>kitti_2d</id>
+        <license>CC BY-SA 4.0</license>
+        <name>KITTI 2D Object Detection</name>
+        <numberOfClasses>8</numberOfClasses>
+        <version>1.0</version>
+        <tasks>
+            <AI_EOTask>
+                <description>Object detection on street view image</description>
+                <id>kitti_2d-task</id>
+                <taskType>http://demo#od_treet_view</taskType>
+            </AI_EOTask>
+        </tasks>
+        <data>
+            <AI_EOTrainingData>
+                <id>000000</id>
+                <dataURL>data_object_image_2/training/image_2/000000.png</dataURL>
+                <numberOfLabels>1</numberOfLabels>
+                <labels>
+                    <AI_ObjectLabel>
+                        <class>Pedestrian</class>
+                        <object>
+                            <Feature>
+                                <geometry>
+                                    <Polygon>
+                                        <coordinates>[[712.4,143.0],[712.4,307.92],[810.73,307.92],[810.73,143.0],[712.4,143.0]]</coordinates>
+                                    </Polygon>
+                                </geometry>
+                            </Feature>
+                        </object>
+                        <bboxType>Horizontal BBox</bboxType>
+                        <truncated>0.0</truncated>
+                        <occluded>0</occluded>
+                        <alpha>-0.2</alpha>
+                    </AI_ObjectLabel>
+                </labels>
+                <trainingType>training</trainingType>
+            </AI_EOTrainingData>
+        </data>
+    </AI_EOTrainingDataset>
+</TrainingDML-AI>
