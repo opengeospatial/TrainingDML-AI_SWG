@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1" xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1" xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.2" xmlns:lan="https://schemas.isotc211.org/19115/-1/lan/1.3" xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"  elementFormDefault="qualified">
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/mrc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd"/>
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
+  <xs:complexType name="AI_EOTrainingDataset">
+    <xs:complexContent>
+      <xs:extension base="AI_AbstractTrainingDataset">
+        <xs:sequence>
+          <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1" fixed="AI_EOTrainingDataset"/>
+          <xs:element name="bands" type="mrc:MD_Band_Type" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="imageSize" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

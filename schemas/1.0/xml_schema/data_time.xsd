@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+    <xs:complexType name="multiDateTime">
+      <xs:choice>
+        <xs:element name="date" type="xs:date" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="time" type="xs:time" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="dateTime" type="xs:dateTime" minOccurs="0" maxOccurs="1"/>
+      </xs:choice>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+  <xs:complexType name="AI_TDChangeset">
+    <xs:sequence>
+      <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1" fixed="AI_TDChangeset"/>
+      <xs:element name="add" type="AI_AbstractTrainingData" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="changeCount" type="xs:int" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="datasetId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="delete" type="AI_AbstractTrainingData" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="modify" type="AI_AbstractTrainingData" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="version" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="createdTime" type="multiDateTime" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

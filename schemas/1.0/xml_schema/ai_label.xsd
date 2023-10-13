@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+	<xs:complexType name="AI_AbstractLabel">
+		<xs:sequence>
+			<xs:element name="confidence" default="1.0" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:float">
+						<xs:minInclusive value="0.0" />
+						<xs:maxInclusive value="1.0" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="isNegative" type="xs:boolean" default="false" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
