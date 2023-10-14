@@ -101,10 +101,12 @@
                     "type": "AI_ObjectLabel",
                     "class": "1",
                     "bboxType": "Horizontal BBox",
-                    "iscrowd": 0,
-                    "area": 2580,
                     "object": {
                         "type": "Feature",
+                        "properties": {
+                            "iscrowd": 0,
+                            "area": 2580
+                        },
                         "geometry": {
                             "type": "Polygon",
                             "bbox": [
