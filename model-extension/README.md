@@ -12,7 +12,8 @@ The model-extension will undertake the following work actions around geospatial 
 - Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning models.
 
 ## 3. UML Model
-The core concepts of the model-extension are presented below, followed by the specific concrete classes. The core concepts includes:
+The core concepts of the model-extension are presented in Figure 1, followed by the specific concrete classes in Figure 2.
+The core concepts includes:
 - D
 
 ## 4. Use Cases
