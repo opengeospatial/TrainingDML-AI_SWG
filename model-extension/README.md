@@ -6,7 +6,7 @@ The objective of the deep learning model extension (model-extension) is to devel
 ## 2. Scope of Work
 The model-extension will undertake the following work actions around geospatial deep learning models:
 - Design the UML model and encoding of geospatial deep learning models, maximize the findability, interoperability, and reusability of models;
-- Define the description of neural network and optimization method of a model;
+- Define the description of neural network and optimization method of models;
 - Define the description of model quality(e.g., performance metrics, computational complexity, generalization, robustness);
 - Define the JSON schema for encoding geospatial deep learning models;
 - Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning models.
