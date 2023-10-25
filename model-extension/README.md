@@ -17,9 +17,9 @@ The core concepts includes:
 - D
 - 
 <div align=center>
-<img width="350" src="UML/Conceptual Model.png"/>
+<img width="600" src="UML/Conceptual Model.png"/>
 </div>
-<div align=center> 图3.3 带有隐藏层的多层感知机</div>
+<div align=center> Figure 1 Conceptual model</div>
 
 ## 4. Use Cases
 
