@@ -17,7 +17,7 @@ The core concepts includes:
 - D
 - 
 <div align=center>
-<img width="600" src="UML/Conceptual Model.png"/>
+<img width="600" src="UML/Conceptual Model.svg"/>
 </div>
 <div align=center> Figure 1. Conceptual model</div>
 
