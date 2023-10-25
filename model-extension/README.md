@@ -13,7 +13,7 @@ The model-extension will undertake the following work actions around geospatial 
 
 ## 3. UML Model
 The core concepts of the model-extension are presented in Figure 1, followed by the specific concrete classes in Figure 2.
-The core concepts includes:
+The core concepts include:
 - D
 - 
 <div align=center>
