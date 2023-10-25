@@ -15,6 +15,11 @@ The model-extension will undertake the following work actions around geospatial 
 The core concepts of the model-extension are presented in Figure 1, followed by the specific concrete classes in Figure 2.
 The core concepts includes:
 - D
+- 
+<div align=center>
+<img width="350" src="UML/Conceptual Model.png"/>
+</div>
+<div align=center> 图3.3 带有隐藏层的多层感知机</div>
 
 ## 4. Use Cases
 
