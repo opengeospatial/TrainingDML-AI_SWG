@@ -21,6 +21,11 @@ The core concepts includes:
 </div>
 <div align=center> Figure 1. Conceptual model</div>
 
+<div align=center>
+<img width="900" src="UML/UML Model.png"/>
+</div>
+<div align=center> Figure 2. UML model</div>
+
 ## 4. Use Cases
 
 
