@@ -9,4 +9,4 @@ The model-extension will undertake the following work actions around geospatial 
 - Define the description of neural network and optimization method of a model;
 - Define the description of model quality(e.g., performance metrics, computational complexity, generalization, robustness);
 - Define the JSON schema for encoding geospatial deep learning models;
-- Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning;
+- Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning models;
