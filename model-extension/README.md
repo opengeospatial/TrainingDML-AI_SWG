@@ -1,8 +1,12 @@
 # Deep Learning Model Extension of TrainingDML-AI
 
 ## 1. Abstract
-The objective of the deep learning model extension (model-extension) is to develop the UML model and encodings to describe geospatial deep learning models. The model-extension will align with TrainingDML-AI and OGC standards baseline to facilitate the sharing, exchange, reusability, and inference of models in the web environment.
+The objective of the deep learning model extension (model-extension) is to develop the UML model and encoding to describe geospatial deep learning models. The model-extension will align with TrainingDML-AI and OGC standards baseline to facilitate the sharing, exchange, reusability, and inference of models in the web environment.
 
-## 2. Introduction
-The purpose of the TrainingDML-AI Use Cases is to demonstrate the task scenarios and training datasets that enable the modeling and use of TrainingDML:
-
+## 2. Scope of Work
+The model-extension will undertake the following work actions around geospatial deep learning models:
+- Design the UML model and encoding of geospatial deep learning models, maximize the findability, interoperability, and reusability of models;
+- Define the description of neural network and optimization method of a model;
+- Define the description of model quality(e.g., performance metrics, computational complexity, generalization, robustness);
+- Define the JSON schema for encoding geospatial deep learning models;
+- Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning;
