@@ -31,6 +31,10 @@ The core concepts include:
 <div align=center> Figure 2. UML model</div>
 
 ## 4. Use Cases
+A collection of some encoded deep learning models:
+|Model Name|Description|JSON|Download|
+|-|-|-|-|
+|UPerNet_LULC|A land use classification model based on UPerNet|？？？|？？|
 
 
 
