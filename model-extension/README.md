@@ -11,12 +11,13 @@ The model-extension will undertake the following work actions around geospatial 
 - Define the JSON schema for encoding geospatial deep learning models;
 - Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning models.
 
-## 3. Conceptual Model
+## 3. UML Model
+The core concepts of the model-extension are presented below, followed by the specific concrete classes. The core concepts includes:
+- D
+
+## 4. Use Cases
 
 
-## 4. UML Model
-
-## 5. Use Cases
 
 
 
