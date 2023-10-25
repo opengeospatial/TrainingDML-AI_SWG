@@ -10,3 +10,13 @@ The model-extension will undertake the following work actions around geospatial 
 - Define the description of model quality(e.g., performance metrics, computational complexity, generalization, robustness);
 - Define the JSON schema for encoding geospatial deep learning models;
 - Best practices for documenting, storing, evaluating, managing, and sharing the geospatial deep learning models.
+
+## 3. Conceptual Model
+
+
+## 4. UML Model
+
+## 5. Use Cases
+
+
+
