@@ -22,7 +22,7 @@ The core concepts includes:
 <div align=center> Figure 1. Conceptual model</div>
 
 <div align=center>
-<img width="900" src="UML/UML Model.png"/>
+<img width="900" src="UML/UML Model.svg"/>
 </div>
 <div align=center> Figure 2. UML model</div>
 
