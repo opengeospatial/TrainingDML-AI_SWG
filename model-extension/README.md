@@ -19,7 +19,7 @@ The core concepts includes:
 <div align=center>
 <img width="600" src="UML/Conceptual Model.png"/>
 </div>
-<div align=center> Figure 1 Conceptual model</div>
+<div align=center> Figure 1. Conceptual model</div>
 
 ## 4. Use Cases
 
