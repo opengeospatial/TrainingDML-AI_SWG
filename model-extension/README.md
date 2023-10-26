@@ -14,11 +14,11 @@ The model-extension will undertake the following work actions around geospatial 
 ## 3. UML Model
 The core concepts of the model-extension are presented in Figure 1, followed by the specific concrete classes in Figure 2.      
 The core concepts include:
-- Deep Learning Model: This concept represents a deep learning model.
-- Neural Network: This concept describes the neural network of the deep learning model.
-- Optimization: This concept describes the information about how to train the deep learning model.
-- Quality: This concept describes the quality of the deep learning model.
-- Training Dataset: From TrainingDML-AI.
+- Deep Learning Model: This concept represents a deep learning model;
+- Neural Network: This concept describes the neural network of the deep learning model;
+- Optimization: This concept describes the information about how to train the deep learning model;
+- Quality: This concept describes the quality of the deep learning model;
+- Training Dataset: From TrainingDML-AI;
 - Task: From TrainingDML-AI.
 <div align=center>
 <img width="600" src="UML/Conceptual Model.svg"/>
