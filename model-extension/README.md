@@ -34,7 +34,7 @@ The core concepts include:
 A collection of some encoded deep learning models:
 |Model Name|Training Dataset|Description|JSON|Download|
 |-|-|-|-|-|
-|UPerNet_LULC|Five-Billion-Pixels|A land use land cover classification model based on UPerNet|[UPerNet_LULC.json](use-cases/UPerNet_LULC.json)|UPerNet_LULC.onnx|
+|UPerNet_LULC|Five-Billion-Pixels|A land use land cover classification model based on UPerNet|[UPerNet_LULC.json](use-cases/UPerNet_LULC.json)|[UPerNet_LULC.onnx](https://drive.google.com/file/d/1AcsTRsgHAwOROfq1qsa709kdKHleFmE0/view?usp=drive_link)|
 
 
 
