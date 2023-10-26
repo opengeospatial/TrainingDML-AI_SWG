@@ -32,9 +32,9 @@ The core concepts include:
 
 ## 4. Use Cases
 A collection of some encoded deep learning models:
-|Model Name|Description|JSON|Download|
-|-|-|-|-|
-|UPerNet_LULC|A land use classification model based on UPerNet|？？？|？？|
+|Model Name|Training Dataset|Description|JSON|Download|
+|-|-|-|-|-|
+|UPerNet_LULC|Five-Billion-Pixels|A land use classification model based on UPerNet|？？？|？？|
 
 
 
