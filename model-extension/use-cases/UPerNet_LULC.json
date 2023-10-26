@@ -200,7 +200,7 @@
             }
         ],
         "applicationScope": [
-            "GF-2, GF-1, PlanetScope, and Sentinel-2 images in Beijing, Chengdu, Guangzhou, Shanghai, Wuhan,Bangkok, Delhi, Naypyidaw, Seoul,Tokyo, Yangon",
+            "GF-2, GF-1, PlanetScope, and Sentinel-2 images in Beijing, Chengdu, Guangzhou, Shanghai, Wuhan,Bangkok, Delhi, Naypyidaw, Seoul,Tokyo, and Yangon",
         ],
         "isPretrainedModel": false
     }
