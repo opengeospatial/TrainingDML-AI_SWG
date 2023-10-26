@@ -1,0 +1,207 @@
+{
+    "id": "UPerNet_LULC",
+    "name": "UPerNet_LandUseLandCoverClassification",
+    "providers": [
+        "Wuhan University"
+    ],
+    "deepLearningFramework": [
+        "PyTorch 1.3.1"
+    ],
+    "saveFormat": [
+        "ONNX"
+    ],
+    "inputs": [{
+        "name": "input0",
+        "dataType": "image",
+        "format": [{"numpy ndarray": "B, 3, 512, 512"}],
+        "normalizationMean": [0.485, 0.456, 0.406],
+        "normalizationStd": [0.229, 0.224, 0.225],
+        "dataSources": ["GF-2"," GF-1", "PlanetScope",  "Sentinel-2"] ,
+        "bands": [
+            "red",
+            "green",
+            "blue"
+        ]
+    }],
+    "outputs" : [{
+        "name": "output0",
+        "dataType": "image",
+        "format": [{"numpy ndarray": "B, 25, 512, 512"}]
+    }],
+    "modelURL": "....../UPerNet_LULC.onnx",
+    "version": "1.0",
+    "created time": "2023-02-01",
+    "updated time": "2023-02-01",
+    "handware": [
+        "GPU memory size >= 8GB"
+    ],
+    "references": [
+        "Xiao, T., Liu, Y., Zhou, B., Jiang, Y. and Sun, J., 2018. Unified perceptual parsing for scene understanding. In Proceedings of the European conference on computer vision (ECCV) (pp. 418-434)."
+    ],
+    "license": "Apache 2.0",
+    "description": [
+        "A land use land cover classification model based on UPerNet"
+    ],
+
+    "tasks": [
+        {
+            "taskType": "Semantic Segmentation",
+            "classes": [
+                {
+                    "id": 0,
+                    "name": "unlabeled"
+                },
+                {
+                    "id": 1,
+                    "name": "industrial area"
+                },
+                {
+                    "id": 2,
+                    "name": "paddy field"
+                },
+                {
+                    "id": 3,
+                    "name": "irrigated field"
+                },
+                {
+                    "id": 4,
+                    "name": "dry cropland"
+                },
+                {
+                    "id": 5,
+                    "name": "garden land"
+                },
+                {
+                    "id": 6,
+                    "name": "arbor forest"
+                },
+                {
+                    "id": 7,
+                    "name": "shrub forest"
+                },
+                {
+                    "id": 8,
+                    "name": "park"
+                },
+                {
+                    "id": 9,
+                    "name": "natural meadow"
+                },
+                {
+                    "id": 10,
+                    "name": "artificial meadow"
+                },
+                {
+                    "id": 11,
+                    "name": "river"
+                },
+                {
+                    "id": 12,
+                    "name": "urban residential"
+                },
+                {
+                    "id": 13,
+                    "name": "lake"
+                },
+                {
+                    "id": 14,
+                    "name": "pond"
+                },
+                {
+                    "id": 15,
+                    "name": "fish pond"
+                },
+                {
+                    "id": 16,
+                    "name": "snow"
+                },
+                {
+                    "id": 17,
+                    "name": "bareland"
+                },
+                {
+                    "id": 18,
+                    "name": "rural residential"
+                },
+                {
+                    "id": 19,
+                    "name": "stadium"
+                },
+                {
+                    "id": 20,
+                    "name": "square"
+                },
+                {
+                    "id": 21,
+                    "name": "road"
+                },
+                {
+                    "id": 22,
+                    "name": "overpass"
+                },
+                {
+                    "id": 23,
+                    "name": "railway station"
+                },
+                {
+                    "id": 24,
+                    "name": "airport"
+                }
+            ]
+        }
+    ],
+
+    "neuralNetwork": {
+        "architecture": [
+            "Swin Transformer + Feature Pyramid Network(FPN) + Pyramid Pooling Module(PPM)"
+        ],
+        "parameters": "197MB",
+
+        "optimization": {
+            "optimizer": "Adam",
+            "objectiveFunction": [
+                "Cross entropy"
+            ],
+            "epoches" : 60,
+            "batchSize": 8,
+            "learningRate": "Initial learning rate is 0.0001. Decays the learning rate at 24 and 48 epoches with 0.1 factor",
+            "handware" : [
+                "GPU memory size >= 24GB"
+            ],
+            "pretrainedModels" :[
+                "Swin Transformer-small pretrained on ImageNet-22k"
+            ]
+        }
+    },
+
+    "trainingDatasets": [
+        "Five-Billion-Pixels"
+    ],
+
+    "quality": {
+        "performanceMetrics": [
+            {
+                "type": "performanceMetrics",
+                "measure": "F1 Score",
+                "evaluationMethod": "The harmonic mean of the precision and recall on the Five-Billion-Pixels test set",
+                "result": ["70.85"]
+            },
+            {
+                "type": "performanceMetrics",
+                "measure": "overall accuracy",
+                "evaluationMethod": "The proportion of correctly classified samples on the Five-Billion-Pixels test set",
+                "result": ["83.66"]
+            },
+            {
+                "type": "performanceMetrics",
+                "measure": "mean IoU",
+                "evaluationMethod": "The ratio of area overlapped to the area of their union on the Five-Billion-Pixels test set",
+                "result": ["57.68"]
+            }
+        ],
+        "applicationScope": [
+            "GF-2, GF-1, PlanetScope, and Sentinel-2 images in Beijing, Chengdu, Guangzhou, Shanghai, Wuhan,Bangkok, Delhi, Naypyidaw, Seoul,Tokyo, Yangon",
+        ],
+        "isPretrainedModel": false
+    }
+}
