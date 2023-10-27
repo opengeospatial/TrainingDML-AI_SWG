@@ -92,8 +92,8 @@
             "items": {
                 "type": "object",
                 "required": [
-                    "class",
-                    "count"
+                    "key",
+                    "value"
                 ],
                 "properties": {
                     "key": {
