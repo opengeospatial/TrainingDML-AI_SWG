@@ -20,7 +20,7 @@ The core concepts include:
 - Quality: This concept describes the quality of the deep learning model;
 - Training Dataset: From TrainingDML-AI;
 - Task: From TrainingDML-AI.
-<div align=center>
+<div align=center> 
 <img width="600" src="UML/Conceptual Model.svg"/>
 </div>
 <div align=center> Figure 1. Conceptual model</div>
