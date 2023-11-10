@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_temporalExtent.json",
+    "title": "EX_TemporalExtent",
+    "type": "object",
+    "required": [
+        "extent"
+    ],
+    "properties": {
+        "extent": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/tm_primitive.json"
+        }
+    }
+}

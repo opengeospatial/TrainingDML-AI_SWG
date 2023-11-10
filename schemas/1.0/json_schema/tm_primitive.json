@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/tm_primitive.json",
+    "title": "TM_Primitive",
+    "oneOf": [
+        {
+            "$comment": "TimeInstant",
+            "type": "object",
+            "required": [
+                "timePosition"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "descriptionReference": {
+                    "type": "string"
+                },
+                "identifier": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "relatedTime": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/tm_primitive.json"
+                    }
+                },
+                "timePosition": {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                }
+            }
+        },
+        {
+            "$comment": "TimePeriod",
+            "type": "object",
+            "required": [
+                "beginPosition",
+                "endPosition"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "descriptionReference": {
+                    "type": "string"
+                },
+                "identifier": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "relatedTime": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/tm_primitive.json"
+                    }
+                },
+                "beginPosition": {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                },
+                "endPosition": {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                },
+                "duration": {
+                    "type": "string",
+                    "format": "duration"
+                },
+                "timeInterval": {
+                    "type": "number"
+                }
+            }
+        }
+    ]
+}

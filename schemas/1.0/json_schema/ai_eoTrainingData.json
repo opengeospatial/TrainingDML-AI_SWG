@@ -28,11 +28,18 @@
             "minItems": 1
         },
         "extent": {
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "minItems": 4
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 4
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json"
+                }
+            ]
         },
         "dataTime": {
             "type": "array",
