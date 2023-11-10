@@ -37,7 +37,10 @@
             }
         },
         "verticalElement": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_verticalExtent.json"
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_verticalExtent.json"
+            }
         }
     }
 }
