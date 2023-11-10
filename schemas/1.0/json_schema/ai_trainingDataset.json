@@ -24,6 +24,9 @@
                     },
                     {
                         "type": "string"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json"
                     }
                 ]
             },
@@ -90,19 +93,7 @@
         "statisticsInfo": {
             "type": "array",
             "items": {
-                "type": "object",
-                "required": [
-                    "key",
-                    "value"
-                ],
-                "properties": {
-                    "key": {
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "integer"
-                    }
-                }
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json"
             },
             "minItems": 1
         },

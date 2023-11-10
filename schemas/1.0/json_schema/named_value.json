@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json",
+    "title": "NamedValue",
+    "type": "object",
+    "required": [
+        "key",
+        "value"
+    ],
+    "properties": {
+        "key": {
+            "type": "string"
+        },
+        "value": {
+            "$comment": "The type of the value is 'any'.",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "array"
+                },
+                {
+                    "type": "boolean"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        }
+    }
+}
