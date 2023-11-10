@@ -1,59 +1,77 @@
-<?xml version='1.0' encoding='utf-8' ?>
-<TrainingDML-AI xmlns="http://example.com"
-    xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://example.com YourSchemaLocation.xsd">
-    <AI_EOTrainingDataset>
-        <amountOfTrainingData>7481</amountOfTrainingData>
-        <classes>Pedestrian</classes>
-        <classes>Truck</classes>
-        <classes>Car</classes>
-        <classes>Cyclist</classes>
-        <classes>DontCare</classes>
-        <classes>Misc</classes>
-        <classes>Van</classes>
-        <classes>Tram</classes>
-        <classes>Person_sitting</classes>
-        <createdTime>
-            <date>2012-01-01</date>
-        </createdTime>
-        <description>This dataset is a novel open-access dataset and benchmark for road area and ego-lane detection</description>
-        <id>kitti_2d</id>
-        <license>CC BY-SA 4.0</license>
-        <name>KITTI 2D Object Detection</name>
-        <numberOfClasses>8</numberOfClasses>
-        <version>1.0</version>
-        <tasks>
-            <AI_EOTask>
-                <description>Object detection on street view image</description>
-                <id>kitti_2d-task</id>
-                <taskType>http://demo#od_treet_view</taskType>
-            </AI_EOTask>
-        </tasks>
-        <data>
-            <AI_EOTrainingData>
-                <id>000000</id>
-                <dataURL>data_object_image_2/training/image_2/000000.png</dataURL>
-                <numberOfLabels>1</numberOfLabels>
-                <labels>
-                    <AI_ObjectLabel>
-                        <class>Pedestrian</class>
-                        <object>
-                            <Feature>
-                                <geometry>
-                                    <Polygon>
-                                        <coordinates>[[712.4,143.0],[712.4,307.92],[810.73,307.92],[810.73,143.0],[712.4,143.0]]</coordinates>
-                                    </Polygon>
-                                </geometry>
-                            </Feature>
-                        </object>
-                        <bboxType>Horizontal BBox</bboxType>
+<?xml version="1.0" encoding="UTF-8" ?>
+<AI_EOTrainingDataset
+        xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ogr="http://ogr.maptools.org/"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3"
+        xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2"
+        xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3"
+        xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1"
+        xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1"
+        xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3"
+        xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.2"
+        xmlns:lan="https://schemas.isotc211.org/19115/-1/lan/1.3"
+        xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"
+        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../ai_eoTrainingDataset.xsd">
+
+
+    <amountOfTrainingData>7481</amountOfTrainingData>
+    <classes>Pedestrian</classes>
+    <classes>Truck</classes>
+    <classes>Car</classes>
+    <classes>Cyclist</classes>
+    <classes>DontCare</classes>
+    <classes>Misc</classes>
+    <classes>Van</classes>
+    <classes>Tram</classes>
+    <classes>Person_sitting</classes>
+    <createdTime>2012-01-01</createdTime>
+    <description>This dataset is a novel open-access dataset and benchmark for road area and ego-lane detection
+    </description>
+    <id>kitti_2d</id>
+    <license>CC BY-SA 4.0</license>
+    <name>KITTI 2D Object Detection</name>
+    <numberOfClasses>8</numberOfClasses>
+    <version>1.0</version>
+    <tasks>
+        <description>Object detection on street view image</description>
+        <id>kitti_2d-task</id>
+        <taskType>http://demo#od_treet_view</taskType>
+    </tasks>
+    <data>
+        <id>000000</id>
+        <dataURL>data_object_image_2/training/image_2/000000.png</dataURL>
+        <numberOfLabels>1</numberOfLabels>
+        <labels>
+            <class>Pedestrian</class>
+            <object>
+                <gml:metaDataProperty>
+                    <gml:GenericMetaData>
                         <truncated>0.0</truncated>
-                        <occluded>0</occluded>
-                        <alpha>-0.2</alpha>
-                    </AI_ObjectLabel>
-                </labels>
-                <trainingType>training</trainingType>
-            </AI_EOTrainingData>
-        </data>
-    </AI_EOTrainingDataset>
-</TrainingDML-AI>
+                    <occluded>0</occluded>
+                    <alpha>-0.2</alpha>
+                    </gml:GenericMetaData>
+                </gml:metaDataProperty>
+                <gml:location>
+                    <gml:GeometricComplex>
+                        <gml:element>
+                            <gml:Polygon>
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>
+                                            51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                                        </gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>
+                        </gml:element>
+                    </gml:GeometricComplex>
+                </gml:location>
+            </object>
+            <bboxType>Horizontal BBox</bboxType>
+
+        </labels>
+        <trainingType>training</trainingType>
+    </data>
+</AI_EOTrainingDataset>
