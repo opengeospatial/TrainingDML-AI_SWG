@@ -17,7 +17,7 @@
         "metrics": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/namedValue.json"
             },
             "minItems": 1
         }

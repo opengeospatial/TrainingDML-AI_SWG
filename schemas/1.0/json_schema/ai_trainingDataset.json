@@ -26,7 +26,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json"
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/namedValue.json"
                     }
                 ]
             },
@@ -37,7 +37,7 @@
             "format": "uri-reference"
         },
         "createdTime": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
         },
         "dataSources": {
             "oneOf": [
@@ -93,12 +93,12 @@
         "statisticsInfo": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/named_value.json"
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/namedValue.json"
             },
             "minItems": 1
         },
         "updatedTime": {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
         },
         "version": {
             "type": "string"

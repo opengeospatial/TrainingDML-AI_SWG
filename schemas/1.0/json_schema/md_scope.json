@@ -13,25 +13,13 @@
         "extent": {
             "type": "array",
             "items": {
-                "type": "number"
-            },
-            "minItems": 4
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json"
+            }
         },
         "levelDescription": {
-            "type": "object",
-            "required": [
-                "dataset"
-            ],
-            "properties": {
-                "dataset": {
-                    "type": "string"
-                },
-                "features": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_scopeDescription.json"
             }
         }
     }

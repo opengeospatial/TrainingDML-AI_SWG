@@ -15,7 +15,6 @@
             "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_verticalExtent.json"
         },
         "spatialExtent": {
-            "type": "object",
             "oneOf": [
                 {
                     "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_boundingPolygon.json"

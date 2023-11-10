@@ -32,7 +32,7 @@
                     }
                 },
                 "timePosition": {
-                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
                 }
             }
         },
@@ -66,10 +66,10 @@
                     }
                 },
                 "beginPosition": {
-                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
                 },
                 "endPosition": {
-                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/date_time.json"
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
                 },
                 "duration": {
                     "type": "string",

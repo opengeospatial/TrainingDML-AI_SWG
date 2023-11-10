@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_address.json",
+    "title": "CI_Address",
+    "type": "object",
+    "properties": {
+        "deliveryPoint": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "city": {
+            "type": "string"
+        },
+        "administrativeArea": {
+            "type": "string"
+        },
+        "postalCode": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "electronicMailAddress": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

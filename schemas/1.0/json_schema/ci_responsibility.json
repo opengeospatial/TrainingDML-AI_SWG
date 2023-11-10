@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_responsibility.json",
+    "title": "CI_Responsibility",
+    "type": "object",
+    "required": [
+        "role",
+        "party"
+    ],
+    "properties": {
+        "role": {
+            "type": "string"
+        },
+        "extent": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json"
+            }
+        },
+        "party": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_individual.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_organisation.json"
+                    }
+                ]
+            },
+            "minimum": 1
+        }
+    }
+}

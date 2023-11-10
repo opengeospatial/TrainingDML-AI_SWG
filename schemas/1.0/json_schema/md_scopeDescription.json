@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_scopeDescription.json",
+    "title": "MD_ScopeDescription",
+    "type": "object",
+    "properties": {
+        "attributes": {
+            "type": "string"
+        },
+        "features": {
+            "type": "string"
+        },
+        "featureInstances": {
+            "type": "string"
+        },
+        "attributeInstances": {
+            "type": "string"
+        },
+        "dataset": {
+            "type": "string"
+        },
+        "other": {
+            "type": "string"
+        }
+    }
+}
