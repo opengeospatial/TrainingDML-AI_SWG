@@ -1185,7 +1185,7 @@ c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The encoding of EX_Extent follows GeoJSON for Bounding Box.</p>
+<p>An EX_Extent is encoded as a GeoJSON bounding box or a JSON Object.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1197,7 +1197,9 @@ c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype/extent</p>
 <p class="tableblock">Each EX_Extent value shall be encoded using the GeoJSON bounding box encoding defined in RFC 7946 Section 5:</p>
-<p class="tableblock"><a href="https://datatracker.ietf.org/doc/html/rfc7946#section-5" class="bare">https://datatracker.ietf.org/doc/html/rfc7946#section-5</a></p></td>
+<p class="tableblock"><a href="https://datatracker.ietf.org/doc/html/rfc7946#section-5" class="bare">https://datatracker.ietf.org/doc/html/rfc7946#section-5</a></p>
+<p class="tableblock">or a JSON object matching the XML Schema type:</p>
+<p class="tableblock"><a href="https://schemas.isotc211.org/19115/-1/gex/1.3#EX_Extent" class="bare">https://schemas.isotc211.org/19115/-1/gex/1.3#EX_Extent</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1207,7 +1209,15 @@ c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 <div class="literalblock">
 <div class="content">
 <pre>a)	[120.0, 30.0, 130.0, 40.0]
-b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]</pre>
+b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]
+c)	{
+       "geographicElement": {
+           "westBoundLongitude": -171.76409,
+           "eastBoundLongitude": -157.86768,
+           "southBoundLatitude": -14.42443,
+           "northBoundLatitude": 21.31573
+       }
+   }</pre>
 </div>
 </div>
 <div class="paragraph">
