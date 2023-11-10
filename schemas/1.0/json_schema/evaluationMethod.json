@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/evaluationMethod.json",
+    "title": "EvaluationMethod",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "evaluationMethodDescription": {
+            "type": "string"
+        },
+        "evaluationMethodType": {
+            "type": "string"
+        },
+        "evaluationProcedure": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
+        },
+        "dateTime": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
+            }
+        },
+        "referenceDoc": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
+            }
+        },
+        "deductiveSource": {
+            "type": "string"
+        }
+    }
+}
