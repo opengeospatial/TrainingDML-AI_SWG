@@ -2,9 +2,9 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
 	<xs:complexType name="AI_MetricsInLiterature">
 		<xs:sequence>
-			<xs:element name="algorithm" type="xs:string" minOccurs="0" maxOccurs="1"/>
-			<xs:element name="doi" type="xs:string" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="metrics" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="algorithm" type="xs:string" minOccurs="0"/>
+			<xs:element name="doi" type="xs:string"/>
+			<xs:element name="metrics" type="xs:string" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

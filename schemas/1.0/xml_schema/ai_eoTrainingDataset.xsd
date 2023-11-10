@@ -1,17 +1,48 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1" xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1" xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.2" xmlns:lan="https://schemas.isotc211.org/19115/-1/lan/1.3" xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"  elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1" xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1" xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fcc="https://schemas.isotc211.org/19110/-/fcc/2.2" xmlns:lan="https://schemas.isotc211.org/19115/-1/lan/1.3" xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"  elementFormDefault="qualified">
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
 <xs:import namespace="https://schemas.isotc211.org/19115/-1/mrc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd"/>
 <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
+<xs:include schemaLocation="ai_eoTask.xsd"/>
+<xs:include schemaLocation="ai_eoTrainingData.xsd"/>
+<xs:include schemaLocation="data_time.xsd"/>
+<xs:include schemaLocation="named_value.xsd"/>
+<xs:include schemaLocation="ai_labeling.xsd"/>
+<xs:include schemaLocation="ai_metricsInLiterature.xsd"/>
+<xs:include schemaLocation="ai_task.xsd"/>
+<xs:include schemaLocation="dataQuality.xsd"/>
+  <xs:element name="AI_EOTrainingDataset" type="AI_EOTrainingDataset"/>
   <xs:complexType name="AI_EOTrainingDataset">
     <xs:complexContent>
-      <xs:extension base="AI_AbstractTrainingDataset">
         <xs:sequence>
-          <xs:element name="type" type="xs:string" minOccurs="1" maxOccurs="1" fixed="AI_EOTrainingDataset"/>
+          <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
+          <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
+          <xs:element name="createdTime" type="multiDateTime" minOccurs="0"/>
+          <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="description" type="xs:string"/>
+          <xs:element name="doi" type="xs:string" minOccurs="0"/>
+          <xs:element name="id" type="xs:string"/>
+          <xs:element name="keywords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="license" type="xs:string" minOccurs="0"/>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="numberOfClasses" type="xs:int" minOccurs="0"/>
+          <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="scope" type="mcc:MD_Scope_Type" minOccurs="0"/>
+          <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="updatedTime" type="multiDateTime" minOccurs="0"/>
+          <xs:element name="version" type="xs:string" minOccurs="0"/>
+          <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="metricsInLIT" type="AI_MetricsInLiterature" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="tasks" type="AI_EOTask" maxOccurs="unbounded"/>
+          <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="data" type="AI_EOTrainingData" maxOccurs="unbounded"/>
+          <xs:element name="type" type="xs:string" fixed="AI_EOTrainingDataset"/>
           <xs:element name="bands" type="mrc:MD_Band_Type" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0" maxOccurs="1"/>
-          <xs:element name="imageSize" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0"/>
+          <xs:element name="imageSize" type="xs:string" minOccurs="0"/>
         </xs:sequence>
-      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
 </xs:schema>
