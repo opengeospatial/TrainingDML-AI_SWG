@@ -11,7 +11,7 @@
             "type": "string"
         },
         "evaluationMethodType": {
-            "type": "string"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/evaluationMethodTypeCode.json"
         },
         "evaluationProcedure": {
             "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"

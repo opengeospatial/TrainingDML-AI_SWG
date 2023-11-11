@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/coverageResult.json",
+    "title": "CoverageResult",
+    "type": "object",
+    "required": [
+        "spatialRepresentationType",
+        "resultSpatialRepresentation"
+    ],
+    "properties": {
+        "spatialRepresentationType": {
+            "type": "string"
+        },
+        "resultSpatialRepresentation": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_spatialRepresentation.json"
+        },
+        "resultContent": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_rangeDimension.json"
+            }
+        },
+        "resultFormat": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/md_format.json"
+        }
+    }
+}

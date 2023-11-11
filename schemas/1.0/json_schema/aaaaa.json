@@ -1,0 +1,10 @@
+{
+    "type": "FormatConsistency",
+    "measure": {
+        "measureDescription": "Percentage of training samples with inconsistent image format"
+    },
+    "evaluationMethod": {
+        "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with inconsistent format"
+    },
+    "result": "0"
+}

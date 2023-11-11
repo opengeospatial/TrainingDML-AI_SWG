@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/conformanceResult.json",
+    "title": "ConformanceResult",
+    "type": "object",
+    "required": [
+        "pass",
+        "specification"
+    ],
+    "properties": {
+        "pass": {
+            "type": "boolean"
+        },
+        "specification": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
+        },
+        "explanation": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
