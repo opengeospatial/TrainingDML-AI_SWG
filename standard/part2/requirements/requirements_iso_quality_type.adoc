@@ -20,16 +20,29 @@ Each QualityElement value shall be encoded as a JSON object with properties show
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |The type of the quality element object. |CharacterString [1..1] |Mandatory
-|measure |The type of evaluation. |CharacterString [1..1] |Mandatory
-|evaluationMethod |The procedure used to evaluate the measure. |CharacterString [1..1] |Mandatory
-|result |The output of the evaluation. |CharacterString [1..1] |Mandatory
+|measure |Reference to measure used. |MeasureReference [1..1] |Mandatory
+|evaluationMethod |Evaluation information. |EvaluationMethod [1..1] |Mandatory
+|result |Value obtained from applying a data quality measure. |QualityResult [1..*] |Mandatory
 |===
 
 Example:
 
  {
     "type": "FormatConsistency",
-    "measure": "Percentage of training samples with inconsistent image format",
-    "evaluationMethod": "Full test method to calculate the percentage of training samples with inconsistent format",
-    "result": "0"
+    "measure": {
+       "measureDescription": "Percentage of training samples with inconsistent image format"
+    },
+    "evaluationMethod": {
+       "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with inconsistent format"
+    },
+    "result": [
+       {
+          "quantitativeResult": {
+          "value": [
+             0
+          ],
+          "valueUnit": "%"
+          }
+       }
+    ]
  }

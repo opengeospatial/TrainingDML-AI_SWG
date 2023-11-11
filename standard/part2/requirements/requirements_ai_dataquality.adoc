@@ -10,16 +10,29 @@ Each AI_ClassBalanceDegree object shall implement the properties shown in Table 
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the class balance degree object. |"AI_ClassBalanceDegree" |Mandatory
-|measure |Reference to measure used |MeasureReference [1..1] |Mandatory
-|evaluationMethod |Evaluation information |EvaluationMethod [1..1] |Mandatory
-|result |Value obtained from applying a data quality measure |QualityResult [1..*] |Mandatory
+|measure |Reference to measure used. |MeasureReference [1..1] |Mandatory
+|evaluationMethod |Evaluation information. |EvaluationMethod [1..1] |Mandatory
+|result |Value obtained from applying a data quality measure. |QualityResult [1..*] |Mandatory
 |===
 
 Example:
 
  {
-    "type": "AI_ClassBalanceDegree",
-    "measure": "Balance degree of label classes",
-    "evaluationMethod": "Counting the number of training samples belonging to each class and calculating the balance degree",
-    "result": "0.935"
+   "type": "AI_ClassBalanceDegree",
+   "measure": {
+     "measureDescription": "Balance degree of label classes"
+   },
+   "evaluationMethod": {
+     "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
+   },
+   "result": [
+     {
+       "quantitativeResult": {
+         "value": [
+           93.5
+         ],
+         "valueUnit": "%"
+       }
+     }
+   ]
  }

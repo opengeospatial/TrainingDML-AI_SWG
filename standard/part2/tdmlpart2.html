@@ -1347,20 +1347,20 @@ b)	{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifie
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">measure</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The type of evaluation.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Reference to measure used.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MeasureReference [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">evaluationMethod</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The procedure used to evaluate the measure.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Evaluation information.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">EvaluationMethod [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">result</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The output of the evaluation.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Value obtained from applying a data quality measure.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">QualityResult [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 </tbody>
@@ -1372,9 +1372,22 @@ b)	{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifie
 <div class="content">
 <pre>{
    "type": "FormatConsistency",
-   "measure": "Percentage of training samples with inconsistent image format",
-   "evaluationMethod": "Full test method to calculate the percentage of training samples with inconsistent format",
-   "result": "0"
+   "measure": {
+      "measureDescription": "Percentage of training samples with inconsistent image format"
+   },
+   "evaluationMethod": {
+      "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with inconsistent format"
+   },
+   "result": [
+      {
+         "quantitativeResult": {
+         "value": [
+            0
+         ],
+         "valueUnit": "%"
+         }
+      }
+   ]
 }</pre>
 </div>
 </div>
@@ -2919,19 +2932,19 @@ c)	"test"</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">measure</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Reference to measure used</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Reference to measure used.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MeasureReference [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">evaluationMethod</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Evaluation information</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Evaluation information.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">EvaluationMethod [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">result</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Value obtained from applying a data quality measure</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Value obtained from applying a data quality measure.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">QualityResult [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
@@ -2943,10 +2956,23 @@ c)	"test"</pre>
 <div class="literalblock">
 <div class="content">
 <pre>{
-   "type": "AI_ClassBalanceDegree",
-   "measure": "Balance degree of label classes",
-   "evaluationMethod": "Counting the number of training samples belonging to each class and calculating the balance degree",
-   "result": "0.935"
+  "type": "AI_ClassBalanceDegree",
+  "measure": {
+    "measureDescription": "Balance degree of label classes"
+  },
+  "evaluationMethod": {
+    "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
+  },
+  "result": [
+    {
+      "quantitativeResult": {
+        "value": [
+          93.5
+        ],
+        "valueUnit": "%"
+      }
+    }
+  ]
 }</pre>
 </div>
 </div>
