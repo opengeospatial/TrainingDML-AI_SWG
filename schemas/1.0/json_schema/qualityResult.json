@@ -15,7 +15,8 @@
                 "quantitativeResult": {
                     "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/quantitativeResult.json"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         {
             "type": "object",
@@ -29,7 +30,8 @@
                 "conformanceResult": {
                     "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/conformanceResult.json"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         {
             "type": "object",
@@ -43,7 +45,8 @@
                 "descriptiveResult": {
                     "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/descriptiveResult.json"
                 }
-            }
+            },
+            "additionalProperties": false
         },
         {
             "type": "object",
@@ -57,7 +60,8 @@
                 "coverageResult": {
                     "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/coverageResult.json"
                 }
-            }
+            },
+            "additionalProperties": false
         }
     ]
 }
