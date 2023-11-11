@@ -10,7 +10,30 @@
         "value": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$comment": "The type of the value is 'any'.",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "object"
+                    },
+                    {
+                        "type": "number"
+                    },
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "array"
+                    },
+                    {
+                        "type": "boolean"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         },
         "valueUnit": {
