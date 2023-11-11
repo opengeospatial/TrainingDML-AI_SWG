@@ -17,16 +17,17 @@
             ]
         },
         "measure": {
-            "type": "string"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/measureReference.json"
         },
         "evaluationMethod": {
-            "type": "string"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/evaluationMethod.json"
         },
         "result": {
             "type": "array",
             "items": {
-                "type": "string"
-            }
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/qualityResult.json"
+            },
+            "minItems": 1
         }
     }
 }
