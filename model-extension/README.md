@@ -142,10 +142,40 @@ Table 10. Attributes of AI_Optimization (Class)
 | pretrainedModels     | CharacterString[0..*]           | Pretrained  models that the training process relies on.      |
 | hyperparameters      | CharacterString[0..*]           | Other hyperparameters  to train the deep learning model.     |
 
+### 4.5	AI_ModelQuality
+The quality of a deep learning model refers to its performance and effectiveness in solving a specific task or problem. Evaluating the quality of a deep learning model involves considering various aspects and metrics. Here are some key factors and elements that contribute to assessing the quality of a deep learning model: accuracy, computational complexity, generalization, robustness, fairness, and explainability. AI_ModelQuality records these elements to express the quality of the deep learning model. The quality description of the deep learning model can leverage the quality elements defined in QualityElement from ISO 19157. 
 
+#### 4.5.1 Class Definitions
+Table 11. Classes defined in AI_ModelQuality
+| **Name**                | **Description**                                              |
+| ----------------------- | ------------------------------------------------------------ |
+| AI_AbstractModelQuality | AI_AbstractModelQuality defines the basic quality elements of a deep learning model. |
+| AI_EOModelQuality       | AI_EOModelQuality describes quality  elements specific to a EO deep learning model. |
 
+#### 4.5.2 Data Dictionary
+Table 12. Attributes of AI_AbstractModelQuality (Class)
+| **Attribute**           | **Value type and multiplicity** | **Definition**                                               |
+| ----------------------- | ------------------------------- | ------------------------------------------------------------ |
+| performanceMetrics      | QualityElement[1..*]            | Accuracy  of the deep learning model.                        |
+| computationalComplexity | QualityElement[0..*]            | How  efficiently a deep learning model performs tasks while utilizing  computational resources such as CPU/GPU, memory, and energy. |
+| generalization          | QualityElement[0..*]            | The  ability to perform well on data it has never seen before. |
+| robustness              | QualityElement[0..*]            | The  ability to maintain their level of performance, as intended by their  developers, under any condition and circumstances. |
+| fairness                | QualityElement[0..*]            | Equitable  and unbiased treatment of different individuals or groups. |
+| explainability          | QualityElement[0..*]            | The  property that the important factors influencing a decision can be expressed  in a way that humans can understand. |
+| isPretrainedModel       | Bool[0..*]                      | Whether  the deep learning model can be used as a pre-trained model. |
+| applicationScope        | CharacterString[0..*]           | A  complementary description of the deep learning model application scope. |
 
+Table 12. Attributes of AI_EOModelQuality (Class)
+| **Attribute**          | **Value type and multiplicity** | **Definition**                                               |
+| ---------------------- | ------------------------------- | ------------------------------------------------------------ |
+| spatialGeneralization  | QualityElement[0..*]            | The  ability to perform well on data from unseen geographic regions. |
+| temporalGeneralization | QualityElement[0..*]            | The  ability to perform well on data from unseen time period. |
 
+### 4.6	AI_TrainingDataset
+AI_TrainingDataset records the dataset needed to train the deep learning model. The training dataset description can leverage the AI_AbstractTrainingDataset and AI_EOTrainingDataset defined in TrainingDML-AI.
+
+### 4.7	AI_Task
+AI_Task refers to a specific problem or objective addressed using deep learning techniques and models. The task description can leverage the AI_AbstractTask and AI-EOTask defined in TrainingDML-AI.
 
 ## 5. Use Cases
 A collection of some encoded deep learning models:
