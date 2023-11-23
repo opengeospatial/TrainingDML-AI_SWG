@@ -41,6 +41,13 @@ The full overview of concrete classes and attributes are presented in Figure 2. 
 </div>
 <div align=center> Figure 2. UML model</div>
 
+### 4.2 AI_DeepLearningModel
+A deep learning model is represented as AI_AbstractDeepLearningModel. A set of basic attributes are defined for AI_AbstractDeepLearningModel. These include the identification, name for findability; providers, references, citations, and license for copyright; inputs, outputs, deep learning framework, save format, dependencies, and resources for reusability; version, created time, and updated time for update. These basic attributes can also be seen as a minimum set of metadata to define a simple payload.
+
+#### 4.2.1 Class Definitions
+
+
+
 ## 5. Use Cases
 A collection of some encoded deep learning models:
 |Model Name|Training Dataset|Description|JSON|Download|
