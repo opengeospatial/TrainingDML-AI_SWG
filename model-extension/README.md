@@ -104,6 +104,47 @@ Table 6. Attributes of AI_EOIOType (DataType)
 | bands             | MD_Bands[0..*]                  | Description  of the image bands in the EO input/output data. |
 | imageSize         | CharacterString[0..1]           | Size  of the EO input/output data.     
 
+### 4.3 AI_NeuralNetwork
+The neural network of a deep learning model is represented as AI_NeuralNetwork. The details of the neural network architecture and parameters are described in AI_NeuralNetwork for model reproduction.
+
+#### 4.3.1 Class Definitions
+Table 7. Classes defined in AI_NeuralNetwork
+| **Name**         | **Description**                                              |
+| ---------------- | ------------------------------------------------------------ |
+| AI_NeuralNetwork | AI_NeuralNetwork defines the concepts of neural network of a deep learning model. |
+
+#### 4.3.2 Data Dictionary
+Table 8. Attributes of AI_NeuralNetwork (Class)
+| **Attribute** | **Value type and multiplicity** | **Definition**                                           |
+| ------------- | ------------------------------- | -------------------------------------------------------- |
+| architecture  | CharacterString  [1..*]         | Neural  network architecture of the deep learning model. |
+| parameters    | CharacterString  [0..*]         | The  number of parameters of the neural network.         |
+
+### 4.4 AI_Optimization
+AI_Optimization records the attributes needed to train the neural network.
+
+#### 4.4.1 Class Definitions
+Table 9. Classes defined in AI_Optimization
+| **Name**        | **Description**                                              |
+| --------------- | ------------------------------------------------------------ |
+| AI_Optimization | AI_Optimization defines the concepts to train the neural network. |
+
+#### 4.4.2 Data Dictionary
+Table 10. Attributes of AI_Optimization (Class)
+| **Attribute**        | **Value type and multiplicity** | **Definition**                                               |
+| -------------------- | ------------------------------- | ------------------------------------------------------------ |
+| optimizer            | CharacterString[1..1]           | The optimization  algorithms to minimize the objective function during the training process,  for example stochastic gradient descent. |
+| objectiveFunction    | CharacterString[1..*]           | A  mathematical function that quantifies the difference between predicted and  actual values. |
+| numberOfEpochs       | Int[0..1]                       | Number  of epochs, where an epoch is a complete iteration through the entire training  dataset for training. |
+| batchSize            | Int[0..1]                       | Batch  size defines the number of samples used in one iteration to train a neural  network. |
+| learningRate         | CharacterString[0..1]           | A parameter  in the optimizer that determines the step size at each iteration. |
+| hardwareDependencies | CharacterString[0..*]           | Hardware  requirement to train the deep learning model.      |
+| pretrainedModels     | CharacterString[0..*]           | Pretrained  models that the training process relies on.      |
+| hyperparameters      | CharacterString[0..*]           | Other hyperparameters  to train the deep learning model.     |
+
+
+
+
 
 
 ## 5. Use Cases
