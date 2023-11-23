@@ -45,6 +45,64 @@ The full overview of concrete classes and attributes are presented in Figure 2. 
 A deep learning model is represented as AI_AbstractDeepLearningModel. A set of basic attributes are defined for AI_AbstractDeepLearningModel. These include the identification, name for findability; providers, references, citations, and license for copyright; inputs, outputs, deep learning framework, save format, dependencies, and resources for reusability; version, created time, and updated time for update. These basic attributes can also be seen as a minimum set of metadata to define a simple payload.
 
 #### 4.2.1 Class Definitions
+Table 1. Classes defined in AI_DeepLearningModel
+| **Name**                         | **Description**                                                  |
+| ---------------------------- | ------------------------------------------------------------ |
+| AI_AbstractDeepLearningModel | AI_AbstractDeepLearningModel defines the basic concepts and components of a deep learning  model. |
+| AI_EODeepLearningModel       | AI_EODeepLearningModel describes attributes  specific to a EO deep learning model. |
+
+Table 2. Data types defined in AI_DeepLearningModel
+| **Name**                           | **Description**                                                  |
+| ------------------------------- | ------------------------------------------------------------ |
+| AI_AbstractIOType  \<\<DataType>> | AI_AbstractIOType  defines the basic concepts of inputs and outputs of the  deep learning model. |
+| AI_EOIOType  \<\<DataType>>       | AI_EOIOType defines attributes of inputs and outputs specific to the EO deep learning  model. |
+
+#### 4.2.2 Data Dictionary
+Table 3. Attributes of AI_AbstractDeepLearningModel (Class)
+| **Attribute**         | **Value type and multiplicity** | **Definition**                                               |
+| --------------------- | ------------------------------- | ------------------------------------------------------------ |
+| id                    | CharacterString  [1..1]         | Identification  of the deep learning model.                  |
+| name                  | CharacterString  [1..1]         | Name  of the deep learning model.                            |
+| providers             | CharacterString  [0..*]         | People  or organizations who provide the deep learning model. |
+| deepLearningFramework | CharacterString  [1..*]         | Deep learning  framework of the deep learning model. For example PyTorch, TensorFlow. |
+| saveFormat            | CharacterString  [1..*]         | Save  format of the deep learning model. For example ONNX, TensorRT. |
+| inputs                | AI_AbstractIOType[0..*]         | The  information of the inputs of the deep learning model.   |
+| outputs               | AI_AbstractIOType[1..*]         | The  information of the outputs of the deep learning model.  |
+| modelURL              | URL[1..*]                       | URLs of the deep learning model.                             |
+| version               | CharacterString  [0..1]         | Version  number of the deep learning model.                  |
+| createdTime           | DateTime  [0..1]                | Time  when the deep learning model was created.              |
+| updatedTime           | DateTime  [0..1]                | Time  when the deep learning model was updated.              |
+| softwareDependencies  | CharacterString  [0..*]         | Software  requirement that the deep learning model relies on to function correctly. |
+| hardwareDependencies  | CharacterString  [0..*]         | Hardware  requirement that the deep learning model relies on to function correctly. |
+| references            | CharacterString  [0..*]         | The  literatures that the deep learning model is referenced. |
+| citations             | CharacterString  [0..*]         | Citations  when using the deep learning model.               |
+| resources             | CharacterString  [0..*]         | Additional  resources related to the deep learning model, for example GitHub link. |
+| license               | CharacterString  [1..1]         | License  description of the deep learning model.             |
+| description           | CharacterString  [0..*]         | Other  description of the deep learning model.               |
+
+Table 4. Attributes of AI_EODeepLearningModel (Class)
+| **Attribute** | **Value type and multiplicity** | **Definition**                                               |
+| ------------- | ------------------------------- | ------------------------------------------------------------ |
+| inputs        | AI_EOIOType[0..*]               | The  information of the inputs of the EO deep learning model. |
+| outputs       | AI_EOIOType[1..*]               | The information  of the outputs of the EO deep learning model. |
+
+Table 5. Attributes of AI_AbstractIOType (DataType)
+| **Attribute** | **Value type and multiplicity** | **Definition**                                               |
+| ------------- | ------------------------------- | ------------------------------------------------------------ |
+| id            | CharacterString  [1..1]         | Identification  of the input/output data.                    |
+| dataType      | CharacterString  [1..1]         | Data  type of the input/output data, for example image, text, video. |
+| dataFormat    | NamedValue[1..1]                | Data  format of the input/output data, for example the NumPy array. |
+| description   | CharacterString[0..*]           | Other  description of the input/output data.                 |
+
+Table 6. Attributes of AI_EOIOType (DataType)
+| **Attribute**     | **Value type and multiplicity** | **Definition**                                               |
+| ----------------- | ------------------------------- | ------------------------------------------------------------ |
+| meanNormalization | Float[0..*]                     | The  mean used to normalize the EO input data.               |
+| stdNormalization  | Float[0..*]                     | The standard  deviation used to normalize the EO input data. |
+| dataSources       | CI_Citation[0..*]               | Citation  of data sources.                                   |
+| extent            | EX_Extent[0..1]                 | Spatial  extent of the EO input data.                        |
+| bands             | MD_Bands[0..*]                  | Description  of the image bands in the EO input/output data. |
+| imageSize         | CharacterString[0..1]           | Size  of the EO input/output data.     
 
 
 
