@@ -175,7 +175,7 @@ Table 12. Attributes of AI_EOModelQuality (Class)
 AI_TrainingDataset records the dataset needed to train the deep learning model. The training dataset description can leverage the AI_AbstractTrainingDataset and AI_EOTrainingDataset defined in TrainingDML-AI.
 
 ### 4.7	AI_Task
-AI_Task refers to a specific problem or objective addressed using deep learning techniques and models. The task description can leverage the AI_AbstractTask and AI-EOTask defined in TrainingDML-AI.
+AI_Task refers to a specific problem or objective addressed using deep learning techniques and models. The task description can leverage the AI_AbstractTask and AI_EOTask defined in TrainingDML-AI.
 
 ## 5. Use Cases
 A collection of some encoded deep learning models:
