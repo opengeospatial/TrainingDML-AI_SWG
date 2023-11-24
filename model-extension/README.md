@@ -189,7 +189,7 @@ A collection of some encoded deep learning models:
 |Model Name|Training Dataset|Description|JSON|Download|
 |-|-|-|-|-|
 |UPerNet_LULC|Five-Billion-Pixels|A land use land cover classification model based on UPerNet with 25 classes.|[UPerNet_LULC.json](use-cases/UPerNet_LULC.json)|[UPerNet_LULC.onnx](https://drive.google.com/file/d/1AcsTRsgHAwOROfq1qsa709kdKHleFmE0/view?usp=drive_link)|
-
+|CropLandExtraction_GF2|-|Crop land extraction model on GF-2 images.|[CropLandExtraction_GF2.json](use-cases/CropLandExtraction_GF2.json)|[CropLandExtraction_GF2.onnx](https://drive.google.com/file/d/1x7s3LWbHln2bj_X54jU9Il7Wi_mB5mZu/view?usp=sharing)|
 
 
 
