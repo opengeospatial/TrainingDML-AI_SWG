@@ -145,6 +145,13 @@ Table 10. Attributes of AI_Optimization (Class)
 ### 4.5	AI_ModelQuality
 The quality of a deep learning model refers to its performance and effectiveness in solving a specific task or problem. Evaluating the quality of a deep learning model involves considering various aspects and metrics. Here are some key factors and elements that contribute to assessing the quality of a deep learning model: accuracy, computational complexity, generalization, robustness, fairness, and explainability. AI_ModelQuality records these elements to express the quality of the deep learning model. The quality description of the deep learning model can leverage the quality elements defined in QualityElement from ISO 19157. 
 
+The data quality element of ISO 19157 is described by a reference to a quality measure, an evaluation method, a quality result, and a metaquality element. These are shown in Figure 3. Measure reference provide an identifier of a measure fully described elsewhere. Evaluation method describes those procedures and methods which are applied to the geographic data to arrive at a data quality result. Quality result is provided for each data quality element. This could be a quantitative result, a conformance result, a descriptive result or a coverage result. A metaquality element is described by the same descriptors as for the quality element: measure, evaluation method and result.
+
+<div align=center>
+<img width="700" src="UML/QualityElement of ISO 19157.png"/>
+</div>
+<div align=center> Figure 3. Data quality element descriptors.</div>
+
 #### 4.5.1 Class Definitions
 Table 11. Classes defined in AI_ModelQuality
 | **Name**                | **Description**                                              |
