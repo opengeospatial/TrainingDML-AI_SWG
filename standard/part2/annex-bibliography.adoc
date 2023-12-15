@@ -2,7 +2,7 @@
 [[ats-bibliography]]
 == Bibliography
 
-[1] Yue, P., ed., 2023. OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, OGC 23-008r2. Wayland, MA: Open Geospatial Consortium Inc. https://portal.ogc.org/files/?artifact_id=104605&version=1
+[1] Yue, P., ed., 2023. OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, OGC 23-008r3. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/is/23-008r3/23-008r3.html
 
 [2] Klyne, G., 2002. RFC 3339. Date and Time on the Internet: Timestamps. http://www.ietf.org/rfc/rfc3339.txt
 

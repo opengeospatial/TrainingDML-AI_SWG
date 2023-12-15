@@ -2,7 +2,7 @@
 
 The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
 
-* https://portal.ogc.org/files/?artifact_id=104605&version=1[OGC: OGC 23-008r2, OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, 2023]
+* https://docs.ogc.org/is/23-008r3/23-008r3.html[OGC: OGC 23-008r3, OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, 2023]
 * http://www.ietf.org/rfc/rfc7159.txt[IETF: RFC 7159, The JavaScript Object Notation (JSON) Data Interchange Format, 2014]
 * https://tools.ietf.org/html/rfc7946[IETF: RFC 7946, The GeoJSON Format, 2016]
 * http://www.ietf.org/rfc/rfc3986.txt[IETF: RFC 3986, Uniform Resource Identifiers (URI): Generic Syntax, 2005]
