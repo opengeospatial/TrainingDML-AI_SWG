@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-09-05 21:41:22
+ * @LastEditTime: 2023-12-15 19:23:27
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -33,4 +33,6 @@ The Main Branch is the latest version of the draft Standard:
 - PDF [TrainingDML-AI Part2: JSON Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part2/tdmlpart2.pdf)
 
 #### Part 3 
-- TrainingDML-AI Part3: XML Encoding Standard is coming soon.
+The Main Branch is the latest version of the draft Standard:
+
+- DOCX [TrainingDML-AI Part3: XML Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part3/tdmlpart3.docx)
