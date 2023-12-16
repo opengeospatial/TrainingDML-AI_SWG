@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-12-15 19:23:27
+ * @LastEditTime: 2023-12-16 22:29:58
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -36,3 +36,16 @@ The Main Branch is the latest version of the draft Standard:
 The Main Branch is the latest version of the draft Standard:
 
 - DOCX [TrainingDML-AI Part3: XML Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part3/tdmlpart3.docx)
+
+### Implementations
+
+Implementations of TrainingDML-AI can be found at this [link](https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/Implementations)
+Current implementations:
+- PyTDML
+- TrainingDML-AI STAC Extension
+- LuojiaSet TrainingDML-AI Server
+- PIE (Pixel Information Expert) Engine Online Dataset
+- Pixalytics Plastics Detection Dataset
+- GeoLabs TDML-as-a-service
+- The First Institute of photogrammetry and Remote Sensing, MNR: Deployment of PyTDML and Sample Database
+- Open Geospatial Engine (OGE): Sample Retrieval Service
