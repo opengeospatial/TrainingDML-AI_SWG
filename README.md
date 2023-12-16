@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-12-16 22:29:58
+ * @LastEditTime: 2023-12-16 22:31:18
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -40,6 +40,7 @@ The Main Branch is the latest version of the draft Standard:
 ### Implementations
 
 Implementations of TrainingDML-AI can be found at this [link](https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/Implementations)
+
 Current implementations:
 - PyTDML
 - TrainingDML-AI STAC Extension
