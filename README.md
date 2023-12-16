@@ -39,7 +39,7 @@ The Main Branch is the latest version of the draft Standard:
 
 ### Implementations
 
-Implementations of TrainingDML-AI can be found at this [link](https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/Implementations)
+Implementations of TrainingDML-AI can be found at this [link](https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/Implementations).
 
 Current implementations:
 - PyTDML
