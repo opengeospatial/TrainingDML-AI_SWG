@@ -1,4 +1,5 @@
 # PyCharm configuration
+.vscode/
 .idea/
 .DS_Store
 iev/
