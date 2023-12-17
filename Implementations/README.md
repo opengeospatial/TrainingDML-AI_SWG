@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-05-30 09:57:22
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-07-28 20:01:53
+ * @LastEditTime: 2023-12-17 16:44:07
  * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -42,3 +42,10 @@ This implementation also ensures the integrity and effectiveness of the datasets
 ## Pixalytics Plastics Detection Dataset Implementation
 
 The implementation is based on work undertaken as part of the OGC Testbed activities, where Python code was developed to catalog a Machine Learning dataset that has been extended to use the [PyTDML](https://github.com/TrainingDML/pytdml) to store the metadata in the TrainingDML-AI format.
+
+## GeoLabs TDML-as-a-service Implementation
+
+In OGC Testbed-19: Machine Learning Models Engineering Report, GeoLabs made an implementation:
+
+/tdml — TDML-as-a-service: Endpoint implementing generation of training data encodings in a JSON file format based on the OGC Training-DML for AI Standard.
+![TDML-as-a-service](geolabs-t19-er.png)
