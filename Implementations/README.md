@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-05-30 09:57:22
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-12-19 10:20:42
+ * @LastEditTime: 2023-12-19 22:28:21
  * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -61,3 +61,7 @@ The main training process can be outlined as follows:
 3. Utilizing the LuojiaSet's API to transform the datasets into the TrainingDML-AI format.
 4. Uploading the PyTDML installation package.
 5. Developing deep learning code wherein PyTDML reads the training data in the TrainingDML-AI format and undergoes training tasks.
+
+## Flame and Smoke Detection Dataset (FASDD) Implementation
+
+We constructed a 100,000-level Flame and Smoke Detection Dataset (FASDD) based on the OGC TrainingDML-AI (TDML) standard. FASDD stands as a pivotal benchmark, propelling continuous evolution in fire detection models for object detection tasks. FASDD dataset has been encoded into TrainingDML-AI format.
