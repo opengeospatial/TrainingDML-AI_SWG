@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-05-30 09:57:22
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-12-17 16:44:07
+ * @LastEditTime: 2023-12-19 10:20:42
  * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -49,3 +49,15 @@ In OGC Testbed-19: Machine Learning Models Engineering Report, GeoLabs made an i
 
 /tdml — TDML-as-a-service: Endpoint implementing generation of training data encodings in a JSON file format based on the OGC Training-DML for AI Standard.
 ![TDML-as-a-service](geolabs-t19-er.png)
+
+## The First Institute of Photogrammetry & Remote Sensing, MNR Classification Task Implementation
+
+The First Institute of Photogrammery & Remote Sensing, MNR Uses training data in TrainingDML-AI format and performs training tasks (semantic segmentation and change detection) based on the TrainingDML-AI Standard.
+
+The main training process can be outlined as follows:
+
+1. Utilizing the LuojiaSet's API to incorporate the category system of MNR into the library, supporting a multi-level category system.
+2. Leveraging the LuojiaSet's API to parse the datasets comprehensively, encompassing both metadata and raw data parsing.
+3. Utilizing the LuojiaSet's API to transform the datasets into the TrainingDML-AI format.
+4. Uploading the PyTDML installation package.
+5. Developing deep learning code wherein PyTDML reads the training data in the TrainingDML-AI format and undergoes training tasks.
