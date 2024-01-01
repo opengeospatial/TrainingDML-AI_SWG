@@ -65,3 +65,10 @@ The main training process can be outlined as follows:
 ## Flame and Smoke Detection Dataset (FASDD) Implementation
 
 We constructed a 100,000-level Flame and Smoke Detection Dataset (FASDD) based on the OGC TrainingDML-AI (TDML) standard. FASDD stands as a pivotal benchmark, propelling continuous evolution in fire detection models for object detection tasks. FASDD dataset has been encoded into TrainingDML-AI format.
+
+
+## OSM2TDML Implementation
+
+[Ohsome2label](https://github.com/GIScience/ohsome2label) is a tool designed for efficiently downloading OSM data and WMTS tiles in order to generate deep learning samples. The annotation format used by ohsome2label is Microsoft COCO format. 
+Recently, we have been working on enhancing the tool by adding more features and rewriting it. The engineering refactoring process is currently underway, and once it is completed, we will release a completely revamped version of the tool called OSM2TDML, which will offer end-to-end functionality.
+So, we provide a Jupyter [notebook](https://gist.github.com/wuzyzy/523cd14473e769a87015af6f19d7105c) demo that demonstrates how to convert geococo format to tdml format. This demo serves as a preview of the forthcoming capabilities of the tool.
