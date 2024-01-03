@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-05-30 09:57:22
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2023-12-19 22:28:21
+ * @LastEditTime: 2024-01-03 20:44:14
  * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -65,3 +65,9 @@ The main training process can be outlined as follows:
 ## Flame and Smoke Detection Dataset (FASDD) Implementation
 
 We constructed a 100,000-level Flame and Smoke Detection Dataset (FASDD) based on the OGC TrainingDML-AI (TDML) standard. FASDD stands as a pivotal benchmark, propelling continuous evolution in fire detection models for object detection tasks. FASDD dataset has been encoded into TrainingDML-AI format.
+
+## OSM2TDML Implementation
+
+[Ohsome2label](https://github.com/GIScience/ohsome2label) is a tool designed for efficiently downloading OSM data and WMTS tiles in order to generate deep learning samples. The annotation format used by ohsome2label is Microsoft COCO format. 
+Recently, we have been working on enhancing the tool by adding more features and rewriting it. The engineering refactoring process is currently underway, and once it is completed, we will release a completely revamped version of the tool called OSM2TDML, which will offer end-to-end functionality.
+So, we provide a Jupyter [notebook](https://gist.github.com/wuzyzy/523cd14473e769a87015af6f19d7105c) demo that demonstrates how to convert geococo format to tdml format. This demo serves as a preview of the forthcoming capabilities of the tool.
