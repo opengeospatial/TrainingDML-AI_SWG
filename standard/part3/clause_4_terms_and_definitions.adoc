@@ -1,0 +1,53 @@
+== Terms and Definitions
+This document used the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+For the purposes of this document, the following additional terms and definitions apply.
+
+[[artificial-intelligence-definition]]
+=== Artificial Intelligence (AI) 
+
+refers to a set of methods and technologies that can empower machines or software to learn and perform tasks like humans. 
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[machine-learning-definition]]
+=== Machine Learning (ML)
+
+is an important branch of artificial intelligence that gives computers the ability to improve their performance without explicitly being programmed to do so. ML processes create models from training data by using a set of learning algorithms, and then can use these models to make predictions. Depending on whether the training data include labels, the learning algorithms can be divided into supervised and unsupervised learning.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[deep-learning-definition]]
+=== Deep Learning (DL)
+
+is a subset of machine learning, which is essentially a neural network with three or more layers. The number of layers is referred to as depth. While a neural network with a single layer can still make approximate predictions, additional hidden layers can help to optimize and refine for accuracy.
+
+SOURCE: https://www.ibm.com/topics/deep-learning
+
+[[training-dataset-definition]]
+=== Training Dataset
+
+a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[label-definition]]
+=== Label
+
+refers to known or expected results annotated as values of a dependent variable in training samples. A training sample label is different from those on a geographical map, which are known as map labels or annotations.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[extensible-markup-language-definition]]
+=== Extensible Markup Language (XML)
+
+is a simple, very flexible text format derived from SGML (ISO 8879). Originally designed to meet the challenges of large-scale electronic publishing, XML is also playing an increasingly important role in the exchange of a wide variety of data on the Web and elsewhere.
+
+SOURCE: https://www.w3.org/XML/
+
+[[xml-schema-definition]]
+=== XML Schema
+
+is a means for defining the structure, content and semantics of XML documents.
+
+SOURCE: https://www.w3.org/XML/Schema

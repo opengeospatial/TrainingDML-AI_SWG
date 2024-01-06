@@ -1,0 +1,20 @@
+[width="100%",cols="25%,10%,55%",]
+|===
+|Conformance Class 2+|/conf/base
+|Requirements 2+|/req/base
+|Dependency 2+|An XML Schema Validator
+.5+|Test 2+|/conf/base/xml
+|Requirement |/req/base/xmlbasetype/xml
+|Test purpose |Verify that the document is well-formed XML.
+|Test method |Load the document in an XML validator.
+
+Pass if no errors reported. Fail otherwise.
+|Test type |Capability
+.5+|Test 2+|/conf/base/type
+|Requirement |/req/base/xmlbasetype/datatime, /req/base/xmlbasetype/namedvalue, /req/base/isometadatatype, /req/base/isoqualitytype, /req/base/geospatialtype
+|Test purpose |Verify that the related values and objects are encoded using the specified property names and structures.
+|Test method |Validate the XML instance document using the appropriate object definition from the TraningDML-AI.xsd XML Schema. 
+
+Pass if no errors reported. Fail otherwise.
+|Test type |Capability
+|===

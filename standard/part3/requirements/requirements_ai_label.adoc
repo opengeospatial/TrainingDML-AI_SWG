@@ -1,0 +1,132 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/ailabel
+|Dependency |XML
+|Dependency |/req/base/xmlbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/base/geospatialtype
+|Requirement |/req/ailabel/label
+|Requirement |/req/ailabel/scenelabel
+|Requirement |/req/ailabel/objectlabel
+|Requirement |/req/ailabel/pixellabel
+|===
+
+An AI_Label object is encoded as an XML element with properties shown in Table 9.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabel/label
+
+Each AI_Label object shall implement the properties shown in Table 9.
+|===
+
+.AI_Label properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the label object. |"AI_AbstractLabel" |Mandatory
+|isNegative |Whether the training sample related to the label is a positive or negative sample. |bool [0..1] |Optional
+|confidence |Confidence score of the labeler.  |Float [0..1] |Optional
+|===
+
+Example:
+
+   <type>AI_AbstractLabel</type>
+   <isNegative>false</isNegative>
+
+An AI_SceneLabel object is encoded as an XML element with properties shown in Table 10.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabel/scenelabel
+
+Each AI_SceneLabel object shall implement the properties shown in Table 10.
+|===
+
+.AI_SceneLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the scene level. |"AI_SceneLabel" |Mandatory
+|class |Class that records the semantic of the scene of the training sample. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+   <type>AI_SceneLabel</type>
+   <class>Airport</class>
+
+An AI_ObjectLabel object is encoded as an XML element with properties shown in Table 11.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabel/objectlabel
+
+Each AI_ObjectLabel object shall implement the properties shown in Table 11.
+|===
+
+.AI_ObjectLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the object level. |"AI_ObjectLabel" |Mandatory
+|object |Feature that represents the position and attributes of the object.  |Feature [0..1] |Optional
+|bboxType |Type of the bbox. |CharacterString [0..1] |Optional
+|class |Class that records the semantic of the object type. |CharacterString [1..1] |Mandatory
+|dateTime |Created time of the object label. |DateTime [0..1] |Optional
+|===
+
+Example:
+
+   <type>AI_ObjectLabel</type>
+   <class>Pedestrian</class>
+   <object>
+      <gml:metaDataProperty>
+         <gml:GenericMetaData>
+            <truncated>0.0</truncated>
+            <occluded>0</occluded>
+            <alpha>-0.2</alpha>
+         </gml:GenericMetaData>
+      </gml:metaDataProperty>
+      <gml:location>
+         <gml:GeometricComplex>
+            <gml:element>
+               <gml:Polygon>
+                  <gml:exterior>
+                     <gml:LinearRing>
+                        <gml:posList>
+                           51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                        </gml:posList>
+                     </gml:LinearRing>
+                  </gml:exterior>
+               </gml:Polygon>
+            </gml:element>
+         </gml:GeometricComplex>
+      </gml:location>
+   </object>
+   <bboxType>Horizontal BBox</bboxType>
+
+An AI_PixelLabel object is encoded as an XML element with properties shown in Table 12.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabel/pixellabel
+
+Each AI_PixelLabel object shall implement the properties shown in Table 12.
+|===
+
+.AI_PixelLabel properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the label object at the pixel level. |"AI_PixelLabel" |Mandatory
+|imageURL |URL of the images representing the label information. |URL [1..*] |Mandatory
+|imageFormat |Image data format. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+   <type>AI_PixelLabel</type>
+   <imageURL>/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif</imageURL>
+   <imageFormat>image/tiff</imageFormat>

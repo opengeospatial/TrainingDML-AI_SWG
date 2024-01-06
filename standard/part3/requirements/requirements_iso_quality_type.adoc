@@ -1,0 +1,50 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/isoqualitytype
+|Dependency |XML
+|Requirement |/req/base/isoqualitytype/element
+|===
+
+A QualityElement object is encoded as an XML element with properties shown in Table 1.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/isoqualitytype/element
+
+Each QualityElement value shall be encoded as an XML element with properties shown in Table 1.
+|===
+
+.QualityElement properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |The type of the quality element object. |CharacterString [1..1] |Mandatory
+|measure |Reference to measure used. |MeasureReference [1..1] |Mandatory
+|evaluationMethod |Evaluation information. |EvaluationMethod [1..1] |Mandatory
+|result |Value obtained from applying a data quality measure. |QualityResult [1..*] |Mandatory
+|===
+
+Example:
+
+   <type>FormatConsistency</type>
+   <measure>
+      <measureDescription>
+         Percentage of training samples with inconsistent image format
+      </measureDescription>
+   </measure>
+   <evaluationMethod>
+      <evaluationMethodDescription>
+         Full test method to calculate the percentage of training samples with inconsistent format
+      </evaluationMethodDescription>
+   </evaluationMethod>
+   <result>
+      <quantitativeResult>
+	      <value>
+            0
+         </value>
+	      <valueUnit>
+            %
+         </valueUnit>
+      </quantitativeResult>
+   </result>

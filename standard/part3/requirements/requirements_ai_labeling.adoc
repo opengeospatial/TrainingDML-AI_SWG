@@ -1,0 +1,98 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/ailabeling
+|Dependency |XML
+|Dependency |/req/base/xmlbasetype
+|Dependency |/req/base/isometadatatype
+|Requirement |/req/ailabeling/labeling
+|Requirement |/req/ailabeling/labeler
+|Requirement |/req/ailabeling/labelingprocedure
+|===
+
+An AI_Labeling object is encoded as an XML element with properties shown in Table 13.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabeling/labeling
+
+Each AI_Labeling object shall implement the properties shown in Table 13.
+|===
+
+.AI_ Labeling properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the labeling object. |"AI_Labeling" |Mandatory
+|id |Identifier of the labeling. |CharacterString [1..1] |Mandatory
+|scope |Description of the scope of the labeling. |MD_Scope [1..1] |Mandatory
+|labelers |Labelers of the labeling activity. |AI_Labeler [0..*] |Optional
+|procedure |Procedure used in the labeling activity. |AI_LabelingProcedure [0..1] |Optional
+|===
+
+Example:
+
+   <type>AI_Labeling</type>
+   <id>0</id>
+   <scope>
+      <level>dataset</level>
+      <levelDescription>
+         <dataset>whu_rs19</dataset>
+      </levelDescription>
+   </scope>
+   <labelers>...</labelers>
+   <procedure>...</procedure>
+
+An AI_Labeler object is encoded as an XML element with properties shown in Table 14.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabeling/labeler
+
+Each AI_Labeler object shall implement the properties shown in Table 14.
+|===
+
+.AI_ Labeler properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the labeler object. |"AI_Labeler" |Mandatory
+|id |Identifier of the labeler. |CharacterString [1..1] |Mandatory
+|name |Name of the labeler. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+   <type>AI_Labeler</type>
+   <id>0</id>
+   <name>Tom</name>
+
+An AI_LabelingProcedure object is encoded as an XML element with properties shown in Table 15.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/ailabeling/labelingprocedure
+
+Each AI_LabelingProcedure object shall implement the properties shown in Table 15.
+|===
+
+.AI_ LabelingProcedure properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the labeling procedure object. |"AI_LabelingProcedure" |Mandatory
+|id |Identifier of the labeling procedure. |CharacterString [1..1] |Mandatory
+|methods |Methods used in the labeling procedure. |CharacterString [1..*] |Mandatory
+|tools |Tools or software used in the labeling procedure. |CharacterString [0..1] |Optional
+|===
+
+Example:
+
+   <type>AI_LabelingProcedure</type>
+   <id>0</id>
+   <methods>
+      <method>manual</method>
+   </methods>
+   <tools>
+      <tool>ArcGIS</tool>
+   </tools>

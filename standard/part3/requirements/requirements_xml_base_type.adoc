@@ -1,0 +1,54 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/xmlbasetype 
+|Dependency |XML
+|Requirement |/req/base/xmlbasetype/xml
+|Requirement |/req/base/xmlbasetype/datetime
+|Requirement |/req/base/xmlbasetype/namedvalue
+|===
+
+The first requirement is that a TrainingDML-AI XML document is a valid XML document.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/xmlbasetype/xml
+
+An instance shall be a conformant XML document, as defined by W3C Recommendation
+|===
+
+XML has a limited range of built-in types (https://www.w3.org/TR/xmlschema11-2/). The following requirements provide standard XML representations of additional types required across all requirements within this specification.
+
+A DateTime is encoded as an XML element defined as one of three elements of type "data", "time", "dataTime".
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/xmlbasetype/datetime
+
+Each DateTime value shall be encoded as an XML element of one of three types "data", "time", "dataTime", while the type of "data" is xs:data, the type of "time" is xs:time and the type of "dataTime" is xs:dataTime.
+|===
+
+Examples:
+
+ a) 2022-08-08T08:08:00.00+08:00
+ b) 2022-08-08T08:08:00.00Z
+ c) 2022-08-08
+ d) 12:34:56
+ e) 12:34:56.123
+
+A NamedValue is encoded as an XML element with two elements named “key” and “value”.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/xmlbasetype/namedvalue
+
+Each NamedValue value shall be encoded as an XML element with elements "key" and "value", while the type of "key" is CharacterString.
+|===
+
+Examples:
+
+ a) <key>forest</key>
+    <value>RGB(0,255,255)</value>
+
+ b) <key>precision</key>
+    <value>0.8</value>

@@ -1,0 +1,16 @@
+== Overview
+
+This standard defines a XML-based serialization syntax for geospatial training datasets. While other serialization forms are possible, such alternatives are not discussed in this document.
+
+When serialized, absent properties in XML are typically represented by leaving the corresponding elements empty, without any content. Alternatively, certain XML-based formats may use attributes to signify the absence of a property. These representations convey semantic equivalence. An empty or missing element signifies that no value has been assigned, distinct from the interpretation that the provided value is empty or nil.
+
+XML employs a formal class model through the use of elements and attributes, allowing for a more structured representation of data. XML documents are hierarchical in nature, composed of nested elements that can contain both data and metadata.
+
+A training dataset document conforming to this standard is an XML document whose root element is an AI_TrainingDataset element.
+
+
+=== Extensible Markup Language
+
+Extensible Markup Language (XML) is a versatile and widely used markup language designed for encoding documents in a format that is both human-readable and machine-readable. It provides a set of rules for defining custom markup languages and is often employed for representing structured data in a hierarchical and platform-independent manner. XML documents consist of elements, attributes, and text content organized within a tree-like structure. Elements are enclosed within tags, and attributes provide additional information about the elements.
+
+XML has widespread applicability and is utilized in various domains, including web development, data interchange, configuration files, and more. Its flexibility allows users to define their own document structures, making it suitable for a broad range of applications. XML is supported by many programming languages and technologies, contributing to its interoperability and adoption.

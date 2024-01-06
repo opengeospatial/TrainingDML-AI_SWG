@@ -1,0 +1,71 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/geospatialtype
+|Dependency |XML
+|Dependency |GML
+|Requirement |/req/geospatialtype/feature
+|===
+
+The encoding of Feature follows GML for Feature.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/geospatialtype/feature
+
+Each Feature value shall be encoded using the GML feature encoding defined by OpenGIS in GML Section 3.2:
+
+http://www.opengis.net/gml/3.2
+|===
+
+Examples:
+
+ a)	<gml:metaDataProperty>
+	    <gml:GenericMetaData>
+		    <truncated>0.0</truncated>
+		    <occluded>0</occluded>
+		    <alpha>-0.2</alpha>
+	    </gml:GenericMetaData>
+    </gml:metaDataProperty>
+    <gml:location>
+	    <gml:GeometricComplex>
+		    <gml:element>
+			    <gml:Polygon>
+			    	<gml:exterior>
+				    	<gml:LinearRing>
+					    	<gml:posList>
+					    		51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+						    </gml:posList>
+					    </gml:LinearRing>
+			    	</gml:exterior>
+			    </gml:Polygon>
+		    </gml:element>
+	    </gml:GeometricComplex>
+    </gml:location>
+
+ b)	<gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <iscrowd>0</iscrowd>
+            <area>2580</area>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+    <gml:location>
+        <gml:GeometricComplex>
+            <gml:element>
+                <gml:Polygon>
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                274 1602 273 1603 272 1603 271 1603 270 1604 269 1604 268 1604 267 1604 266 1605 265 1605 264 1605 263 1606 262 1606 261 1606 260 1607 259 1607 258 1607 257 1608 256 1608 255 1608 254 1609 253 1610 252 1611 251 1611
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </gml:element>
+        </gml:GeometricComplex>
+    </gml:location>
+    <gml:boundedBy>
+        <gml:Envelope>
+            244 1602 306 1653
+        </gml:Envelope>
+    </gml:boundedBy>

@@ -1,0 +1,51 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/aitdchangeset
+|Dependency |XML
+|Dependency |/req/base/xmlbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/tdtrainingdata
+|Requirement |/req/aitdchangeset/tdchangeset
+|===
+
+An AI_TDChangeset object is encoded as an XML element with properties shown in Table 17.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/aitdchangeset/tdchangeset
+
+Each AI_TDChangeset object shall implement the properties shown in Table 17.
+|===
+
+.AI_ TDChangeset properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the TD changeset object. |"AI_TDChangeset" |Mandatory
+|id |Identifier of the changeset. |CharacterString [1..1] |Mandatory
+|datasetId |Identifier of the training dataset the changeset belongs to. |CharacterString [0..1] |Optional
+|version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
+|changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
+|createdTime |Created time of the changeset. |DateTime [0..1] |Optional
+|add |Added training samples. |AI_TrainingData [0..*] |Optional
+|modify |Modified training samples. |AI_TrainingData [0..*] |Optional
+|delete |Deleted training samples. |AI_TrainingData [0..*] |Optional
+|===
+
+Example:
+
+   <type>AI_TDChangeset</type>
+   <id>changeset-dota_v1.5</id>
+   <datasetId>dota_v1.5</datasetId>
+   <createdTime>2019-01-01</createdTime>
+   <changeCount>9</changeCount>
+   <modify>
+      <type>EOTrainingData</type>
+      <id>P1228</id>
+      <dataSources>GF</dataSources>
+      <dataURL>train/images/P1228.png</dataURL>
+      <numberOfLabels>50</numberOfLabels>
+      <trainingType>training</trainingType>
+      <labels>...</labels>
+   </modify>

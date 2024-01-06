@@ -1,0 +1,59 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/aitask
+|Dependency |XML
+|Dependency |/req/base/xmlbasetype
+|Dependency |/req/base/isometadatatype
+|Requirement |/req/aitask/task
+|Requirement |/req/aitask/eotask
+|===
+
+An AI_Task object is encoded as an XML element with properties shown in Table 7.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/aitask/task
+
+Each AI_Task object shall implement the properties shown in Table 7.
+|===
+
+.AI_Task properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the task object. |"AI_AbstractTask" |Mandatory
+|id |Identification of the task. |CharacterString [1..1] |Mandatory
+|datasetId |Identification of the training dataset the training sample belongs to. |CharacterString [0..1] |Optional
+|description |Description of the AI task. |CharacterString [0..1] |Optional
+|===
+
+Example:
+
+   <type>AI_AbstractTask</type>
+   <id>image-indexing-task</id>
+   <description>Structural high-resolution satellite image indexing</description>
+
+An AI_EOTask object is encoded as an XML element with properties both shown in Table 7 and Table 8.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/aitask/task
+
+Each AI_EOTask object shall implement the properties shown in Table 7 and Table 8.
+|===
+
+.AI_EOTask properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the task object. |"AI_EOTask" |Mandatory
+|taskType |Type of the EO task. |CharacterString [1..1] |Mandatory
+|===
+
+Example:
+
+   <type>AI_EOTask</type>
+   <id>image-indexing-task</id>
+   <description>Structural high-resolution satellite image indexing</description>
+   <taskType>Scene Classification</taskType>

@@ -1,0 +1,23 @@
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/aidataquality/classbalancedegree
+
+Each AI_ClassBalanceDegree object shall implement the properties shown in Table 16.
+|===
+
+.AI_ ClassBalanceDegree properties
+[width="100%",cols="25%,25%,25%,25%",options="header",]
+|===
+|XML Property |Definition |Data type and values |Obligation
+|type |Type of the class balance degree object. |"AI_ClassBalanceDegree" |Mandatory
+|measure |Reference to measure used. |MeasureReference [1..1] |Mandatory
+|evaluationMethod |Evaluation information. |EvaluationMethod [1..1] |Mandatory
+|result |Value obtained from applying a data quality measure. |QualityResult [1..*] |Mandatory
+|===
+
+Example:
+
+  <type>AI_ClassBalanceDegree</type>
+  <measure>Balance degree of label classes</measure>
+  <evaluationMethod>Counting the number of training samples belonging to each class and calculating the balance degree</evaluationMethod>
+  <result>0.935</result>

@@ -1,0 +1,91 @@
+[width="100%",cols="15%,85%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/base/isometadatatype
+|Dependency |XML
+|Requirement |/req/base/isometadatatype/band
+|Requirement |/req/base/isometadatatype/extent
+|Requirement |/req/base/isometadatatype/citation
+|Requirement |/req/base/isometadatatype/scope
+|===
+
+An MD_Band is encoded as a text string or an XML element.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/isometadatatype/band
+
+Each MD_Band value shall be encoded as a text string or an XML element matching the XML Schema type:
+
+https://schemas.isotc211.org/19115/-1/mrc/1.3.0/mrc/#element_MD_Band
+|===
+
+Examples:
+
+ a)	red
+ b)	B4
+ c) <mrc:boundMax>690</mrc:boundMax>
+    <mrc:boundMin>630</mrc:boundMin>
+    <mrc:boundUnits>nm</mrc:boundUnits>
+
+An EX_Extent is encoded as a text string or an XML element.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/isometadatatype/extent
+
+Each EX_Extent value shall be encoded as a text string or an XML element matching the XML Schema type: 
+
+https://schemas.isotc211.org/19115/-1/gex/1.3.0/gex/#element_EX_Extent
+|===
+
+Examples:
+
+ a)	120.0 30.0 130.0 40.0
+ b)	120.0 30.0 10.0 130.0 40.0 20.0
+ c) <geographicElement>
+        <westBoundLongitude>-171.76409</westBoundLongitude>
+        <eastBoundLongitude>-157.86768</eastBoundLongitude>
+        <southBoundLatitude>-14.42443</southBoundLatitude>
+        <northBoundLatitude>21.31573</northBoundLatitude>
+    </geographicElement>
+
+A CI_Citation is encoded as a text string or an XML element.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/isometadatatype/citation
+
+Each CI_Citation value shall be encoded as a text string or an XML element matching the XML Schema type: 
+
+https://schemas.isotc211.org/19115/-1/cit/1.3.0/cit/#element_CI_Citation
+|===
+
+Examples:
+
+ a)	http://www.opengeospatial.org
+ b)	<cit:title>Open Geospatial Consortium</cit:title>
+    <cit:alternateTitle>OGC</cit:alternateTitle> 
+    <cit:identifier>
+        <cit:code>
+            https://portal.ogc.org/files/?artifact_id=104605&version=1
+        </cit:code>
+    </cit:identifier>
+
+An MD_Scope is encoded as an XML element.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement |/req/base/isometadatatype/scope
+
+Each MD_Scope value shall be encoded as an XML element matching the XML Schema type: 
+
+https://schemas.isotc211.org/19115/-1/mcc/1.3.0/mcc/#element_MD_Scope
+|===
+
+Example:
+
+    <mcc:level>dataset</mcc:level>
+    <mcc:levelDescription>
+        <mcc:dataset>whu_rs19</mcc:dataset>
+    </mcc:levelDescription>

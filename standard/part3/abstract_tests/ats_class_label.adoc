@@ -1,0 +1,12 @@
+[width="100%",cols="25%,10%,55%",]
+|===
+|Conformance Class 2+|/conf/ailabel
+|Requirements 2+|/req/ailabel
+|Dependency 2+|An XML Schema Validator
+.3+|Test
+|Test purpose |Verify that the label objects are encoded using the specified property names and structures.
+|Test method |Validate the XML instance document using the appropriate object definition from the TraningDML-AI.xsd XML Schema.
+
+Pass if no errors reported. Fail otherwise.
+|Test type |Capability
+|===

@@ -1,0 +1,70 @@
+== Requirements for TrainingDML-AI XML Encoding
+
+=== Requirements Class: base
+
+==== Requirements Class: XML base type
+
+This requirements class defines the base requirements for XML encodings, which includes definitions of common types used in the TrainingDML-AI XML encoding.
+
+include::requirements/requirements_xml_base_type.adoc[]
+
+==== Requirements Class: ISO metadata type
+
+This requirement class defines the requirements for XML encoding of ISO metadata types.
+
+include::requirements/requirements_iso_metadata_type.adoc[]
+
+==== Requirements Class: ISO quality type
+
+This requirement class defines the requirements for XML encoding of ISO quality types.
+
+include::requirements/requirements_iso_quality_type.adoc[]
+
+
+==== Requirements Class: geospatial type
+
+This requirement class defines the requirements for XML encoding of geospatial types.
+
+include::requirements/requirements_iso_geospatial_type.adoc[]
+
+=== Requirements Class: AI_TrainingDataset
+
+This requirements class defines a XML encoding for AI_TrainingDataset module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_trainingdataset.adoc[]
+
+=== Requirements Class: AI_TrainingData
+
+This requirements class defines an XML encoding for AI_TrainingData module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_trainingdata.adoc[]
+
+=== Requirements Class: AI_Task
+
+This requirements class defines a XML encoding for AI_Task module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_task.adoc[]
+
+=== Requirements Class: AI_Label
+
+This Requirements class defines an XML encoding for AI_Label module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_label.adoc[]
+
+=== Requirements Class: AI_Labeling
+
+This requirements class defines a XML encoding for AI_Labeling module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_labeling.adoc[]
+
+=== Requirements Class: AI_DataQuality
+
+An AI_ClassBalanceDegree object is encoded as an XML element with properties shown in Table 16.
+
+include::requirements/requirements_ai_dataquality.adoc[]
+
+=== Requirements Class: AI_TDChangeset
+
+This requirements class defines an XML encoding for AI_TDChangeset module, which is based on the current version of the UML model presented in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+include::requirements/requirements_ai_tdchangeset.adoc[]
