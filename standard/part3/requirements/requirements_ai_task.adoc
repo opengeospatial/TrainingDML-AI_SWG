@@ -38,7 +38,7 @@ An AI_EOTask object is encoded as an XML element with properties both shown in T
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitask/task
+|Requirement |/req/aitask/eotask
 
 Each AI_EOTask object shall implement the properties shown in Table 7 and Table 8.
 |===
