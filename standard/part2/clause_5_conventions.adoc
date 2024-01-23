@@ -4,7 +4,7 @@ This section provides details and examples for any conventions used in the docum
 
 === Identifiers
 
-The normative provisions in this specification are denoted by the URI:
+The normative provisions in this Standard are denoted by the URI:
 
 http://www.opengis.net/spec/TrainingDML-AI-2/1.0
 
@@ -25,3 +25,4 @@ In this document the following abbreviations and acronyms are used or introduced
 * TD -- Training Data
 * UML -- Unified Modelling Language
 * XML -- Extensible Markup Language
+* UTC -- Coordinated Universal Time

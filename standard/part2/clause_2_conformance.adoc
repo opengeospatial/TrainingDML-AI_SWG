@@ -1,6 +1,6 @@
 == Conformance
 
-This Standard defines a JSON encoding for AI training datasets. The standardization targets for this Standard is:
+This Standard defines a JSON encoding for AI training datasets. The standardization target for this Standard is:
 
 * TrainingDML-AI JSON Encoding Schema
 

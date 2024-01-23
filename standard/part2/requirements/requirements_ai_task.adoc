@@ -5,17 +5,17 @@
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
-|Requirement |/req/aitask/task
-|Requirement |/req/aitask/eotask
+|Requirement 17 |/req/aitask/task
+|Requirement 18 |/req/aitask/eotask
 |===
 
-An AI_Task object is encoded as a JSON object with properties shown in Table 8.
+The AI_Task object is encoded as a JSON object with properties as shown in Table 7.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitask/task
+|Requirement 17 |/req/aitask/task
 
-Each AI_Task object shall implement the properties shown in Table 8.
+Each AI_Task object SHALL implement the Mandatory properties shown in Table 7.
 |===
 
 .AI_Task properties
@@ -36,13 +36,13 @@ Example:
     "description": "Structural high-resolution satellite image indexing"
  }
 
-An AI_EOTask object is encoded as a JSON object with properties both shown in Table 8 and Table 9.
+The AI_EOTask object is encoded as a JSON object with properties both shown in Table 7 and Table 8.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitask/task
+|Requirement 18 |/req/aitask/eotask
 
-Each AI_EOTask object shall implement the properties shown in Table 8 and Table 9.
+Each AI_EOTask object SHALL implement the Mandatory properties shown in Table 7 and Table 8.
 |===
 
 .AI_EOTask properties

@@ -1,8 +1,8 @@
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aidataquality/classbalancedegree
+|Requirement 26 |/req/aidataquality/classbalancedegree
 
-Each AI_ClassBalanceDegree object shall implement the properties shown in Table 17.
+Each AI_ClassBalanceDegree object SHALL implement the Mandatory properties as shown in Table 16.
 |===
 
 .AI_ ClassBalanceDegree properties

@@ -3,49 +3,50 @@
 2+|*Requirements class* 
 2+|/req/base/jsonbasetype 
 |Dependency |JSON
-|Requirement |/req/base/jsonbasetype/json
-|Requirement |/req/base/jsonbasetype/datetime
-|Requirement |/req/base/jsonbasetype/namedvalue
-|Requirement |/req/base/jsonbasetype/url
+|Requirement 1 |/req/base/jsonbasetype/json
+|Requirement 2 |/req/base/jsonbasetype/datetime
+|Requirement 3 |/req/base/jsonbasetype/namedvalue
+|Requirement 4 |/req/base/jsonbasetype/url
 |===
 
 The first requirement is that a TrainingDML-AI JSON document is a valid JSON document.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/jsonbasetype/json
+|Requirement 1 |/req/base/jsonbasetype/json
 
-An instance shall be a conformant JSON document, as defined in ECMA-404
+An instance SHALL be a conformant JSON document, as defined in ECMA-404
 |===
 
 JSON has a limited range of built-in types (http://json.org/). The following requirements provide standard JSON representations of additional types required across all requirements within this specification.
 
-A DateTime is encoded as a text string.
+The DateTime is encoded as a text string.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/jsonbasetype/datetime
+|Requirement 2 |/req/base/jsonbasetype/datetime
 
-Each DateTime value shall be encoded as a text string defined in RFC 3339 Section 5.6:
+Each DateTime value SHALL be encoded as a text string defined in Date and Time on the Internet: Timestamps https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6].
 
-https://datatracker.ietf.org/doc/html/rfc3339#section-5.6
+RFC 3339 is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
+
+The specification of date and time in any JSON encoding of training set data SHALL be specified in UTC.
 |===
 
 Examples:
 
- a) "2022-08-08T08:08:00.00+08:00"
- b) "2022-08-08T08:08:00.00Z"
- c) "2022-08-08"
- d) "12:34:56"
- e) "12:34:56.123"
+ a) "2022-08-08T08:08:00.00Z"
+ b) "2022-08-08"
+ c) "12:34:56"
+ d) "12:34:56.123"
 
-A NamedValue is encoded as a JSON object with two properties named "key" and "value".
+The NamedValue is encoded as a JSON object with two properties named "key" and "value".
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/jsonbasetype/namedvalue
+|Requirement 3 |/req/base/jsonbasetype/namedvalue
 
-Each NamedValue value shall be encoded as a JSON object with properties "key" and "value", while the value of property "key" is a text string.
+Each NamedValue value SHALL be encoded as a JSON object with properties "key" and "value", while the value of property "key" is a text string.
 |===
 
 Examples:
@@ -53,15 +54,13 @@ Examples:
  a) {"key": "forest", "value": "RGB(0,255,255)"}
  b) {"key": "precision", "value": 0.8}
 
-A URL is encoded as a text string.
+The URL is encoded as a text string.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/jsonbasetype/url
+|Requirement 4 |/req/base/jsonbasetype/url
 
-Each URL value shall be encoded as a text string defined in RFC 3986 Section 4.1:
-
-https://datatracker.ietf.org/doc/html/rfc3986#section-4.1
+Each URL value SHALL be encoded as a text string defined in Uniform Resource Identifier (URI): Generic Syntax https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1].
 |===
 
 Examples:

@@ -4,21 +4,19 @@
 2+|/req/base/geospatialtype
 |Dependency |JSON
 |Dependency |GeoJSON
-|Requirement |/req/geospatialtype/feature
+|Requirement 10 |/req/geospatialtype/feature
 |===
 
-The encoding of Feature follows GeoJSON for Feature, with object members of "type", "geometry" and "properties".
+The encoding of one or more features follows the GeoJSON RFC rules for encoding a Feature object, with members “type”, “geometry” and “properties”. A Feature object represents a spatially bounded thing.  Every Feature object is a GeoJSON object no matter where it occurs in a GeoJSON text. https://datatracker.ietf.org/doc/html/rfc7946[RFC 7946]
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/geospatialtype/feature
+|Requirement 10 |/req/geospatialtype/feature
 
-Each Feature value shall be encoded using the GeoJSON feature encoding defined in RFC 7946 Section 3.2:
-
-https://datatracker.ietf.org/doc/html/rfc7946#section-3.2
+Each Feature value SHALL be encoded using the GeoJSON feature encoding defined in The GeoJSON Format https://datatracker.ietf.org/doc/html/rfc7946#section-3.2[RFC 7946 Section 3.2].
 |===
 
-Examples:
+Examples of Feature encodings are:
 
  a)	{"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.0, 30.0]}, "properties": {"class": "station"}}
  b)	{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[120.0, 30.0], [130.0, 40.0]]}, "properties": {"class": "road"}}

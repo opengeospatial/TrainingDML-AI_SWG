@@ -41,7 +41,7 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 [[javascript-object-notation-definition]]
 === JavaScript Object Notation (JSON)
 
-is a lightweight, text-based, language-independent syntax for defining data interchange formats. It was derived from the ECMAScript programming language, but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.
+is a lightweight, text-based, language-independent syntax for defining data interchange formats. It was derived from the ECMAScript programming language but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.
 
 SOURCE: ECMA-404 The JSON data interchange syntax 2nd edition, December 2017
 
@@ -51,3 +51,8 @@ SOURCE: ECMA-404 The JSON data interchange syntax 2nd edition, December 2017
 is a vocabulary that allows you to annotate and validate JSON documents.
 
 SOURCE: https://json-schema.org/
+
+[[publisher-definition]]
+=== Publisher
+
+refers to the entity or individual responsible for creating and releasing the JSON-based serialization syntax for geospatial training datasets, as defined in the TrainingDML-AI Part 2: JSON Encoding Standard.

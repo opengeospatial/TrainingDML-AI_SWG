@@ -1,6 +1,6 @@
 {
     "type": "AI_TextTrainingDataset",
-    "id": "scirec",
+    "id": "scierc",
     "name": "Scientific Information Extractor",
     "description": "This dataset includes annotations for all three tasks and develop a unified framework called Scientific Information Extractor (SCIIE)",
     "license": "CC BY 4.0",

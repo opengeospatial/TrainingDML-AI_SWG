@@ -5,21 +5,21 @@
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
-|Requirement |/req/ailabeling/labeling
-|Requirement |/req/ailabeling/labeler
-|Requirement |/req/ailabeling/labelingprocedure
+|Requirement 23 |/req/ailabeling/labeling
+|Requirement 24 |/req/ailabeling/labeler
+|Requirement 25 |/req/ailabeling/labelingprocedure
 |===
 
-An AI_Labeling object is encoded as a JSON object with properties shown in Table 14.
+The AI_Labeling object is encoded as a JSON object with properties shown in Table 13.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabeling/labeling
+|Requirement 23 |/req/ailabeling/labeling
 
-Each AI_Labeling object shall implement the properties shown in Table 14.
+Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 13.
 |===
 
-.AI_ Labeling properties
+.AI_Labeling properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
@@ -45,16 +45,16 @@ Example:
     "procedure": {..}
  }
 
-An AI_Labeler object is encoded as a JSON object with properties shown in Table 15.
+The AI_Labeler object is encoded as a JSON object with properties as shown in Table 14.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabeling/labeler
+|Requirement 24 |/req/ailabeling/labeler
 
-Each AI_Labeler object shall implement the properties shown in Table 15.
+Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 14.
 |===
 
-.AI_ Labeler properties
+.AI_Labeler properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
@@ -71,23 +71,23 @@ Example:
     "name": "Tom"
  }
 
-An AI_LabelingProcedure object is encoded as a JSON object with properties shown in Table 16.
+An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in Table 15.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabeling/labelingprocedure
+|Requirement 25 |/req/ailabeling/labelingprocedure
 
-Each AI_LabelingProcedure object shall implement the properties shown in Table 16.
+Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown in Table 15.
 |===
 
-.AI_ LabelingProcedure properties
+.AI_LabelingProcedure properties
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the labeling procedure object. |"AI_LabelingProcedure" |Mandatory
 |id |Identifier of the labeling procedure. |CharacterString [1..1] |Mandatory
 |methods |Methods used in the labeling procedure. |CharacterString [1..*] |Mandatory
-|tools |Tools or software used in the labeling procedure. |CharacterString [0..1] |Optional
+|tools |Tools or software used in the labeling procedure. |CharacterString [0..*] |Optional
 |===
 
 Example:

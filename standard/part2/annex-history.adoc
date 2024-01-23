@@ -5,7 +5,7 @@
 [width="100%",cols="15%,15%,15%,15%,40%",options="header"]
 |===
 |Date |Release |Author | Paragraph modified |Description
-| | | | |
-| | | | |
-| | | | |
+|2023-07-28 |0.1 |Peng Yue, Ruixiang Liu, Boyi Shangguan |All |Draft for internal review.
+|2023-12-15 |0.2 |Peng Yue, Ruixiang Liu, Jim Antonisse |Most |Revisions based on comments from Jim Antonisse.
+|2024-01-23 |0.3 |Peng Yue, Ruixiang Liu, Carl Reed |Most |Merge edits and comments from Carl Reed.
 |===

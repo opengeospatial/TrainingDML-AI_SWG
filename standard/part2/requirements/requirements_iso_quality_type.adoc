@@ -3,16 +3,16 @@
 2+|*Requirements class* 
 2+|/req/base/isoqualitytype
 |Dependency |JSON
-|Requirement |/req/base/isoqualitytype/element
+|Requirement 9 |/req/base/isoqualitytype/element
 |===
 
-A QualityElement object is encoded as a JSON object with properties shown in Table 1.
+The QualityElement object is encoded as a JSON object with properties shown in Table 1.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/base/isoqualitytype/element
+|Requirement 9 |/req/base/isoqualitytype/element
 
-Each QualityElement value shall be encoded as a JSON object with properties shown in Table 1.
+Each QualityElement value SHALL be encoded as a JSON object with properties shown in Table 1.
 |===
 
 .QualityElement properties
@@ -33,7 +33,7 @@ Example:
        "measureDescription": "Percentage of training samples with inconsistent image format"
     },
     "evaluationMethod": {
-       "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with inconsistent format"
+       "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with an inconsistent format"
     },
     "result": [
        {

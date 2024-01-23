@@ -6,16 +6,16 @@
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
 |Dependency |/req/tdtrainingdata
-|Requirement |/req/aitdchangeset/tdchangeset
+|Requirement 27 |/req/aitdchangeset/tdchangeset
 |===
 
-An AI_TDChangeset object is encoded as a JSON object with properties shown in Table 21.
+The AI_TDChangeset object is encoded as a JSON object with properties shown in Table 17.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitdchangeset/tdchangeset
+|Requirement 27 |/req/aitdchangeset/tdchangeset
 
-Each AI_TDChangeset object shall implement the properties shown in Table 21.
+Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in Table 17.
 |===
 
 .AI_ TDChangeset properties
@@ -27,7 +27,7 @@ Each AI_TDChangeset object shall implement the properties shown in Table 21.
 |datasetId |Identifier of the training dataset the changeset belongs to. |CharacterString [0..1] |Optional
 |version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
 |changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
-|createdTime |Created time of the changeset. |DateTime [0..1] |Optional
+|createdTime |The time that the changeset was created. |DateTime [0..1] |Optional
 |add |Added training samples. |AI_TrainingData [0..*] |Optional
 |modify |Modified training samples. |AI_TrainingData [0..*] |Optional
 |delete |Deleted training samples. |AI_TrainingData [0..*] |Optional
@@ -41,5 +41,5 @@ Example:
     "datasetId": "dota_v1.5",
     "createdTime": "2019-01-01",
     "changeCount": 9, 
-    "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": ["GF"], "dataURL": "train/images/P1228.png", "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
+    "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": ["GF"], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
  }

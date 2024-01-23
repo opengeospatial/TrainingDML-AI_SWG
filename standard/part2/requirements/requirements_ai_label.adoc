@@ -12,13 +12,13 @@
 |Requirement |/req/ailabel/pixellabel
 |===
 
-An AI_Label object is encoded as a JSON object with properties shown in Table 10.
+The AI_Label object is encoded as a JSON object with properties as shown in Table 9.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabel/label
+|Requirement 19 |/req/ailabel/label
 
-Each AI_Label object shall implement the properties shown in Table 10.
+Each AI_Label object SHALL implement the Mandatory properties shown in Table 9.
 |===
 
 .AI_Label properties
@@ -26,8 +26,14 @@ Each AI_Label object shall implement the properties shown in Table 10.
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the label object. |"AI_AbstractLabel" |Mandatory
-|isNegative |Whether the training sample related to the label is a positive or negative sample. |bool [0..1] |Optional
-|confidence |Confidence score of the labeler.  |Float [0..1] |Optional
+|isNegative |Whether the training sample related to the label is a positive or negative sample. |Bool [0..1] 
+
+Default: false |Optional
+|confidence |Confidence score of the labeler.  |Float [0..1] 
+
+Default: 1.0 
+
+Range: [0, 1] |Optional
 |===
 
 Example:
@@ -37,13 +43,13 @@ Example:
     "isNegative": false
  }
 
-An AI_SceneLabel object is encoded as a JSON object with properties shown in Table 11.
+The AI_SceneLabel object is encoded as a JSON object with properties as shown in Table 10.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabel/scenelabel
+|Requirement 20 |/req/ailabel/scenelabel
 
-Each AI_SceneLabel object shall implement the properties shown in Table 11.
+Each AI_SceneLabel object SHALL implement the properties shown in Table 10.
 |===
 
 .AI_SceneLabel properties
@@ -61,13 +67,13 @@ Example:
     "class": "Airport"
  }
 
-An AI_ObjectLabel object is encoded as a JSON object with properties shown in Table 12.
+The AI_ObjectLabel object is encoded as a JSON object with properties shown in Table 11.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabel/objectlabel
+|Requirement 21 |/req/ailabel/objectlabel
 
-Each AI_ObjectLabel object shall implement the properties shown in Table 12.
+Each AI_ObjectLabel object SHALL implement the Mandatory properties shown in Table 11.
 |===
 
 .AI_ObjectLabel properties
@@ -75,7 +81,7 @@ Each AI_ObjectLabel object shall implement the properties shown in Table 12.
 |===
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the label object at the object level. |"AI_ObjectLabel" |Mandatory
-|object |Feature that represents the position and attributes of the object.  |Feature [0..1] |Optional
+|object |Feature that represents the position and attributes of the object.  |Feature [1..1] |Mandatory
 |bboxType |Type of the bbox. |CharacterString [0..1] |Optional
 |class |Class that records the semantic of the object type. |CharacterString [1..1] |Mandatory
 |dateTime |Created time of the object label. |DateTime [0..1] |Optional
@@ -90,13 +96,13 @@ Example:
     "bboxType": "Horizontal BBox", 
  }
 
-An AI_PixelLabel object is encoded as a JSON object with properties shown in Table 13.
+The AI_PixelLabel object is encoded as a JSON object with properties as shown in Table 12.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/ailabel/pixellabel
+|Requirement 22 |/req/ailabel/pixellabel
 
-Each AI_PixelLabel object shall implement the properties shown in Table 13.
+Each AI_PixelLabel object shall implement the Mandatory properties shown in Table 12.
 |===
 
 .AI_PixelLabel properties
@@ -105,13 +111,13 @@ Each AI_PixelLabel object shall implement the properties shown in Table 13.
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the label object at the pixel level. |"AI_PixelLabel" |Mandatory
 |imageURL |URL of the images representing the label information. |URL [1..*] |Mandatory
-|imageFormat |Image data format. |CharacterString [1..1] |Mandatory
+|imageFormat |Image data format. |CharacterString [1..*] |Mandatory
 |===
 
 Example:
 
  {
     "type": "AI_PixelLabel",
-    "imageURL": "/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif",
-    "imageFormat": "image/tiff"
+    "imageURL": ["/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif"],
+    "imageFormat": ["image/tiff"]
  }

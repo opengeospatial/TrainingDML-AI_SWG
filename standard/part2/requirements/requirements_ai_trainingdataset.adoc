@@ -10,18 +10,18 @@
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
 |Dependency |/req/aitdchangeset
-|Requirement |/req/aitrainingdataset/trainingdataset
-|Requirement |/req/aitrainingdataset/metricsinliterature
-|Requirement |/req/aitrainingdataset/eotrainingdataset
+|Requirement 11 |/req/aitrainingdataset/trainingdataset
+|Requirement 12 |/req/aitrainingdataset/metricsinliterature
+|Requirement 13 |/req/aitrainingdataset/eotrainingdataset
 |===
 
-An AI_TrainingDataset object is encoded as a JSON object with properties shown in Table 2.
+The AI_TrainingDataset object is encoded as a JSON object with properties shown in Table 2.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitrainingdataset/trainingdataset
+|Requirement 11 |/req/aitrainingdataset/trainingdataset
 
-Each AI_TrainingDataset object shall implement the properties shown in Table 2.
+Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in Table 2.
 |===
 
 .AI_TrainingDataset properties
@@ -35,24 +35,23 @@ Each AI_TrainingDataset object shall implement the properties shown in Table 2.
 |name |Name of the AI training dataset. |CharacterString [1..1] |Mandatory
 |description |Description of the AI training dataset. |CharacterString [1..1] |Mandatory
 |version |Version number of the AI training dataset. |CharacterString [0..1] |Optional
-|amountOfTrainingData |Total number of training samples in the AI training dataset. |Int [1..1] |Mandatory
+|amountOfTrainingData |Total number of training samples in the AI training dataset. |Int [0..1] |Optional
 |createdTime |Time when the AI training dataset was created. |DateTime [0..1] |Optional
 |updatedTime |Time when the AI training dataset was updated. |DateTime [0..1] |Optional
-|license |License description of the AI training dataset. |CharacterString [0..1] |Optional
+|license |License description of the AI training dataset. |CharacterString [1..1] |Mandatory
 |providers |People or organizations who provide the AI training dataset. |CharacterString [0..*] |Optional
 |keywords |Keywords of the AI training dataset. |CharacterString [0..*] |Optional
 |metricsInLIT |Results of performance metrics achieved by AI/ML algorithms in the peer-reviewed literature. |AI_MetricsInLiterature [0..*] |Optional
-|statisticsInfo |Statistics results of training samples in each class. |NamedValue [0..*] |Optional
-|dataSources |Citation of data sources. |CI_Citation [0..*] |Optional
-|numberOfClasses |Total number of classes in the AI training dataset. |Int [1..1] |Mandatory
-|classficationSchema |Classification schema for classes used in the AI training dataset. |CharacterString [0..1] |Optional
-|classes |Classes used in the AI training dataset. |NamedValue [1..1] |Mandatory
+|statisticsInfo |Statistical results for training samples in each class. |NamedValue [0..*] |Optional
+|dataSources |Citation for the data sources. |CI_Citation [0..*] |Optional
+|numberOfClasses |Total number of classes in the AI training dataset. |Int [0..1] |Optional
+|classificationSchema |Classification schema for classes used in the AI training dataset. |CharacterString [0..1] |Optional
+|classes |Classes used in the AI training dataset. |NamedValue [0..*] |Optional
 |tasks |Task description of the training dataset. |AI_Task [1..*] |Mandatory
 |labeling |Provenance information of how the training dataset is labeled. |AI_Labeling [0..*] |Optional
 |quality |Quality information of the training dataset. |DataQuality [0..*] |Optional
 |changesets |Changeset between two versions of the training dataset. |AI_TDChangeset [0..*] |Optional
 |data |Training data in the training dataset. |AI_TrainingData [1..*] |Mandatory
-|genericAttributes |Attributes of the training dataset that are not defined. |GenericAttribute [0..*] |Optional
 |===
 
 Example:
@@ -69,16 +68,16 @@ Example:
     "numberOfClasses": 19,
     "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
     "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-    "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
+    "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
  }
 
-An AI_MetricsInLiterature is encoded as JSON object with properties shown in Table 3.
+If the optional element AI_MetricsInLiterature is specified, this element is encoded as JSON object with properties as shown in Table 3.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitrainingdataset/metricsinliterature
+|Requirement 12 |/req/aitrainingdataset/metricsinliterature
 
-Each AI_MetricsInLiterature value shall implement the properties shown in Table 3.
+Each AI_MetricsInLiterature value SHALL implement the Mandatory properties shown in Table 3.
 |===
 
 .AI_MetricsInLiterature properties
@@ -98,13 +97,13 @@ Example:
     "metrics": [{"key": "Overall Accuracy", "value": 0.9881}]
  }
 
-An AI_EOTrainingDataset object is encoded as a JSON object with properties shown in Table 2 and Table 4.
+The AI_EOTrainingDataset object is encoded as a JSON object with properties shown in Table 2 and Table 4.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement |/req/aitrainingdataset/eotrainingdataset
+|Requirement 13 |/req/aitrainingdataset/eotrainingdataset
 
-Each AI_EOTrainingDataset object shall implement the properties both shown in Table 2 and Table 4.
+Each AI_EOTrainingDataset object SHALL implement the Mandatory properties both shown in Table 2 and Table 4.
 |===
 
 .AI_EOTrainingDataset properties
@@ -134,5 +133,5 @@ Example:
     "imageSize": "6000x7600",
     "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
     "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": "image/Airport/airport_01.jpg", "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
+    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }
