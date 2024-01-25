@@ -8,17 +8,18 @@
 |Dependency |/req/ailabel
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
-|Requirement |/req/aitrainingdata/trainingdata
-|Requirement |/req/aitrainingdata/eotrainingdata
+|Requirement 13|/req/aitrainingdata/trainingdata
+|Requirement 14|/req/aitrainingdataset/trainingtypecode
+|Requirement 15|/req/aitrainingdata/eotrainingdata
 |===
 
-An AI_TrainingData object is encoded as an XML element with properties shown in Table 5.
+The AI_TrainingData object is encoded as an XML element with properties shown in Table 5.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/aitrainingdataset/trainingdata
+|Requirement 13|/req/aitrainingdataset/trainingdata
 
-Each AI_TrainingData object shall implement the properties shown in Table 5.
+Each AI_TrainingData object SHALL implement the Mandatory properties shown in Table 5.
 |===
 
 .AI_TrainingData properties
@@ -47,13 +48,13 @@ Example:
       <class>Airport</class>
    </labels>
 
-An AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.
+The AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/aitrainingdataset/trainingtypecode
+|Requirement 14|/req/aitrainingdataset/trainingtypecode
 
-Each AI_TrainingTypeCode value shall be a text string whose value is one of "training", "validation" or "test".
+Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation” or “test”.
 |===
 
 Examples:
@@ -62,13 +63,13 @@ Examples:
  b)	validation
  c)	test
 
-An AI_EOTrainingData object is encoded as an XML element with properties both shown in Table  and Table 6.
+The AI_EOTrainingData object is encoded as an XML element with properties both shown in Table  and Table 6.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/aitrainingdataset/eotrainingdata
+|Requirement 15|/req/aitrainingdataset/eotrainingdata
 
-Each AI_EOTrainingData object shall implement the properties both shown in Table 5 and Table 6.
+Each AI_EOTrainingData object SHALL implement the Mandatory properties as defined in Table 5 and Table 6.
 |===
 
 .AI_EOTrainingData properties

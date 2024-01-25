@@ -5,7 +5,7 @@
 |Dependency 2+|An XML Schema Validator
 .3+|Test
 |Test purpose |Verify that the TD changeset objects are encoded using the specified property names and structures.
-|Test method |Validate the XML instance document using the appropriate object definition from the TraningDML-AI.xsd XML Schema. 
+|Test method |Validate the XML instance document using the appropriate object definition from the TrainingDML-AI.xsd XML Schema. 
 
 Pass if no errors reported. Fail otherwise.
 |Test type |Capability

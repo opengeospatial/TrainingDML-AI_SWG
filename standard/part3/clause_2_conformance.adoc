@@ -1,6 +1,6 @@
 == Conformance
 
-This Standard defines an XML encoding for AI training datasets. The standardization targets for this Standard is:
+This Standard defines an XML encoding for AI training datasets. The standardization target for this Standard is:
 
 * TrainingDML-AI XML Encoding Schema
 

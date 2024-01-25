@@ -1,12 +1,12 @@
 == Overview
 
-This standard defines a XML-based serialization syntax for geospatial training datasets. While other serialization forms are possible, such alternatives are not discussed in this document.
+The TrainingDML - AI Part 3: XML Encoding Standard defines a XML-based serialization syntax for geospatial training datasets. While other serialization formats are possible, such alternatives are not discussed in this Standard.
 
 When serialized, absent properties in XML are typically represented by leaving the corresponding elements empty, without any content. Alternatively, certain XML-based formats may use attributes to signify the absence of a property. These representations convey semantic equivalence. An empty or missing element signifies that no value has been assigned, distinct from the interpretation that the provided value is empty or nil.
 
 XML employs a formal class model through the use of elements and attributes, allowing for a more structured representation of data. XML documents are hierarchical in nature, composed of nested elements that can contain both data and metadata.
 
-A training dataset document conforming to this standard is an XML document whose root element is an AI_TrainingDataset element.
+A training dataset document conforming to this Standard is an XML document whose root element is an "AI_TrainingDataset" element.
 
 
 === Extensible Markup Language

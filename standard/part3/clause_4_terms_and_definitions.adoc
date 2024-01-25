@@ -51,3 +51,7 @@ SOURCE: https://www.w3.org/XML/
 is a means for defining the structure, content and semantics of XML documents.
 
 SOURCE: https://www.w3.org/XML/Schema
+
+[[publisher-definition]]
+=== Publisher
+refers to the entity or individual responsible for creating and releasing the XML-based serialization syntax for geospatial training datasets, as defined in the TrainingDML-AI Part 3: XML Encoding Standard.

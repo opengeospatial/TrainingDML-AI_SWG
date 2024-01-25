@@ -6,44 +6,44 @@
 
 Conformance is tested using the XML Schema document which formalize the requirements described above.
 
-=== Conformance Class: base
+=== Conformance Class: Base
 
-This conformance class tests that occurrences of the basic types are encoded according to the requirements.
+The Base conformance class tests that occurrences of the basic types are encoded according to the requirements.
 
 include::abstract_tests/ats_class_base.adoc[]
 
 === Conformance Class: AI_TrainingDataset
 
-This conformance class tests the training dataset object is encoded according to the requirements.
+The AI_TrainingDataset conformance class tests that the training dataset object is encoded according to the requirements.
 
 include::abstract_tests/ats_class_trainingdataset.adoc[]
 
 === Conformance Class: AI_TrainingData
 
-This conformance class tests the training data objects are encoded according to the requirements.
+The AI_TrainingData conformance class tests that the training data objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_trainingdata.adoc[]
 
 === Conformance Class: AI_Task
 
-This conformance class tests the task objects are encoded according to the requirements.
+The AI_Task conformance class tests that the task objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_task.adoc[]
 
 === Conformance Class: AI_Label
 
-This conformance class tests the label objects are encoded according to the requirements.
+The AI_Label conformance class tests that the label objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_label.adoc[]
 
 === Conformance Class: AI_Labeling
 
-This conformance class tests the labeling objects are encoded according to the requirements.
+The AI_Labeling conformance class tests that the labeling objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_labeling.adoc[]
 
 === Conformance Class: AI_TDChangeset
 
-This conformance class tests the TD changeset objects are encoded according to the requirements.
+The AI_TDChangeset conformance class tests that the TD changeset objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_tdchangeset.adoc[]

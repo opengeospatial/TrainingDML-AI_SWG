@@ -3,16 +3,16 @@
 2+|*Requirements class* 
 2+|/req/base/isoqualitytype
 |Dependency |XML
-|Requirement |/req/base/isoqualitytype/element
+|Requirement 8|/req/base/isoqualitytype/element
 |===
 
-A QualityElement object is encoded as an XML element with properties shown in Table 1.
+The QualityElement object is encoded as an XML element with properties shown in Table 1.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/base/isoqualitytype/element
+|Requirement 8|/req/base/isoqualitytype/element
 
-Each QualityElement value shall be encoded as an XML element with properties shown in Table 1.
+Each QualityElement value SHALL be encoded as an XML element with properties shown in Table 1.
 |===
 
 .QualityElement properties
@@ -35,7 +35,7 @@ Example:
    </measure>
    <evaluationMethod>
       <evaluationMethodDescription>
-         Full test method to calculate the percentage of training samples with inconsistent format
+         Full test method to calculate the percentage of training samples with an inconsistent format
       </evaluationMethodDescription>
    </evaluationMethod>
    <result>

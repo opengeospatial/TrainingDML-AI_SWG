@@ -6,16 +6,16 @@
 |Dependency |/req/base/xmlbasetype
 |Dependency |/req/base/isometadatatype
 |Dependency |/req/tdtrainingdata
-|Requirement |/req/aitdchangeset/tdchangeset
+|Requirement 26|/req/aitdchangeset/tdchangeset
 |===
 
-An AI_TDChangeset object is encoded as an XML element with properties shown in Table 17.
+The AI_TDChangeset object is encoded as an XML element with properties shown in Table 17.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/aitdchangeset/tdchangeset
+|Requirement 26|/req/aitdchangeset/tdchangeset
 
-Each AI_TDChangeset object shall implement the properties shown in Table 17.
+Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in Table 17.
 |===
 
 .AI_ TDChangeset properties
@@ -27,7 +27,7 @@ Each AI_TDChangeset object shall implement the properties shown in Table 17.
 |datasetId |Identifier of the training dataset the changeset belongs to. |CharacterString [0..1] |Optional
 |version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
 |changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
-|createdTime |Created time of the changeset. |DateTime [0..1] |Optional
+|createdTime |The time that the changeset was created. |DateTime [0..1] |Optional
 |add |Added training samples. |AI_TrainingData [0..*] |Optional
 |modify |Modified training samples. |AI_TrainingData [0..*] |Optional
 |delete |Deleted training samples. |AI_TrainingData [0..*] |Optional

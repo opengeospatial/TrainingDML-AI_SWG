@@ -4,21 +4,21 @@
 2+|/req/base/geospatialtype
 |Dependency |XML
 |Dependency |GML
-|Requirement |/req/geospatialtype/feature
+|Requirement 9|/req/geospatialtype/feature
 |===
 
-The encoding of Feature follows GML for Feature.
+The encoding of one or more features follows GML for encoding a Feature element, with members “type”, “geometry” and “properties”. A Feature element represents a spatially bounded thing. Every Feature element is a GML element no matter where it occurs in a GML text.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
-|Requirement |/req/geospatialtype/feature
+|Requirement 9|/req/geospatialtype/feature
 
-Each Feature value shall be encoded using the GML feature encoding defined by OpenGIS in GML Section 3.2:
+Each Feature value SHALL be encoded using the GML feature encoding defined by OpenGIS in GML Section 3.2:
 
 http://www.opengis.net/gml/3.2
 |===
 
-Examples:
+Examples of Feature encodings are:
 
  a)	<gml:metaDataProperty>
 	    <gml:GenericMetaData>
