@@ -8,16 +8,16 @@
 |Dependency |/req/ailabel
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
-|Requirement 13|/req/aitrainingdata/trainingdata
-|Requirement 14|/req/aitrainingdataset/trainingtypecode
-|Requirement 15|/req/aitrainingdata/eotrainingdata
+|Requirement 14|/req/aitrainingdata/trainingdata
+|Requirement 15|/req/aitrainingdataset/trainingtypecode
+|Requirement 16|/req/aitrainingdata/eotrainingdata
 |===
 
 The AI_TrainingData object is encoded as an XML element with properties shown in Table 5.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 13|/req/aitrainingdataset/trainingdata
+|Requirement 14|/req/aitrainingdataset/trainingdata
 
 Each AI_TrainingData object SHALL implement the Mandatory properties shown in Table 5.
 |===
@@ -52,7 +52,7 @@ The AI_TrainingTypeCode is encoded as a text string whose value is one of “tra
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 14|/req/aitrainingdataset/trainingtypecode
+|Requirement 15|/req/aitrainingdataset/trainingtypecode
 
 Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation” or “test”.
 |===
@@ -67,7 +67,7 @@ The AI_EOTrainingData object is encoded as an XML element with properties both s
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 15|/req/aitrainingdataset/eotrainingdata
+|Requirement 16|/req/aitrainingdataset/eotrainingdata
 
 Each AI_EOTrainingData object SHALL implement the Mandatory properties as defined in Table 5 and Table 6.
 |===

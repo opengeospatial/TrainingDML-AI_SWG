@@ -10,16 +10,16 @@
 |Dependency |/req/ailabeling
 |Dependency |/req/aidataquality
 |Dependency |/req/aitdchangeset
-|Requirement 10|/req/aitrainingdataset/trainingdataset
-|Requirement 11|/req/aitrainingdataset/metricsinliterature
-|Requirement 12|/req/aitrainingdataset/eotrainingdataset
+|Requirement 11|/req/aitrainingdataset/trainingdataset
+|Requirement 12|/req/aitrainingdataset/metricsinliterature
+|Requirement 13|/req/aitrainingdataset/eotrainingdataset
 |===
 
 The AI_TrainingDataset object is encoded as an XML element with properties shown in Table 2.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 10|/req/aitrainingdataset/trainingdataset
+|Requirement 11|/req/aitrainingdataset/trainingdataset
 
 Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in Table 2.
 |===
@@ -114,7 +114,7 @@ If the optional element AI_MetricsInLiterature is specified, this element is enc
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 11|/req/aitrainingdataset/metricsinliterature
+|Requirement 12|/req/aitrainingdataset/metricsinliterature
 
 Each AI_MetricsInLiterature value SHALL implement the Mandatory properties shown in Table 3.
 |===
@@ -141,7 +141,7 @@ The AI_EOTrainingDataset object is encoded as an XML element with properties sho
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 12|/req/aitrainingdataset/eotrainingdataset
+|Requirement 13|/req/aitrainingdataset/eotrainingdataset
 
 Each AI_EOTrainingDataset object SHALL implement the Mandatory properties both shown in Table 2 and Table 4.
 |===

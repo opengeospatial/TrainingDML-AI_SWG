@@ -3,17 +3,17 @@
 2+|*Requirements class* 
 2+|/req/base/isometadatatype
 |Dependency |XML
-|Requirement 4|/req/base/isometadatatype/band
-|Requirement 5|/req/base/isometadatatype/extent
-|Requirement 6|/req/base/isometadatatype/citation
-|Requirement 7|/req/base/isometadatatype/scope
+|Requirement 5|/req/base/isometadatatype/band
+|Requirement 6|/req/base/isometadatatype/extent
+|Requirement 7|/req/base/isometadatatype/citation
+|Requirement 8|/req/base/isometadatatype/scope
 |===
 
 The MD_Band is encoded as a text string or an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 4|/req/base/isometadatatype/band
+|Requirement 5|/req/base/isometadatatype/band
 
 Each MD_Band value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
 
@@ -32,7 +32,7 @@ An The EX_Extent is encoded as a text string or an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 5|/req/base/isometadatatype/extent
+|Requirement 6|/req/base/isometadatatype/extent
 
 Each EX_Extent value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
 
@@ -54,7 +54,7 @@ The CI_Citation is encoded as a text string or an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 6|/req/base/isometadatatype/citation
+|Requirement 7|/req/base/isometadatatype/citation
 
 Each CI_Citation value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
 
@@ -76,7 +76,7 @@ The MD_Scope is encoded as an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 7|/req/base/isometadatatype/scope
+|Requirement 8|/req/base/isometadatatype/scope
 
 Each MD_Scope value SHALL be encoded as an XML element matching the XML Schema type as defined in:
 

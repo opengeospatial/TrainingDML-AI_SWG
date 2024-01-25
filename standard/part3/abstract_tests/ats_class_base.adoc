@@ -11,7 +11,7 @@
 Pass if no errors reported. Fail otherwise.
 |Test type |Capability
 .5+|Test 2+|/conf/base/type
-|Requirement |/req/base/xmlbasetype/datatime, /req/base/xmlbasetype/namedvalue, /req/base/isometadatatype, /req/base/isoqualitytype, /req/base/geospatialtype
+|Requirement |/req/base/xmlbasetype/datatime, /req/base/xmlbasetype/namedvalue, /req/base/xmlbasetype/url, /req/base/isometadatatype, /req/base/isoqualitytype, /req/base/geospatialtype
 |Test purpose |Verify that the related values and objects are encoded using the specified property names and structures.
 |Test method |Validate the XML instance document using the appropriate object definition from the TrainingDML-AI.xsd XML Schema. 
 

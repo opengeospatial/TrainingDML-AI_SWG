@@ -3,14 +3,14 @@
 2+|*Requirements class* 
 2+|/req/base/isoqualitytype
 |Dependency |XML
-|Requirement 8|/req/base/isoqualitytype/element
+|Requirement 9|/req/base/isoqualitytype/element
 |===
 
 The QualityElement object is encoded as an XML element with properties shown in Table 1.
 
 [width="100%",cols="20%,80%",]
 |===
-|Requirement 8|/req/base/isoqualitytype/element
+|Requirement 9|/req/base/isoqualitytype/element
 
 Each QualityElement value SHALL be encoded as an XML element with properties shown in Table 1.
 |===

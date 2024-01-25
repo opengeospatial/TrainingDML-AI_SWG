@@ -6,6 +6,7 @@
 |Requirement 1|/req/base/xmlbasetype/xml
 |Requirement 2|/req/base/xmlbasetype/datetime
 |Requirement 3|/req/base/xmlbasetype/namedvalue
+|Requirement 4|/req/base/xmlbasetype/url
 |===
 
 The first requirement is that a TrainingDML-AI XML document is a valid XML document.
@@ -53,3 +54,18 @@ Examples:
 
  b) <key>precision</key>
     <value>0.8</value>
+
+The URL is encoded as an XML element defined as the type of “anyURI”.
+
+[width="100%",cols="20%,80%",]
+|===
+|Requirement 4|/req/base/xmlbasetype/url
+
+Each URL value SHALL be encoded as a text string defined in Section 3.3.17 of W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes.
+|===
+
+Examples:
+
+ a) http://www.opengeospatial.org
+
+ b) /file.txt
