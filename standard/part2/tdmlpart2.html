@@ -2346,20 +2346,24 @@ c)	"test"</pre>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/geospatialtype</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 19</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/label</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 20</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/scenelabel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 21</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/objectlabel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 22</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/pixellabel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 23</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/imageformatcode</p></td>
 </tr>
 </tbody>
 </table>
@@ -2614,7 +2618,7 @@ c)	"test"</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">imageFormat</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Image data format.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_ImageFormatCode [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 </tbody>
@@ -2627,8 +2631,34 @@ c)	"test"</pre>
 <pre>{
    "type": "AI_PixelLabel",
    "imageURL": ["/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif"],
-   "imageFormat": ["image/tiff"]
+   "imageFormat": ["GeoTIFF"]
 }</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The AI_ImageFormatCode is encoded as a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 85%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 23</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/imageformatcode</p>
+<p class="tableblock">Each AI_ImageFormatCode value SHALL be a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a)	"JEPG"
+b)	"PNG"
+c)	"TIFF"</pre>
 </div>
 </div>
 </div>
@@ -2664,16 +2694,20 @@ c)	"test"</pre>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 23</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 24</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labeling</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 24</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 25</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labeler</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 25</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 26</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labelingprocedure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 27</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labelingmethodcode</p></td>
 </tr>
 </tbody>
 </table>
@@ -2687,7 +2721,7 @@ c)	"test"</pre>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 23</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 24</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labeling</p>
 <p class="tableblock">Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 13.</p></td>
 </tr>
@@ -2771,7 +2805,7 @@ c)	"test"</pre>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 24</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 25</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labeler</p>
 <p class="tableblock">Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 14.</p></td>
 </tr>
@@ -2836,7 +2870,7 @@ c)	"test"</pre>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 25</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 26</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labelingprocedure</p>
 <p class="tableblock">Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown in Table 15.</p></td>
 </tr>
@@ -2874,7 +2908,7 @@ c)	"test"</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">methods</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Methods used in the labeling procedure.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_LabelingMethodCode [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
@@ -2893,9 +2927,35 @@ c)	"test"</pre>
 <pre>{
    "type": "AI_LabelingProcedure",
    "id": "0",
-   "methods": ["manual"],
+   "methods": ["Manual"],
    "tools": ["ArcGIS"]
 }</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The AI_LabelingMethodCode is encoded as a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 85%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 27</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labelingmethodcode</p>
+<p class="tableblock">Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a)	"Manual"
+b)	"Semi-Automatic"
+c)	"Automatic"</pre>
 </div>
 </div>
 </div>
@@ -2911,7 +2971,7 @@ c)	"test"</pre>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 26</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 28</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aidataquality/classbalancedegree</p>
 <p class="tableblock">Each AI_ClassBalanceDegree object SHALL implement the Mandatory properties as shown in Table 16.</p></td>
 </tr>
@@ -3023,7 +3083,7 @@ c)	"test"</pre>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/tdtrainingdata</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 27</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 29</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aitdchangeset/tdchangeset</p></td>
 </tr>
 </tbody>
@@ -3038,7 +3098,7 @@ c)	"test"</pre>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 27</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 29</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aitdchangeset/tdchangeset</p>
 <p class="tableblock">Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in Table 17.</p></td>
 </tr>
