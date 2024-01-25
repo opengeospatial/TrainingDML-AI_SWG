@@ -5,16 +5,17 @@
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
-|Requirement 23 |/req/ailabeling/labeling
-|Requirement 24 |/req/ailabeling/labeler
-|Requirement 25 |/req/ailabeling/labelingprocedure
+|Requirement 24 |/req/ailabeling/labeling
+|Requirement 25 |/req/ailabeling/labeler
+|Requirement 26 |/req/ailabeling/labelingprocedure
+|Requirement 27 |/req/ailabeling/labelingmethodcode
 |===
 
 The AI_Labeling object is encoded as a JSON object with properties shown in Table 13.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement 23 |/req/ailabeling/labeling
+|Requirement 24 |/req/ailabeling/labeling
 
 Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 13.
 |===
@@ -49,7 +50,7 @@ The AI_Labeler object is encoded as a JSON object with properties as shown in Ta
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement 24 |/req/ailabeling/labeler
+|Requirement 25 |/req/ailabeling/labeler
 
 Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 14.
 |===
@@ -75,7 +76,7 @@ An AI_LabelingProcedure object is encoded as a JSON object with properties as sh
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement 25 |/req/ailabeling/labelingprocedure
+|Requirement 26 |/req/ailabeling/labelingprocedure
 
 Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown in Table 15.
 |===
@@ -86,7 +87,7 @@ Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown 
 |JSON Property |Definition |Data type and values |Obligation
 |type |Type of the labeling procedure object. |"AI_LabelingProcedure" |Mandatory
 |id |Identifier of the labeling procedure. |CharacterString [1..1] |Mandatory
-|methods |Methods used in the labeling procedure. |CharacterString [1..*] |Mandatory
+|methods |Methods used in the labeling procedure. |AI_LabelingMethodCode [1..*] |Mandatory
 |tools |Tools or software used in the labeling procedure. |CharacterString [0..*] |Optional
 |===
 
@@ -95,6 +96,21 @@ Example:
  {
     "type": "AI_LabelingProcedure",
     "id": "0",
-    "methods": ["manual"],
+    "methods": ["Manual"],
     "tools": ["ArcGIS"]
  }
+
+The AI_LabelingMethodCode is encoded as a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.
+
+[width="100%",cols="15%,85%",]
+|===
+|Requirement 27 |/req/ailabeling/labelingmethodcode
+
+Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.
+|===
+
+Examples:
+
+ a)	"Manual" 
+ b)	"Semi-Automatic"
+ c)	"Automatic"

@@ -1,6 +1,6 @@
 [width="100%",cols="15%,85%",]
 |===
-|Requirement 26 |/req/aidataquality/classbalancedegree
+|Requirement 28 |/req/aidataquality/classbalancedegree
 
 Each AI_ClassBalanceDegree object SHALL implement the Mandatory properties as shown in Table 16.
 |===

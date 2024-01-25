@@ -6,14 +6,14 @@
 |Dependency |/req/base/jsonbasetype
 |Dependency |/req/base/isometadatatype
 |Dependency |/req/tdtrainingdata
-|Requirement 27 |/req/aitdchangeset/tdchangeset
+|Requirement 29 |/req/aitdchangeset/tdchangeset
 |===
 
 The AI_TDChangeset object is encoded as a JSON object with properties shown in Table 17.
 
 [width="100%",cols="15%,85%",]
 |===
-|Requirement 27 |/req/aitdchangeset/tdchangeset
+|Requirement 29 |/req/aitdchangeset/tdchangeset
 
 Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in Table 17.
 |===
