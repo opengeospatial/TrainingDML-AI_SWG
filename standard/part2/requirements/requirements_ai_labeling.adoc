@@ -96,21 +96,21 @@ Example:
  {
     "type": "AI_LabelingProcedure",
     "id": "0",
-    "methods": ["Manual"],
+    "methods": ["manual"],
     "tools": ["ArcGIS"]
  }
 
-The AI_LabelingMethodCode is encoded as a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.
+The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic” or “automatic”.
 
 [width="100%",cols="15%,85%",]
 |===
 |Requirement 27 |/req/ailabeling/labelingmethodcode
 
-Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “Manual”, “Semi-Automatic” or “Automatic”.
+Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “manual”, “semi-automatic” or “automatic”.
 |===
 
 Examples:
 
- a)	"Manual" 
- b)	"Semi-Automatic"
- c)	"Automatic"
+ a)	"manual" 
+ b)	"semi-automatic"
+ c)	"automatic"
