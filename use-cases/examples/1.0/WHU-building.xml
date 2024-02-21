@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
+     <type>AI_EOTrainingDataset</type>
+    <id>whu-building</id>
+    <name>WHU-Building Dataset-Building Change Detection Dataset</name>
+    <description>This dataset covers an area where a 6.3-magnitude earthquake has occurred in February 2011 and rebuilt
+        in the following years. This dataset consists of aerial images obtained in April 2012 that contains 12796
+        buildings in 20.5 km2 (16077 buildings in the same area in 2016 dataset).
+    </description>
+    <license>CC BY-SA 4.0</license>
+    <version>1.0</version>
+    <amountOfTrainingData>1</amountOfTrainingData>
+    <createdTime>2011-01-01</createdTime>
+    <providers>Wuhan University</providers>
+    <extent/>
+    <classes>
+        <key>building</key>
+        <value>1</value>
+    </classes>
+    <numberOfClasses>1</numberOfClasses>
+    <bands>red</bands>
+    <bands>green</bands>
+    <bands>blue</bands>
+    <imageSize>32507x15354</imageSize>
+    <tasks>
+        <type>AI_EOTask</type>
+        <id>whu-building-task</id>
+        <description>Building change detection based on aerial images</description>
+        <taskType>Change Detection</taskType>
+    </tasks>
+    <data>
+        <type>AI_EOTrainingData</type>
+        <id>0</id>
+        <extent>
+            <geographicElement>
+                <EX_GeographicBoundingBox>
+                    <westBoundLongitude>1560160</westBoundLongitude>
+                    <eastBoundLongitude>1566661.4</eastBoundLongitude>
+                    <southBoundLatitude>5176338.4</southBoundLatitude>
+                    <northBoundLatitude>5179409.2</northBoundLatitude>
+                </EX_GeographicBoundingBox>
+            </geographicElement>
+        </extent>
+        <dataTime>2012-01-01</dataTime>
+        <dataTime>2016-01-01</dataTime>
+        <dataURL>before/before.tif</dataURL>
+        <dataURL>after/after.tif</dataURL>
+        <numberOfLabels>1</numberOfLabels>
+        <labels>
+            <type>AI_PixelLabel</type>
+            <imageURL>change label/change_label.tif</imageURL>
+            <imageFormat>TIFF</imageFormat>
+        </labels>
+    </data>
+</AI_EOTrainingDataset>

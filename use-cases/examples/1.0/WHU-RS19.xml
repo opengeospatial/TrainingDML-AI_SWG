@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../ai_eoTrainingDataset.xsd">
+      xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
 	<type>AI_EOTrainingDataset</type>
 	<id>whu_rs19</id>
 	<name>WHU-RS19</name>

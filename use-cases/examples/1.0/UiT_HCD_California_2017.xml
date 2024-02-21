@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
+     <type>AI_EOTrainingDataset</type>
+    <id>uit_hcd_california_2017</id>
+    <name>UiT HCD California 2017</name>
+    <description>This dataset is composed of two images and a label image.</description>
+    <license>CC BY-SA 4.0</license>
+    <version>1.0</version>
+    <amountOfTrainingData>1</amountOfTrainingData>
+    <createdTime>2017-01-01</createdTime>
+    <providers>LP DAAC</providers>
+    <providers>ESA</providers>
+    <classes>
+        <key>change</key>
+        <value>1</value>
+    </classes>
+    <classes>
+        <key>unchanged</key>
+        <value>0</value>
+    </classes>
+    <numberOfClasses>2</numberOfClasses>
+    <bands>red</bands>
+    <bands>green</bands>
+    <bands>blue</bands>
+    <bands>VH</bands>
+    <bands>VV</bands>
+    <bands>VV/VH</bands>
+    <imageSize>2000x3500</imageSize>
+    <tasks>
+        <type>AI_EOTask</type>
+        <id>uit_hcd_california_2017-task</id>
+        <description>Multi-source images change detection</description>
+        <taskType>http://demo#change_detection</taskType>
+    </tasks>
+    <data>
+        <type>AI_EOTrainingData</type>
+        <id>0</id>
+        <dataTime>2017-01-05</dataTime>
+        <dataTime>2017-02-18</dataTime>
+        <dataURL>t1_L8.png</dataURL>
+        <dataURL>t2_SAR.png</dataURL>
+        <dataSources>Landsat-8</dataSources>
+        <dataSources>Sentinel-1A</dataSources>
+        <numberOfLabels>1</numberOfLabels>
+        <labels>
+            <type>AI_PixelLabel</type>
+            <imageURL>change_label.png</imageURL>
+            <imageFormat>PNG</imageFormat>
+        </labels>
+    </data>
+</AI_EOTrainingDataset>

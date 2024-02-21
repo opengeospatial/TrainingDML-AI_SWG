@@ -3,8 +3,8 @@
 
 <xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
 <xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
-<xs:include schemaLocation="data_time.xsd"/>
-<xs:include schemaLocation="named_value.xsd"/>
+<xs:include schemaLocation="dataTime.xsd"/>
+<xs:include schemaLocation="namedValue.xsd"/>
 <xs:include schemaLocation="ai_labeling.xsd"/>
 <xs:include schemaLocation="ai_metricsInLiterature.xsd"/>
 <xs:include schemaLocation="ai_task.xsd"/>
@@ -13,6 +13,7 @@
     <xs:element name="AI_AbstractTrainingDataset" type="AI_AbstractTrainingDataset"/>
     <xs:complexType name="AI_AbstractTrainingDataset">
     <xs:sequence>
+        <xs:element name="type" type="xs:string" fixed="AI_AbstractTrainingDataset"/>
         <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
         <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>

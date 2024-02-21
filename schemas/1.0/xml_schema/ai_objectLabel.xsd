@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
 <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/temporal.xsd"/>
 <xs:include schemaLocation="ai_label.xsd"/>
-<xs:include schemaLocation="data_time.xsd"/>
+<xs:include schemaLocation="dataTime.xsd"/>
   <xs:complexType name="AI_ObjectLabel">
     <xs:complexContent>
       <xs:extension base="AI_AbstractLabel">

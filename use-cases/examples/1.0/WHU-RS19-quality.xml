@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <DataQuality xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/dataQuality.xsd">
+    <type>DataQuality</type>
+    <scope>
+        <level>dataset</level>
+        <levelDescription>
+            <MD_ScopeDescription>
+                <dataset>whu_rs19</dataset>
+            </MD_ScopeDescription>
+        </levelDescription>
+    </scope>
+    <report>
+        <type>FormatConsistency</type>
+        <measure>
+            <measureDescription>Percentage of training samples with inconsistent image format</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with
+                inconsistent format
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+        <type>CompletenessOmission</type>
+        <measure>
+            <measureDescription>Percentage of missing scene labels</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with missing
+                labels
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+        <type>ThematicClassificationCorrectness</type>
+        <measure>
+            <measureDescription>Percentage of error scene labels</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with incorrect
+                scene labels
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+        <type>AI_ClassBalanceDegree</type>
+        <measure>
+            <measureDescription>Balance degree of label classes</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Counting the number of training samples belonging to each class and calculating
+                the balance degree
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+    </report>
+</DataQuality>

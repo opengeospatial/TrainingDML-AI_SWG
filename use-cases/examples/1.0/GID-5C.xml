@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../ai_eoTrainingDataset.xsd">
-	<type>AI_EOTrainingDataset</type>
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
+ 	<type>AI_EOTrainingDataset</type>
 	<id>gid-5c</id>
 	<name>GID-Large-scale Classification</name>
 	<description>Gaofen Image Dataset (GID) is a large-scale land-cover dataset with Gaofen-2 (GF-2) satellite images, it has superiorities over the existing land-cover dataset because of its large coverage, wide distribution, and high spatial resolution.</description>
