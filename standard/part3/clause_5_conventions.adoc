@@ -17,6 +17,7 @@ In this document the following abbreviations and acronyms are used or introduced
 * AI -- Artificial Intelligence
 * DL -- Deep Learning
 * EO -- Earth Observation
+* IETF -- Internet Engineering Task Force
 * ISO -- International Organization for Standardization
 * JSON -- JavaScript Object Notation
 * ML -- Machine Learning
@@ -24,5 +25,7 @@ In this document the following abbreviations and acronyms are used or introduced
 * RS -- Remote Sensing
 * TD -- Training Data
 * UML -- Unified Modelling Language
-* XML -- Extensible Markup Language
+* URL -- Uniform Resource Locator
 * UTC -- Coordinated Universal Time
+* W3C -- World Wide Web Consortium
+* XML -- Extensible Markup Language

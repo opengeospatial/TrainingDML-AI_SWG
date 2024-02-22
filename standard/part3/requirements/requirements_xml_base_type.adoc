@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/base/xmlbasetype 

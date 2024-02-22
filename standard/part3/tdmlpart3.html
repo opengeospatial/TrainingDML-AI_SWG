@@ -572,11 +572,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#artificial-intelligence-definition">4.1. Artificial Intelligence (AI)</a></li>
 <li><a href="#machine-learning-definition">4.2. Machine Learning (ML)</a></li>
 <li><a href="#deep-learning-definition">4.3. Deep Learning (DL)</a></li>
-<li><a href="#training-dataset-definition">4.4. Training Dataset</a></li>
-<li><a href="#label-definition">4.5. Label</a></li>
-<li><a href="#extensible-markup-language-definition">4.6. Extensible Markup Language (XML)</a></li>
-<li><a href="#xml-schema-definition">4.7. XML Schema</a></li>
-<li><a href="#publisher-definition">4.8. Publisher</a></li>
+<li><a href="#dataset-definition">4.4. Dataset</a></li>
+<li><a href="#training-dataset-definition">4.5. Training Dataset</a></li>
+<li><a href="#label-definition">4.6. Label</a></li>
+<li><a href="#class-definition">4.7. Class</a></li>
+<li><a href="#task-definition">4.8. Task</a></li>
+<li><a href="#provenance-definition">4.9. Provenance</a></li>
+<li><a href="#quality-definition">4.10. Quality</a></li>
+<li><a href="#earth-observation-definition">4.11. Earth Observation</a></li>
+<li><a href="#scene-classification-definition">4.12. Scene Classification</a></li>
+<li><a href="#object-detection-definition">4.13. Object Detection</a></li>
+<li><a href="#semantic-segmentation-definition">4.14. Semantic Segmentation</a></li>
+<li><a href="#change-detection-definition">4.15. Change Detection</a></li>
+<li><a href="#threed-model-reconstruction-definition">4.16. 3D Model Reconstruction</a></li>
+<li><a href="#generative-model-definition">4.17. Generative Model</a></li>
+<li><a href="#extensible-markup-language-definition">4.18. Extensible Markup Language (XML)</a></li>
+<li><a href="#xml-schema-definition">4.19. XML Schema</a></li>
+<li><a href="#publisher-definition">4.20. Training Dataset Publisher</a></li>
 </ul>
 </li>
 <li><a href="#_conventions">5. Conventions</a>
@@ -741,7 +753,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_scope"><a class="anchor" href="#_scope"></a>1. Scope</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This OGC TrainingDML - AI Part 3: XML Encoding Standard defines an XML encoding for the exchange of training datasets. The TrainingDML - AI Part 3 Standard provides a document model for the exchange of information describing training datasets, both within and between different organizations.</p>
+<p>This OGC TrainingDML - AI Part 3: XML Encoding Standard defines an XML encoding for the exchange of training datasets. The TrainingDML - AI Part 3 Standard provides an XML-based encoding for the exchange of information describing training datasets, both within and between different organizations.</p>
 </div>
 <div class="paragraph">
 <p>The document model is derived from the conceptual models defined in the OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard.</p>
@@ -790,13 +802,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://www.w3.org/TR/xmlschema11-2/">W3C Recommendation: W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes, 2012</a></p>
 </li>
 <li>
+<p><a href="https://www.ietf.org/rfc/rfc2046.txt">IETF: RFC 2046, Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types, 1996</a></p>
+</li>
+<li>
 <p><a href="https://www.iso.org/standard/66175.html">ISO 19107:2019 Geographic information — Spatial schema</a></p>
 </li>
 <li>
 <p><a href="https://www.iso.org/standard/53798.html">ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals</a></p>
 </li>
 <li>
-<p><a href="https://www.iso.org/standard/78900.html">ISO 19157-1 Geographic information — Data quality — Part 1: General requirements</a></p>
+<p><a href="https://www.iso.org/standard/78900.html">ISO 19157-1:2023 Geographic information — Data quality — Part 1: General requirements</a></p>
 </li>
 </ul>
 </div>
@@ -839,16 +854,35 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="training-dataset-definition"><a class="anchor" href="#training-dataset-definition"></a>4.4. Training Dataset</h3>
+<h3 id="dataset-definition"><a class="anchor" href="#dataset-definition"></a>4.4. Dataset</h3>
 <div class="paragraph">
-<p>a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations &amp; Measurements (O&amp;M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.</p>
+<p>identifiable collection of data</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Note 1 to entry: A dataset can be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset can be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart can be considered a dataset.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>[SOURCE: ISO 19115‑1:2014, 4.3]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="training-dataset-definition"><a class="anchor" href="#training-dataset-definition"></a>4.5. Training Dataset</h3>
+<div class="paragraph">
+<p>is a collection of samples that have been derived or generated from reliable geospatial data sources, often labeled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations &amp; Measurements (O&amp;M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Note 1 to entry: the quality of data source considered higher than the AI data.</pre>
+</div>
 </div>
 <div class="paragraph">
 <p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="label-definition"><a class="anchor" href="#label-definition"></a>4.5. Label</h3>
+<h3 id="label-definition"><a class="anchor" href="#label-definition"></a>4.6. Label</h3>
 <div class="paragraph">
 <p>refers to known or expected results annotated as values of a dependent variable in training samples. A training sample label is different from those on a geographical map, which are known as map labels or annotations.</p>
 </div>
@@ -857,7 +891,109 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="extensible-markup-language-definition"><a class="anchor" href="#extensible-markup-language-definition"></a>4.6. Extensible Markup Language (XML)</h3>
+<h3 id="class-definition"><a class="anchor" href="#class-definition"></a>4.7. Class</h3>
+<div class="paragraph">
+<p>the known or expected category labeled on training samples that share some common attributes.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="task-definition"><a class="anchor" href="#task-definition"></a>4.8. Task</h3>
+<div class="paragraph">
+<p>the specific goal that an AI application want to achieve.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="provenance-definition"><a class="anchor" href="#provenance-definition"></a>4.9. Provenance</h3>
+<div class="paragraph">
+<p>information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.  In this standard provenance is a record of how training data were prepared.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: W3C (<a href="https://www.w3.org/TR/prov-overview/" class="bare">https://www.w3.org/TR/prov-overview/</a>)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="quality-definition"><a class="anchor" href="#quality-definition"></a>4.10. Quality</h3>
+<div class="paragraph">
+<p>degree to which a set of inherent characteristics of an object fulfils requirements [ISO 9000:2015, 3.6.2, modified－Notes 1 and 2 to entry have been deleted]. Quality of training data (such as data imbalance and mislabeling) can impact the performance of AI/ML models.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="earth-observation-definition"><a class="anchor" href="#earth-observation-definition"></a>4.11. Earth Observation</h3>
+<div class="paragraph">
+<p>data and information collected about our planet, whether atmospheric, oceanic or terrestrial. This includes space-based or remotely-sensed data, as well as ground-based or in situ data.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: GEO (<a href="https://earthobservations.org/geo_wwd.php" class="bare">https://earthobservations.org/geo_wwd.php</a>)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scene-classification-definition"><a class="anchor" href="#scene-classification-definition"></a>4.12. Scene Classification</h3>
+<div class="paragraph">
+<p>task of identifying scene categories of images, on the basis of a training set of images whose scene categories are known.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="object-detection-definition"><a class="anchor" href="#object-detection-definition"></a>4.13. Object Detection</h3>
+<div class="paragraph">
+<p>task of recognizing objects such as cars from images. The objects are often localized using bounding boxes.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="semantic-segmentation-definition"><a class="anchor" href="#semantic-segmentation-definition"></a>4.14. Semantic Segmentation</h3>
+<div class="paragraph">
+<p>task of assigning class labels to pixels of images or points of point clouds.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="change-detection-definition"><a class="anchor" href="#change-detection-definition"></a>4.15. Change Detection</h3>
+<div class="paragraph">
+<p>task that finds the changes in an area between images taken at different times.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="threed-model-reconstruction-definition"><a class="anchor" href="#threed-model-reconstruction-definition"></a>4.16. 3D Model Reconstruction</h3>
+<div class="paragraph">
+<p>task that builds 3D objects and scenes from multi-view images.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="generative-model-definition"><a class="anchor" href="#generative-model-definition"></a>4.17. Generative Model</h3>
+<div class="paragraph">
+<p>is one of the methods of large model training, which improve model performance through unsupervised pre-training. In the fine-tuning phase, labeled data plays a critical role in optimizing the model for specific vertical domains or tasks. By incorporating labeled data, the model can learn to accurately identify and extract relevant features, leading to better performance on specific downstream tasks. Overall, the combination of generative models and fine-tuning with labeled data can significantly improve the performance of large models in specialized domains or tasks.</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+<div class="paragraph">
+<p>SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="extensible-markup-language-definition"><a class="anchor" href="#extensible-markup-language-definition"></a>4.18. Extensible Markup Language (XML)</h3>
 <div class="paragraph">
 <p>is a simple, very flexible text format derived from SGML (ISO 8879). Originally designed to meet the challenges of large-scale electronic publishing, XML is also playing an increasingly important role in the exchange of a wide variety of data on the Web and elsewhere.</p>
 </div>
@@ -866,7 +1002,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="xml-schema-definition"><a class="anchor" href="#xml-schema-definition"></a>4.7. XML Schema</h3>
+<h3 id="xml-schema-definition"><a class="anchor" href="#xml-schema-definition"></a>4.19. XML Schema</h3>
 <div class="paragraph">
 <p>is a means for defining the structure, content and semantics of XML documents.</p>
 </div>
@@ -875,7 +1011,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="publisher-definition"><a class="anchor" href="#publisher-definition"></a>4.8. Publisher</h3>
+<h3 id="publisher-definition"><a class="anchor" href="#publisher-definition"></a>4.20. Training Dataset Publisher</h3>
 <div class="paragraph">
 <p>refers to the entity or individual responsible for creating and releasing the XML-based serialization syntax for geospatial training datasets, as defined in the TrainingDML-AI Part 3: XML Encoding Standard.</p>
 </div>
@@ -917,6 +1053,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>EO&#8201;&#8212;&#8201;Earth Observation</p>
 </li>
 <li>
+<p>IETF&#8201;&#8212;&#8201;Internet Engineering Task Force</p>
+</li>
+<li>
 <p>ISO&#8201;&#8212;&#8201;International Organization for Standardization</p>
 </li>
 <li>
@@ -938,10 +1077,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>UML&#8201;&#8212;&#8201;Unified Modelling Language</p>
 </li>
 <li>
-<p>XML&#8201;&#8212;&#8201;Extensible Markup Language</p>
+<p>URL&#8201;&#8212;&#8201;Uniform Resource Locator</p>
 </li>
 <li>
 <p>UTC&#8201;&#8212;&#8201;Coordinated Universal Time</p>
+</li>
+<li>
+<p>W3C&#8201;&#8212;&#8201;World Wide Web Consortium</p>
+</li>
+<li>
+<p>XML&#8201;&#8212;&#8201;Extensible Markup Language</p>
 </li>
 </ul>
 </div>
@@ -986,8 +1131,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -1135,8 +1280,8 @@ d) 12:34:56.123</pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -1298,8 +1443,8 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -1415,8 +1560,8 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -1526,8 +1671,8 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -2016,8 +2161,8 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -2278,8 +2423,8 @@ c)	test</pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -2447,8 +2592,8 @@ c)	test</pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -2777,11 +2922,11 @@ c)	test</pre>
 <div class="content">
 <pre>&lt;type&gt;AI_PixelLabel&lt;/type&gt;
 &lt;imageURL&gt;/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif&lt;/imageURL&gt;
-&lt;imageFormat&gt;GeoTIFF&lt;/imageFormat&gt;</pre>
+&lt;imageFormat&gt;image/tiff; application=geotiff&lt;/imageFormat&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The AI_ImageFormatCode is encoded as a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.</p>
+<p>The AI_ImageFormatCode is encoded as a text string whose value is defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types <a href="https://www.ietf.org/rfc/rfc2046.txt">RFC 2046</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2792,15 +2937,16 @@ c)	test</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 23</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabel/imageformatcode</p>
-<p class="tableblock">Each AI_ImageFormatCode value SHALL be a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.</p></td>
+<p class="tableblock">Each AI_ImageFormatCode value SHALL be encoded as a text string defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types <a href="https://www.ietf.org/rfc/rfc2046.txt">RFC 2046</a>.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
 <p>Examples:
-   a)	JPEG
-   b)	PNG
-   c)	TIFF</p>
+ a)	image/tiff; application=geotiff
+ b)	application/x-netcdf
+ c)	image/png
+ d)   image/jp2</p>
 </div>
 </div>
 <div class="sect2">
@@ -2810,8 +2956,8 @@ c)	test</pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -3191,8 +3337,8 @@ c)	test</pre>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 15%;">
-<col style="width: 85%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -3674,7 +3820,7 @@ c)	test</pre>
 <div class="sect3">
 <h4 id="_whu_rs19_dataset"><a class="anchor" href="#_whu_rs19_dataset"></a>B.1.1. WHU-RS19 Dataset</h4>
 <div class="paragraph">
-<p><a href="https://captain-whu.github.io/BED4RS/">The WHU-RS19 dataset</a> is widely used in scene classification of remote sensing images. This dataset is collected from Google Earth and has 19 classes including airport, beach, bridge, commercial, desert, farmland, football field, forest, industrial, meadow, mountain, park, parking, pond, port, railway station, residential, river, and viaduct. Each class contains around 50 images, with an image size of 600×600 and a resolution of 0.5m.</p>
+<p><a href="https://captain-whu.github.io/BED4RS/">The WHU-RS19 dataset</a> is widely used in scene classification of remote sensing images. This dataset is collected from Google Earth and has 19 classes including airport, beach, bridge, commercial, desert, farmland, football field, forest, industrial, meadow, mountain, park, parking, pond, port, railway station, residential, river, and viaduct. Each class contains around 50 images, with an image size of 600×600 and a resolution of 0.5 m.</p>
 </div>
 <div class="paragraph">
 <p>An example of XML encoding of the WHU-RS19 dataset following the TrainingDML-AI UML model can be found in <a href="https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/WHU-RS19.xml" class="bare">https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/WHU-RS19.xml</a>.</p>
@@ -3683,7 +3829,7 @@ c)	test</pre>
 <div class="sect3">
 <h4 id="_dota_v1_5_dataset"><a class="anchor" href="#_dota_v1_5_dataset"></a>B.1.2. DOTA-v1.5 Dataset</h4>
 <div class="paragraph">
-<p><a href="https://captain-whu.github.io/DOTA/">The DOTA-v1.5 dataset</a> is a large-scale dataset for object detection in aerial images. The sources for content in the dataset include Google Earth, Gaofen-2, and Jilin-1 imagery provided by China Resources Satellite Data Center. The 16 classes in DOTA-v1.5 are plane, ship, storage tank, baseball diamond, tennis court, basketball court, ground track field, harbor, bridge, large vehicle, small vehicle, helicopter, roundabout, soccer ball field, swimming pool, and container crane. Compared with other aerial image object detection datasets, the dataset has the largest number of classes. The images in the dataset have various image sizes (from 800×800 to 2000×2000) and resolutions (Google Earth/0.1m-1m, Gaofen-2/1m, Jilin-1/0.72m).</p>
+<p><a href="https://captain-whu.github.io/DOTA/">The DOTA-v1.5 dataset</a> is a large-scale dataset for object detection in aerial images. The sources for content in the dataset include Google Earth, Gaofen-2, and Jilin-1 imagery provided by China Resources Satellite Data Center. The 16 classes in DOTA-v1.5 are plane, ship, storage tank, baseball diamond, tennis court, basketball court, ground track field, harbor, bridge, large vehicle, small vehicle, helicopter, roundabout, soccer ball field, swimming pool, and container crane. Compared with other aerial image object detection datasets, the dataset has the largest number of classes. The images in the dataset have various image sizes (from 800×800 to 2000×2000) and resolutions (Google Earth/0.1 m-1 m, Gaofen-2/1 m, Jilin-1/0.72 m).</p>
 </div>
 <div class="paragraph">
 <p>An example of XML encoding of the DOTA-v1.5 dataset following the TrainingDML-AI UML model can be found in <a href="https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/DOTA-v1.5.xml" class="bare">https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/DOTA-v1.5.xml</a>.</p>
@@ -3701,7 +3847,7 @@ c)	test</pre>
 <div class="sect3">
 <h4 id="_gid_dataset"><a class="anchor" href="#_gid_dataset"></a>B.1.4. GID Dataset</h4>
 <div class="paragraph">
-<p><a href="https://x-ytong.github.io/project/GID.html">The GID dataset</a> is one of state-of-art land cover classification datasets. This dataset has a large spatial coverage covering many provinces in China with a relatively high spatial resolution (2m). GID has two sets. One is the GID-5C. It has 150 images (image size 7200×6800) that are classified into 5 land cover classes. The other set is GID-15C. The images from GID-5C are sliced into 30,000 patches in GID-15C, which have three types of patch sizes (56×56, 112×112, 224×224) and are classified into 15 land cover classes.</p>
+<p><a href="https://x-ytong.github.io/project/GID.html">The GID dataset</a> is one of state-of-art land cover classification datasets. This dataset has a large spatial coverage covering many provinces in China with a relatively high spatial resolution (2 m). GID has two sets. One is the GID-5C. It has 150 images (image size 7200×6800) that are classified into 5 land cover classes. The other set is GID-15C. The images from GID-5C are sliced into 30,000 patches in GID-15C, which have three types of patch sizes (56×56, 112×112, 224×224) and are classified into 15 land cover classes.</p>
 </div>
 <div class="paragraph">
 <p>An example of XML encoding of the GID-5C dataset following the TrainingDML-AI UML model can be found in <a href="https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/GID-5C.xml" class="bare">https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/GID-5C.xml</a>.</p>
@@ -3719,7 +3865,7 @@ c)	test</pre>
 <div class="sect3">
 <h4 id="_whu_building_dataset"><a class="anchor" href="#_whu_building_dataset"></a>B.1.6. WHU-Building Dataset</h4>
 <div class="paragraph">
-<p><a href="http://gpcv.whu.edu.cn/data/building_dataset.html">The WHU-Building dataset</a> is a change detection dataset collected from the Land Information New Zealand Data Service. The dataset is composed of images (with the resolution 0.2m) in 2012 and 2016, covering 20.5 km2. It includes 12,796 and 16,077 buildings respectively in 2012 and 2016.</p>
+<p><a href="http://gpcv.whu.edu.cn/data/building_dataset.html">The WHU-Building dataset</a> is a change detection dataset collected from the Land Information New Zealand Data Service. The dataset is composed of images (with the resolution 0.2 m) in 2012 and 2016, covering 20.5 km2. It includes 12,796 and 16,077 buildings respectively in 2012 and 2016.</p>
 </div>
 <div class="paragraph">
 <p>An example of XML encoding of the WHU-Building dataset following the TrainingDML-AI UML model can be found in <a href="https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/WHU-building.xml" class="bare">https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/use-cases/examples/1.0/WHU-building.xml</a>.</p>
@@ -3861,43 +4007,46 @@ c)	test</pre>
 <p>[1] Yue, P., ed., 2023. OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, OGC 23-008r3. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/is/23-008r3/23-008r3.html" class="bare">https://docs.ogc.org/is/23-008r3/23-008r3.html</a></p>
 </div>
 <div class="paragraph">
-<p>[2] Portele, C., 2007. OpenGIS Geography Markup Language (GML) Encoding Standard, OGC 07-036. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://portal.ogc.org/files/?artifact_id=20509" class="bare">https://portal.ogc.org/files/?artifact_id=20509</a></p>
+<p>[2] Freed, N., 1996. RFC 2046. Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. <a href="https://www.ietf.org/rfc/rfc2046.txt" class="bare">https://www.ietf.org/rfc/rfc2046.txt</a></p>
 </div>
 <div class="paragraph">
-<p>[3] World Wide Web Consortium. Extensible Markup Language (XML).
+<p>[3] Portele, C., 2007. OpenGIS Geography Markup Language (GML) Encoding Standard, OGC 07-036. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://portal.ogc.org/files/?artifact_id=20509" class="bare">https://portal.ogc.org/files/?artifact_id=20509</a></p>
+</div>
+<div class="paragraph">
+<p>[4] World Wide Web Consortium. Extensible Markup Language (XML).
 <a href="https://www.w3.org/XML/" class="bare">https://www.w3.org/XML/</a></p>
 </div>
 <div class="paragraph">
-<p>[4] World Wide Web Consortium. XML Schema.
+<p>[5] World Wide Web Consortium. XML Schema.
 <a href="https://www.w3.org/XML/Schema" class="bare">https://www.w3.org/XML/Schema</a></p>
 </div>
 <div class="paragraph">
-<p>[5] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. <a href="https://www.iso.org/standard/26012.html" class="bare">https://www.iso.org/standard/26012.html</a></p>
+<p>[6] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. <a href="https://www.iso.org/standard/66175.html" class="bare">https://www.iso.org/standard/66175.html</a></p>
 </div>
 <div class="paragraph">
-<p>[6] ISO, 2022. ISO 19157-1: 2022. Geographic information — Data quality. <a href="https://www.iso.org/standard/32575.html" class="bare">https://www.iso.org/standard/32575.html</a></p>
+<p>[7] ISO, 2022. ISO 19157-1: 2022. Geographic information — Data quality. <a href="https://www.iso.org/standard/78900.html" class="bare">https://www.iso.org/standard/78900.html</a></p>
 </div>
 <div class="paragraph">
-<p>[7] ISO, 2014. 19115-1:2014, Geographic information — Metadata — Part 1: Fundamentals. <a href="https://www.iso.org/standard/53798.html" class="bare">https://www.iso.org/standard/53798.html</a></p>
+<p>[8] ISO, 2014. 19115-1:2014, Geographic information — Metadata — Part 1: Fundamentals. <a href="https://www.iso.org/standard/53798.html" class="bare">https://www.iso.org/standard/53798.html</a></p>
 </div>
 <div class="paragraph">
-<p>[8] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/18-038r2.html" class="bare">https://docs.ogc.org/per/18-038r2.html</a></p>
+<p>[9] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/18-038r2.html" class="bare">https://docs.ogc.org/per/18-038r2.html</a></p>
 </div>
 <div class="paragraph">
-<p>[9] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/19-027r2.html" class="bare">https://docs.ogc.org/per/19-027r2.html</a></p>
+<p>[10] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/19-027r2.html" class="bare">https://docs.ogc.org/per/19-027r2.html</a></p>
 </div>
 <div class="paragraph">
-<p>[10] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/20-015r2.html" class="bare">https://docs.ogc.org/per/20-015r2.html</a></p>
+<p>[11] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. <a href="https://docs.ogc.org/per/20-015r2.html" class="bare">https://docs.ogc.org/per/20-015r2.html</a></p>
 </div>
 <div class="paragraph">
-<p>[11] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. <a href="https://doi.org/10.1080/13658816.2022.2087223" class="bare">https://doi.org/10.1080/13658816.2022.2087223</a></p>
+<p>[12] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. <a href="https://doi.org/10.1080/13658816.2022.2087223" class="bare">https://doi.org/10.1080/13658816.2022.2087223</a></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-25 00:48:09 +0800
+Last updated 2024-02-21 21:13:32 +0800
 </div>
 </div>
 </body>

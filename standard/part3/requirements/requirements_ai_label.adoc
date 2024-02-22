@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/ailabel
@@ -138,18 +138,19 @@ Example:
 
    <type>AI_PixelLabel</type>
    <imageURL>/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif</imageURL>
-   <imageFormat>GeoTIFF</imageFormat>
+   <imageFormat>image/tiff; application=geotiff</imageFormat>
 
-The AI_ImageFormatCode is encoded as a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.
+The AI_ImageFormatCode is encoded as a text string whose value is defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 23|/req/ailabel/imageformatcode
 
-Each AI_ImageFormatCode value SHALL be a text string whose value is one of “JPEG”, “PNG”, “BMP”, “TIFF”, “GeoTIFF”, “HDF5”, “HFA”, “JP2”, “GeoPackage” or “NetCDF”.
+Each AI_ImageFormatCode value SHALL be encoded as a text string defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
 |===
 
 Examples:
-   a)	JPEG
-   b)	PNG
-   c)	TIFF
+ a)	image/tiff; application=geotiff
+ b)	application/x-netcdf
+ c)	image/png
+ d)   image/jp2

@@ -4,24 +4,26 @@
 
 [1] Yue, P., ed., 2023. OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part1: Conceptual Model Standard, OGC 23-008r3. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/is/23-008r3/23-008r3.html
 
-[2] Portele, C., 2007. OpenGIS Geography Markup Language (GML) Encoding Standard, OGC 07-036. Wayland, MA: Open Geospatial Consortium Inc. https://portal.ogc.org/files/?artifact_id=20509
+[2] Freed, N., 1996. RFC 2046. Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. https://www.ietf.org/rfc/rfc2046.txt
 
-[3] World Wide Web Consortium. Extensible Markup Language (XML). 
+[3] Portele, C., 2007. OpenGIS Geography Markup Language (GML) Encoding Standard, OGC 07-036. Wayland, MA: Open Geospatial Consortium Inc. https://portal.ogc.org/files/?artifact_id=20509
+
+[4] World Wide Web Consortium. Extensible Markup Language (XML). 
 https://www.w3.org/XML/
 
-[4] World Wide Web Consortium. XML Schema.
+[5] World Wide Web Consortium. XML Schema.
 https://www.w3.org/XML/Schema
 
-[5] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. https://www.iso.org/standard/26012.html
+[6] ISO, 2019. ISO 19107: 2019. Geographic information — Spatial schema. https://www.iso.org/standard/66175.html
 
-[6] ISO, 2022. ISO 19157-1: 2022. Geographic information — Data quality. https://www.iso.org/standard/32575.html
+[7] ISO, 2022. ISO 19157-1: 2022. Geographic information — Data quality. https://www.iso.org/standard/78900.html
 
-[7] ISO, 2014. 19115-1:2014, Geographic information — Metadata — Part 1: Fundamentals. https://www.iso.org/standard/53798.html
+[8] ISO, 2014. 19115-1:2014, Geographic information — Metadata — Part 1: Fundamentals. https://www.iso.org/standard/53798.html
 
-[8] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/18-038r2.html
+[9] Landry, T., ed., 2018. OGC Testbed-14: Machine Learning Engineering Report, OGC 18-038r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/18-038r2.html
 
-[9] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/19-027r2.html
+[10] Meek, S., ed., 2019. OGC Testbed-15: Machine Learning Engineering Report, OGC 19-027r2. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/19-027r2.html
 
-[10] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/20-015r2.html
+[11] Schumann, G., ed., 2020. OGC Testbed-16: Machine Learning Training Data Engineering Report, OGC 20-018. Wayland, MA: Open Geospatial Consortium Inc. https://docs.ogc.org/per/20-015r2.html
 
-[11] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. https://doi.org/10.1080/13658816.2022.2087223
+[12] Yue, P., Shangguan, B., Hu, L., Jiang, L., Zhang, C., Cao, Z., Pan, Y., 2022. Towards a training data model for artificial intelligence in earth observation. International Journal of Geographical Information Science, 1-25. https://doi.org/10.1080/13658816.2022.2087223

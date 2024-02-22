@@ -24,10 +24,24 @@ is a subset of machine learning, which is essentially a neural network with thre
 
 SOURCE: https://www.ibm.com/topics/deep-learning
 
+[[dataset-definition]]
+=== Dataset
+identifiable collection of data
+
+----
+Note 1 to entry: A dataset can be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset can be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart can be considered a dataset.
+----
+
+{empty}[SOURCE: ISO 19115‑1:2014, 4.3]
+
 [[training-dataset-definition]]
 === Training Dataset
 
-a collection of samples, often labelled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.
+is a collection of samples that have been derived or generated from reliable geospatial data sources, often labeled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model.
+
+----
+Note 1 to entry: the quality of data source considered higher than the AI data.
+----
 
 SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
@@ -35,6 +49,85 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 === Label
 
 refers to known or expected results annotated as values of a dependent variable in training samples. A training sample label is different from those on a geographical map, which are known as map labels or annotations.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[class-definition]]
+=== Class
+
+the known or expected category labeled on training samples that share some common attributes.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[task-definition]]
+=== Task
+
+the specific goal that an AI application want to achieve.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[provenance-definition]]
+=== Provenance
+
+information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.  In this standard provenance is a record of how training data were prepared.
+
+SOURCE: W3C (https://www.w3.org/TR/prov-overview/)
+
+[[quality-definition]]
+=== Quality
+
+degree to which a set of inherent characteristics of an object fulfils requirements [ISO 9000:2015, 3.6.2, modified－Notes 1 and 2 to entry have been deleted]. Quality of training data (such as data imbalance and mislabeling) can impact the performance of AI/ML models.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[earth-observation-definition]]
+=== Earth Observation
+
+data and information collected about our planet, whether atmospheric, oceanic or terrestrial. This includes space-based or remotely-sensed data, as well as ground-based or in situ data.
+
+SOURCE: GEO (https://earthobservations.org/geo_wwd.php)
+
+[[scene-classification-definition]]
+=== Scene Classification
+
+task of identifying scene categories of images, on the basis of a training set of images whose scene categories are known.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[object-detection-definition]]
+=== Object Detection
+
+task of recognizing objects such as cars from images. The objects are often localized using bounding boxes.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[semantic-segmentation-definition]]
+=== Semantic Segmentation
+
+task of assigning class labels to pixels of images or points of point clouds.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[change-detection-definition]]
+=== Change Detection
+
+task that finds the changes in an area between images taken at different times.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[threed-model-reconstruction-definition]]
+=== 3D Model Reconstruction
+
+task that builds 3D objects and scenes from multi-view images.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+
+[[generative-model-definition]]
+=== Generative Model
+
+is one of the methods of large model training, which improve model performance through unsupervised pre-training. In the fine-tuning phase, labeled data plays a critical role in optimizing the model for specific vertical domains or tasks. By incorporating labeled data, the model can learn to accurately identify and extract relevant features, leading to better performance on specific downstream tasks. Overall, the combination of generative models and fine-tuning with labeled data can significantly improve the performance of large models in specialized domains or tasks.
+
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
 SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
@@ -53,5 +146,6 @@ is a means for defining the structure, content and semantics of XML documents.
 SOURCE: https://www.w3.org/XML/Schema
 
 [[publisher-definition]]
-=== Publisher
+=== Training Dataset Publisher
+
 refers to the entity or individual responsible for creating and releasing the XML-based serialization syntax for geospatial training datasets, as defined in the TrainingDML-AI Part 3: XML Encoding Standard.

@@ -1,5 +1,5 @@
 == Scope
 
-This OGC TrainingDML - AI Part 3: XML Encoding Standard defines an XML encoding for the exchange of training datasets. The TrainingDML - AI Part 3 Standard provides a document model for the exchange of information describing training datasets, both within and between different organizations.
+This OGC TrainingDML - AI Part 3: XML Encoding Standard defines an XML encoding for the exchange of training datasets. The TrainingDML - AI Part 3 Standard provides an XML-based encoding for the exchange of information describing training datasets, both within and between different organizations.
 
 The document model is derived from the conceptual models defined in the OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard.

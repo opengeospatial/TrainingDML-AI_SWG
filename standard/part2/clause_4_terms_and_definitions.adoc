@@ -55,32 +55,16 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 [[class-definition]]
 === Class
 
-human-defined category of elements that are part of the dataset and that share common attributes.
+the known or expected category labeled on training samples that share some common attributes.
 
-EXAMPLE:
-
-"telephone", "table", "chair", "ball bearing" and "tennis ball" are classes. The "table" class includes: a work table, a dining table, a study desk, a coffee table, a workbench.
-
-----
-Note 1 to entry: Classes are typically target variables and designated by a name.
-----
-
-{empty}[SOURCE: ISO/IEC 23053:2022, 3.3.1]
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
 [[task-definition]]
 === Task
 
-actions required to achieve a specific goal.
+the specific goal that an AI application want to achieve.
 
-----
-Note 1 to entry: These actions can be physical or cognitive.
-----
-
-----
-Note 2 to entry: Examples of tasks include classification, regression, ranking, clustering and dimensionality reduction.
-----
-
-{empty}[SOURCE: ISO/IEC 22989:2022, 3.1.37]
+SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
 [[provenance-definition]]
 === Provenance
