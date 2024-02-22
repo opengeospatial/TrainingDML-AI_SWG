@@ -27,4 +27,5 @@ In this document the following abbreviations and acronyms are used or introduced
 * UML -- Unified Modelling Language
 * URL -- Uniform Resource Locator
 * UTC -- Coordinated Universal Time
+* W3C -- World Wide Web Consortium
 * XML -- Extensible Markup Language
