@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/ailabel
@@ -15,7 +15,7 @@
 
 The AI_Label object is encoded as a JSON object with properties as shown in Table 9.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 19 |/req/ailabel/label
 
@@ -46,7 +46,7 @@ Example:
 
 The AI_SceneLabel object is encoded as a JSON object with properties as shown in Table 10.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 20 |/req/ailabel/scenelabel
 
@@ -70,7 +70,7 @@ Example:
 
 The AI_ObjectLabel object is encoded as a JSON object with properties shown in Table 11.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 21 |/req/ailabel/objectlabel
 
@@ -99,7 +99,7 @@ Example:
 
 The AI_PixelLabel object is encoded as a JSON object with properties as shown in Table 12.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 22 |/req/ailabel/pixellabel
 
@@ -125,7 +125,7 @@ Example:
 
 The AI_ImageFormatCode is encoded as a text string whose value is defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 23 |/req/ailabel/imageformatcode
 

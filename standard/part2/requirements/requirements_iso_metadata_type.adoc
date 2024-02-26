@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/base/isometadatatype
@@ -12,7 +12,7 @@
 
 The MD_Band is encoded as a text string or a JSON object.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 5 |/req/base/isometadatatype/band
 
@@ -29,7 +29,7 @@ Examples:
 
 The EX_Extent is encoded as a GeoJSON bounding box or a JSON Object.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 6 |/req/base/isometadatatype/extent
 
@@ -57,7 +57,7 @@ Examples:
 
 The CI_Citation is encoded as a text string or a JSON object.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 7 |/req/base/isometadatatype/citation
 
@@ -73,7 +73,7 @@ Examples:
 
 The MD_Scope is encoded as a JSON object.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 8 |/req/base/isometadatatype/scope
 

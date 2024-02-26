@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/base/geospatialtype
@@ -9,7 +9,7 @@
 
 The encoding of one or more features follows the GeoJSON RFC rules for encoding a Feature object, with members “type”, “geometry” and “properties”. A Feature object represents a spatially bounded thing.  Every Feature object is a GeoJSON object no matter where it occurs in a GeoJSON text. https://datatracker.ietf.org/doc/html/rfc7946[RFC 7946]
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 10 |/req/geospatialtype/feature
 

@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 28 |/req/aidataquality/classbalancedegree
 

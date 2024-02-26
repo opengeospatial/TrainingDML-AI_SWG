@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/aitrainingdataset
@@ -17,7 +17,7 @@
 
 The AI_TrainingDataset object is encoded as a JSON object with properties shown in Table 2.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 11 |/req/aitrainingdataset/trainingdataset
 
@@ -73,7 +73,7 @@ Example:
 
 If the optional element AI_MetricsInLiterature is specified, this element is encoded as JSON object with properties as shown in Table 3.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 12 |/req/aitrainingdataset/metricsinliterature
 
@@ -99,7 +99,7 @@ Example:
 
 The AI_EOTrainingDataset object is encoded as a JSON object with properties shown in Table 2 and Table 4.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 13 |/req/aitrainingdataset/eotrainingdataset
 

@@ -37,11 +37,7 @@ Note 1 to entry: A dataset can be a smaller grouping of data which, though limit
 [[training-dataset-definition]]
 === Training Dataset
 
-is a collection of samples that have been derived or generated from reliable geospatial data sources, often labeled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model.
-
-----
-Note 1 to entry: the quality of data source considered higher than the AI data.
-----
+is a collection of samples, often labeled in terms of supervised learning. A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labeled as values of a dependent variable for generating a trained predictive model.
 
 SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
 
@@ -55,9 +51,9 @@ SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingD
 [[class-definition]]
 === Class
 
-the known or expected category labeled on training samples that share some common attributes.
+<classification> result of a classification process as part of a classification system which subdivides concepts within a given topic area.
 
-SOURCE: OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard
+{empty}[SOURCE: ISO 19144-2:2023, 3.1.6]
 
 [[task-definition]]
 === Task

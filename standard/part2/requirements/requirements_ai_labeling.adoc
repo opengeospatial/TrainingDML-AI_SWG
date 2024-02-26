@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/ailabeling
@@ -13,7 +13,7 @@
 
 The AI_Labeling object is encoded as a JSON object with properties shown in Table 13.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 24 |/req/ailabeling/labeling
 
@@ -48,7 +48,7 @@ Example:
 
 The AI_Labeler object is encoded as a JSON object with properties as shown in Table 14.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 25 |/req/ailabeling/labeler
 
@@ -74,7 +74,7 @@ Example:
 
 An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in Table 15.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 26 |/req/ailabeling/labelingprocedure
 
@@ -102,7 +102,7 @@ Example:
 
 The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic” or “automatic”.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 27 |/req/ailabeling/labelingmethodcode
 

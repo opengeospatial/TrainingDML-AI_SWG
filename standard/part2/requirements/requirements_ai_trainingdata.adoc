@@ -1,4 +1,4 @@
-[width="100%",cols="15%,85%",options="header",]
+[width="100%",cols="20%,80%",options="header",]
 |===
 2+|*Requirements class* 
 2+|/req/aitrainingdata
@@ -15,7 +15,7 @@
 
 The AI_TrainingData object is encoded as a JSON object with properties shown in Table 5.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 14 |/req/aitrainingdataset/trainingdata
 
@@ -49,7 +49,7 @@ Example:
 
 The AI_TrainingTypeCode is encoded as a text string whose value is one of "training", "validation" or "test".
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 15 |/req/aitrainingdataset/trainingtypecode
 
@@ -64,7 +64,7 @@ Examples:
 
 The AI_EOTrainingData object is encoded as a JSON object with properties both shown in Table 5 and Table 6.
 
-[width="100%",cols="15%,85%",]
+[width="100%",cols="20%,80%",]
 |===
 |Requirement 16 |/req/aitrainingdataset/eotrainingdata
 
