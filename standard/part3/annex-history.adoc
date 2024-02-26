@@ -5,7 +5,7 @@
 [width="100%",cols="15%,15%,15%,15%,40%",options="header"]
 |===
 |Date |Release |Author | Paragraph modified |Description
-| | | | |
-| | | | |
+|2023-12-15 |0.1 |Peng Yue, Ruixiang Liu, Kaixuan Wang, Yongyi Mi |All |Draft for internal review.
+|2024-02-26 |0.2 |Peng Yue, Ruixiang Liu, Carl Reed, Yongyi Mi |Most |Merge edits and comments from Carl Reed.
 | | | | |
 |===

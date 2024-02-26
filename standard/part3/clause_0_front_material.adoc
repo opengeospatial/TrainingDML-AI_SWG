@@ -25,23 +25,41 @@ No security considerations have been made for this Standard.
 
 The following organizations submitted this Document to the Open Geospatial Consortium (OGC): 
 
-Organization name(s)
+* Wuhan University
+* Luoyao Information Technology Co., Ltd
+* Pixalytics Ltd
+* WiSC Enterprises
+* George Mason University
+* Laboratoire d'Informatique de Grenoble
+* Wuhan University of Technology
+* Hubei University
+* Chongqing Changan Automobile Co., Ltd
+
 
 [[submitters]]
 [big]*vi.     Submitters*
 
-All questions regarding this submission should be directed to the editor or the submitters:
+All questions regarding this submission should be directed to the editors or the submitters:
 
 |===
 |*Name* |*Affiliation*
-||
-||
-||
+|Peng Yue |Wuhan University
+|Ruixiang Liu |Wuhan University
+|Kaixuan Wang |Wuhan University
+|Haoru Wu |Wuhan University
+|Boyi Shangguan |Luoyao Information Technology Co., Ltd
+|Samantha Lavender |Pixalytics Ltd
+|Jim Antonisse |WiSC Enterprises
+|Liping Di |George Mason University
+|Eugene Yu |George Mason University
+|Danielle Ziébelin |Laboratoire d’Informatique de Grenoble
+|Liangcun Jiang |Wuhan University of Technology
+|Lei Hu |Hubei University
+|Mingda Zhang |Hubei University
+|Kai Yan |Chongqing Changan Automobile Co., Ltd
 |===
 
 [[acknowledgments]]
-[big]*vii.    Contributors*
+[big]*vii.    Acknowledgments*
 
-Additional contributors to this Standard include the following:
-
-Individual name(s), Organization
+Thanks to the members of the TrainingDML-AI Standards Working Group of the OGC as well as all contributors of change requests and comments. In particular: Scott Simmons, Carl Reed, Yongyi Mi, Chenxiao Zhang, Zhipeng Cao, Shuaiqi Liu, Ming Zhao, Hanwen Xu, Haipeng Deng, Baoxin Teng.

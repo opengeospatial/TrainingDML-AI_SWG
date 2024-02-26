@@ -22,7 +22,7 @@
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document: YY-nnnrx
 |Version: n.n.n
-|Editor: <Name(s) of Editor or Editors>
+|Editor: Peng Yue, Ruixiang Liu, Boyi Shangguan
 |===
 
 [cols = "^", frame = "none"]
