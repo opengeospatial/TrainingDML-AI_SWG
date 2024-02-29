@@ -96,7 +96,7 @@
                         "train/Instance_masks/P0000_instance_id_RGB.png",
                         "train/Semantic_masks/P0000_instance_color_RGB.png"
                     ],
-                    "imageFormat":["PNG", "PNG"]
+                    "imageFormat":["image/png", "image/png"]
                 },
                 {
                     "type": "AI_ObjectLabel",

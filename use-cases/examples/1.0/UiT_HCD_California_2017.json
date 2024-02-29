@@ -58,7 +58,7 @@
         {
           "type": "AI_PixelLabel",
           "imageUrl": "change_label.png",
-          "imageFormat": "PNG"
+          "imageFormat": "image/png"
         }
       ]
     }

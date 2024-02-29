@@ -59,7 +59,7 @@
         {
           "type": "AI_PixelLabel",
           "imageURL": "change label/change_label.tif",
-          "imageFormat": "TIFF"
+          "imageFormat": "image/tiff"
         }
       ]
     }

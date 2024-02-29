@@ -9,9 +9,17 @@
         "description",
         "license",
         "tasks",
-        "data"
+        "data",
+		"classes",
+		"type"
     ],
     "properties": {
+		 "type": {
+            "type": "string",
+            "enum": [
+                "AI_AbstractTrainingDataset"
+            ]
+        },
         "amountOfTrainingData": {
             "type": "integer"
         },

@@ -21,7 +21,8 @@
         "methods": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "string",
+                "enum": ["manual", "automatic", "semi-automatic"]
             },
             "minItems": 1
         },
