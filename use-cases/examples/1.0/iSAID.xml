@@ -102,6 +102,8 @@
             <type>AI_PixelLabel</type>
             <imageURL>train/Instance_masks/P0000_instance_id_RGB.png</imageURL>
             <imageURL>train/Semantic_masks/P0000_instance_color_RGB.png</imageURL>
+            <imageFormat>image/png</imageFormat>
+            <imageFormat>image/png</imageFormat>
         </labels>
         <labels>
             <type>AI_ObjectLabel</type>

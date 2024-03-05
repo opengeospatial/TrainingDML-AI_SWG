@@ -1,15 +1,104 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
-<xs:include schemaLocation="ai_label.xsd"/>
+  <xs:include schemaLocation="ai_label.xsd"/>
   <xs:complexType name="AI_PixelLabel">
-      <xs:complexContent>
-        <xs:extension base="AI_AbstractLabel">
-          <xs:sequence>
-            <xs:element name="type" type="xs:string" fixed="AI_PixelLabel"/>
-            <xs:element name="imageFormat" type="xs:string" maxOccurs="unbounded"/>
-            <xs:element name="imageURL" type="xs:anyURI" maxOccurs="unbounded"/>
-          </xs:sequence>
-        </xs:extension>
-      </xs:complexContent>
-    </xs:complexType>
+    <xs:complexContent>
+      <xs:extension base="AI_AbstractLabel">
+        <xs:sequence>
+          <xs:element name="type" type="xs:string" fixed="AI_PixelLabel"/>
+          <xs:element name="imageFormat" type="imageFormat" maxOccurs="unbounded"/>
+          <xs:element name="imageURL" type="xs:anyURI" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="imageFormat">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="image/aces"/>
+      <xs:enumeration value="image/apng"/>
+      <xs:enumeration value="image/avci"/>
+      <xs:enumeration value="image/avcs"/>
+      <xs:enumeration value="image/avif"/>
+      <xs:enumeration value="image/bmp"/>
+      <xs:enumeration value="image/cgm"/>
+      <xs:enumeration value="image/dicom-rle"/>
+      <xs:enumeration value="image/dpx"/>
+      <xs:enumeration value="image/emf"/>
+      <xs:enumeration value="image/example"/>
+      <xs:enumeration value="image/fits"/>
+      <xs:enumeration value="image/g3fax"/>
+      <xs:enumeration value="image/gif"/>
+      <xs:enumeration value="image/heic"/>
+      <xs:enumeration value="image/heic-sequence"/>
+      <xs:enumeration value="image/heif"/>
+      <xs:enumeration value="image/heif-sequence"/>
+      <xs:enumeration value="image/hej2k"/>
+      <xs:enumeration value="image/hsj2"/>
+      <xs:enumeration value="image/ief"/>
+      <xs:enumeration value="image/j2c"/>
+      <xs:enumeration value="image/jls"/>
+      <xs:enumeration value="image/jp2"/>
+      <xs:enumeration value="image/jpeg"/>
+      <xs:enumeration value="image/jph"/>
+      <xs:enumeration value="image/jphc"/>
+      <xs:enumeration value="image/jpm"/>
+      <xs:enumeration value="image/jpx"/>
+      <xs:enumeration value="image/jxr"/>
+      <xs:enumeration value="image/jxrA"/>
+      <xs:enumeration value="image/jxrS"/>
+      <xs:enumeration value="image/jxs"/>
+      <xs:enumeration value="image/jxsc"/>
+      <xs:enumeration value="image/jxsi"/>
+      <xs:enumeration value="image/jxss"/>
+      <xs:enumeration value="image/ktx"/>
+      <xs:enumeration value="image/ktx2"/>
+      <xs:enumeration value="image/naplps"/>
+      <xs:enumeration value="image/png"/>
+      <xs:enumeration value="image/prs.btif"/>
+      <xs:enumeration value="image/prs.pti"/>
+      <xs:enumeration value="image/pwg-raster"/>
+      <xs:enumeration value="image/svg+xml"/>
+      <xs:enumeration value="image/t38"/>
+      <xs:enumeration value="image/tiff"/>
+      <xs:enumeration value="image/tiff-fx"/>
+      <xs:enumeration value="image/vnd.adobe.photoshop"/>
+      <xs:enumeration value="image/vnd.airzip.accelerator.azv"/>
+      <xs:enumeration value="image/vnd.cns.inf2"/>
+      <xs:enumeration value="image/vnd.dece.graphic"/>
+      <xs:enumeration value="image/vnd.djvu"/>
+      <xs:enumeration value="image/vnd.dwg"/>
+      <xs:enumeration value="image/vnd.dxf"/>
+      <xs:enumeration value="image/vnd.dvb.subtitle"/>
+      <xs:enumeration value="image/vnd.fastbidsheet"/>
+      <xs:enumeration value="image/vnd.fpx"/>
+      <xs:enumeration value="image/vnd.fst"/>
+      <xs:enumeration value="image/vnd.fujixerox.edmics-mmr"/>
+      <xs:enumeration value="image/vnd.fujixerox.edmics-rlc"/>
+      <xs:enumeration value="image/vnd.globalgraphics.pgb"/>
+      <xs:enumeration value="image/vnd.microsoft.icon"/>
+      <xs:enumeration value="image/vnd.mix"/>
+      <xs:enumeration value="image/vnd.ms-modi"/>
+      <xs:enumeration value="image/vnd.mozilla.apng"/>
+      <xs:enumeration value="image/vnd.net-fpx"/>
+      <xs:enumeration value="image/vnd.pco.b16"/>
+      <xs:enumeration value="image/vnd.radiance"/>
+      <xs:enumeration value="image/vnd.sealed.png"/>
+      <xs:enumeration value="image/vnd.sealedmedia.softseal.gif"/>
+      <xs:enumeration value="image/vnd.sealedmedia.softseal.jpg"/>
+      <xs:enumeration value="image/vnd.svf"/>
+      <xs:enumeration value="image/vnd.tencent.tap"/>
+      <xs:enumeration value="image/vnd.valve.source.texture"/>
+      <xs:enumeration value="image/vnd.wap.wbmp"/>
+      <xs:enumeration value="image/vnd.xiff"/>
+      <xs:enumeration value="image/vnd.zbrush.pcx"/>
+      <xs:enumeration value="image/webp"/>
+      <xs:enumeration value="image/wmf"/>
+      <xs:enumeration value="image/x-emf"/>
+      <xs:enumeration value="image/x-wmf"/>
+      <xs:enumeration value="application/json"/>
+      <xs:enumeration value="application/xml"/>
+      <xs:enumeration value="application/xhtml+xml"/>
+      <xs:enumeration value="application/geopackage+sqlite3"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>

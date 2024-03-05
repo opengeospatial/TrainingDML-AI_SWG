@@ -51,7 +51,7 @@
         <labels>
             <type>AI_PixelLabel</type>
             <imageURL>change label/change_label.tif</imageURL>
-            <imageFormat>TIFF</imageFormat>
+            <imageFormat>image/tiff</imageFormat>
         </labels>
     </data>
 </AI_EOTrainingDataset>

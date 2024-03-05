@@ -47,7 +47,7 @@
         <labels>
             <type>AI_PixelLabel</type>
             <imageURL>change_label.png</imageURL>
-            <imageFormat>PNG</imageFormat>
+            <imageFormat>image/png</imageFormat>
         </labels>
     </data>
 </AI_EOTrainingDataset>
