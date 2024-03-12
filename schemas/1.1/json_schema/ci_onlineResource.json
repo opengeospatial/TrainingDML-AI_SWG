@@ -11,40 +11,22 @@
             "type": "string"
         },
         "protocol": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "applicationProfile": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "name": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "description": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "function": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "protocolRequest": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         }
     }
 }
