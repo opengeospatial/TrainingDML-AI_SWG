@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_pixelLabel.json",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_pixelLabel.json",
     "title": "AI_PixelLabel",
     "type": "object",
     "required": [
@@ -9,7 +9,7 @@
         "imageFormat"
     ],
     "oneOf": [{
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_label.json"
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_label.json"
         }
     ],
     "properties": {

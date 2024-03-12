@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/li_source.json",
+    "title": "LI_Source",
+    "type": "object",
+    "properties": {
+        "description": {
+            "type": "string"
+        },
+        "sourceResolution": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_resolution.json"
+        },
+        "sourceReferenceSystem": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_referenceSystem.json"
+        },
+        "sourceCitation": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_citation.json"
+        },
+        "sourceMetadata": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_citation.json"
+            }
+        },
+        "scope": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_scope.json"
+        },
+        "sourceStep": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/li_processStep.json"
+            }
+        }
+    }
+}

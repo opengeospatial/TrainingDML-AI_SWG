@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_eoTask.json",
+    "title": "AI_EOTask",
+    "type": "object",
+    "required": [
+        "type",
+        "taskType"
+    ],
+    "oneOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_task.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_EOTask"
+            ]
+        },
+        "taskType": {
+            "type": "string"
+        }
+    }
+}

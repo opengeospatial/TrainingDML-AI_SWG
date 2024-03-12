@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_scope.json",
+    "title": "MD_Scope",
+    "type": "object",
+    "required": [
+        "level"
+    ],
+    "properties": {
+        "level": {
+            "type": "string"
+        },
+        "extent": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ex_extent.json"
+            }
+        },
+        "levelDescription": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_scopeDescription.json"
+            }
+        }
+    }
+}

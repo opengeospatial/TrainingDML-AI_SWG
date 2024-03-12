@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_resolution.json",
+    "title": "MD_Resolution",
+    "type": "object",
+    "oneOf": [
+        {
+            "required": [
+                "equivalentScale"
+            ]
+        },
+        {
+            "required": [
+                "distance"
+            ]
+        },
+        {
+            "required": [
+                "vertical"
+            ]
+        },
+        {
+            "required": [
+                "angularDistance"
+            ]
+        },
+        {
+            "required": [
+                "levelOfDetail"
+            ]
+        }
+    ],
+    "properties": {
+        "equivalentScale": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_representativeFraction.json"
+        },
+        "distance": {
+            "type": "string"
+        },
+        "vertical": {
+            "type": "string"
+        },
+        "angularDistance": {
+            "type": "string"
+        },
+        "levelOfDetail": {
+            "type": "string"
+        }
+    }
+}

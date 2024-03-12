@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_browseGraphic.json",
+    "title": "MD_BrowseGraphic",
+    "type": "object",
+    "required": [
+        "fileName"
+    ],
+    "properties": {
+        "fileName": {
+            "type": "string"
+        },
+        "fileDescription": {
+            "type": "string"
+        },
+        "fileType": {
+            "type": "string"
+        },
+        "imageConstraints": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_constraints.json"
+            }
+        },
+        "linkage": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_onlineResource.json"
+            }
+        }
+    }
+}

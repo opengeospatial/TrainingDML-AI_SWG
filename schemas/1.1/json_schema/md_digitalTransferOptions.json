@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_digitalTransferOptions.json",
+    "title": "MD_DigitalTransferOptions",
+    "type": "object",
+    "properties": {
+        "unitsOfDistribution": {
+            "type": "string"
+        },
+        "transferSize": {
+            "type": "number"
+        },
+        "onLine": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_onlineResource.json"
+            }
+        },
+        "offLine": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_medium.json"
+            }
+        },
+        "transferFrequency": {
+            "type": "string",
+            "format": "duration"
+        },
+        "distributionFormat": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_format.json"
+            }
+        }
+    }
+}

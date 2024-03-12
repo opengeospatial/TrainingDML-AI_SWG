@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:mcc= "https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
+<xs:include schemaLocation="ai_label.xsd"/>
+<xs:include schemaLocation="ai_labeling.xsd"/>
+<xs:include schemaLocation="ai_trainingTypeCode.xsd"/>
+<xs:include schemaLocation="dataQuality.xsd"/>
+	<xs:complexType name="AI_AbstractTrainingData">
+		<xs:sequence>
+			<xs:element name="type" type="xs:string" fixed="AI_AbstractTrainingData"/>
+			<xs:element name="datasetId" type="xs:string" minOccurs="0"/>
+			<xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="numberOfLabels" type="xs:int" minOccurs="0"/>
+			<xs:element name="labels" type="AI_AbstractLabel" maxOccurs="unbounded"/>
+			<xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="trainingType" type="AI_TrainingTypeCode" minOccurs="0"/>
+			<xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

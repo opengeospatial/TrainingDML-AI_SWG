@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_eoTrainingData.json",
+    "title": "AI_EOTrainingData",
+    "type": "object",
+    "required": [
+        "type",
+        "dataURL"
+    ],
+    "oneOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ai_trainingData.json"
+        }
+    ],
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_EOTrainingData"
+            ]
+        },
+        "dataURL": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri-reference"
+            },
+            "minItems": 1
+        },
+        "extent": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 4
+                },
+                {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ex_extent.json"
+                }
+            ]
+        },
+        "dataTime": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/dateTime.json"
+            }
+        }
+    }
+}

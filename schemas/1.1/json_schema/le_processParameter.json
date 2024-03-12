@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/le_processParameter.json",
+    "title": "LE_ProcessParameter",
+    "type": "object",
+    "required": [
+        "name",
+        "direction",
+        "description",
+        "optionality",
+        "repeatability"
+    ],
+    "properties": {
+        "name": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/memberName.json"
+        },
+        "direction": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "optionality": {
+            "type": "boolean"
+        },
+        "repeatability": {
+            "type": "boolean"
+        },
+        "valueType": {
+            "type": "string"
+        },
+        "value": {
+            "type": "string"
+        },
+        "source": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/li_source.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/le_source.json"
+                    }
+                ]
+            }
+        }
+    }
+}

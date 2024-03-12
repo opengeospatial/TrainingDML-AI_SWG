@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_citation.json",
+    "title": "CI_Citation",
+    "type": "object",
+    "required": [
+        "title"
+    ],
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "alternateTitle": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "date": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_date.json"
+            }
+        },
+        "edition": {
+            "type": "string"
+        },
+        "editionDate": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/dateTime.json"
+        },
+        "identifier": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_identifier.json"
+            }
+        },
+        "citedResponsibleParty": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_responsibility.json"
+            }
+        },
+        "presentationForm": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "series": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_series.json"
+        },
+        "otherCitationDetails": {
+            "type": "string"
+        },
+        "collectiveTitle": {
+            "type": "string"
+        },
+        "ISBN": {
+            "type": "string"
+        },
+        "ISSN": {
+            "type": "string"
+        },
+        "onlineResource": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/ci_onlineResource.json"
+            }
+        },
+        "graphicOverview": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/md_browseGraphic.json"
+            }
+        }
+    }
+}

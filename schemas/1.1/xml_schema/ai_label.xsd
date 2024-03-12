@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
+<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/temporal.xsd"/>
+<xs:include schemaLocation="ai_pixelLabel.xsd"/>
+<xs:include schemaLocation="ai_sceneLabel.xsd"/>
+<xs:include schemaLocation="ai_objectLabel.xsd"/>
+	<xs:complexType name="AI_AbstractLabel">
+		<xs:sequence>
+			<xs:choice>
+				<xs:group ref="AI_PixelLabel"/>
+				<xs:group ref="AI_SceneLabel"/>
+				<xs:group ref="AI_ObjectLabel"/>
+			</xs:choice>
+			<xs:element name="confidence" default="1.0" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:float">
+						<xs:minInclusive value="0.0" />
+						<xs:maxInclusive value="1.0" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="isNegative" type="xs:boolean" default="false" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:group name="AI_PixelLabel">
+	  <xs:sequence>
+		<xs:element name="type" type="xs:string" fixed="AI_PixelLabel"/>
+		<xs:element name="imageFormat" type="xs:string" maxOccurs="unbounded"/>
+		<xs:element name="imageURL" type="xs:anyURI" maxOccurs="unbounded"/>
+	  </xs:sequence>
+	</xs:group>
+		<xs:group name="AI_SceneLabel">
+	  <xs:sequence>
+		<xs:element name="type" type="xs:string" fixed="AI_SceneLabel"/>
+        <xs:element name="class" type="xs:string"/>
+	  </xs:sequence>
+	</xs:group>
+		<xs:group name="AI_ObjectLabel">
+	  <xs:sequence>
+          <xs:element name="type" type="xs:string" fixed="AI_ObjectLabel"/>
+          <xs:element name="bboxType" type="xs:string" minOccurs="0"/>
+          <xs:element name="class" type="xs:string"/>
+          <xs:element name="object" type="gml:AbstractFeatureType"/>
+          <xs:element name="dateTime" type="multiDateTime" minOccurs="0"/>
+	  </xs:sequence>
+	</xs:group>
+</xs:schema>

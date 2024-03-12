@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3" xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
+<xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
+<xs:import namespace="https://schemas.isotc211.org/19103/-/gco/1.2" schemaLocation="https://schemas.isotc211.org/19103/-/gco/1.2.0/gco.xsd"/>
+	<xs:include schemaLocation="dataTime.xsd"/>
+	<xs:complexType name="QualityElement">
+		<xs:sequence>
+			<xs:element name="type" type="xs:string"/>
+			<xs:element name="measure" type="measureReference"/>
+			<xs:element name="evaluationMethod" type="evaluationMethod"/>
+			<xs:element name="result" type="result" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="measureReference">
+		<xs:sequence>
+			<xs:element name="measureIdentification" type="mcc:MD_Identifier_Type"/>
+			<xs:element name="nameOfMeasure" type="xs:string"/>
+			<xs:element name="measureDescription" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="evaluationMethod">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="evaluationMethodDescription" type="xs:string"/>
+			<xs:element name="evaluationMethodType" type="evaluationMethodTypeCode"/>
+			<xs:element name="evaluationProcedure" type="cit:CI_Citation_Type"/>
+			<xs:element name="dateTime" type="multiDateTime"/>
+			<xs:element name="referenceDoc" type="cit:CI_Citation_Type"/>
+			<xs:element name="deductiveSource" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="evaluationMethodTypeCode">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="directInternal"/>
+			<xs:enumeration value="directExternal"/>
+			<xs:enumeration value="indirect"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="result">
+		<xs:sequence>
+			<xs:element name="dateTime" type="multiDateTime"/>
+			<xs:element name="resultScope" type="mcc:MD_Scope_Type"/>
+		</xs:sequence>
+		<xs:choice>
+			<xs:element name="quantitativeResult" type="quantitativeResult"/>
+			<xs:element name="conformanceResult" type="conformanceResult"/>
+			<xs:element name="descriptiveResult" type="descriptiveResult"/>
+			<xs:element name="coverageResult" type="coverageResult"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="quantitativeResult">
+		<xs:sequence>
+			<xs:element name="value" type="xs:anyType"/>
+			<xs:element name="valueUnit" type="xs:string"/>
+			<xs:element name="valueRecordType" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="conformanceResult">
+		<xs:sequence>
+			<xs:element name="pass" type="xs:boolean"/>
+			<xs:element name="specification" type="cit:CI_Citation_Type"/>
+			<xs:element name="explanation" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="descriptiveResult">
+		<xs:sequence>
+			<xs:element name="statement" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+		<xs:complexType name="coverageResult">
+		<xs:sequence>
+			<xs:element name="spatialRepresentationType" type="xs:string"/>
+			<xs:element name="resultSpatialRepresentation" type="mcc:Abstract_SpatialRepresentation_Type"/>
+			<xs:element name="resultContent" type="mrc:MD_RangeDimension_Type"/>
+			<xs:element name="resultFormat" type="mcc:Abstract_Format_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

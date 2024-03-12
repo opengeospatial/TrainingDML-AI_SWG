@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.1/json_schema/mi_rangeElementDescription.json",
+    "title": "MI_RangeElementDescription",
+    "type": "object",
+    "required": [
+        "name",
+        "definition",
+        "rangeElement"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "definition": {
+            "type": "string"
+        },
+        "rangeElement": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        }
+    }
+}
