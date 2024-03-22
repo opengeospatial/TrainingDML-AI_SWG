@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-05-30 09:57:22
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-01-03 20:44:14
+ * @LastEditTime: 2024-03-22 16:26:57
  * @FilePath: \TrainingDML-AI_SWG\Implementations\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,13 +18,13 @@ If you have any implementations or contributions related to TrainingDML-AI, we w
 
 ## PyTDML Implementation
 
-[PyTDML](https://github.com/TrainingDML/pytdml) is a pure python parser and encoder for training datasets based on OGC Training Data Markup Language for AI standard.
+[PyTDML](https://github.com/openrsgis/pytdml) is a pure python parser and encoder for training datasets based on OGC Training Data Markup Language for AI standard.
 
 Additionally, PyTDML is currently in the process of designing and implementing a pipeline service that enables the entire workflow from sample loading to sample consistency handling, sample transformation, and iterative training. We have designed user-friendly APIs that adhere to the OGC TrainingDML-AI Standard. With these APIs, users can automate the process of feeding TrainingDML-AI-encoded datasets into deep learning frameworks such as PyTorch, TensorFlow, and others.
 
 ## TrainingDML-AI STAC Extension Implementation
 
-[TrainingDML-AI STAC Extension](https://github.com/TrainingDML/trainingdml-ai-extension) is designed as an extension to the SpatioTemporal Asset Catalog (STAC) specification. It builds upon the STAC specification and specifically addresses the requirements for geospatial machine learning training data and introduces additional fields and metadata concepts to formalize the information model of training data within the STAC framework.The extension expands upon the core STAC specification to accommodate the specific needs of training data, enabling interoperability and facilitating effective management and utilization of geospatial machine learning training datasets within the STAC ecosystem.
+[TrainingDML-AI STAC Extension](https://github.com/openrsgis/trainingdml-ai-extension) is designed as an extension to the SpatioTemporal Asset Catalog (STAC) specification. It builds upon the STAC specification and specifically addresses the requirements for geospatial machine learning training data and introduces additional fields and metadata concepts to formalize the information model of training data within the STAC framework.The extension expands upon the core STAC specification to accommodate the specific needs of training data, enabling interoperability and facilitating effective management and utilization of geospatial machine learning training datasets within the STAC ecosystem.
 Now you can find the TrainingDML-AI Extension in the [STAC GitHub repository](https://stac-extensions.github.io/). The current maturity level is Proposal, and the release version is 1.0.0.
 
 ## LuojiaSet TrainingDML-AI Server Implementation
@@ -37,11 +37,11 @@ This implementation allows for retrieving the complete encoded content of the co
 
 [The PIE engine](https://engine.piesat.cn/)'s online model training module has implemented support for TrainingDML-AI encoding format in dataset import, as well as dataset export using the TrainingDML-AI format allowing users to easily upload their datasets to the platform for training purposes.
 
-This implementation also ensures the integrity and effectiveness of the datasets used for training. By validating the data format, the platform can confirm that the datasets adhere to the required structure and standards. You can find the introduction [here](https://github.com/TrainingDML/ImplementationCaseOfPIE).
+This implementation also ensures the integrity and effectiveness of the datasets used for training. By validating the data format, the platform can confirm that the datasets adhere to the required structure and standards. You can find the introduction [here](https://github.com/openrsgis/ImplementationCaseOfPIE).
 
 ## Pixalytics Plastics Detection Dataset Implementation
 
-The implementation is based on work undertaken as part of the OGC Testbed activities, where Python code was developed to catalog a Machine Learning dataset that has been extended to use the [PyTDML](https://github.com/TrainingDML/pytdml) to store the metadata in the TrainingDML-AI format.
+The implementation is based on work undertaken as part of the OGC Testbed activities, where Python code was developed to catalog a Machine Learning dataset that has been extended to use the [PyTDML](https://github.com/openrsgis/pytdml) to store the metadata in the TrainingDML-AI format.
 
 ## GeoLabs TDML-as-a-service Implementation
 
