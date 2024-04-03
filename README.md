@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-04-03 16:03:32
+ * @LastEditTime: 2024-04-03 16:30:06
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -14,7 +14,9 @@ This is the GitHub repository of the [OGC Training Data Markup Language for AI S
 
 Please visit the [Wiki Home page](https://gitlab.ogc.org/ogc/TrainingDML-AI/-/wikis/home) for additional information. Please note: Only OGC members have permission to view the information.
 
+To facilitate the further development of TDML, we have been diligently collecting public comments from various organizations, including OGC and ISO, as well as from a wider community of organizations, enterprises, and individuals. We have categorized these comments into two parts: a FAQ list for comments requiring clarification, and update notes for comments necessitating updates to TDML.
 You may find answers to your questions and concerns by consulting the [FAQ](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/FAQ.md).
+Please also see [update notes](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/update_notes.md)
 
 ## Progress
 
