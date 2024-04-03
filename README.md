@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-04-03 16:33:19
+ * @LastEditTime: 2024-04-03 16:34:40
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,7 +18,7 @@ To facilitate the further development of TDML, we have been diligently collectin
 
 You may find answers to your questions and concerns by consulting the [FAQ](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/FAQ.md).
 
-Please also see [update notes](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/update_notes.md)
+Please also see [update notes](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/update_notes.md).
 
 ## Progress
 
