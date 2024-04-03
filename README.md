@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-01-06 23:21:54
+ * @LastEditTime: 2024-04-03 10:54:08
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -13,6 +13,8 @@
 This is the GitHub repository of the [OGC Training Data Markup Language for AI Standard Working Group (TrainingDML-AI SWG)](https://github.com/opengeospatial/TrainingDML-AI_SWG/).
 
 Please visit the [Wiki Home page](https://gitlab.ogc.org/ogc/TrainingDML-AI/-/wikis/home) for additional information. Please note: Only OGC members have permission to view the information.
+
+You may find answers to your questions and concerns by consulting the [FAQ](https://github.com/opengeospatial/TrainingDML-AI_SWG/FAQ.md).
 
 ## Progress
 
