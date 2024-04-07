@@ -43,6 +43,7 @@ Example:
 
    <type>AI_AbstractLabel</type>
    <isNegative>false</isNegative>
+   <confidence>1.0</confidence>
 
 The AI_SceneLabel object is encoded as an XML element with properties as shown in Table 10.
 

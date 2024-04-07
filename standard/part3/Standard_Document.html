@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <title>OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 3: XML Encoding Standard</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -208,13 +208,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -393,7 +390,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -1161,13 +1158,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_overview"><a class="anchor" href="#_overview"></a>6. Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The TrainingDML - AI Part 3: XML Encoding Standard defines a XML-based serialization syntax for geospatial training datasets. While other serialization formats are possible, such alternatives are not discussed in this Standard.</p>
+<p>The TrainingDML - AI Part 3: XML Encoding Standard defines an XML-based serialization syntax for geospatial training datasets. While other serialization formats are possible, such alternatives are not discussed in this Standard.</p>
 </div>
 <div class="paragraph">
-<p>When serialized, absent properties in XML are typically represented by leaving the corresponding elements empty, without any content. Alternatively, certain XML-based formats may use attributes to signify the absence of a property. These representations convey semantic equivalence. An empty or missing element signifies that no value has been assigned, distinct from the interpretation that the provided value is empty or nil.</p>
-</div>
-<div class="paragraph">
-<p>XML employs a formal class model through the use of elements and attributes, allowing for a more structured representation of data. XML documents are hierarchical in nature, composed of nested elements that can contain both data and metadata.</p>
+<p>XML employs a formal class model with elements and attributes, allowing for a more structured representation of data. XML documents are hierarchical in nature, composed of nested elements that can contain both data and metadata.</p>
 </div>
 <div class="paragraph">
 <p>A training dataset document conforming to this Standard is an XML document whose root element is an "AI_TrainingDataset" element.</p>
@@ -1179,6 +1173,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p>XML has widespread applicability and is utilized in various domains, including web development, data interchange, configuration files, and more. Its flexibility allows users to define their own document structures, making it suitable for a broad range of applications. XML is supported by many programming languages and technologies, contributing to its interoperability and adoption.</p>
+</div>
+<div class="paragraph">
+<p>When serialized, absent properties in XML are typically represented by leaving the corresponding elements empty, without any content. Alternatively, certain XML-based formats may use attributes to signify the absence of a property. These representations convey semantic equivalence. An empty or missing element signifies that no value has been assigned, distinct from the interpretation that the provided value is empty or nil.</p>
 </div>
 </div>
 </div>
@@ -1249,7 +1246,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>XML has a limited range of built-in types (<a href="https://www.w3.org/TR/xmlschema11-2/" class="bare">https://www.w3.org/TR/xmlschema11-2/</a>). The following requirements provide standard XML representations of additional types required across all requirements within this specification.</p>
 </div>
 <div class="paragraph">
-<p>The DateTime is encoded as an XML element defined as one of three elements of type "data", "time", "dataTime".</p>
+<p>The DateTime is encoded as an XML element defined as one of three elements of type "date", "time", "dateTime".</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1270,14 +1267,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a) 2022-08-08T08:08:00.00Z
-b) 2022-08-08
-c) 12:34:56
-d) 12:34:56.123</pre>
+<pre>a)	2002-05-30T09:00:00
+b)	2002-05-30T09:30:10.5
+c)	2002-05-30T09:30:10Z
+d)	2002-09-24
+e)	2002-09-24Z
+f)	09:30:10
+g)	09:30:10.5
+h)	09:30:10Z</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The NamedValue is encoded as an XML element with two elements named “key” and “value”.</p>
+<p>The NamedValue is encoded as an XML element with two elements named “key” and “value”. Typically, the "key" element represents a unique identifier or name for the value being described, while the "value" element contains the actual data associated with that identifier. The "key" element is an open field allowing for arbitrary keys to be used. The "value" element may be any types.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1379,7 +1380,7 @@ d) 12:34:56.123</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The MD_Band is encoded as a text string or an XML element.</p>
+<p>The MD_Band is encoded as an XML element.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1390,7 +1391,7 @@ d) 12:34:56.123</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 5</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype/band</p>
-<p class="tableblock">Each MD_Band value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:</p>
+<p class="tableblock">Each MD_Band value SHALL be encoded as an XML element matching the XML Schema type as defined in:</p>
 <p class="tableblock"><a href="https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd" class="bare">https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd</a></p></td>
 </tr>
 </tbody>
@@ -1400,15 +1401,19 @@ d) 12:34:56.123</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	red
-b)	B4
+<pre>a)	&lt;mrc:name&gt;
+       &lt;mcc:code&gt;red&lt;/mcc:code&gt;
+   &lt;/mrc:name&gt;
+b)	&lt;mrc:name&gt;
+       &lt;mcc:code&gt;B4&lt;/mcc:code&gt;
+   &lt;/mrc:name&gt;
 c) &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
    &lt;mrc:boundMin&gt;630&lt;/mrc:boundMin&gt;
    &lt;mrc:boundUnits&gt;nm&lt;/mrc:boundUnits&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>An The EX_Extent is encoded as a text string or an XML element.</p>
+<p>An The EX_Extent is encoded as an XML element.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1419,7 +1424,7 @@ c) &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 6</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype/extent</p>
-<p class="tableblock">Each EX_Extent value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:</p>
+<p class="tableblock">Each EX_Extent value SHALL be encoded as an XML element matching the XML Schema type as defined in:</p>
 <p class="tableblock"><a href="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd" class="bare">https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd</a></p></td>
 </tr>
 </tbody>
@@ -1429,18 +1434,27 @@ c) &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	120.0 30.0 130.0 40.0
-b)	120.0 30.0 10.0 130.0 40.0 20.0
-c) &lt;geographicElement&gt;
-       &lt;westBoundLongitude&gt;-171.76409&lt;/westBoundLongitude&gt;
-       &lt;eastBoundLongitude&gt;-157.86768&lt;/eastBoundLongitude&gt;
-       &lt;southBoundLatitude&gt;-14.42443&lt;/southBoundLatitude&gt;
-       &lt;northBoundLatitude&gt;21.31573&lt;/northBoundLatitude&gt;
-   &lt;/geographicElement&gt;</pre>
+<pre>a)	&lt;gex:geographicElement&gt;
+       &lt;gex:polygon&gt;
+           &lt;gml:exterior&gt;
+	        &lt;gml:LinearRing&gt;
+		        &lt;gml:posList&gt;
+			        51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+		        &lt;/gml:posList&gt;
+	        &lt;/gml:LinearRing&gt;
+           &lt;/gml:exterior&gt;
+       &lt;/gex:polygon&gt;
+   &lt;/gex:geographicElement&gt;
+b)	&lt;gex:geographicElement&gt;
+       &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
+       &lt;gex:eastBoundLongitude&gt;-157.86768&lt;/gex:eastBoundLongitude&gt;
+       &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
+       &lt;gex:northBoundLatitude&gt;21.31573&lt;/gex:northBoundLatitude&gt;
+   &lt;/gex:geographicElement&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The CI_Citation is encoded as a text string or an XML element.</p>
+<p>The CI_Citation is encoded as an XML element.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1451,18 +1465,17 @@ c) &lt;geographicElement&gt;
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 7</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype/citation</p>
-<p class="tableblock">Each CI_Citation value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:</p>
+<p class="tableblock">Each CI_Citation value SHALL be encoded as an XML element matching the XML Schema type as defined in:</p>
 <p class="tableblock"><a href="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd" class="bare">https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd</a></p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Example:</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	http://www.opengeospatial.org
-b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
+<pre>a)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
    &lt;cit:alternateTitle&gt;OGC&lt;/cit:alternateTitle&gt;
    &lt;cit:identifier&gt;
        &lt;cit:code&gt;
@@ -1489,14 +1502,18 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </tbody>
 </table>
 <div class="paragraph">
-<p>Example:</p>
+<p>Examples:</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
-&lt;mcc:levelDescription&gt;
-    &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
-&lt;/mcc:levelDescription&gt;</pre>
+<pre>a)	&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
+   &lt;mcc:levelDescription&gt;
+       &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
+   &lt;/mcc:levelDescription&gt;
+b)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
+   &lt;mcc:levelDescription&gt;
+       &lt;mcc:other&gt;labeling&lt;/mcc:other &gt;
+   &lt;/mcc:levelDescription&gt;</pre>
 </div>
 </div>
 </div>
@@ -1983,35 +2000,29 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 &lt;description&gt;Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth&lt;/description&gt;
 &lt;amountOfTrainingData&gt;1013&lt;/amountOfTrainingData&gt;
 &lt;createdTime&gt;2010-01-01&lt;/createdTime&gt;
-&lt;providers&gt;
-   &lt;provider&gt;Wuhan University&lt;/provider&gt;
-&lt;/providers&gt;
-&lt;keywords&gt;
-   &lt;keyword&gt;Remote Sensing&lt;/keyword&gt;
-   &lt;keyword&gt;Scene Classification&lt;/keyword&gt;
-&lt;/keywords&gt;
+&lt;providers&gt;Wuhan University&lt;/providers&gt;
+&lt;keywords&gt;Remote Sensing&lt;/keywords&gt;
+&lt;keywords&gt;Scene Classification&lt;/keywords&gt;
 &lt;numberOfClasses&gt;19&lt;/numberOfClasses&gt;
-&lt;classes&gt;
-   &lt;class&gt;Airport&lt;/class&gt;
-   &lt;class&gt;Beach&lt;/class&gt;
-   &lt;class&gt;Bridge&lt;/class&gt;
-   &lt;class&gt;Commercial&lt;/class&gt;
-   &lt;class&gt;Desert&lt;/class&gt;
-   &lt;class&gt;Farmland&lt;/class&gt;
-   &lt;class&gt;footballField&lt;/class&gt;
-   &lt;class&gt;Forest&lt;/class&gt;
-   &lt;class&gt;Industrial&lt;/class&gt;
-   &lt;class&gt;Meadow&lt;/class&gt;
-   &lt;class&gt;Mountain&lt;/class&gt;
-   &lt;class&gt;Park&lt;/class&gt;
-   &lt;class&gt;Parking&lt;/class&gt;
-   &lt;class&gt;Pond&lt;/class&gt;
-   &lt;class&gt;Port&lt;/class&gt;
-   &lt;class&gt;railwayStation&lt;/class&gt;
-   &lt;class&gt;Residential&lt;/class&gt;
-   &lt;class&gt;River&lt;/class&gt;
-   &lt;class&gt;Viaduct&lt;/class&gt;
-&lt;/classes&gt;
+&lt;classes&gt;Airport&lt;/classes&gt;
+&lt;classes&gt;Beach&lt;/classes&gt;
+&lt;classes&gt;Bridge&lt;/classes&gt;
+&lt;classes&gt;Commercial&lt;/classes&gt;
+&lt;classes&gt;Desert&lt;/classes&gt;
+&lt;classes&gt;Farmland&lt;/classes&gt;
+&lt;classes&gt;footballField&lt;/classes&gt;
+&lt;classes&gt;Forest&lt;/classes&gt;
+&lt;classes&gt;Industrial&lt;/classes&gt;
+&lt;classes&gt;Meadow&lt;/classes&gt;
+&lt;classes&gt;Mountain&lt;/classes&gt;
+&lt;classes&gt;Park&lt;/classes&gt;
+&lt;classes&gt;Parking&lt;/classes&gt;
+&lt;classes&gt;Pond&lt;/classes&gt;
+&lt;classes&gt;Port&lt;/classes&gt;
+&lt;classes&gt;railwayStation&lt;/classes&gt;
+&lt;classes&gt;Residential&lt;/classes&gt;
+&lt;classes&gt;River&lt;/classes&gt;
+&lt;classes&gt;Viaduct&lt;/classes&gt;
 &lt;tasks&gt;
    &lt;type&gt;EOTask&lt;/type&gt;
    &lt;id&gt;whu_rs19-task&lt;/id&gt;
@@ -2022,7 +2033,7 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
    &lt;type&gt;EOTrainingData&lt;/type&gt;
    &lt;id&gt;airport_01&lt;/id&gt;
    &lt;dataSources&gt;
-      &lt;dataSource&gt;googleEarth&lt;/dataSource&gt;
+      &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
    &lt;/dataSources&gt;
    &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
    &lt;labels&gt;
@@ -2033,7 +2044,7 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 </div>
 <div class="paragraph">
-<p>If the optional element AI_MetricsInLiterature is specified, this element is encoded as XML  element with properties as shown in Table 3.</p>
+<p>If the optional element AI_MetricsInLiterature is specified, this element is encoded as XML element with properties as shown in Table 3.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2172,13 +2183,29 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 &lt;keywords&gt;Remote Sensing&lt;/keywords&gt;
 &lt;keywords&gt;Scene Classification&lt;/keywords&gt;
 &lt;numberOfClasses&gt;19&lt;/numberOfClasses&gt;
-&lt;extent&gt;-180&lt;/extent&gt;
-&lt;extent&gt;-90&lt;/extent&gt;
-&lt;extent&gt;180&lt;/extent&gt;
-&lt;extent&gt;90&lt;/extent&gt;
-&lt;bands&gt;red&lt;/bands&gt;
-&lt;bands&gt;green&lt;/bands&gt;
-&lt;bands&gt;blue&lt;/bands&gt;
+&lt;extent&gt;
+&lt;gex:geographicElement&gt;
+&lt;gex:westBoundLongitude&gt;-180&lt;/gex:westBoundLongitude&gt;
+      &lt;gex:eastBoundLongitude&gt;180&lt;/gex:eastBoundLongitude&gt;
+      &lt;gex:southBoundLatitude&gt;-90&lt;/gex:southBoundLatitude&gt;
+      &lt;gex:northBoundLatitude&gt;90&lt;/gex:northBoundLatitude&gt;
+&lt;/gex:geographicElement&gt;
+&lt;/extent&gt;
+&lt;bands&gt;
+&lt;mrc:name&gt;
+&lt;mcc:code&gt;red&lt;/mcc:code&gt;
+&lt;/mrc:name&gt;
+&lt;/bands&gt;
+&lt;bands&gt;
+&lt;mrc:name&gt;
+&lt;mcc:code&gt;green&lt;/mcc:code&gt;
+&lt;/mrc:name&gt;
+&lt;/bands&gt;
+&lt;bands&gt;
+&lt;mrc:name&gt;
+&lt;mcc:code&gt;blue&lt;/mcc:code&gt;
+&lt;/mrc:name&gt;
+&lt;/bands&gt;
 &lt;imageSize&gt;6000x7600&lt;/imageSize&gt;
 &lt;classes&gt;Airport&lt;/classes&gt;
 &lt;classes&gt;Beach&lt;/classes&gt;
@@ -2208,7 +2235,9 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 &lt;data&gt;
    &lt;type&gt;AI_EOTrainingData&lt;/type&gt;
    &lt;id&gt;airport_01&lt;/id&gt;
-   &lt;dataSources&gt;googleEarth&lt;/dataSources&gt;
+   &lt;dataSources&gt;
+&lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+&lt;/dataSources&gt;
    &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
    &lt;labels&gt;
       &lt;type&gt;AI_SceneLabel&lt;/type&gt;
@@ -2310,13 +2339,13 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the training data.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Type of the training sample.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">"AI_AbstractTrainingData"</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">id</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Identification of the AI training data.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Identification of an individual AI training sample.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CharacterString [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
@@ -2371,7 +2400,9 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 <div class="content">
 <pre>&lt;type&gt;AI_AbstractTrainingData&lt;/type&gt;
 &lt;id&gt;airport_01&lt;/id&gt;
-&lt;dataSources&gt;googleEarth&lt;/dataSources&gt;
+&lt;dataSources&gt;
+   &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+&lt;/dataSources&gt;
 &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
 &lt;labels&gt;
    &lt;type&gt;AI_SceneLabel&lt;/type&gt;
@@ -2380,7 +2411,7 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 </div>
 <div class="paragraph">
-<p>The AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.</p>
+<p>The AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation”, “test” or “retraining”.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2391,7 +2422,7 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 15</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aitrainingdataset/trainingtypecode</p>
-<p class="tableblock">Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation” or “test”.</p></td>
+<p class="tableblock">Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation”, “test” or “retraining”.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2400,9 +2431,10 @@ b)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	training
-b)	validation
-c)	test</pre>
+<pre>a) training
+b) validation
+c) test
+d) retraining</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2451,8 +2483,8 @@ c)	test</pre>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">dataTime</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Data time when the EO data was obtained.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">dateTime</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date time when the EO data was obtained.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">DateTime [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
@@ -2471,7 +2503,18 @@ c)	test</pre>
 <div class="content">
 <pre>&lt;type&gt;AI_EOTrainingData&lt;/type&gt;
 &lt;id&gt;airport_01&lt;/id&gt;
-&lt;dataSources&gt;googleEarth&lt;/dataSources&gt;
+&lt;dataSources&gt;
+&lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+&lt;/dataSources&gt;
+&lt;extent&gt;
+   &lt;gex:geographicElement&gt;
+      &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
+      &lt;gex:eastBoundLongitude&gt;-171.56578&lt;/gex:eastBoundLongitude&gt;
+      &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
+      &lt;gex:northBoundLatitude&gt;-14.32568&lt;/gex:northBoundLatitude&gt;
+&lt;/gex:geographicElement&gt;
+&lt;/extent&gt;
+&lt;dataTime&gt;2002-05-30T09:30:10Z&lt;/dataTime&gt;
 &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
 &lt;labels&gt;
    &lt;type&gt;AI_SceneLabel&lt;/type&gt;
@@ -2768,7 +2811,8 @@ c)	test</pre>
 <div class="literalblock">
 <div class="content">
 <pre>&lt;type&gt;AI_AbstractLabel&lt;/type&gt;
-&lt;isNegative&gt;false&lt;/isNegative&gt;</pre>
+&lt;isNegative&gt;false&lt;/isNegative&gt;
+&lt;confidence&gt;1.0&lt;/confidence&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3273,16 +3317,12 @@ c)	test</pre>
 <div class="content">
 <pre>&lt;type&gt;AI_LabelingProcedure&lt;/type&gt;
 &lt;id&gt;0&lt;/id&gt;
-&lt;methods&gt;
-   &lt;method&gt;manual&lt;/method&gt;
-&lt;/methods&gt;
-&lt;tools&gt;
-   &lt;tool&gt;ArcGIS&lt;/tool&gt;
-&lt;/tools&gt;</pre>
+&lt;methods&gt;manual&lt;/methods&gt;
+&lt;tools&gt;ArcGIS&lt;/tools&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic” or “automatic”.</p>
+<p>The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic”, “automatic” or “unkonwn”.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3293,7 +3333,7 @@ c)	test</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 27</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/ailabeling/labelingmethodcode</p>
-<p class="tableblock">Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “manual”, “semi-automatic” or “automatic”.</p></td>
+<p class="tableblock">Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “manual”, “semi-automatic”, “automatic” or “unknown”.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3301,7 +3341,8 @@ c)	test</pre>
 <p>Examples:
    a)	manual
    b)	semi-automatic
-   c) automatic</p>
+   c) automatic
+   d)	unknown</p>
 </div>
 </div>
 <div class="sect2">
@@ -3537,7 +3578,9 @@ c)	test</pre>
 &lt;modify&gt;
    &lt;type&gt;EOTrainingData&lt;/type&gt;
    &lt;id&gt;P1228&lt;/id&gt;
-   &lt;dataSources&gt;GF&lt;/dataSources&gt;
+   &lt;dataSources&gt;
+      &lt;cit:title&gt;GF&lt;/cit:title&gt;
+   &lt;/dataSources&gt;
    &lt;dataURL&gt;train/images/P1228.png&lt;/dataURL&gt;
    &lt;numberOfLabels&gt;50&lt;/numberOfLabels&gt;
    &lt;trainingType&gt;training&lt;/trainingType&gt;
@@ -4110,7 +4153,7 @@ c)	test</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-02-26 20:32:22 +0800
+Last updated 2024-04-07 16:38:05 +0800
 </div>
 </div>
 </body>
