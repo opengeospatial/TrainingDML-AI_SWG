@@ -26,8 +26,8 @@ Each AI_TrainingData object SHALL implement the Mandatory properties shown in Ta
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
 |XML Property |Definition |Data type and values |Obligation
-|type |Type of the training data. |"AI_AbstractTrainingData" |Mandatory
-|id |Identification of the AI training data. |CharacterString [1..1] |Mandatory
+|type |Type of the training sample. |"AI_AbstractTrainingData" |Mandatory
+|id |Identification of an individual AI training sample. |CharacterString [1..1] |Mandatory
 |datasetId |Identification of the training dataset that the training sample belongs to. |CharacterString [0..1] |Optional
 |trainingType |Training type of the individual AI training sample. |AI_TrainingTypeCode [0..1] |Optional
 |numberOfLabels |Total number of labels in the individual AI training sample. |Int [0..1] |Optional
@@ -41,27 +41,30 @@ Example:
 
    <type>AI_AbstractTrainingData</type>
    <id>airport_01</id>
-   <dataSources>googleEarth</dataSources>
+   <dataSources>
+      <cit:title>googleEarth</cit:title>
+   </dataSources>
    <dataURL>image/Airport/airport_01.jpg</dataURL>
    <labels>
       <type>AI_SceneLabel</type>
       <class>Airport</class>
    </labels>
 
-The AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation” or “test”.
+The AI_TrainingTypeCode is encoded as a text string whose value is one of “training”, “validation”, “test” or “retraining”.
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 15|/req/aitrainingdataset/trainingtypecode
 
-Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation” or “test”.
+Each AI_TrainingTypeCode value SHALL be a text string whose value is one of “training”, “validation”, “test” or “retraining”.
 |===
 
 Examples:
 
- a)	training
- b)	validation
- c)	test
+ a) training
+ b) validation
+ c) test
+ d) retraining
 
 The AI_EOTrainingData object is encoded as an XML element with properties both shown in Table  and Table 6.
 
@@ -78,7 +81,7 @@ Each AI_EOTrainingData object SHALL implement the Mandatory properties as define
 |XML Property |Definition |Data type and values |Obligation
 |type |Type of the EO training data. |"AI_EOTrainingData" |Mandatory
 |extent |Spatial extent of the individual EO training sample. |EX_Extent [0..1] |Optional
-|dataTime |Data time when the EO data was obtained. |DateTime [0..*] |Optional
+|dateTime |Date time when the EO data was obtained. |DateTime [0..*] |Optional
 |dataURL |URL of the EO data. |URL [1..*] |Mandatory
 |===
 
@@ -86,7 +89,18 @@ Example:
 
    <type>AI_EOTrainingData</type>
    <id>airport_01</id>
-   <dataSources>googleEarth</dataSources>
+   <dataSources>
+   <cit:title>googleEarth</cit:title>
+   </dataSources>
+   <extent>
+      <gex:geographicElement>
+         <gex:westBoundLongitude>-171.76409</gex:westBoundLongitude>
+         <gex:eastBoundLongitude>-171.56578</gex:eastBoundLongitude>
+         <gex:southBoundLatitude>-14.42443</gex:southBoundLatitude>
+         <gex:northBoundLatitude>-14.32568</gex:northBoundLatitude>
+   </gex:geographicElement>
+   </extent>
+   <dataTime>2002-05-30T09:30:10Z</dataTime>
    <dataURL>image/Airport/airport_01.jpg</dataURL>
    <labels>
       <type>AI_SceneLabel</type>

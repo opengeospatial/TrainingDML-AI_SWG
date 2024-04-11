@@ -43,7 +43,9 @@ Example:
    <modify>
       <type>EOTrainingData</type>
       <id>P1228</id>
-      <dataSources>GF</dataSources>
+      <dataSources>
+         <cit:title>GF</cit:title>
+      </dataSources>
       <dataURL>train/images/P1228.png</dataURL>
       <numberOfLabels>50</numberOfLabels>
       <trainingType>training</trainingType>

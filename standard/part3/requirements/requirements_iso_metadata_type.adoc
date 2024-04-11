@@ -9,62 +9,75 @@
 |Requirement 8|/req/base/isometadatatype/scope
 |===
 
-The MD_Band is encoded as a text string or an XML element.
+The MD_Band is encoded as an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 5|/req/base/isometadatatype/band
 
-Each MD_Band value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
+Each MD_Band value SHALL be encoded as an XML element matching the XML Schema type as defined in:
 
 https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd
 |===
 
 Examples:
 
- a)	red
- b)	B4
+ a)	<mrc:name>
+        <mcc:code>red</mcc:code>
+    </mrc:name>
+ b)	<mrc:name>
+        <mcc:code>B4</mcc:code>
+    </mrc:name>
  c) <mrc:boundMax>690</mrc:boundMax>
     <mrc:boundMin>630</mrc:boundMin>
     <mrc:boundUnits>nm</mrc:boundUnits>
 
-An The EX_Extent is encoded as a text string or an XML element.
+
+An The EX_Extent is encoded as an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 6|/req/base/isometadatatype/extent
 
-Each EX_Extent value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
+Each EX_Extent value SHALL be encoded as an XML element matching the XML Schema type as defined in:
 
 https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd
 |===
 
 Examples:
 
- a)	120.0 30.0 130.0 40.0
- b)	120.0 30.0 10.0 130.0 40.0 20.0
- c) <geographicElement>
-        <westBoundLongitude>-171.76409</westBoundLongitude>
-        <eastBoundLongitude>-157.86768</eastBoundLongitude>
-        <southBoundLatitude>-14.42443</southBoundLatitude>
-        <northBoundLatitude>21.31573</northBoundLatitude>
-    </geographicElement>
+ a)	<gex:geographicElement>
+        <gex:polygon>
+            <gml:exterior>
+		        <gml:LinearRing>
+			        <gml:posList>
+				        51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+			        </gml:posList>
+		        </gml:LinearRing>
+            </gml:exterior>
+        </gex:polygon>
+    </gex:geographicElement>
+ b)	<gex:geographicElement>
+        <gex:westBoundLongitude>-171.76409</gex:westBoundLongitude>
+        <gex:eastBoundLongitude>-157.86768</gex:eastBoundLongitude>
+        <gex:southBoundLatitude>-14.42443</gex:southBoundLatitude>
+        <gex:northBoundLatitude>21.31573</gex:northBoundLatitude>
+    </gex:geographicElement>
 
-The CI_Citation is encoded as a text string or an XML element.
+The CI_Citation is encoded as an XML element.
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 7|/req/base/isometadatatype/citation
 
-Each CI_Citation value SHALL be encoded as a text string or an XML element matching the XML Schema type as defined in:
+Each CI_Citation value SHALL be encoded as an XML element matching the XML Schema type as defined in:
 
 https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd
 |===
 
-Examples:
+Example:
 
- a)	http://www.opengeospatial.org
- b)	<cit:title>Open Geospatial Consortium</cit:title>
+ a)	<cit:title>Open Geospatial Consortium</cit:title>
     <cit:alternateTitle>OGC</cit:alternateTitle> 
     <cit:identifier>
         <cit:code>
@@ -83,9 +96,13 @@ Each MD_Scope value SHALL be encoded as an XML element matching the XML Schema t
 https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd
 |===
 
-Example:
+Examples:
 
-    <mcc:level>dataset</mcc:level>
+ a)	<mcc:level>dataset</mcc:level>
     <mcc:levelDescription>
         <mcc:dataset>whu_rs19</mcc:dataset>
+    </mcc:levelDescription>
+ b)	<mcc:level>feature</mcc:level>
+    <mcc:levelDescription>
+        <mcc:other>labeling</mcc:other >
     </mcc:levelDescription>

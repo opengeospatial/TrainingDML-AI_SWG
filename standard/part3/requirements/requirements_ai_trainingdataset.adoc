@@ -62,35 +62,29 @@ Example:
    <description>Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth</description>
    <amountOfTrainingData>1013</amountOfTrainingData>
    <createdTime>2010-01-01</createdTime>
-   <providers>
-      <provider>Wuhan University</provider>
-   </providers>
-   <keywords>
-      <keyword>Remote Sensing</keyword>
-      <keyword>Scene Classification</keyword>
-   </keywords>
+   <providers>Wuhan University</providers>
+   <keywords>Remote Sensing</keywords>
+   <keywords>Scene Classification</keywords>
    <numberOfClasses>19</numberOfClasses>
-   <classes>
-      <class>Airport</class>
-      <class>Beach</class>
-      <class>Bridge</class>
-      <class>Commercial</class>
-      <class>Desert</class>
-      <class>Farmland</class>
-      <class>footballField</class>
-      <class>Forest</class>
-      <class>Industrial</class>
-      <class>Meadow</class>
-      <class>Mountain</class>
-      <class>Park</class>
-      <class>Parking</class>
-      <class>Pond</class>
-      <class>Port</class>
-      <class>railwayStation</class>
-      <class>Residential</class>
-      <class>River</class>
-      <class>Viaduct</class>
-   </classes>
+   <classes>Airport</classes>
+   <classes>Beach</classes>
+   <classes>Bridge</classes>
+   <classes>Commercial</classes>
+   <classes>Desert</classes>
+   <classes>Farmland</classes>
+   <classes>footballField</classes>
+   <classes>Forest</classes>
+   <classes>Industrial</classes>
+   <classes>Meadow</classes>
+   <classes>Mountain</classes>
+   <classes>Park</classes>
+   <classes>Parking</classes>
+   <classes>Pond</classes>
+   <classes>Port</classes>
+   <classes>railwayStation</classes>
+   <classes>Residential</classes>
+   <classes>River</classes>
+   <classes>Viaduct</classes>
    <tasks>
       <type>EOTask</type>
       <id>whu_rs19-task</id>
@@ -101,7 +95,7 @@ Example:
       <type>EOTrainingData</type>
       <id>airport_01</id>
       <dataSources>
-         <dataSource>googleEarth</dataSource>
+         <cit:title>googleEarth</cit:title>
       </dataSources>
       <dataURL>image/Airport/airport_01.jpg</dataURL>
       <labels>
@@ -110,7 +104,7 @@ Example:
       </labels>
    </data>
 
-If the optional element AI_MetricsInLiterature is specified, this element is encoded as XML  element with properties as shown in Table 3.
+If the optional element AI_MetricsInLiterature is specified, this element is encoded as XML element with properties as shown in Table 3.
 
 [width="100%",cols="20%,80%",]
 |===
@@ -168,13 +162,29 @@ Example:
    <keywords>Remote Sensing</keywords>
    <keywords>Scene Classification</keywords>
    <numberOfClasses>19</numberOfClasses>
-   <extent>-180</extent>
-   <extent>-90</extent>
-   <extent>180</extent>
-   <extent>90</extent>
-   <bands>red</bands>
-   <bands>green</bands>
-   <bands>blue</bands>
+   <extent>
+   <gex:geographicElement>
+   <gex:westBoundLongitude>-180</gex:westBoundLongitude>
+         <gex:eastBoundLongitude>180</gex:eastBoundLongitude>
+         <gex:southBoundLatitude>-90</gex:southBoundLatitude>
+         <gex:northBoundLatitude>90</gex:northBoundLatitude>
+   </gex:geographicElement>
+   </extent>
+   <bands>
+   <mrc:name>
+   <mcc:code>red</mcc:code>
+   </mrc:name>
+   </bands>
+   <bands>
+   <mrc:name>
+   <mcc:code>green</mcc:code>
+   </mrc:name>
+   </bands>
+   <bands>
+   <mrc:name>
+   <mcc:code>blue</mcc:code>
+   </mrc:name>
+   </bands>
    <imageSize>6000x7600</imageSize>
    <classes>Airport</classes>
    <classes>Beach</classes>
@@ -204,7 +214,9 @@ Example:
    <data>
       <type>AI_EOTrainingData</type>
       <id>airport_01</id>
-      <dataSources>googleEarth</dataSources>
+      <dataSources>
+   <cit:title>googleEarth</cit:title>
+   </dataSources>
       <dataURL>image/Airport/airport_01.jpg</dataURL>
       <labels>
          <type>AI_SceneLabel</type>
