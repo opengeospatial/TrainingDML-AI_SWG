@@ -1403,13 +1403,13 @@ h)	09:30:10Z</pre>
 <div class="content">
 <pre>a)	&lt;mrc:name&gt;
        &lt;mcc:code&gt;red&lt;/mcc:code&gt;
-   &lt;/mrc:name&gt;
+    &lt;/mrc:name&gt;
 b)	&lt;mrc:name&gt;
        &lt;mcc:code&gt;B4&lt;/mcc:code&gt;
-   &lt;/mrc:name&gt;
-c) &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
-   &lt;mrc:boundMin&gt;630&lt;/mrc:boundMin&gt;
-   &lt;mrc:boundUnits&gt;nm&lt;/mrc:boundUnits&gt;</pre>
+    &lt;/mrc:name&gt;
+c)  &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
+    &lt;mrc:boundMin&gt;630&lt;/mrc:boundMin&gt;
+    &lt;mrc:boundUnits&gt;nm&lt;/mrc:boundUnits&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1507,13 +1507,48 @@ b)	&lt;gex:geographicElement&gt;
 <div class="literalblock">
 <div class="content">
 <pre>a)	&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
-   &lt;mcc:levelDescription&gt;
+    &lt;mcc:levelDescription&gt;
        &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
-   &lt;/mcc:levelDescription&gt;
+    &lt;/mcc:levelDescription&gt;
 b)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
-   &lt;mcc:levelDescription&gt;
+    &lt;mcc:levelDescription&gt;
        &lt;mcc:other&gt;labeling&lt;/mcc:other &gt;
-   &lt;/mcc:levelDescription&gt;</pre>
+    &lt;/mcc:levelDescription&gt;</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a)	&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
+    &lt;mcc:levelDescription&gt;
+       &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
+    &lt;/mcc:levelDescription&gt;
+b)	&lt;mcc:level&gt;attribute&lt;/mcc:level&gt;
+    &lt;mcc:levelDescription&gt;
+       &lt;mcc:attributes&gt;completeness&lt;/mcc:attributes&gt;
+    &lt;/mcc:levelDescription&gt;
+c)	&lt;mcc:level&gt;coverage&lt;/mcc:level&gt;
+    &lt;mcc:extent&gt;
+       &lt;gex:geographicElement&gt;
+           &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
+           &lt;gex:eastBoundLongitude&gt;-157.86768&lt;/gex:eastBoundLongitude&gt;
+           &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
+           &lt;gex:northBoundLatitude&gt;21.31573&lt;/gex:northBoundLatitude&gt;
+       &lt;/gex:geographicElement&gt;
+    &lt;/mcc:extent&gt;
+d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
+    &lt;mcc:extent&gt;
+       &lt;gex:geographicElement&gt;
+           &lt;gex:polygon&gt;
+               &lt;gml:exterior&gt;
+                   &lt;gml:LinearRing&gt;
+                       &lt;gml:posList&gt;
+                           51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                       &lt;/gml:posList&gt;
+                   &lt;/gml:LinearRing&gt;
+               &lt;/gml:exterior&gt;
+           &lt;/gex:polygon&gt;
+       &lt;/gex:geographicElement&gt;
+    &lt;/mcc:extent&gt;</pre>
 </div>
 </div>
 </div>
@@ -2490,7 +2525,7 @@ d) retraining</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">dataURL</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">URL of the EO data.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">URL of the EO data, including both relative and absolute paths, which can encompass local paths, network addresses, and more.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">URL [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>

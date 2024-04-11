@@ -78,7 +78,7 @@ Each AI_EOTrainingData object SHALL implement the Mandatory properties as define
 |type |Type of the EO training data. |"AI_EOTrainingData" |Mandatory
 |extent |Spatial extent of the individual EO training sample. |EX_Extent [0..1] |Optional
 |dataTime |Data time when the EO data was obtained. |DateTime [0..*] |Optional
-|dataURL |URL of the EO data. |URL [1..*] |Mandatory
+|dataURL |URL of the EO data, including both relative and absolute paths, which can encompass local paths, network addresses, and more. |URL [1..*] |Mandatory
 |===
 
 Example:

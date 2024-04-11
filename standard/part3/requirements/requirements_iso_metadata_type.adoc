@@ -24,13 +24,13 @@ Examples:
 
  a)	<mrc:name>
         <mcc:code>red</mcc:code>
-    </mrc:name>
+     </mrc:name>
  b)	<mrc:name>
         <mcc:code>B4</mcc:code>
-    </mrc:name>
- c) <mrc:boundMax>690</mrc:boundMax>
-    <mrc:boundMin>630</mrc:boundMin>
-    <mrc:boundUnits>nm</mrc:boundUnits>
+     </mrc:name>
+ c)  <mrc:boundMax>690</mrc:boundMax>
+     <mrc:boundMin>630</mrc:boundMin>
+     <mrc:boundUnits>nm</mrc:boundUnits>
 
 
 An The EX_Extent is encoded as an XML element.
@@ -99,10 +99,42 @@ https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd
 Examples:
 
  a)	<mcc:level>dataset</mcc:level>
-    <mcc:levelDescription>
+     <mcc:levelDescription>
         <mcc:dataset>whu_rs19</mcc:dataset>
-    </mcc:levelDescription>
+     </mcc:levelDescription>
  b)	<mcc:level>feature</mcc:level>
-    <mcc:levelDescription>
+     <mcc:levelDescription>
         <mcc:other>labeling</mcc:other >
-    </mcc:levelDescription>
+     </mcc:levelDescription>
+
+ a)	<mcc:level>dataset</mcc:level>
+     <mcc:levelDescription>
+        <mcc:dataset>whu_rs19</mcc:dataset>
+     </mcc:levelDescription>
+ b)	<mcc:level>attribute</mcc:level>
+     <mcc:levelDescription>
+        <mcc:attributes>completeness</mcc:attributes>
+     </mcc:levelDescription>
+ c)	<mcc:level>coverage</mcc:level>
+     <mcc:extent>
+        <gex:geographicElement>
+            <gex:westBoundLongitude>-171.76409</gex:westBoundLongitude>
+            <gex:eastBoundLongitude>-157.86768</gex:eastBoundLongitude>
+            <gex:southBoundLatitude>-14.42443</gex:southBoundLatitude>
+            <gex:northBoundLatitude>21.31573</gex:northBoundLatitude>
+        </gex:geographicElement>
+     </mcc:extent>
+ d)	<mcc:level>feature</mcc:level>
+     <mcc:extent>
+        <gex:geographicElement>
+            <gex:polygon>
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gex:polygon>
+        </gex:geographicElement>
+     </mcc:extent>
