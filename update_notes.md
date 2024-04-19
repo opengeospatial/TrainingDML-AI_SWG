@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2024-04-03 16:35:15
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-04-19 19:29:39
+ * @LastEditTime: 2024-04-19 19:50:15
  * @FilePath: \TrainingDML-AI_SWG\update_notes.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -53,9 +53,13 @@
 
 ## Comments from ISO
 ### Update 1
-- Comment:
-- Response:
-- Action:
+- Comment: The Training Dataset environment has a high influence in the model trained with it，and consequently in the obtained predictions. I mean, for example, a high variety of environments/landscapes in the Datasets are required for obtaining a model able to detect objects within all of them. (This issue could be related with the “optimal applicable geographical region” defined in the extension for GeoAI models standardization proposed for the future)
+- Proposed Change: Introducing an attribute defining the “Main Environment” of the Dataset (urban/rural/different land uses.. ) or even the different percentages. .
+- Action: Adding "regionEnvironment [0..1]: CharacterString" to AI_AbstractTrainingDataset
+### Update 2
+- Comment: 
+- Proposed Change: 
+- Action: 
 
 
 
