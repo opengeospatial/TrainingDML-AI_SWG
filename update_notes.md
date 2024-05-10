@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2024-04-03 16:35:15
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-05-10 11:41:38
+ * @LastEditTime: 2024-05-10 11:48:47
  * @FilePath: \TrainingDML-AI_SWG\update_notes.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -134,7 +134,7 @@ A definition should be so long and should not contain multiple sentences. The de
 - Proposed Change: Add the &lt;earth observation&gt; and the highlighted text should be transformed to a note to entry.
 - Action: Corrected to the following sentence:
 > label  
-<earth observation> refers to known or expected results annotated as values of a dependent variable in training samples  
+&lt;earth observation&gt; refers to known or expected results annotated as values of a dependent variable in training samples  
 Note 1 to entry: A training sample label is different from those on a geographical map, which are known as map labels or annotations.
 
 ### Update 9
