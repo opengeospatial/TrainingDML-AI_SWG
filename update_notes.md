@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2024-04-03 16:35:15
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-05-10 19:42:57
+ * @LastEditTime: 2024-05-10 19:47:01
  * @FilePath: \TrainingDML-AI_SWG\update_notes.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -115,7 +115,7 @@ Note 1 to entry: ML processes create models from training data by using a set of
 >training dataset  
 collection of samples, often labelled in terms of supervised learning. **A training dataset can be divided into training, validation, and test sets. Training samples are different from samples in OGC Observations & Measurements (O&M). They are often collected in purposive ways that deviate from purely probability sampling, with known or expected results labelled as values of a dependent variable for generating a trained predictive model.**
 
-A definition should be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
+A definition should not be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
 - Proposed Change: The highlighted sentences should be formatted as notes to entry or examples.
 - Action: Corrected to the following sentence:
 > training dataset  
@@ -130,7 +130,7 @@ refers to known or expected results annotated as values of a dependent variable 
 
 Because the term "label" is a common term (understood by many people outside of our geospatial/EO domains) we need use a &lt;domain&gt; to clarify which domain this definition belongs. &lt;earth observation&gt; may be one suitable domain because this type of "label" is different from a "cartographic label". I will let you and the experts decide. A list of current domains used in tc211 can be found in the quarterly terminology spreadsheet N5976; if you cannot find this, please let me know.
 
-A definition should be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
+A definition should not be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
 - Proposed Change: Add the &lt;earth observation&gt; and the highlighted text should be transformed to a note to entry.
 - Action: Corrected to the following sentence:
 > label  
@@ -187,7 +187,7 @@ recognition of objects from images. The objects are often localized using boundi
 
 Please search for a suitable definition in ISO/IEC/IEEE if possible.
 
-A definition should be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
+A definition should not be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
 
 This text is suitable as a note to entry
 
@@ -233,7 +233,7 @@ Do the same for definition "3D model reconstruction"
 >generative model  
 method of large model training, which improve model performance through unsupervised pre-training. In the fine-tuning phase, labelled data plays a critical role in optimizing the model for specific vertical domains or tasks. **By incorporating labelled data, the model can learn to accurately identify and extract relevant features, leading to better performance on specific downstream tasks. Overall, the combination of generative models and fine-tuning with labelled data can significantly improve the performance of large models in specialized domains or tasks.**
 
-A definition should be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
+A definition should not be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document.
 
 - Proposed Change: The highlighted sentences should be formatted as notes to entry or examples.
 - Action: Corrected to the following sentence:
