@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2024-04-03 16:35:15
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-04-19 19:50:15
+ * @LastEditTime: 2024-05-10 11:41:38
  * @FilePath: \TrainingDML-AI_SWG\update_notes.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -105,7 +105,7 @@ Is it possible to find an ISO/IEC/IEEE definition suitable for this term?
 - Action: Replaced with one sourced from ISO/IEC 22989:2022,3.3.5:
 > machine learning  
 ML  
-process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience
+process of optimizing model parameters through computational techniques, such that the model's behavior reflects the data or experience
 Note 1 to entry: ML processes create models from training data by using a set of learning algorithms, and then can use these models to make predictions. Depending on whether the training data include labels, the learning algorithms can be divided into supervised and unsupervised learning.  
 [SOURCE: ISO/IEC 22989:2022, 3.3.5, modified — Note 1 has been added]
 
@@ -217,7 +217,7 @@ Sometimes it is not good to use "ing forms of verbs" in the definitions; we can 
 recognition of changes in an area between images taken at different times
 
 
-I am not sure if &lt;iamgery&gt; is the best domain. We do not have an &lt;image processing&gt; domain. You could create that if you think more of the terms could benefit from that domain. I understand change detection is typically performed on images, would "change detection between two point clouds also be possible" but not easy... 
+I am not sure if &lt;imagery&gt; is the best domain. We do not have an &lt;image processing&gt; domain. You could create that if you think more of the terms could benefit from that domain. I understand change detection is typically performed on images, would "change detection between two point clouds also be possible" but not easy... 
 
 - Proposed Change: Perhaps could create &lt;image processing&gt; domain.
 - Action: We use the &lt;earth observation&gt; for these specific tasks used in the EO domain:
