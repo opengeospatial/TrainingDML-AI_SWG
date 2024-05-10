@@ -2,7 +2,7 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2024-04-03 16:35:15
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-05-10 11:48:47
+ * @LastEditTime: 2024-05-10 19:42:57
  * @FilePath: \TrainingDML-AI_SWG\update_notes.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -97,7 +97,7 @@ ML
 
 These type of qualifying or descriptive words (highlighted words) should not be used in the definition or standard.
 
-A definition should be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document. This extra content can be formatted as Notes to entry or EXAMPLEs
+A definition should not be so long and should not contain multiple sentences. The definition should be able to "replace" the term if inserted to the document. This extra content can be formatted as Notes to entry or EXAMPLEs
 
 Is it possible to find an ISO/IEC/IEEE definition suitable for this term?
 
