@@ -4,7 +4,6 @@
 2+|/req/aitask
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
-|Dependency |/req/base/isometadatatype
 |Requirement 17 |/req/aitask/task
 |Requirement 18 |/req/aitask/eotask
 |===

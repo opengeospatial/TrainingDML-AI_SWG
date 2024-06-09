@@ -1,11 +1,40 @@
-[width="100%",cols="25%,10%,55%",]
+[width="100%",cols="40%,60%",]
 |===
-|Conformance Class 2+|/conf/aitrainingdataset
-|Requirements 2+|/req/aitrainingdataset
-|Dependency 2+|A JSON Schema Validator
-.3+|Test |Test purpose |Verify that the training dataset object is encoded using the specified property names and structures.
-|Test method |Validate the JSON instance document using the appropriate object definition from the TrainingDML-AI.json JSON Schema. 
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-2/1.0/conf/aitrainingdataset
+|Requirements class |/req/aitrainingdataset
+|Dependency |/conf/base/jsonbasetype
+|Dependency |/conf/base/isometadatatype
+|Dependency |/conf/aitrainingdata
+|Dependency |/conf/aitask
+|Dependency |/conf/ailabeling
+|Dependency |/conf/aidataquality
+|Dependency |/conf/aitdchangeset
+|===
 
-Pass if no errors reported. Fail otherwise.
-|Test type |Capability
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 11
+|Test ID |/conf/aitrainingdataset/trainingdataset
+|Requirement |/req/aitrainingdataset/trainingdataset
+|Test purpose |Verify that instance documents using the AI_TrainingDataset JSON objects listed in Table 2 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_trainingDataset.json.
+|Test method |Validate the instance document against the ai_trainingDataset.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 12
+|Test ID |/conf/aitrainingdataset/metricsinliterature
+|Requirement |/req/aitrainingdataset/metricsinliterature
+|Test purpose |Verify that instance documents using the AI_MetricsInLiterature JSON objects listed in Table 3 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_metricsInLiterature.json.
+|Test method |Validate the instance document against the ai_metricsInLiterature.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 13
+|Test ID |/conf/aitrainingdataset/eotrainingdataset
+|Requirement |/req/aitrainingdataset/eotrainingdataset
+|Test purpose |Verify that instance documents using the AI_EOTrainingDataset JSON objects listed in Table 2 and Table 4 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_eoTrainingDataset.json.
+|Test method |Validate the instance document against the ai_eoTrainingDataset.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

@@ -10,7 +10,21 @@ Conformance is tested using the JSON Schema document which formalize the require
 
 The Base conformance class tests that occurrences of the basic types are encoded according to the requirements.
 
-include::abstract_tests/ats_class_base.adoc[]
+==== Conformance Class: JSON Base Type
+
+include::abstract_tests/ats_class_base_json_base_type.adoc[]
+
+==== Conformance Class: ISO Metadata Type
+
+include::abstract_tests/ats_class_base_iso_metadata_type.adoc[]
+
+==== Conformance Class: ISO Quality Type
+
+include::abstract_tests/ats_class_base_iso_quality_type.adoc[]
+
+==== Conformance Class: Geospatial Type
+
+include::abstract_tests/ats_class_base_geospatial_type.adoc[]
 
 === Conformance Class: AI_TrainingDataset
 
@@ -41,6 +55,12 @@ include::abstract_tests/ats_class_label.adoc[]
 The AI_Labeling conformance class tests that the labeling objects are encoded according to the requirements.
 
 include::abstract_tests/ats_class_labeling.adoc[]
+
+=== Conformance Class: AI_DataQuality
+
+The AI_DataQuality conformance class tests that the data quality objects are encoded according to the requirements.
+
+include::abstract_tests/ats_class_dataquality.adoc[]
 
 === Conformance Class: AI_TDChangeset
 

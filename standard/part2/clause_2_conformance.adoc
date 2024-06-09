@@ -7,3 +7,9 @@ This Standard defines a JSON encoding for AI training datasets. The standardizat
 Conformance with this Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and https://www.opengeospatial.org/cite[the OGC Compliance Testing website].
 
 All requirements-classes and conformance-classes described in this document are owned by the standard identified.
+
+This standard identifies eleven (11) conformance classes. Each conformance class is defined by one requirements class. The tests in Annex A are organized by requirements class. So an implementation of each conformance class must pass all tests specified in Annex A for the respective requirements class.
+
+Of these eleven conformance classes, only the AI_TrainingDataset conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.
+
+If AI_TrainingDataset conformance class is implemented, all other conformance classes will eventually be implemented based on the dependencies between the conformance classes. Therefore, all conformance classes can also be considered mandatory.

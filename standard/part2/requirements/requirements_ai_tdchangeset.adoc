@@ -4,7 +4,6 @@
 2+|/req/aitdchangeset
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
-|Dependency |/req/base/isometadatatype
 |Dependency |/req/tdtrainingdata
 |Requirement 29 |/req/aitdchangeset/tdchangeset
 |===

@@ -1,0 +1,42 @@
+[width="100%",cols="40%,60%",]
+|===
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-2/1.0/conf/base/jsonbasetype
+|Requirements class |/req/base/jsonbasetype
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 1
+|Test ID |/conf/base/jsonbasetype/json
+|Requirement |/req/base/jsonbasetype/json
+|Test purpose |Verify that the document is well-formed JSON.
+|Test method |Load the document in a JSON validator. Pass if no errors reported. Fail otherwise.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 2
+|Test ID |/conf/base/jsonbasetype/datetime
+|Requirement |/req/base/jsonbasetype/datetime
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid DateTime values according to Date and Time on the Internet: Timestamps https://datatracker.ietf.org/doc/html/rfc3339#section-5.6[RFC 3339 Section 5.6].
+|Test method |Inspect the instance document to verify the above requirement.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 3
+|Test ID |/conf/base/jsonbasetype/namedvalue
+|Requirement |/req/base/jsonbasetype/namedvalue
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/namedValue.json.
+|Test method |Validate the instance document against the namedValue.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 4
+|Test ID |/conf/base/jsonbasetype/url
+|Requirement |/req/base/jsonbasetype/url
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification contain valid URL values according to Uniform Resource Identifier (URI): Generic Syntax https://datatracker.ietf.org/doc/html/rfc3986#section-4.1[RFC 3986 Section 4.1]. A URL value can be absolute or relative and may have an optional fragment identifier.
+|Test method |Inspect the instance document to verify the above requirement.
+|===

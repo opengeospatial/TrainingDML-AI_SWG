@@ -4,7 +4,6 @@
 2+|/req/ailabel
 |Dependency |JSON
 |Dependency |/req/base/jsonbasetype
-|Dependency |/req/base/isometadatatype
 |Dependency |/req/base/geospatialtype
 |Requirement 19 |/req/ailabel/label
 |Requirement 20 |/req/ailabel/scenelabel

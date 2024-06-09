@@ -1,0 +1,42 @@
+[width="100%",cols="40%,60%",]
+|===
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-2/1.0/conf/base/isometadatatype
+|Requirements class |/req/base/isometadatatype
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 5
+|Test ID |/conf/base/isometadatatype/band
+|Requirement |/req/base/isometadatatype/band
+|Test purpose |Verify that instance documents using the MD_Band JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/md_band.json.
+|Test method |Validate the instance document against the md_band.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 6
+|Test ID |/conf/base/isometadatatype/extent
+|Requirement |/req/base/isometadatatype/extent
+|Test purpose |Verify that instance documents using the EX_Extent JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/ex_extent.json.
+|Test method |Validate the instance document against the ex_extent.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 7
+|Test ID |/conf/base/isometadatatype/citation
+|Requirement |/req/base/isometadatatype/citation
+|Test purpose |Verify that instance documents using the CI_Citation JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/ci_citation.json.
+|Test method |Validate the instance document against the ci_citation.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 8
+|Test ID |/conf/base/isometadatatype/scope
+|Requirement |/req/base/isometadatatype/scope
+|Test purpose |Verify that instance documents using the MD_Scope JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/md_scope.json.
+|Test method |Validate the instance document against the md_scope.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
+|===
