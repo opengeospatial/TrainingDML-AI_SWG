@@ -1302,12 +1302,8 @@ h)	09:30:10Z</pre>
 <div class="literalblock">
 <div class="content">
 <pre>a) &lt;key&gt;forest&lt;/key&gt;
-   &lt;value&gt;RGB(0,255,255)&lt;/value&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>b) &lt;key&gt;precision&lt;/key&gt;
+   &lt;value&gt;RGB(0,255,255)&lt;/value&gt;
+b) &lt;key&gt;precision&lt;/key&gt;
    &lt;value&gt;0.8&lt;/value&gt;</pre>
 </div>
 </div>
@@ -1332,12 +1328,8 @@ h)	09:30:10Z</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a) http://www.opengeospatial.org</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>b) /file.txt</pre>
+<pre>a) http://www.opengeospatial.org
+b) /file.txt</pre>
 </div>
 </div>
 </div>
@@ -1478,7 +1470,7 @@ b)	&lt;gex:geographicElement&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
+<pre>&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
    &lt;cit:alternateTitle&gt;OGC&lt;/cit:alternateTitle&gt;
    &lt;cit:identifier&gt;
        &lt;cit:code&gt;
@@ -1506,18 +1498,6 @@ b)	&lt;gex:geographicElement&gt;
 </table>
 <div class="paragraph">
 <p>Examples:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>a)	&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
-    &lt;mcc:levelDescription&gt;
-       &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
-    &lt;/mcc:levelDescription&gt;
-b)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
-    &lt;mcc:levelDescription&gt;
-       &lt;mcc:other&gt;labeling&lt;/mcc:other &gt;
-    &lt;/mcc:levelDescription&gt;</pre>
-</div>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -1661,10 +1641,10 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 &lt;/evaluationMethod&gt;
 &lt;result&gt;
    &lt;quantitativeResult&gt;
-    &lt;value&gt;
+      &lt;value&gt;
          0
       &lt;/value&gt;
-    &lt;valueUnit&gt;
+      &lt;valueUnit&gt;
          %
       &lt;/valueUnit&gt;
    &lt;/quantitativeResult&gt;
@@ -1701,7 +1681,7 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 10</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/geospatialtype/feature</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/geospatialtype/feature</p></td>
 </tr>
 </tbody>
 </table>
@@ -1716,7 +1696,7 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 10</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/geospatialtype/feature</p>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/geospatialtype/feature</p>
 <p class="tableblock">Each Feature value SHALL be encoded using the GML feature encoding defined by OpenGIS in GML Section 3.2:</p>
 <p class="tableblock"><a href="http://www.opengis.net/gml/3.2" class="bare">http://www.opengis.net/gml/3.2</a></p></td>
 </tr>
@@ -1748,12 +1728,8 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 		    &lt;/gml:Polygon&gt;
 	    &lt;/gml:element&gt;
     &lt;/gml:GeometricComplex&gt;
-   &lt;/gml:location&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>b)	&lt;gml:metaDataProperty&gt;
+   &lt;/gml:location&gt;
+b)	&lt;gml:metaDataProperty&gt;
        &lt;gml:GenericMetaData&gt;
            &lt;iscrowd&gt;0&lt;/iscrowd&gt;
            &lt;area&gt;2580&lt;/area&gt;
@@ -1786,7 +1762,7 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 <div class="sect2">
 <h3 id="_requirements_class_ai_trainingdataset"><a class="anchor" href="#_requirements_class_ai_trainingdataset"></a>7.2. Requirements Class: AI_TrainingDataset</h3>
 <div class="paragraph">
-<p>The AI_TrainingDataset requirements class defines a XML encoding for the AI_TrainingDataset module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
+<p>The AI_TrainingDataset requirements class defines an XML encoding for the AI_TrainingDataset module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2222,27 +2198,27 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 &lt;keywords&gt;Scene Classification&lt;/keywords&gt;
 &lt;numberOfClasses&gt;19&lt;/numberOfClasses&gt;
 &lt;extent&gt;
-&lt;gex:geographicElement&gt;
-&lt;gex:westBoundLongitude&gt;-180&lt;/gex:westBoundLongitude&gt;
+   &lt;gex:geographicElement&gt;
+      &lt;gex:westBoundLongitude&gt;-180&lt;/gex:westBoundLongitude&gt;
       &lt;gex:eastBoundLongitude&gt;180&lt;/gex:eastBoundLongitude&gt;
       &lt;gex:southBoundLatitude&gt;-90&lt;/gex:southBoundLatitude&gt;
       &lt;gex:northBoundLatitude&gt;90&lt;/gex:northBoundLatitude&gt;
-&lt;/gex:geographicElement&gt;
+   &lt;/gex:geographicElement&gt;
 &lt;/extent&gt;
 &lt;bands&gt;
-&lt;mrc:name&gt;
-&lt;mcc:code&gt;red&lt;/mcc:code&gt;
-&lt;/mrc:name&gt;
+   &lt;mrc:name&gt;
+      &lt;mcc:code&gt;red&lt;/mcc:code&gt;
+   &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;bands&gt;
-&lt;mrc:name&gt;
-&lt;mcc:code&gt;green&lt;/mcc:code&gt;
-&lt;/mrc:name&gt;
+   &lt;mrc:name&gt;
+      &lt;mcc:code&gt;green&lt;/mcc:code&gt;
+   &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;bands&gt;
-&lt;mrc:name&gt;
-&lt;mcc:code&gt;blue&lt;/mcc:code&gt;
-&lt;/mrc:name&gt;
+   &lt;mrc:name&gt;
+      &lt;mcc:code&gt;blue&lt;/mcc:code&gt;
+   &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;imageSize&gt;6000x7600&lt;/imageSize&gt;
 &lt;classes&gt;Airport&lt;/classes&gt;
@@ -2542,7 +2518,7 @@ d) retraining</pre>
 <pre>&lt;type&gt;AI_EOTrainingData&lt;/type&gt;
 &lt;id&gt;airport_01&lt;/id&gt;
 &lt;dataSources&gt;
-&lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+   &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
 &lt;/dataSources&gt;
 &lt;extent&gt;
    &lt;gex:geographicElement&gt;
@@ -2550,7 +2526,7 @@ d) retraining</pre>
       &lt;gex:eastBoundLongitude&gt;-171.56578&lt;/gex:eastBoundLongitude&gt;
       &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
       &lt;gex:northBoundLatitude&gt;-14.32568&lt;/gex:northBoundLatitude&gt;
-&lt;/gex:geographicElement&gt;
+   &lt;/gex:geographicElement&gt;
 &lt;/extent&gt;
 &lt;dataTime&gt;2002-05-30T09:30:10Z&lt;/dataTime&gt;
 &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
@@ -2564,7 +2540,7 @@ d) retraining</pre>
 <div class="sect2">
 <h3 id="_requirements_class_ai_task"><a class="anchor" href="#_requirements_class_ai_task"></a>7.4. Requirements Class: AI_Task</h3>
 <div class="paragraph">
-<p>The AI_Task requirements class defines a XML encoding for the AI_Task module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
+<p>The AI_Task requirements class defines an XML encoding for the AI_Task module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3098,7 +3074,7 @@ d) retraining</pre>
 <div class="sect2">
 <h3 id="_requirements_class_ai_labeling"><a class="anchor" href="#_requirements_class_ai_labeling"></a>7.6. Requirements Class: AI_Labeling</h3>
 <div class="paragraph">
-<p>The AI_Labeling requirements class defines a XML encoding for the AI_Labeling module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
+<p>The AI_Labeling requirements class defines an XML encoding for the AI_Labeling module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3385,6 +3361,45 @@ d) retraining</pre>
 </div>
 <div class="sect2">
 <h3 id="_requirements_class_ai_dataquality"><a class="anchor" href="#_requirements_class_ai_dataquality"></a>7.7. Requirements Class: AI_DataQuality</h3>
+<div class="paragraph">
+<p>The AI_DataQuality requirements class defines an XML encoding for the AI_DataQuality module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><strong>Requirements class</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2" style="background-color: #FFFFFF;"><p class="tableblock">/req/aidataquality</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">XML</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/xmlbasetype</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isometadatatype</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Dependency</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/base/isoqualitytype</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement 28</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/aidataquality/classbalancedegree</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>The AI_ClassBalanceDegree object is encoded as an XML element with properties as shown in Table 16.</p>
 </div>

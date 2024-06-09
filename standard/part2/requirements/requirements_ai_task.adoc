@@ -31,9 +31,9 @@ Each AI_Task object SHALL implement the Mandatory properties shown in Table 7.
 Example:
 
  {
-    "type": "AI_AbstractTask",
-    "id": "image-indexing-task",
-    "description": "Structural high-resolution satellite image indexing"
+   "type": "AI_AbstractTask",
+   "id": "image-indexing-task",
+   "description": "Structural high-resolution satellite image indexing"
  }
 
 The AI_EOTask object is encoded as a JSON object with properties both shown in Table 7 and Table 8.
@@ -56,8 +56,8 @@ Each AI_EOTask object SHALL implement the Mandatory properties shown in Table 7 
 Example:
 
  {
-    "type": "AI_EOTask",
-    "id": "image-indexing-task",
-    "description": "Structural high-resolution satellite image indexing"
-    "taskType": "Scene Classification"
+   "type": "AI_EOTask",
+   "id": "image-indexing-task",
+   "description": "Structural high-resolution satellite image indexing"
+   "taskType": "Scene Classification"
  }

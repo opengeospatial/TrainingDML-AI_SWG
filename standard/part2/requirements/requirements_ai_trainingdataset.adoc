@@ -57,18 +57,18 @@ Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in
 Example:
 
  {
-    "type": "AI_AbstractTrainingDataset",
-    "id": "whu_rs19",
-    "name": "WHU-RS19",
-    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
-    "amountOfTrainingData": 1013,
-    "createdTime": "2010-01-01",
-    "providers": ["Wuhan University"],
-    "keywords": ["Remote Sensing", "Scene Classification"],
-    "numberOfClasses": 19,
-    "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
-    "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-    "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
+   "type": "AI_AbstractTrainingDataset",
+   "id": "whu_rs19",
+   "name": "WHU-RS19",
+   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "amountOfTrainingData": 1013,
+   "createdTime": "2010-01-01",
+   "providers": ["Wuhan University"],
+   "keywords": ["Remote Sensing", "Scene Classification"],
+   "numberOfClasses": 19,
+   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+   "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+   "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
  }
 
 If the optional element AI_MetricsInLiterature is specified, this element is encoded as JSON object with properties as shown in Table 3.
@@ -92,9 +92,9 @@ Each AI_MetricsInLiterature value SHALL implement the Mandatory properties shown
 Example:
 
  {
-    "doi": "10.1109/TGRS.2019.2917161",
-    "algorithm": "FACNN",
-    "metrics": [{"key": "Overall Accuracy", "value": 0.9881}]
+   "doi": "10.1109/TGRS.2019.2917161",
+   "algorithm": "FACNN",
+   "metrics": [{"key": "Overall Accuracy", "value": 0.9881}]
  }
 
 The AI_EOTrainingDataset object is encoded as a JSON object with properties shown in Table 2 and Table 4.
@@ -119,19 +119,23 @@ Each AI_EOTrainingDataset object SHALL implement the Mandatory properties both s
 Example:
 
  {
-    "type": "AI_EOTrainingDataset",
-    "id": "whu_rs19",
-    "name": "WHU-RS19",
-    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
-    "amountOfTrainingData": 1013,
-    "createdTime": "2010-01-01",
-    "providers": ["Wuhan University"],
-    "keywords": ["Remote Sensing", "Scene Classification"],
-    "numberOfClasses": 19,
-    "extent": [-180, -90, 180, 90],
-    "bands": ["red", "green", "blue"],
-    "imageSize": "6000x7600",
-    "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
-    "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": ["googleEarth"], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
+   "type": "AI_EOTrainingDataset",
+   "id": "whu_rs19",
+   "name": "WHU-RS19",
+   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "amountOfTrainingData": 1013,
+   "createdTime": "2010-01-01",
+   "providers": ["Wuhan University"],
+   "keywords": ["Remote Sensing", "Scene Classification"],
+   "numberOfClasses": 19,
+   "extent": [-180, -90, 180, 90],
+   "bands": [
+      {"name": {"code": "red"}},
+      {"name": {"code": "green"}},
+      {"name": {"code": "blue"}}
+   ],
+   "imageSize": "6000x7600",
+   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+   "tasks": [{"type": "AI_EOTask", "id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+   "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }

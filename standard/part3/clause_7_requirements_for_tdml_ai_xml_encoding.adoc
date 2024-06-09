@@ -29,7 +29,7 @@ include::requirements/requirements_iso_geospatial_type.adoc[]
 
 === Requirements Class: AI_TrainingDataset
 
-The AI_TrainingDataset requirements class defines a XML encoding for the AI_TrainingDataset module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
+The AI_TrainingDataset requirements class defines an XML encoding for the AI_TrainingDataset module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
 
 include::requirements/requirements_ai_trainingdataset.adoc[]
 
@@ -41,7 +41,7 @@ include::requirements/requirements_ai_trainingdata.adoc[]
 
 === Requirements Class: AI_Task
 
-The AI_Task requirements class defines a XML encoding for the AI_Task module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
+The AI_Task requirements class defines an XML encoding for the AI_Task module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
 
 include::requirements/requirements_ai_task.adoc[]
 
@@ -53,13 +53,13 @@ include::requirements/requirements_ai_label.adoc[]
 
 === Requirements Class: AI_Labeling
 
-The AI_Labeling requirements class defines a XML encoding for the AI_Labeling module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
+The AI_Labeling requirements class defines an XML encoding for the AI_Labeling module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
 
 include::requirements/requirements_ai_labeling.adoc[]
 
 === Requirements Class: AI_DataQuality
 
-The AI_ClassBalanceDegree object is encoded as an XML element with properties as shown in Table 16.
+The AI_DataQuality requirements class defines an XML encoding for the AI_DataQuality module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
 
 include::requirements/requirements_ai_dataquality.adoc[]
 

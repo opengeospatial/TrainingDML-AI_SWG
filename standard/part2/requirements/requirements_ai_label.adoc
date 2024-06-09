@@ -40,8 +40,9 @@ Range: [0, 1] |Optional
 Example:
 
  {
-    "type": "AI_AbstractLabel",
-    "isNegative": false
+   "type": "AI_AbstractLabel",
+   "isNegative": false,
+   "confidence": 1.0
  }
 
 The AI_SceneLabel object is encoded as a JSON object with properties as shown in Table 10.
@@ -64,8 +65,8 @@ Each AI_SceneLabel object SHALL implement the properties shown in Table 10.
 Example:
 
  {
-    "type": "AI_SceneLabel",
-    "class": "Airport"
+   "type": "AI_SceneLabel",
+   "class": "Airport"
  }
 
 The AI_ObjectLabel object is encoded as a JSON object with properties shown in Table 11.
@@ -91,10 +92,10 @@ Each AI_ObjectLabel object SHALL implement the Mandatory properties shown in Tab
 Example:
 
  {
-    "type": "AI_ObjectLabel",
-    "class": "Truck", 
-    "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]}, 
-    "bboxType": "Horizontal BBox", 
+   "type": "AI_ObjectLabel",
+   "class": "Truck", 
+   "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]}}, 
+   "bboxType": "Horizontal BBox"
  }
 
 The AI_PixelLabel object is encoded as a JSON object with properties as shown in Table 12.
@@ -118,9 +119,9 @@ Each AI_PixelLabel object shall implement the Mandatory properties shown in Tabl
 Example:
 
  {
-    "type": "AI_PixelLabel",
-    "imageURL": ["/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif"],
-    "imageFormat": ["image/tiff; application=geotiff"]
+   "type": "AI_PixelLabel",
+   "imageURL": ["/label_5classes/GF2_PMS1__L1A0000647767-MSS1_label.tif"],
+   "imageFormat": ["image/tiff; application=geotiff"]
  }
 
 The AI_ImageFormatCode is encoded as a text string whose value is defined in Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types https://www.ietf.org/rfc/rfc2046.txt[RFC 2046].
@@ -137,4 +138,4 @@ Examples:
  a)	"image/tiff; application=geotiff" 
  b)	"application/x-netcdf"
  c)	"image/png"
- d)   "image/jp2"
+ d) "image/jp2"

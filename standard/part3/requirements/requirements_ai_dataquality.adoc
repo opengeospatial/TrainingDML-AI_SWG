@@ -1,3 +1,16 @@
+[width="100%",cols="20%,80%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/aidataquality
+|Dependency |XML
+|Dependency |/req/base/xmlbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/base/isoqualitytype
+|Requirement 28|/req/aidataquality/classbalancedegree
+|===
+
+The AI_ClassBalanceDegree object is encoded as an XML element with properties as shown in Table 16.
+
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 28|/req/aidataquality/classbalancedegree

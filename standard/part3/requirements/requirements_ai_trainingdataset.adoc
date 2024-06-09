@@ -163,27 +163,27 @@ Example:
    <keywords>Scene Classification</keywords>
    <numberOfClasses>19</numberOfClasses>
    <extent>
-   <gex:geographicElement>
-   <gex:westBoundLongitude>-180</gex:westBoundLongitude>
+      <gex:geographicElement>
+         <gex:westBoundLongitude>-180</gex:westBoundLongitude>
          <gex:eastBoundLongitude>180</gex:eastBoundLongitude>
          <gex:southBoundLatitude>-90</gex:southBoundLatitude>
          <gex:northBoundLatitude>90</gex:northBoundLatitude>
-   </gex:geographicElement>
+      </gex:geographicElement>
    </extent>
    <bands>
-   <mrc:name>
-   <mcc:code>red</mcc:code>
-   </mrc:name>
+      <mrc:name>
+         <mcc:code>red</mcc:code>
+      </mrc:name>
    </bands>
    <bands>
-   <mrc:name>
-   <mcc:code>green</mcc:code>
-   </mrc:name>
+      <mrc:name>
+         <mcc:code>green</mcc:code>
+      </mrc:name>
    </bands>
    <bands>
-   <mrc:name>
-   <mcc:code>blue</mcc:code>
-   </mrc:name>
+      <mrc:name>
+         <mcc:code>blue</mcc:code>
+      </mrc:name>
    </bands>
    <imageSize>6000x7600</imageSize>
    <classes>Airport</classes>

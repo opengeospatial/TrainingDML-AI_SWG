@@ -55,7 +55,6 @@ Examples:
 
  a) <key>forest</key>
     <value>RGB(0,255,255)</value>
-
  b) <key>precision</key>
     <value>0.8</value>
 
@@ -71,5 +70,4 @@ Each URL value SHALL be encoded as a text string defined in Section 3.3.17 of W3
 Examples:
 
  a) http://www.opengeospatial.org
-
  b) /file.txt

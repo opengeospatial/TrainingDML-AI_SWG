@@ -1,3 +1,16 @@
+[width="100%",cols="20%,80%",options="header",]
+|===
+2+|*Requirements class* 
+2+|/req/aidataquality
+|Dependency |JSON
+|Dependency |/req/base/jsonbasetype
+|Dependency |/req/base/isometadatatype
+|Dependency |/req/base/isoqualitytype
+|Requirement 28 |/req/aidataquality/classbalancedegree
+|===
+
+The AI_ClassBalanceDegree object is encoded as a JSON object with properties as shown in Table 16.
+
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 28 |/req/aidataquality/classbalancedegree
@@ -18,21 +31,21 @@ Each AI_ClassBalanceDegree object SHALL implement the Mandatory properties as sh
 Example:
 
  {
-   "type": "AI_ClassBalanceDegree",
-   "measure": {
-     "measureDescription": "Balance degree of label classes"
-   },
-   "evaluationMethod": {
-     "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
-   },
-   "result": [
-     {
-       "quantitativeResult": {
-         "value": [
-           93.5
-         ],
-         "valueUnit": "%"
-       }
-     }
-   ]
+    "type": "AI_ClassBalanceDegree",
+    "measure": {
+      "measureDescription": "Balance degree of label classes"
+    },
+    "evaluationMethod": {
+      "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
+    },
+    "result": [
+      {
+        "quantitativeResult": {
+          "value": [
+            93.5
+          ],
+          "valueUnit": "%"
+        }
+      }
+    ]
  }

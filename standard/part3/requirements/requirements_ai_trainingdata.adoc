@@ -90,7 +90,7 @@ Example:
    <type>AI_EOTrainingData</type>
    <id>airport_01</id>
    <dataSources>
-   <cit:title>googleEarth</cit:title>
+      <cit:title>googleEarth</cit:title>
    </dataSources>
    <extent>
       <gex:geographicElement>
@@ -98,7 +98,7 @@ Example:
          <gex:eastBoundLongitude>-171.56578</gex:eastBoundLongitude>
          <gex:southBoundLatitude>-14.42443</gex:southBoundLatitude>
          <gex:northBoundLatitude>-14.32568</gex:northBoundLatitude>
-   </gex:geographicElement>
+      </gex:geographicElement>
    </extent>
    <dataTime>2002-05-30T09:30:10Z</dataTime>
    <dataURL>image/Airport/airport_01.jpg</dataURL>

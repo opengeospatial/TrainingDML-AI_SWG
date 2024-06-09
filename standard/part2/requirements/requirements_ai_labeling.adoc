@@ -34,16 +34,16 @@ Each AI_Labeling object SHALL implement the Mandatory properties shown in Table 
 Example:
 
  {
-    "type": "AI_Labeling",
-    "id": "0",
-    "scope": {
-        "level": "dataset",
-        "levelDescription": {
-            "dataset": "whu_rs19"
-        }
-    },
-    "labelers": [{..}],
-    "procedure": {..}
+   "type": "AI_Labeling",
+   "id": "0",
+   "scope": {
+      "level": "dataset",
+      "levelDescription": {
+         "dataset": "whu_rs19"
+      }
+   },
+   "labelers": [{..}],
+   "procedure": {..}
  }
 
 The AI_Labeler object is encoded as a JSON object with properties as shown in Table 14.
@@ -67,9 +67,9 @@ Each AI_Labeler object SHALL implement the Mandatory properties shown in Table 1
 Example:
 
  {
-    "type": "AI_Labeler",
-    "id": "0",
-    "name": "Tom"
+   "type": "AI_Labeler",
+   "id": "0",
+   "name": "Tom"
  }
 
 An AI_LabelingProcedure object is encoded as a JSON object with properties as shown in Table 15.
@@ -94,19 +94,19 @@ Each AI_LabelingProcedure object SHALL implement the Mandatory properties shown 
 Example:
 
  {
-    "type": "AI_LabelingProcedure",
-    "id": "0",
-    "methods": ["manual"],
-    "tools": ["ArcGIS"]
+   "type": "AI_LabelingProcedure",
+   "id": "0",
+   "methods": ["manual"],
+   "tools": ["ArcGIS"]
  }
 
-The AI_LabelingMethodCode is encoded as a text string whose value is one of “manual”, “semi-automatic” or “automatic”.
+The AI_LabelingMethodCode is encoded as a text string whose value is one of "manual", "semi-automatic", "automatic" or "unknown".
 
 [width="100%",cols="20%,80%",]
 |===
 |Requirement 27 |/req/ailabeling/labelingmethodcode
 
-Each AI_LabelingMethodCode value SHALL be a text string whose value is one of “manual”, “semi-automatic” or “automatic”.
+Each AI_LabelingMethodCode value SHALL be a text string whose value is one of "manual", "semi-automatic", "automatic" or "unknown".
 |===
 
 Examples:
@@ -114,3 +114,4 @@ Examples:
  a)	"manual" 
  b)	"semi-automatic"
  c)	"automatic"
+ d) "unknown"

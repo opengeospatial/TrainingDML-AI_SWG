@@ -40,10 +40,10 @@ Example:
    </evaluationMethod>
    <result>
       <quantitativeResult>
-	      <value>
+         <value>
             0
          </value>
-	      <valueUnit>
+         <valueUnit>
             %
          </valueUnit>
       </quantitativeResult>

@@ -59,7 +59,9 @@ include::requirements/requirements_ai_labeling.adoc[]
 
 === Requirements Class: AI_DataQuality
 
-The AI_ClassBalanceDegree object is encoded as a JSON object with properties as shown in Table 16.
+The AI_DataQuality requirements class defines a JSON encoding for the AI_Labeling module, which is based on the UML model specified in the TrainingDML-AI Part 1: Conceptual Model Standard.
+
+
 
 include::requirements/requirements_ai_dataquality.adoc[]
 

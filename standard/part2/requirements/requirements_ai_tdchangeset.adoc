@@ -36,10 +36,10 @@ Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in 
 Example:
 
  {
-    "type": "AI_TDChangeset",
-    "id": "changeset-dota_v1.5",
-    "datasetId": "dota_v1.5",
-    "createdTime": "2019-01-01",
-    "changeCount": 9, 
-    "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": ["GF"], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
+   "type": "AI_TDChangeset",
+   "id": "changeset-dota_v1.5",
+   "datasetId": "dota_v1.5",
+   "createdTime": "2019-01-01",
+   "changeCount": 9, 
+   "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": [{“title”: “GF” }], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
  }
