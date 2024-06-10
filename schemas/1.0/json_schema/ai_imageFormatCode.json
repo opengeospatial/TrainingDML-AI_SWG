@@ -51,6 +51,7 @@
         "image/t38",
         "image/tiff",
         "image/tiff-fx",
+        "image/tiff; application=geotiff",
         "image/vnd.adobe.photoshop",
         "image/vnd.airzip.accelerator.azv",
         "image/vnd.cns.inf2",
@@ -88,6 +89,7 @@
         "application/json",
         "application/xml",
         "application/xhtml+xml",
+        "application/x-netcdf",
         "application/geopackage+sqlite3"
     ]
 }

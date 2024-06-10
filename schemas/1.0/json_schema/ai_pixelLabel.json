@@ -12,7 +12,7 @@
         "type": {
             "type": "string",
             "enum": [
-                "AI_AbstractLabel"
+                "AI_PixelLabel"
             ]
         },
         "confidence": {
