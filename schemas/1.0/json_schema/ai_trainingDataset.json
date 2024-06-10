@@ -100,7 +100,14 @@
         "tasks": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_task.json"
+                "oneOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_task.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_eoTask.json"
+                    }
+                ]
             },
             "minItems": 1
         },

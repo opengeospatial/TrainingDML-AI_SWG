@@ -18,7 +18,14 @@
         "add": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                "oneOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_eoTrainingData.json"
+                    }
+                ]
             }
         },
         "changeCount": {
@@ -30,7 +37,14 @@
         "delete": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                "oneOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_eoTrainingData.json"
+                    }
+                ]
             }
         },
         "id": {
@@ -39,7 +53,14 @@
         "modify": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                "oneOf": [
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
+                    },
+                    {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_eoTrainingData.json"
+                    }
+                ]
             }
         },
         "version": {
