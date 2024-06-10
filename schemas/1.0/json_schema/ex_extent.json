@@ -2,45 +2,56 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json",
     "title": "EX_Extent",
-    "type": "object",
-    "properties": {
-        "description": {
-            "type": "string"
-        },
-        "geographicElement": {
-            "type": "array",
-            "items": {
-                "oneOf": [
-                    {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_boundingPolygon.json"
-                    },
-                    {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_geographicBoundingBox.json"
-                    },
-                    {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_geographicDescription.json"
+    "oneOf": [
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "geographicElement": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_boundingPolygon.json"
+                            },
+                            {
+                                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_geographicBoundingBox.json"
+                            },
+                            {
+                                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_geographicDescription.json"
+                            }
+                        ]
                     }
-                ]
-            }
-        },
-        "temporalElement": {
-            "type": "array",
-            "items": {
-                "oneOf": [
-                    {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_temporalExtent.json"
-                    },
-                    {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_spatialTemporalExtent.json"
+                },
+                "temporalElement": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_temporalExtent.json"
+                            },
+                            {
+                                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_spatialTemporalExtent.json"
+                            }
+                        ]
                     }
-                ]
+                },
+                "verticalElement": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_verticalExtent.json"
+                    }
+                }
             }
         },
-        "verticalElement": {
+        {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_verticalExtent.json"
-            }
+                "type": "number"
+            },
+            "minItems": 4
         }
-    }
+    ]
 }
