@@ -4,9 +4,16 @@
     "title": "AI_AbstractTask",
     "type": "object",
     "required": [
+        "type",
         "id"
     ],
     "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_AbstractTask"
+            ]
+        },
         "datasetId": {
             "type": "string"
         },

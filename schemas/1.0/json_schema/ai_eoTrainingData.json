@@ -5,12 +5,9 @@
     "type": "object",
     "required": [
         "type",
+        "id",
+        "labels",
         "dataURL"
-    ],
-    "oneOf": [
-        {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingData.json"
-        }
     ],
     "properties": {
         "type": {
@@ -18,6 +15,21 @@
             "enum": [
                 "AI_EOTrainingData"
             ]
+        },
+        "datasetId": {
+            "type": "string"
+        },
+        "dataSources": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
+            }
+        },
+        "id": {
+            "type": "string"
+        },
+        "numberOfLabels": {
+            "type": "integer"
         },
         "dataURL": {
             "type": "array",
@@ -28,23 +40,34 @@
             "minItems": 1
         },
         "extent": {
-            "oneOf": [
-                {
-                    "type": "array",
-                    "items": {
-                        "type": "number"
-                    },
-                    "minItems": 4
-                },
-                {
-                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json"
-                }
-            ]
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ex_extent.json"
         },
         "dataTime": {
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dateTime.json"
+            }
+        },
+        "labels": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_label.json"
+            },
+            "minItems": 1
+        },
+        "labeling": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labeling.json"
+            }
+        },
+        "trainingType": {
+            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_trainingTypeCode.json"
+        },
+        "quality": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/dataQuality.json"
             }
         }
     }

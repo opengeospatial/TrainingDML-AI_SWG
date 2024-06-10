@@ -8,17 +8,22 @@
         "object",
         "class"
     ],
-    "oneOf": [
-        {
-            "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_label.json"
-        }
-    ],
     "properties": {
         "type": {
             "type": "string",
             "enum": [
                 "AI_ObjectLabel"
             ]
+        },
+        "confidence": {
+            "type": "number",
+            "default": 1.0,
+            "minimum": 0.0,
+            "maximum": 1.0
+        },
+        "isNegative": {
+            "type": "boolean",
+            "default": false
         },
         "bboxType": {
             "type": "string"

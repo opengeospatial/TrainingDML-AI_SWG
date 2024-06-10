@@ -4,30 +4,25 @@
     "title": "AI_AbstractTrainingData",
     "type": "object",
     "required": [
+        "type",
         "id",
         "labels"
     ],
     "properties": {
+        "type":{
+            "type": "string",
+            "enum": [
+                "AI_AbstractTrainingData"
+            ]
+        },
         "datasetId": {
             "type": "string"
         },
         "dataSources": {
-            "oneOf": [
-                {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "format": "uri-reference"
-                    },
-                    "minItems": 1
-                },
-                {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
-                    }
-                }
-            ]
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ci_citation.json"
+            }
         },
         "id": {
             "type": "string"

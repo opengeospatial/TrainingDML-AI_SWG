@@ -3,7 +3,16 @@
     "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_label.json",
     "title": "AI_AbstractLabel",
     "type": "object",
+    "required": [
+        "type"
+    ],
     "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "AI_AbstractLabel"
+            ]
+        },
         "confidence": {
             "type": "number",
             "default": 1.0,
