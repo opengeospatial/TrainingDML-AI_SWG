@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labelingMethodCode.json",
+    "title": "AI_LabelingMethodCode",
+    "type": "string",
+    "enum": [
+        "manual",
+        "semi-automatic",
+        "automatic",
+        "unknown"
+    ]
+}

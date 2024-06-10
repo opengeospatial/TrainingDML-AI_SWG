@@ -21,8 +21,7 @@
         "methods": {
             "type": "array",
             "items": {
-                "type": "string",
-                "enum": ["manual", "automatic", "semi-automatic"]
+                "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/ai_labelingMethodCode.json"
             },
             "minItems": 1
         },
