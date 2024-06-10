@@ -1,12 +1,38 @@
-[width="100%",cols="25%,10%,55%",]
+[width="100%",cols="40%,60%",]
 |===
-|Conformance Class 2+|/conf/aitrainingdata
-|Requirements 2+|/req/aitrainingdata
-|Dependency 2+|An XML Schema Validator
-.3+|Test
-|Test purpose |Verify that the training data objects are encoded using the specified property names and structures.
-|Test method |Validate the XML instance document using the appropriate object definition from the TrainingDML-AI.xsd XML Schema. 
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-3/1.0/conf/aitrainingdata
+|Requirements class |/req/aitrainingdata
+|Dependency |/conf/base/xmlbasetype
+|Dependency |/conf/base/isometadatatype
+|Dependency |/conf/ailabel
+|Dependency |/conf/ailabeling
+|Dependency |/conf/aidataquality
+|===
 
-Pass if no errors reported. Fail otherwise.
-|Test type |Capability
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 14
+|Test ID |/conf/aitrainingdata/trainingdata
+|Requirement |/req/aitrainingdata/trainingdata
+|Test purpose |Verify that instance documents using the AI_TrainingData XML elements listed in Table 5 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_trainingData.xsd.
+|Test method |Validate the instance document against the ai_trainingData.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 15
+|Test ID |/conf/aitrainingdata/trainingtypecode
+|Requirement |/req/aitrainingdata/trainingtypecode
+|Test purpose |Verify that instance documents using the AI_TrainingTypeCode XML elements validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_trainingTypeCode.xsd.
+|Test method |Validate the instance document against the ai_trainingTypeCode.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 16
+|Test ID |/conf/aitrainingdata/eotrainingdata
+|Requirement |/req/aitrainingdata/eotrainingdata
+|Test purpose |Verify that instance documents using the AI_EOTrainingData XML elements listed in Table 5 and Table 6 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_eoTrainingData.xsd.
+|Test method |Validate the instance document against the ai_eoTrainingData.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===

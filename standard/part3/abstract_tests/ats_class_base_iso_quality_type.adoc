@@ -1,0 +1,15 @@
+[width="100%",cols="40%,60%",]
+|===
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-3/1.0/conf/base/isoqualitytype
+|Requirements class |/req/base/isoqualitytype
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 9
+|Test ID |/conf/base/isoqualitytype/element
+|Requirement |/req/base/isoqualitytype/element
+|Test purpose |Verify that instance documents using the QualityElement XML elements validate against the XML schema specified in https://schemas.isotc211.org/schemas/19157/-/mdq/1.2.0/dataQualityElement.xsd.
+|Test method |Validate the instance document against the dataQualityElement.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===

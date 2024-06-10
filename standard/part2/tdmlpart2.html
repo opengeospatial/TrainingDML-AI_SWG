@@ -4515,11 +4515,11 @@ d) "unknown"</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that instance documents using the AI_LabelingMethodCode JSON objects adhere to the specified requirements, where each AI_LabelingMethodCode value must be a text string with a value of either "manual", "semi-automatic", "automatic", or "unknown".</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that instance documents using the AI_LabelingMethodCode JSON objects validate against the JSON schema specified in <a href="http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingMethodCode.json" class="bare">http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingMethodCode.json</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect the instance document to verify the above requirement.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Validate the instance document against the ai_LabelingMethodCode.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.</p></td>
 </tr>
 </tbody>
 </table>

@@ -39,6 +39,6 @@
 2+|Abstract Test 27
 |Test ID |/conf/ailabeling/labelingmethodcode
 |Requirement |/req/ailabeling/labelingmethodcode
-|Test purpose |Verify that instance documents using the AI_LabelingMethodCode JSON objects adhere to the specified requirements, where each AI_LabelingMethodCode value must be a text string with a value of either "manual", "semi-automatic", "automatic", or "unknown".
-|Test method |Inspect the instance document to verify the above requirement.
+|Test purpose |Verify that instance documents using the AI_LabelingMethodCode JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingMethodCode.json.
+|Test method |Validate the instance document against the ai_LabelingMethodCode.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

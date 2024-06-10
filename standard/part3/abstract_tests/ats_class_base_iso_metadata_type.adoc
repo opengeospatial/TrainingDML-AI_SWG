@@ -1,0 +1,42 @@
+[width="100%",cols="40%,60%",]
+|===
+2+|Conformance Class
+2+|http://www.opengis.net/spec/TrainingDML-AI-3/1.0/conf/base/isometadatatype
+|Requirements class |/req/base/isometadatatype
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 5
+|Test ID |/conf/base/isometadatatype/band
+|Requirement |/req/base/isometadatatype/band
+|Test purpose |Verify that instance documents using the MD_Band XML elements validate against the XML schema specified in https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd.
+|Test method |Validate the instance document against the content.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 6
+|Test ID |/conf/base/isometadatatype/extent
+|Requirement |/req/base/isometadatatype/extent
+|Test purpose |Verify that instance documents using the EX_Extent XML elements validate against the XML schema specified in https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd.
+|Test method |Validate the instance document against the extent.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 7
+|Test ID |/conf/base/isometadatatype/citation
+|Requirement |/req/base/isometadatatype/citation
+|Test purpose |Verify that instance documents using the CI_Citation XML elements validate against the XML schema specified in https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd.
+|Test method |Validate the instance document against the citation.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===
+
+[width="100%",cols="20%,80%",]
+|===
+2+|Abstract Test 8
+|Test ID |/conf/base/isometadatatype/scope
+|Requirement |/req/base/isometadatatype/scope
+|Test purpose |Verify that instance documents using the MD_Scope XML elements validate against the XML schema specified in https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd.
+|Test method |Validate the instance document against the commonClasses.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
+|===

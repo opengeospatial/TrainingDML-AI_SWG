@@ -7,5 +7,5 @@
 |Date |Release |Author | Paragraph modified |Description
 |2023-12-15 |0.1 |Peng Yue, Ruixiang Liu, Kaixuan Wang, Yongyi Mi |All |Draft for internal review.
 |2024-02-26 |0.2 |Peng Yue, Ruixiang Liu, Carl Reed, Yongyi Mi |Most |Merge edits and comments from Carl Reed.
-| | | | |
+|2024-06-09 |0.3 |Peng Yue, Ruixiang Liu, Yongyi Mi |Chapter 2, 4, Annex A |Revisions after OAB review and public comments.
 |===
