@@ -93,7 +93,7 @@ Example:
  {
    "type": "AI_ObjectLabel",
    "class": "Truck", 
-   "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]}}, 
+   "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]]}}, 
    "bboxType": "Horizontal BBox"
  }
 
@@ -137,4 +137,4 @@ Examples:
  a)	"image/tiff; application=geotiff" 
  b)	"application/x-netcdf"
  c)	"image/png"
- d) "image/jp2"
+ d)	"image/jp2"

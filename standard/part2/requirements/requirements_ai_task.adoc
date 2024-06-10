@@ -57,6 +57,6 @@ Example:
  {
    "type": "AI_EOTask",
    "id": "image-indexing-task",
-   "description": "Structural high-resolution satellite image indexing"
+   "description": "Structural high-resolution satellite image indexing",
    "taskType": "Scene Classification"
  }

@@ -1416,8 +1416,8 @@ b)	"/file.txt"</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	{"name": {"code": "red"}}
-b)	{"name": {"code": "B4"}}
+<pre>a)	{"name": [{"code": "red"}]}
+b)	{"name": [{"code": "B4"}]}
 c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 </div>
 </div>
@@ -1448,23 +1448,23 @@ c)	{"boundMax": 690, "boundMin": 630, "boundUnits": "nm"}</pre>
 <pre>a)	[120.0, 30.0, 130.0, 40.0]
 b)	[120.0, 30.0, 10.0, 130.0, 40.0, 20.0]
 c)	{
-       "geographicElement": {
+       "geographicElement": [{
            "westBoundLongitude": -171.76409,
            "eastBoundLongitude": -157.86768,
            "southBoundLatitude": -14.42443,
            "northBoundLatitude": 21.31573
-       }
+       }]
    }
 d)	{
-	    "geographicElement": {
-           "polygon": {
+	    "geographicElement": [{
+           "polygon": [{
                "exterior": {
                    "LinearRing": {
                        "posList": [51.556272, -0.2803943, 51.5562758, -0.2787397, 51.5556539, -0.278736, 51.5556501, -0.2803906, 51.556272, -0.2803943]
                    }
                }
-           }
-       }
+           }]
+       }]
    }</pre>
 </div>
 </div>
@@ -1490,7 +1490,7 @@ d)	{
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifier": {"code": "https://portal.ogc.org/files/?artifact_id=104605&amp;version=1"}}</pre>
+<pre>{"title": "Open Geospatial Consortium", "alternateTitle": ["OGC"], "identifier": [{"code": "https://portal.ogc.org/files/?artifact_id=104605&amp;version=1"}]}</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1517,40 +1517,40 @@ d)	{
 <div class="content">
 <pre>a)	{
        "level": "dataset",
-       "levelDescription": {
+       "levelDescription": [{
            "dataset": "whu_rs19"
-       }
+       }]
    }
 b)	{
        "level": "attribute",
-       "levelDescription": {
+       "levelDescription": [{
            "attributes": "completeness"
-       }
+       }]
    }
 c)	{
        "level": "coverage",
-       "extent": {
-           "geographicElement": {
+       "extent": [{
+           "geographicElement": [{
                "westBoundLongitude": -171.76409,
                "eastBoundLongitude": -157.86768,
                "southBoundLatitude": -14.42443,
                "northBoundLatitude": 21.31573
-           }
-       }
+           }]
+       }]
    }
 d)	{
        "level": "feature",
-       "extent": {
-           "geographicElement": {
-               "polygon": {
+       "extent": [{
+           "geographicElement": [{
+               "polygon": [{
                    "exterior": {
                        "LinearRing": {
                            "posList": [51.556272, -0.2803943, 51.5562758, -0.2787397, 51.5556539, -0.278736, 51.5556501, -0.2803906, 51.556272, -0.2803943]
                        }
                    }
-               }
-           }
-       }
+               }]
+           }]
+       }]
    }</pre>
 </div>
 </div>
@@ -1970,7 +1970,7 @@ c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">data</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Training data in the training dataset.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [1..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 </tbody>
@@ -1985,14 +1985,15 @@ c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 
   "id": "whu_rs19",
   "name": "WHU-RS19",
   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+  "license": "CC BY-SA 4.0",
   "amountOfTrainingData": 1013,
   "createdTime": "2010-01-01",
   "providers": ["Wuhan University"],
   "keywords": ["Remote Sensing", "Scene Classification"],
   "numberOfClasses": 19,
-  "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
-  "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-  "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
+  "classes": [{"key":"Airport","value":null}, {"key":"Beach","value":null}, {"key":"Bridge","value":null}, {"key":"Commercial","value":null}, {"key":"Desert","value":null}, {"key":"Farmland","value":null}, {"key":"footballField","value":null}, {"key":"Forest","value":null}, {"key":"Industrial","value":null}, {"key":"Meadow","value":null}, {"key":"Mountain","value":null}, {"key":"Park","value":null}, {"key":"Parking","value":null}, {"key":"Pond","value":null}, {"key":"Port","value":null}, {"key":"railwayStation","value":null}, {"key":"Residential","value":null}, {"key":"River","value":null}, {"key":"Viaduct","value":null}],
+  "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+  "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
 }</pre>
 </div>
 </div>
@@ -2130,6 +2131,7 @@ c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 
   "id": "whu_rs19",
   "name": "WHU-RS19",
   "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+  "license": "CC BY-SA 4.0",
   "amountOfTrainingData": 1013,
   "createdTime": "2010-01-01",
   "providers": ["Wuhan University"],
@@ -2137,12 +2139,12 @@ c)	{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[120.0, 
   "numberOfClasses": 19,
   "extent": [-180, -90, 180, 90],
   "bands": [
-     {"name": {"code": "red"}},
-     {"name": {"code": "green"}},
-     {"name": {"code": "blue"}}
+     {"name": [{"code": "red"}]},
+     {"name": [{"code": "green"}]},
+     {"name": [{"code": "blue"}]}
   ],
   "imageSize": "6000x7600",
-  "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+  "classes": [{"key":"Airport","value":null}, {"key":"Beach","value":null}, {"key":"Bridge","value":null}, {"key":"Commercial","value":null}, {"key":"Desert","value":null}, {"key":"Farmland","value":null}, {"key":"footballField","value":null}, {"key":"Forest","value":null}, {"key":"Industrial","value":null}, {"key":"Meadow","value":null}, {"key":"Mountain","value":null}, {"key":"Park","value":null}, {"key":"Parking","value":null}, {"key":"Pond","value":null}, {"key":"Port","value":null}, {"key":"railwayStation","value":null}, {"key":"Residential","value":null}, {"key":"River","value":null}, {"key":"Viaduct","value":null}],
   "tasks": [{"type": "AI_EOTask", "id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
   "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
 }</pre>
@@ -2405,14 +2407,14 @@ d)	"retraining"</pre>
   "id": "airport_01",
   "dataSources": [{"title": "googleEarth"}],
   "extent": {
-     "geographicElement": {
+     "geographicElement": [{
         "westBoundLongitude": -171.76409,
         "eastBoundLongitude": -171.56578,
         "southBoundLatitude": -14.42443,
         "northBoundLatitude": -14.32568
-     }
+     }]
   },
-  "dataTime": "2002-05-30T09:30:10Z",
+  "dataTime": ["2002-05-30T09:30:10Z"],
   "dataURL": ["image/Airport/airport_01.jpg"],
   "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
 }</pre>
@@ -2582,7 +2584,7 @@ d)	"retraining"</pre>
 <pre>{
   "type": "AI_EOTask",
   "id": "image-indexing-task",
-  "description": "Structural high-resolution satellite image indexing"
+  "description": "Structural high-resolution satellite image indexing",
   "taskType": "Scene Classification"
 }</pre>
 </div>
@@ -2840,7 +2842,7 @@ d)	"retraining"</pre>
 <pre>{
   "type": "AI_ObjectLabel",
   "class": "Truck",
-  "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]}},
+  "object": {"type": "Feature", "properties": {"truncated": 0.0, "occluded": 0, "alpha": -1.57}, "geometry": {"type": "Polygon", "coordinates": [[[2257.0, 332.0], [2271.0, 332.0], [2271.0, 350.0], [2257.0, 350.0], [2257.0, 332.0]]]}},
   "bboxType": "Horizontal BBox"
 }</pre>
 </div>
@@ -2934,7 +2936,7 @@ d)	"retraining"</pre>
 <pre>a)	"image/tiff; application=geotiff"
 b)	"application/x-netcdf"
 c)	"image/png"
-d) "image/jp2"</pre>
+d)	"image/jp2"</pre>
 </div>
 </div>
 </div>
@@ -3062,9 +3064,9 @@ d) "image/jp2"</pre>
   "id": "0",
   "scope": {
      "level": "dataset",
-     "levelDescription": {
+     "levelDescription": [{
         "dataset": "whu_rs19"
-     }
+     }]
   },
   "labelers": [{..}],
   "procedure": {..}
@@ -3232,7 +3234,7 @@ d) "image/jp2"</pre>
 <pre>a)	"manual"
 b)	"semi-automatic"
 c)	"automatic"
-d) "unknown"</pre>
+d)	"unknown"</pre>
 </div>
 </div>
 </div>
@@ -3472,19 +3474,19 @@ d) "unknown"</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">add</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Added training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">modify</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Modified training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">delete</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Deleted training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 </tbody>
@@ -3500,7 +3502,7 @@ d) "unknown"</pre>
   "datasetId": "dota_v1.5",
   "createdTime": "2019-01-01",
   "changeCount": 9,
-  "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": [{“title”: “GF” }], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
+  "modify": [{"type": "AI_EOTrainingData", "id": "P1228", "dataSources": [{"title": "GF"}], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "AI_ObjectLabel", "class": "ship", "object": {"type": "Feature", "properties": {}, "geometry": {"type": "Polygon", "coordinates": [[[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]]}},"bboxType": "Horizontal BBox"}, …]}]
 }</pre>
 </div>
 </div>

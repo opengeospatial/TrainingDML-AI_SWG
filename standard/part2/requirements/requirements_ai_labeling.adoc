@@ -38,9 +38,9 @@ Example:
    "id": "0",
    "scope": {
       "level": "dataset",
-      "levelDescription": {
+      "levelDescription": [{
          "dataset": "whu_rs19"
-      }
+      }]
    },
    "labelers": [{..}],
    "procedure": {..}
@@ -114,4 +114,4 @@ Examples:
  a)	"manual" 
  b)	"semi-automatic"
  c)	"automatic"
- d) "unknown"
+ d)	"unknown"

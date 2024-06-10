@@ -51,7 +51,7 @@ Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in
 |labeling |Provenance information of how the training dataset is labeled. |AI_Labeling [0..*] |Optional
 |quality |Quality information of the training dataset. |DataQuality [0..*] |Optional
 |changesets |Changeset between two versions of the training dataset. |AI_TDChangeset [0..*] |Optional
-|data |Training data in the training dataset. |AI_TrainingData [1..*] |Mandatory
+|data |Training data in the training dataset. |AI_AbstractTrainingData [1..*] |Mandatory
 |===
 
 Example:
@@ -61,14 +61,15 @@ Example:
    "id": "whu_rs19",
    "name": "WHU-RS19",
    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "license": "CC BY-SA 4.0",
    "amountOfTrainingData": 1013,
    "createdTime": "2010-01-01",
    "providers": ["Wuhan University"],
    "keywords": ["Remote Sensing", "Scene Classification"],
    "numberOfClasses": 19,
-   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
-   "tasks": [{"type": "EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
-   "data": [{"type": "EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "SceneLabel", "class": "Airport"}]}, …]
+   "classes": [{"key":"Airport","value":null}, {"key":"Beach","value":null}, {"key":"Bridge","value":null}, {"key":"Commercial","value":null}, {"key":"Desert","value":null}, {"key":"Farmland","value":null}, {"key":"footballField","value":null}, {"key":"Forest","value":null}, {"key":"Industrial","value":null}, {"key":"Meadow","value":null}, {"key":"Mountain","value":null}, {"key":"Park","value":null}, {"key":"Parking","value":null}, {"key":"Pond","value":null}, {"key":"Port","value":null}, {"key":"railwayStation","value":null}, {"key":"Residential","value":null}, {"key":"River","value":null}, {"key":"Viaduct","value":null}],
+   "tasks": [{"type": "AI_EOTask","id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
+   "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }
 
 If the optional element AI_MetricsInLiterature is specified, this element is encoded as JSON object with properties as shown in Table 3.
@@ -123,6 +124,7 @@ Example:
    "id": "whu_rs19",
    "name": "WHU-RS19",
    "description": "Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth",
+   "license": "CC BY-SA 4.0",
    "amountOfTrainingData": 1013,
    "createdTime": "2010-01-01",
    "providers": ["Wuhan University"],
@@ -130,12 +132,12 @@ Example:
    "numberOfClasses": 19,
    "extent": [-180, -90, 180, 90],
    "bands": [
-      {"name": {"code": "red"}},
-      {"name": {"code": "green"}},
-      {"name": {"code": "blue"}}
+      {"name": [{"code": "red"}]},
+      {"name": [{"code": "green"}]},
+      {"name": [{"code": "blue"}]}
    ],
    "imageSize": "6000x7600",
-   "classes": ["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+   "classes": [{"key":"Airport","value":null}, {"key":"Beach","value":null}, {"key":"Bridge","value":null}, {"key":"Commercial","value":null}, {"key":"Desert","value":null}, {"key":"Farmland","value":null}, {"key":"footballField","value":null}, {"key":"Forest","value":null}, {"key":"Industrial","value":null}, {"key":"Meadow","value":null}, {"key":"Mountain","value":null}, {"key":"Park","value":null}, {"key":"Parking","value":null}, {"key":"Pond","value":null}, {"key":"Port","value":null}, {"key":"railwayStation","value":null}, {"key":"Residential","value":null}, {"key":"River","value":null}, {"key":"Viaduct","value":null}],
    "tasks": [{"type": "AI_EOTask", "id": "whu_rs19-task", "description": "Structural high-resolution satellite image indexing", "taskType": "Scene Classification"}],
    "data": [{"type": "AI_EOTrainingData", "id": "airport_01", "dataSources": [{"title": "googleEarth"}], "dataURL": ["image/Airport/airport_01.jpg"], "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]}, …]
  }

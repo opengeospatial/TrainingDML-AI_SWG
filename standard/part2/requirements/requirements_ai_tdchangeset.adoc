@@ -27,9 +27,9 @@ Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in 
 |version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
 |changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
 |createdTime |The time that the changeset was created. |DateTime [0..1] |Optional
-|add |Added training samples. |AI_TrainingData [0..*] |Optional
-|modify |Modified training samples. |AI_TrainingData [0..*] |Optional
-|delete |Deleted training samples. |AI_TrainingData [0..*] |Optional
+|add |Added training samples. |AI_AbstractTrainingData [0..*] |Optional
+|modify |Modified training samples. |AI_AbstractTrainingData [0..*] |Optional
+|delete |Deleted training samples. |AI_AbstractTrainingData [0..*] |Optional
 |===
 
 Example:
@@ -40,5 +40,5 @@ Example:
    "datasetId": "dota_v1.5",
    "createdTime": "2019-01-01",
    "changeCount": 9, 
-   "modify": [{"type": "EOTrainingData", "id": "P1228", "dataSources": [{“title”: “GF” }], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "ObjectLabel", "class": "ship", "object": {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]}},"bboxType": "Horizontal BBox"}, …]}]
+   "modify": [{"type": "AI_EOTrainingData", "id": "P1228", "dataSources": [{"title": "GF"}], "dataURL": ["train/images/P1228.png"], "numberOfLabels": 50, "trainingType": "training", "labels": [{"type": "AI_ObjectLabel", "class": "ship", "object": {"type": "Feature", "properties": {}, "geometry": {"type": "Polygon", "coordinates": [[[2306.0, 729.0], [2330.0, 729.0], [2330.0, 744.0], [2306.0, 744.0], [2306.0,729.0]]]}},"bboxType": "Horizontal BBox"}, …]}]
  }

@@ -89,14 +89,14 @@ Example:
    "id": "airport_01",
    "dataSources": [{"title": "googleEarth"}],
    "extent": {
-      "geographicElement": {
+      "geographicElement": [{
          "westBoundLongitude": -171.76409,
          "eastBoundLongitude": -171.56578,
          "southBoundLatitude": -14.42443,
          "northBoundLatitude": -14.32568
-      }
+      }]
    },
-   "dataTime": "2002-05-30T09:30:10Z",
+   "dataTime": ["2002-05-30T09:30:10Z"],
    "dataURL": ["image/Airport/airport_01.jpg"],
    "labels": [{"type": "AI_SceneLabel", "class": "Airport"}]
  }
