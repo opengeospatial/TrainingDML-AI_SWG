@@ -20,12 +20,28 @@
             }
         },
         "exterior": {
-            "type": "string"
+            "type": "object",
+            "required": [
+                "LinearRing"
+            ],
+            "properties": {
+                "LinearRing": {
+                    "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/LinearRing.json"
+                }
+            }
         },
         "interior": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "object",
+                "required": [
+                    "LinearRing"
+                ],
+                "properties": {
+                    "LinearRing": {
+                        "$ref": "https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/json_schema/LinearRing.json"
+                    }
+                }
             }
         }
     }
