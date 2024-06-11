@@ -2,18 +2,32 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
   xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
-  <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/temporal.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_label.xsd"/>
+  <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schemas.opengis.net/gml/3.2.1/feature.xsd"/>
   <xs:element name="AI_ObjectLabel" type="AI_ObjectLabel"/>
   <xs:complexType name="AI_ObjectLabel">
+    <xs:sequence>
+      <xs:element name="type" type="xs:string" fixed="AI_ObjectLabel"/>
+      <xs:element name="isNegative" type="xs:boolean" default="false" minOccurs="0"/>
+      <xs:element name="confidence" default="1.0" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0" />
+            <xs:maxInclusive value="1.0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="object" type="Feature"/>
+      <xs:element name="bboxType" type="xs:string" minOccurs="0"/>
+      <xs:element name="class" type="xs:string"/>
+      <xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Feature">
     <xs:complexContent>
-      <xs:extension base="AI_AbstractLabel">
+      <xs:extension base="gml:AbstractFeatureType">
         <xs:sequence>
-          <xs:element name="type" type="xs:string" fixed="AI_ObjectLabel"/>
-          <xs:element name="bboxType" type="xs:string" minOccurs="0"/>
-          <xs:element name="class" type="xs:string"/>
-          <xs:element name="object" type="gml:AbstractFeatureType"/>
-          <xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+          <!-- Additional elements specific to MyFeatureType can be added here -->
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
