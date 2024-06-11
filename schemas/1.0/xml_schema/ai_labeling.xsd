@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
-<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
-<xs:include schemaLocation="ai_labeler.xsd"/>
-<xs:include schemaLocation="ai_labelingProcedure.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+	xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2"
+	xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
+	<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
+	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labeler.xsd"/>
+	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labelingProcedure.xsd"/>
 	<xs:complexType name="AI_Labeling">
 		<xs:sequence>
 			<xs:element name="type" type="xs:string" fixed="AI_Labeling"/>

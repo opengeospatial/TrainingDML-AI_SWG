@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3" xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
-<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
-<xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
-<xs:import namespace="https://schemas.isotc211.org/19103/-/gco/1.2" schemaLocation="https://schemas.isotc211.org/19103/-/gco/1.2.0/gco.xsd"/>
-	<xs:include schemaLocation="dataTime.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+	xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"
+	xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3"
+	xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" elementFormDefault="qualified">
+	<xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
+	<xs:import namespace="https://schemas.isotc211.org/19115/-1/cit/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd"/>
+	<xs:import namespace="https://schemas.isotc211.org/19103/-/gco/1.2" schemaLocation="https://schemas.isotc211.org/19103/-/gco/1.2.0/gco.xsd"/>
+	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dateTime.xsd"/>
 	<xs:complexType name="QualityElement">
 		<xs:sequence>
 			<xs:element name="type" type="xs:string"/>
@@ -68,7 +72,7 @@
 			<xs:element name="statement" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
-		<xs:complexType name="coverageResult">
+	<xs:complexType name="coverageResult">
 		<xs:sequence>
 			<xs:element name="spatialRepresentationType" type="xs:string"/>
 			<xs:element name="resultSpatialRepresentation" type="mcc:Abstract_SpatialRepresentation_Type"/>

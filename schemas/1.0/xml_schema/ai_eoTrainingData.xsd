@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2" xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1" xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1" xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3" xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
-<xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
-<xs:include schemaLocation="ai_trainingData.xsd"/>
-<xs:include schemaLocation="dataTime.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+  xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2"
+  xmlns:rbc="https://schemas.isotc211.org/19111/-/rbc/3.1"
+  xmlns:gmw="https://schemas.isotc211.org/19136/-1/gmw/1.1"
+  xmlns:gex="https://schemas.isotc211.org/19115/-1/gex/1.3"
+  xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3"
+  xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
+  <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
+  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingData.xsd"/>
+  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
   <xs:complexType name="AI_EOTrainingData">
     <xs:complexContent>
       <xs:extension base="AI_AbstractTrainingData">
