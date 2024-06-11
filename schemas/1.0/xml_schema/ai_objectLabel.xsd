@@ -5,6 +5,7 @@
   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/temporal.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_label.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
+  <xs:element name="AI_ObjectLabel" type="AI_ObjectLabel"/>
   <xs:complexType name="AI_ObjectLabel">
     <xs:complexContent>
       <xs:extension base="AI_AbstractLabel">

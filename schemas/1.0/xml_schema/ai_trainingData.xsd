@@ -9,6 +9,7 @@
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labeling.xsd"/>
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingTypeCode.xsd"/>
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataQuality.xsd"/>
+	<xs:element name="AI_AbstractTrainingData" type="AI_AbstractTrainingData"/>
 	<xs:complexType name="AI_AbstractTrainingData">
 		<xs:sequence>
 			<xs:element name="type" type="xs:string" fixed="AI_AbstractTrainingData"/>

@@ -6,6 +6,7 @@
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_pixelLabel.xsd"/>
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_sceneLabel.xsd"/>
 	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_objectLabel.xsd"/>
+	<xs:element name="AI_AbstractLabel" type="AI_AbstractLabel"/>
 	<xs:complexType name="AI_AbstractLabel">
 		<xs:sequence>
 			<xs:choice>

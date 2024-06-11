@@ -10,7 +10,7 @@
 		<xs:sequence>
 			<xs:element name="type" type="xs:string" fixed="DataQuality"/>
 			<xs:element name="scope" type="mcc:MD_Scope_Type"/>
-			<xs:element name="report" type="QualityElement" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="report" type="QualityElement" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+	<xs:element name="NamedValue" type="NamedValue"/>
 	<xs:complexType name="NamedValue">
 		<xs:sequence>
 			<xs:element name="key" type="xs:string"/>

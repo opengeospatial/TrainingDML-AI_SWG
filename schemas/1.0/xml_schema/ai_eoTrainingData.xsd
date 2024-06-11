@@ -10,6 +10,7 @@
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingData.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
+  <xs:element name="AI_EOTrainingData" type="AI_EOTrainingData"/>
   <xs:complexType name="AI_EOTrainingData">
     <xs:complexContent>
       <xs:extension base="AI_AbstractTrainingData">
