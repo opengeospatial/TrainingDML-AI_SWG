@@ -1,20 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labelingMethodCode.xsd"/>
 	<xs:element name="AI_LabelingProcedure" type="AI_LabelingProcedure"/>
 	<xs:complexType name="AI_LabelingProcedure">
 		<xs:sequence>
 			<xs:element name="type" type="xs:string" fixed="AI_LabelingProcedure"/>
 			<xs:element name="id" type="xs:string"/>
-			<xs:element name="methods" type="methods" maxOccurs="unbounded"/>
+			<xs:element name="methods" type="AI_LabelingMethodCode" maxOccurs="unbounded"/>
 			<xs:element name="tools" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name="methods">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="manual"/>
-			<xs:enumeration value="automatic"/>
-			<xs:enumeration value="semi-automatic"/>
-		</xs:restriction>
-	</xs:simpleType>
 </xs:schema>

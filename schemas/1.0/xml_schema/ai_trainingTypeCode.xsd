@@ -7,6 +7,7 @@
 			<xs:enumeration value="training"/>
 			<xs:enumeration value="validation"/>
 			<xs:enumeration value="test"/>
+			<xs:enumeration value="retraining"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>

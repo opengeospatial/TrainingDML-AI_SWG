@@ -4,13 +4,12 @@
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_task.xsd"/>
   <xs:element name="AI_EOTask" type="AI_EOTask"/>
   <xs:complexType name="AI_EOTask">
-    <xs:complexContent>
-      <xs:extension base="AI_AbstractTask">
-        <xs:sequence>
-          <xs:element name="type" type="xs:string" fixed="AI_EOTask"/>
-          <xs:element name="taskType" type="xs:string"/>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
+		<xs:sequence>
+			<xs:element name="type" type="xs:string" fixed="AI_EOTask"/>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="datasetId" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="taskType" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>

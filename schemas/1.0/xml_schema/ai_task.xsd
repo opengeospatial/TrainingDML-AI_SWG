@@ -4,9 +4,10 @@
 	<xs:element name="AI_AbstractTask" type="AI_AbstractTask"/>
 	<xs:complexType name="AI_AbstractTask">
 		<xs:sequence>
+			<xs:element name="type" type="xs:string" fixed="AI_AbstractTask"/>
+			<xs:element name="id" type="xs:string"/>
 			<xs:element name="datasetId" type="xs:string" minOccurs="0"/>
 			<xs:element name="description" type="xs:string" minOccurs="0"/>
-			<xs:element name="id" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
