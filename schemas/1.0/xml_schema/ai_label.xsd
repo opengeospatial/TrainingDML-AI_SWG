@@ -44,7 +44,7 @@
 			<xs:element name="bboxType" type="xs:string" minOccurs="0"/>
 			<xs:element name="class" type="xs:string"/>
 			<xs:element name="object" type="gml:AbstractFeatureType"/>
-			<xs:element name="dateTime" type="multiDateTime" minOccurs="0"/>
+			<xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
 		</xs:sequence>
 	</xs:group>
 </xs:schema>
