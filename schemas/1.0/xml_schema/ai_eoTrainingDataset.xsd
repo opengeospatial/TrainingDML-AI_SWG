@@ -18,7 +18,6 @@
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTask.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTrainingData.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/namedValue.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labeling.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_metricsInLiterature.xsd"/>
@@ -31,7 +30,7 @@
         <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
         <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
-        <xs:element name="createdTime" type="multiDateTime" minOccurs="0"/>
+        <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
         <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="description" type="xs:string"/>
         <xs:element name="doi" type="xs:string" minOccurs="0"/>
@@ -43,7 +42,7 @@
         <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="scope" type="mcc:MD_Scope_Type" minOccurs="0"/>
         <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="updatedTime" type="multiDateTime" minOccurs="0"/>
+        <xs:element name="updatedTime" type="xs:dateTime" minOccurs="0"/>
         <xs:element name="version" type="xs:string" minOccurs="0"/>
         <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="metricsInLIT" type="AI_MetricsInLiterature" minOccurs="0" maxOccurs="unbounded"/>

@@ -9,7 +9,6 @@
   xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingData.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
   <xs:element name="AI_EOTrainingData" type="AI_EOTrainingData"/>
   <xs:complexType name="AI_EOTrainingData">
     <xs:complexContent>
@@ -18,7 +17,7 @@
           <xs:element name="type" type="xs:string" fixed="AI_EOTrainingData"/>
           <xs:element name="dataURL" type="xs:anyURI" maxOccurs="unbounded"/>
           <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0"/>
-          <xs:element name="dataTime" type="multiDateTime" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="dataTime" type="xs:dateTime" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

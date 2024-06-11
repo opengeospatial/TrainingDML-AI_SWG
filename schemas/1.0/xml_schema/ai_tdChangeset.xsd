@@ -2,7 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingData.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataTime.xsd"/>
   <xs:element name="AI_TDChangeset" type="AI_TDChangeset"/>
   <xs:complexType name="AI_TDChangeset">
     <xs:sequence>
@@ -14,7 +13,7 @@
       <xs:element name="id" type="xs:string"/>
       <xs:element name="modify" type="AI_AbstractTrainingData" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="version" type="xs:string" minOccurs="0"/>
-      <xs:element name="createdTime" type="multiDateTime" minOccurs="0"/>
+      <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
