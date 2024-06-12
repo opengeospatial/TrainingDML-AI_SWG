@@ -28,9 +28,9 @@ Each AI_TDChangeset object SHALL implement the Mandatory properties as shown in 
 |version |Version of the training dataset that the changeset belongs to. |CharacterString [0..1] |Optional
 |changeCount |Total number of changed training samples. |Int [1..1] |Mandatory
 |createdTime |The time that the changeset was created. |DateTime [0..1] |Optional
-|add |Added training samples. |AI_TrainingData [0..*] |Optional
-|modify |Modified training samples. |AI_TrainingData [0..*] |Optional
-|delete |Deleted training samples. |AI_TrainingData [0..*] |Optional
+|add |Added training samples. |AI_AbstractTrainingData [0..*] |Optional
+|modify |Modified training samples. |AI_AbstractTrainingData [0..*] |Optional
+|delete |Deleted training samples. |AI_AbstractTrainingData [0..*] |Optional
 |===
 
 Example:
@@ -38,16 +38,39 @@ Example:
    <type>AI_TDChangeset</type>
    <id>changeset-dota_v1.5</id>
    <datasetId>dota_v1.5</datasetId>
-   <createdTime>2019-01-01</createdTime>
+   <createdTime>2019-01-01T00:00:00</createdTime>
    <changeCount>9</changeCount>
    <modify>
       <type>EOTrainingData</type>
       <id>P1228</id>
       <dataSources>
-         <cit:title>GF</cit:title>
+         <cit:title>
+            <gco:CharacterString>GF</gco:CharacterString>
+         </cit:title>
       </dataSources>
       <dataURL>train/images/P1228.png</dataURL>
       <numberOfLabels>50</numberOfLabels>
       <trainingType>training</trainingType>
-      <labels>...</labels>
+      <labels>
+         <type>AI_ObjectLabel</type>
+         <object>
+            <gml:location>
+               <gml:GeometricComplex>
+                  <gml:element>
+                     <gml:Polygon>
+                        <gml:exterior>
+                           <gml:LinearRing>
+                              <gml:posList>
+                                 2306.0 729.0 2330.0 729.0 2330.0 744.0 2306.0 744.0 2306.0 729.0
+                              </gml:posList>
+                           </gml:LinearRing>
+                        </gml:exterior>
+                     </gml:Polygon>
+                  </gml:element>
+               </gml:GeometricComplex>
+            </gml:location>
+         </object>
+         <bboxType>Horizontal BBox</bboxType>
+         <class>ship</class>
+      </labels>
    </modify>

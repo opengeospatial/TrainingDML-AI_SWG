@@ -89,7 +89,6 @@ Each AI_ObjectLabel object SHALL implement the Mandatory properties shown in Tab
 Example:
 
    <type>AI_ObjectLabel</type>
-   <class>Pedestrian</class>
    <object>
       <gml:metaDataProperty>
          <gml:GenericMetaData>
@@ -115,6 +114,7 @@ Example:
       </gml:location>
    </object>
    <bboxType>Horizontal BBox</bboxType>
+   <class>Pedestrian</class>
 
 The AI_PixelLabel object is encoded as an XML element with properties as shown in Table 12.
 
@@ -150,7 +150,8 @@ Each AI_ImageFormatCode value SHALL be encoded as a text string defined in Multi
 |===
 
 Examples:
- a)	image/tiff; application=geotiff
- b)	application/x-netcdf
- c)	image/png
+
+ a)   image/tiff; application=geotiff
+ b)   application/x-netcdf
+ c)   image/png
  d)   image/jp2

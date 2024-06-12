@@ -51,7 +51,7 @@ Each AI_TrainingDataset object SHALL implement the Mandatory properties shown in
 |labeling |Provenance information of how the training dataset is labeled. |AI_Labeling [0..*] |Optional
 |quality |Quality information of the training dataset. |DataQuality [0..*] |Optional
 |changesets |Changeset between two versions of the training dataset. |AI_TDChangeset [0..*] |Optional
-|data |Training data in the training dataset. |AI_TrainingData [1..*] |Mandatory
+|data |Training data in the training dataset. |AI_AbstractTrainingData [1..*] |Mandatory
 |===
 
 Example:
@@ -60,46 +60,106 @@ Example:
    <id>whu_rs19</id>
    <name>WHU-RS19</name>
    <description>Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth</description>
+   <license>CC BY-SA 4.0</license>
    <amountOfTrainingData>1013</amountOfTrainingData>
-   <createdTime>2010-01-01</createdTime>
+   <createdTime>2010-01-01T00:00:00</createdTime>
    <providers>Wuhan University</providers>
    <keywords>Remote Sensing</keywords>
    <keywords>Scene Classification</keywords>
    <numberOfClasses>19</numberOfClasses>
-   <classes>Airport</classes>
-   <classes>Beach</classes>
-   <classes>Bridge</classes>
-   <classes>Commercial</classes>
-   <classes>Desert</classes>
-   <classes>Farmland</classes>
-   <classes>footballField</classes>
-   <classes>Forest</classes>
-   <classes>Industrial</classes>
-   <classes>Meadow</classes>
-   <classes>Mountain</classes>
-   <classes>Park</classes>
-   <classes>Parking</classes>
-   <classes>Pond</classes>
-   <classes>Port</classes>
-   <classes>railwayStation</classes>
-   <classes>Residential</classes>
-   <classes>River</classes>
-   <classes>Viaduct</classes>
+   <classes>
+      <key>Airport</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Beach</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Bridge</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Commercial</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Desert</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Farmland</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>footballField</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Forest</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Industrial</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Meadow</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Mountain</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Park</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Parking</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Pond</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Port</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>railwayStation</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Residential</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>River</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Viaduct</key>
+      <value>null</value>
+   </classes>
    <tasks>
-      <type>EOTask</type>
+      <type>AI_EOTask</type>
       <id>whu_rs19-task</id>
       <description>Structural high-resolution satellite image indexing</description>
       <taskType>Scene Classification</taskType>
    </tasks>
    <data>
-      <type>EOTrainingData</type>
+      <type>AI_EOTrainingData</type>
       <id>airport_01</id>
       <dataSources>
-         <cit:title>googleEarth</cit:title>
+         <cit:title>
+            <gco:CharacterString>googleEarth</gco:CharacterString>
+         </cit:title>
       </dataSources>
       <dataURL>image/Airport/airport_01.jpg</dataURL>
       <labels>
-         <type>SceneLabel</type>
+         <type>AI_SceneLabel</type>
          <class>Airport</class>
       </labels>
    </data>
@@ -156,55 +216,135 @@ Example:
    <id>whu_rs19</id>
    <name>WHU-RS19</name>
    <description>Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth</description>
+   <license>CC BY-SA 4.0</license>
    <amountOfTrainingData>1013</amountOfTrainingData>
-   <createdTime>2010-01-01</createdTime>
+   <createdTime>2010-01-01T00:00:00</createdTime>
    <providers>Wuhan University</providers>
    <keywords>Remote Sensing</keywords>
    <keywords>Scene Classification</keywords>
    <numberOfClasses>19</numberOfClasses>
+   <classes>
+      <key>Airport</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Beach</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Bridge</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Commercial</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Desert</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Farmland</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>footballField</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Forest</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Industrial</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Meadow</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Mountain</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Park</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Parking</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Pond</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Port</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>railwayStation</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Residential</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>River</key>
+      <value>null</value>
+   </classes>
+   <classes>
+      <key>Viaduct</key>
+      <value>null</value>
+   </classes>
    <extent>
       <gex:geographicElement>
-         <gex:westBoundLongitude>-180</gex:westBoundLongitude>
-         <gex:eastBoundLongitude>180</gex:eastBoundLongitude>
-         <gex:southBoundLatitude>-90</gex:southBoundLatitude>
-         <gex:northBoundLatitude>90</gex:northBoundLatitude>
+         <gex:EX_GeographicBoundingBox>
+            <gex:westBoundLongitude>
+               <gco:Decimal>-180</gco:Decimal>
+            </gex:westBoundLongitude>
+            <gex:eastBoundLongitude>
+               <gco:Decimal>180</gco:Decimal>
+            </gex:eastBoundLongitude>
+            <gex:southBoundLatitude>
+               <gco:Decimal>-90</gco:Decimal>
+            </gex:southBoundLatitude>
+            <gex:northBoundLatitude>
+               <gco:Decimal>90</gco:Decimal>
+            </gex:northBoundLatitude>
+         </gex:EX_GeographicBoundingBox>
       </gex:geographicElement>
    </extent>
    <bands>
       <mrc:name>
-         <mcc:code>red</mcc:code>
+         <mcc:MD_Identifier>
+            <mcc:code>
+               <gco:CharacterString>red</gco:CharacterString>
+            </mcc:code>
+         </mcc:MD_Identifier>
       </mrc:name>
    </bands>
    <bands>
       <mrc:name>
-         <mcc:code>green</mcc:code>
+         <mcc:MD_Identifier>
+            <mcc:code>
+               <gco:CharacterString>green</gco:CharacterString>
+            </mcc:code>
+         </mcc:MD_Identifier>
       </mrc:name>
    </bands>
    <bands>
       <mrc:name>
-         <mcc:code>blue</mcc:code>
+         <mcc:MD_Identifier>
+            <mcc:code>
+               <gco:CharacterString>blue</gco:CharacterString>
+            </mcc:code>
+         </mcc:MD_Identifier>
       </mrc:name>
    </bands>
    <imageSize>6000x7600</imageSize>
-   <classes>Airport</classes>
-   <classes>Beach</classes>
-   <classes>Bridge</classes>
-   <classes>Commercial</classes>
-   <classes>Desert</classes>
-   <classes>Farmland</classes>
-   <classes>footballField</classes>
-   <classes>Forest</classes>
-   <classes>Industrial</classes>
-   <classes>Meadow</classes>
-   <classes>Mountain</classes>
-   <classes>Park</classes>
-   <classes>Parking</classes>
-   <classes>Pond</classes>
-   <classes>Port</classes>
-   <classes>railwayStation</classes>
-   <classes>Residential</classes>
-   <classes>River</classes>
-   <classes>Viaduct</classes>
    <tasks>
       <type>AI_EOTask</type>
       <id>whu_rs19-task</id>
@@ -215,8 +355,10 @@ Example:
       <type>AI_EOTrainingData</type>
       <id>airport_01</id>
       <dataSources>
-   <cit:title>googleEarth</cit:title>
-   </dataSources>
+         <cit:title>
+            <gco:CharacterString>googleEarth</gco:CharacterString>
+         </cit:title>
+      </dataSources>
       <dataURL>image/Airport/airport_01.jpg</dataURL>
       <labels>
          <type>AI_SceneLabel</type>

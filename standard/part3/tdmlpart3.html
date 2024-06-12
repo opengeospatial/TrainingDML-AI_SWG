@@ -1447,21 +1447,35 @@ c)  &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
 <div class="literalblock">
 <div class="content">
 <pre>a)	&lt;gex:geographicElement&gt;
-       &lt;gex:polygon&gt;
-           &lt;gml:exterior&gt;
-	        &lt;gml:LinearRing&gt;
-		        &lt;gml:posList&gt;
-			        51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
-		        &lt;/gml:posList&gt;
-	        &lt;/gml:LinearRing&gt;
-           &lt;/gml:exterior&gt;
-       &lt;/gex:polygon&gt;
+       &lt;gex:EX_BoundingPolygon&gt;
+           &lt;gex:polygon&gt;
+               &lt;gml:Polygon&gt;
+                   &lt;gml:exterior&gt;
+                       &lt;gml:LinearRing&gt;
+                           &lt;gml:posList&gt;
+                               51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                           &lt;/gml:posList&gt;
+                       &lt;/gml:LinearRing&gt;
+                   &lt;/gml:exterior&gt;
+               &lt;/gml:Polygon&gt;
+           &lt;/gex:polygon&gt;
+       &lt;/gex:EX_BoundingPolygon&gt;
    &lt;/gex:geographicElement&gt;
 b)	&lt;gex:geographicElement&gt;
-       &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
-       &lt;gex:eastBoundLongitude&gt;-157.86768&lt;/gex:eastBoundLongitude&gt;
-       &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
-       &lt;gex:northBoundLatitude&gt;21.31573&lt;/gex:northBoundLatitude&gt;
+       &lt;gex:EX_GeographicBoundingBox&gt;
+           &lt;gex:westBoundLongitude&gt;
+               &lt;gco:Decimal&gt;-171.76409&lt;/gco:Decimal&gt;
+           &lt;/gex:westBoundLongitude&gt;
+           &lt;gex:eastBoundLongitude&gt;
+               &lt;gco:Decimal&gt;-157.86768&lt;/gco:Decimal&gt;
+           &lt;/gex:eastBoundLongitude&gt;
+           &lt;gex:southBoundLatitude&gt;
+               &lt;gco:Decimal&gt;-14.42443&lt;/gco:Decimal&gt;
+           &lt;/gex:southBoundLatitude&gt;
+           &lt;gex:northBoundLatitude&gt;
+               &lt;gco:Decimal&gt;21.31573&lt;/gco:Decimal&gt;
+           &lt;/gex:northBoundLatitude&gt;
+       &lt;/gex:EX_GeographicBoundingBox&gt;
    &lt;/gex:geographicElement&gt;</pre>
 </div>
 </div>
@@ -1487,12 +1501,21 @@ b)	&lt;gex:geographicElement&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>&lt;cit:title&gt;Open Geospatial Consortium&lt;/cit:title&gt;
-   &lt;cit:alternateTitle&gt;OGC&lt;/cit:alternateTitle&gt;
+<pre>&lt;cit:title&gt;
+       &lt;gco:CharacterString&gt;Open Geospatial Consortium&lt;/gco:CharacterString&gt;
+   &lt;/cit:title&gt;
+   &lt;cit:alternateTitle&gt;
+       &lt;gco:CharacterString&gt;OGC&lt;/gco:CharacterString&gt;
+   &lt;/cit:alternateTitle&gt;
    &lt;cit:identifier&gt;
-       &lt;cit:code&gt;
-           https://portal.ogc.org/files/?artifact_id=104605&amp;version=1
-       &lt;/cit:code&gt;
+       &lt;mcc:MD_Identifier&gt;
+           &lt;mcc:code&gt;
+               &lt;gco:CharacterString&gt;artifact_id=104605&lt;/gco:CharacterString&gt;
+           &lt;/mcc:code&gt;
+           &lt;mcc:version&gt;
+               &lt;gco:CharacterString&gt;1&lt;/gco:CharacterString&gt;
+           &lt;/mcc:version&gt;
+       &lt;/mcc:MD_Identifier&gt;
    &lt;/cit:identifier&gt;</pre>
 </div>
 </div>
@@ -1518,37 +1541,71 @@ b)	&lt;gex:geographicElement&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;mcc:level&gt;dataset&lt;/mcc:level&gt;
-    &lt;mcc:levelDescription&gt;
-       &lt;mcc:dataset&gt;whu_rs19&lt;/mcc:dataset&gt;
-    &lt;/mcc:levelDescription&gt;
-b)	&lt;mcc:level&gt;attribute&lt;/mcc:level&gt;
-    &lt;mcc:levelDescription&gt;
-       &lt;mcc:attributes&gt;completeness&lt;/mcc:attributes&gt;
-    &lt;/mcc:levelDescription&gt;
-c)	&lt;mcc:level&gt;coverage&lt;/mcc:level&gt;
-    &lt;mcc:extent&gt;
-       &lt;gex:geographicElement&gt;
-           &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
-           &lt;gex:eastBoundLongitude&gt;-157.86768&lt;/gex:eastBoundLongitude&gt;
-           &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
-           &lt;gex:northBoundLatitude&gt;21.31573&lt;/gex:northBoundLatitude&gt;
-       &lt;/gex:geographicElement&gt;
-    &lt;/mcc:extent&gt;
-d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
-    &lt;mcc:extent&gt;
-       &lt;gex:geographicElement&gt;
-           &lt;gex:polygon&gt;
-               &lt;gml:exterior&gt;
-                   &lt;gml:LinearRing&gt;
-                       &lt;gml:posList&gt;
-                           51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
-                       &lt;/gml:posList&gt;
-                   &lt;/gml:LinearRing&gt;
-               &lt;/gml:exterior&gt;
-           &lt;/gex:polygon&gt;
-       &lt;/gex:geographicElement&gt;
-    &lt;/mcc:extent&gt;</pre>
+<pre>a)	&lt;mcc:level&gt;
+       &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/&gt;
+   &lt;/mcc:level&gt;
+   &lt;mcc:levelDescription&gt;
+       &lt;mcc:MD_ScopeDescription&gt;
+           &lt;mcc:dataset&gt;
+               &lt;gco:CharacterString&gt;whu_rs19&lt;/gco:CharacterString&gt;
+           &lt;/mcc:dataset&gt;
+       &lt;/mcc:MD_ScopeDescription&gt;
+   &lt;/mcc:levelDescription&gt;
+b)	&lt;mcc:level&gt;
+       &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="attribute"/&gt;
+   &lt;/mcc:level&gt;
+   &lt;mcc:levelDescription&gt;
+       &lt;mcc:MD_ScopeDescription&gt;
+           &lt;mcc:attributes&gt;
+               &lt;gco:CharacterString&gt;completeness&lt;/gco:CharacterString&gt;
+           &lt;/mcc:attributes&gt;
+       &lt;/mcc:MD_ScopeDescription&gt;
+   &lt;/mcc:levelDescription&gt;
+c)	&lt;mcc:level&gt;
+       &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="coverage"/&gt;
+   &lt;/mcc:level&gt;
+   &lt;mcc:extent&gt;
+       &lt;gex:EX_Extent&gt;
+           &lt;gex:geographicElement&gt;
+               &lt;gex:EX_GeographicBoundingBox&gt;
+                   &lt;gex:westBoundLongitude&gt;
+                       &lt;gco:Decimal&gt;-171.76409&lt;/gco:Decimal&gt;
+                   &lt;/gex:westBoundLongitude&gt;
+                   &lt;gex:eastBoundLongitude&gt;
+                       &lt;gco:Decimal&gt;-157.86768&lt;/gco:Decimal&gt;
+                   &lt;/gex:eastBoundLongitude&gt;
+                   &lt;gex:southBoundLatitude&gt;
+                       &lt;gco:Decimal&gt;-14.42443&lt;/gco:Decimal&gt;
+                   &lt;/gex:southBoundLatitude&gt;
+                   &lt;gex:northBoundLatitude&gt;
+                       &lt;gco:Decimal&gt;21.31573&lt;/gco:Decimal&gt;
+                   &lt;/gex:northBoundLatitude&gt;
+               &lt;/gex:EX_GeographicBoundingBox&gt;
+           &lt;/gex:geographicElement&gt;
+       &lt;/gex:EX_Extent&gt;
+   &lt;/mcc:extent&gt;
+d) &lt;mcc:level&gt;
+       &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="feature"/&gt;
+   &lt;/mcc:level&gt;
+   &lt;mcc:extent&gt;
+       &lt;gex:EX_Extent&gt;
+           &lt;gex:geographicElement&gt;
+               &lt;gex:EX_BoundingPolygon&gt;
+                   &lt;gex:polygon&gt;
+                       &lt;gml:Polygon&gt;
+                           &lt;gml:exterior&gt;
+                               &lt;gml:LinearRing&gt;
+                                   &lt;gml:posList&gt;
+                                       51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
+                                   &lt;/gml:posList&gt;
+                               &lt;/gml:LinearRing&gt;
+                           &lt;/gml:exterior&gt;
+                       &lt;/gml:Polygon&gt;
+                   &lt;/gex:polygon&gt;
+               &lt;/gex:EX_BoundingPolygon&gt;
+           &lt;/gex:geographicElement&gt;
+       &lt;/gex:EX_Extent&gt;
+   &lt;/mcc:extent&gt;</pre>
 </div>
 </div>
 </div>
@@ -1724,32 +1781,11 @@ d)	&lt;mcc:level&gt;feature&lt;/mcc:level&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;gml:metaDataProperty&gt;
-    &lt;gml:GenericMetaData&gt;
-	    &lt;truncated&gt;0.0&lt;/truncated&gt;
-	    &lt;occluded&gt;0&lt;/occluded&gt;
-	    &lt;alpha&gt;-0.2&lt;/alpha&gt;
-    &lt;/gml:GenericMetaData&gt;
-   &lt;/gml:metaDataProperty&gt;
-   &lt;gml:location&gt;
-    &lt;gml:GeometricComplex&gt;
-	    &lt;gml:element&gt;
-		    &lt;gml:Polygon&gt;
-		    	&lt;gml:exterior&gt;
-			    	&lt;gml:LinearRing&gt;
-				    	&lt;gml:posList&gt;
-				    		51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
-					    &lt;/gml:posList&gt;
-				    &lt;/gml:LinearRing&gt;
-		    	&lt;/gml:exterior&gt;
-		    &lt;/gml:Polygon&gt;
-	    &lt;/gml:element&gt;
-    &lt;/gml:GeometricComplex&gt;
-   &lt;/gml:location&gt;
-b)	&lt;gml:metaDataProperty&gt;
+<pre>a) &lt;gml:metaDataProperty&gt;
        &lt;gml:GenericMetaData&gt;
-           &lt;iscrowd&gt;0&lt;/iscrowd&gt;
-           &lt;area&gt;2580&lt;/area&gt;
+           &lt;truncated&gt;0.0&lt;/truncated&gt;
+           &lt;occluded&gt;0&lt;/occluded&gt;
+           &lt;alpha&gt;-0.2&lt;/alpha&gt;
        &lt;/gml:GenericMetaData&gt;
    &lt;/gml:metaDataProperty&gt;
    &lt;gml:location&gt;
@@ -1759,7 +1795,7 @@ b)	&lt;gml:metaDataProperty&gt;
                    &lt;gml:exterior&gt;
                        &lt;gml:LinearRing&gt;
                            &lt;gml:posList&gt;
-                               274 1602 273 1603 272 1603 271 1603 270 1604 269 1604 268 1604 267 1604 266 1605 265 1605 264 1605 263 1606 262 1606 261 1606 260 1607 259 1607 258 1607 257 1608 256 1608 255 1608 254 1609 253 1610 252 1611 251 1611
+                               51.556272 -0.2803943 51.5562758 -0.2787397 51.5556539 -0.278736 51.5556501 -0.2803906 51.556272 -0.2803943
                            &lt;/gml:posList&gt;
                        &lt;/gml:LinearRing&gt;
                    &lt;/gml:exterior&gt;
@@ -1767,11 +1803,30 @@ b)	&lt;gml:metaDataProperty&gt;
            &lt;/gml:element&gt;
        &lt;/gml:GeometricComplex&gt;
    &lt;/gml:location&gt;
-   &lt;gml:boundedBy&gt;
-       &lt;gml:Envelope&gt;
-           244 1602 306 1653
-       &lt;/gml:Envelope&gt;
-   &lt;/gml:boundedBy&gt;</pre>
+b) &lt;gml:metaDataProperty&gt;
+       &lt;gml:GenericMetaData&gt;
+           &lt;iscrowd&gt;0&lt;/iscrowd&gt;
+           &lt;area&gt;2580&lt;/area&gt;
+       &lt;/gml:GenericMetaData&gt;
+   &lt;/gml:metaDataProperty&gt;
+   &lt;gml:location&gt;
+       &lt;gml:GeometricComplex&gt;
+           &lt;gml:element&gt;
+               &lt;gml:LineString&gt;
+                   &lt;gml:posList&gt;1.0 1.0 2.0 2.0&lt;/gml:posList&gt;
+               &lt;/gml:LineString&gt;
+           &lt;/gml:element&gt;
+       &lt;/gml:GeometricComplex&gt;
+   &lt;/gml:location&gt;
+c) &lt;gml:location&gt;
+       &lt;gml:GeometricComplex&gt;
+           &lt;gml:element&gt;
+               &lt;gml:Point&gt;
+                   &lt;gml:pos&gt;1.0 1.0&lt;/gml:pos&gt;
+               &lt;/gml:Point&gt;
+           &lt;/gml:element&gt;
+       &lt;/gml:GeometricComplex&gt;
+   &lt;/gml:location&gt;</pre>
 </div>
 </div>
 </div>
@@ -2015,7 +2070,7 @@ b)	&lt;gml:metaDataProperty&gt;
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">data</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Training data in the training dataset.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [1..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [1..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Mandatory</p></td>
 </tr>
 </tbody>
@@ -2029,46 +2084,106 @@ b)	&lt;gml:metaDataProperty&gt;
 &lt;id&gt;whu_rs19&lt;/id&gt;
 &lt;name&gt;WHU-RS19&lt;/name&gt;
 &lt;description&gt;Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth&lt;/description&gt;
+&lt;license&gt;CC BY-SA 4.0&lt;/license&gt;
 &lt;amountOfTrainingData&gt;1013&lt;/amountOfTrainingData&gt;
-&lt;createdTime&gt;2010-01-01&lt;/createdTime&gt;
+&lt;createdTime&gt;2010-01-01T00:00:00&lt;/createdTime&gt;
 &lt;providers&gt;Wuhan University&lt;/providers&gt;
 &lt;keywords&gt;Remote Sensing&lt;/keywords&gt;
 &lt;keywords&gt;Scene Classification&lt;/keywords&gt;
 &lt;numberOfClasses&gt;19&lt;/numberOfClasses&gt;
-&lt;classes&gt;Airport&lt;/classes&gt;
-&lt;classes&gt;Beach&lt;/classes&gt;
-&lt;classes&gt;Bridge&lt;/classes&gt;
-&lt;classes&gt;Commercial&lt;/classes&gt;
-&lt;classes&gt;Desert&lt;/classes&gt;
-&lt;classes&gt;Farmland&lt;/classes&gt;
-&lt;classes&gt;footballField&lt;/classes&gt;
-&lt;classes&gt;Forest&lt;/classes&gt;
-&lt;classes&gt;Industrial&lt;/classes&gt;
-&lt;classes&gt;Meadow&lt;/classes&gt;
-&lt;classes&gt;Mountain&lt;/classes&gt;
-&lt;classes&gt;Park&lt;/classes&gt;
-&lt;classes&gt;Parking&lt;/classes&gt;
-&lt;classes&gt;Pond&lt;/classes&gt;
-&lt;classes&gt;Port&lt;/classes&gt;
-&lt;classes&gt;railwayStation&lt;/classes&gt;
-&lt;classes&gt;Residential&lt;/classes&gt;
-&lt;classes&gt;River&lt;/classes&gt;
-&lt;classes&gt;Viaduct&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Airport&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Beach&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Bridge&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Commercial&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Desert&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Farmland&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;footballField&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Forest&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Industrial&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Meadow&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Mountain&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Park&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Parking&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Pond&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Port&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;railwayStation&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Residential&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;River&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Viaduct&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
 &lt;tasks&gt;
-   &lt;type&gt;EOTask&lt;/type&gt;
+   &lt;type&gt;AI_EOTask&lt;/type&gt;
    &lt;id&gt;whu_rs19-task&lt;/id&gt;
    &lt;description&gt;Structural high-resolution satellite image indexing&lt;/description&gt;
    &lt;taskType&gt;Scene Classification&lt;/taskType&gt;
 &lt;/tasks&gt;
 &lt;data&gt;
-   &lt;type&gt;EOTrainingData&lt;/type&gt;
+   &lt;type&gt;AI_EOTrainingData&lt;/type&gt;
    &lt;id&gt;airport_01&lt;/id&gt;
    &lt;dataSources&gt;
-      &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+      &lt;cit:title&gt;
+         &lt;gco:CharacterString&gt;googleEarth&lt;/gco:CharacterString&gt;
+      &lt;/cit:title&gt;
    &lt;/dataSources&gt;
    &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
    &lt;labels&gt;
-      &lt;type&gt;SceneLabel&lt;/type&gt;
+      &lt;type&gt;AI_SceneLabel&lt;/type&gt;
       &lt;class&gt;Airport&lt;/class&gt;
    &lt;/labels&gt;
 &lt;/data&gt;</pre>
@@ -2208,55 +2323,135 @@ b)	&lt;gml:metaDataProperty&gt;
 &lt;id&gt;whu_rs19&lt;/id&gt;
 &lt;name&gt;WHU-RS19&lt;/name&gt;
 &lt;description&gt;Wuhan University-Remote Sensing 19 Categories (WHU-RS19) has 19 classes of remote sensing images scenes obtained from Google Earth&lt;/description&gt;
+&lt;license&gt;CC BY-SA 4.0&lt;/license&gt;
 &lt;amountOfTrainingData&gt;1013&lt;/amountOfTrainingData&gt;
-&lt;createdTime&gt;2010-01-01&lt;/createdTime&gt;
+&lt;createdTime&gt;2010-01-01T00:00:00&lt;/createdTime&gt;
 &lt;providers&gt;Wuhan University&lt;/providers&gt;
 &lt;keywords&gt;Remote Sensing&lt;/keywords&gt;
 &lt;keywords&gt;Scene Classification&lt;/keywords&gt;
 &lt;numberOfClasses&gt;19&lt;/numberOfClasses&gt;
+&lt;classes&gt;
+   &lt;key&gt;Airport&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Beach&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Bridge&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Commercial&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Desert&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Farmland&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;footballField&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Forest&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Industrial&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Meadow&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Mountain&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Park&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Parking&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Pond&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Port&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;railwayStation&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Residential&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;River&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
+&lt;classes&gt;
+   &lt;key&gt;Viaduct&lt;/key&gt;
+   &lt;value&gt;null&lt;/value&gt;
+&lt;/classes&gt;
 &lt;extent&gt;
    &lt;gex:geographicElement&gt;
-      &lt;gex:westBoundLongitude&gt;-180&lt;/gex:westBoundLongitude&gt;
-      &lt;gex:eastBoundLongitude&gt;180&lt;/gex:eastBoundLongitude&gt;
-      &lt;gex:southBoundLatitude&gt;-90&lt;/gex:southBoundLatitude&gt;
-      &lt;gex:northBoundLatitude&gt;90&lt;/gex:northBoundLatitude&gt;
+      &lt;gex:EX_GeographicBoundingBox&gt;
+         &lt;gex:westBoundLongitude&gt;
+            &lt;gco:Decimal&gt;-180&lt;/gco:Decimal&gt;
+         &lt;/gex:westBoundLongitude&gt;
+         &lt;gex:eastBoundLongitude&gt;
+            &lt;gco:Decimal&gt;180&lt;/gco:Decimal&gt;
+         &lt;/gex:eastBoundLongitude&gt;
+         &lt;gex:southBoundLatitude&gt;
+            &lt;gco:Decimal&gt;-90&lt;/gco:Decimal&gt;
+         &lt;/gex:southBoundLatitude&gt;
+         &lt;gex:northBoundLatitude&gt;
+            &lt;gco:Decimal&gt;90&lt;/gco:Decimal&gt;
+         &lt;/gex:northBoundLatitude&gt;
+      &lt;/gex:EX_GeographicBoundingBox&gt;
    &lt;/gex:geographicElement&gt;
 &lt;/extent&gt;
 &lt;bands&gt;
    &lt;mrc:name&gt;
-      &lt;mcc:code&gt;red&lt;/mcc:code&gt;
+      &lt;mcc:MD_Identifier&gt;
+         &lt;mcc:code&gt;
+            &lt;gco:CharacterString&gt;red&lt;/gco:CharacterString&gt;
+         &lt;/mcc:code&gt;
+      &lt;/mcc:MD_Identifier&gt;
    &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;bands&gt;
    &lt;mrc:name&gt;
-      &lt;mcc:code&gt;green&lt;/mcc:code&gt;
+      &lt;mcc:MD_Identifier&gt;
+         &lt;mcc:code&gt;
+            &lt;gco:CharacterString&gt;green&lt;/gco:CharacterString&gt;
+         &lt;/mcc:code&gt;
+      &lt;/mcc:MD_Identifier&gt;
    &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;bands&gt;
    &lt;mrc:name&gt;
-      &lt;mcc:code&gt;blue&lt;/mcc:code&gt;
+      &lt;mcc:MD_Identifier&gt;
+         &lt;mcc:code&gt;
+            &lt;gco:CharacterString&gt;blue&lt;/gco:CharacterString&gt;
+         &lt;/mcc:code&gt;
+      &lt;/mcc:MD_Identifier&gt;
    &lt;/mrc:name&gt;
 &lt;/bands&gt;
 &lt;imageSize&gt;6000x7600&lt;/imageSize&gt;
-&lt;classes&gt;Airport&lt;/classes&gt;
-&lt;classes&gt;Beach&lt;/classes&gt;
-&lt;classes&gt;Bridge&lt;/classes&gt;
-&lt;classes&gt;Commercial&lt;/classes&gt;
-&lt;classes&gt;Desert&lt;/classes&gt;
-&lt;classes&gt;Farmland&lt;/classes&gt;
-&lt;classes&gt;footballField&lt;/classes&gt;
-&lt;classes&gt;Forest&lt;/classes&gt;
-&lt;classes&gt;Industrial&lt;/classes&gt;
-&lt;classes&gt;Meadow&lt;/classes&gt;
-&lt;classes&gt;Mountain&lt;/classes&gt;
-&lt;classes&gt;Park&lt;/classes&gt;
-&lt;classes&gt;Parking&lt;/classes&gt;
-&lt;classes&gt;Pond&lt;/classes&gt;
-&lt;classes&gt;Port&lt;/classes&gt;
-&lt;classes&gt;railwayStation&lt;/classes&gt;
-&lt;classes&gt;Residential&lt;/classes&gt;
-&lt;classes&gt;River&lt;/classes&gt;
-&lt;classes&gt;Viaduct&lt;/classes&gt;
 &lt;tasks&gt;
    &lt;type&gt;AI_EOTask&lt;/type&gt;
    &lt;id&gt;whu_rs19-task&lt;/id&gt;
@@ -2267,8 +2462,10 @@ b)	&lt;gml:metaDataProperty&gt;
    &lt;type&gt;AI_EOTrainingData&lt;/type&gt;
    &lt;id&gt;airport_01&lt;/id&gt;
    &lt;dataSources&gt;
-&lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
-&lt;/dataSources&gt;
+      &lt;cit:title&gt;
+         &lt;gco:CharacterString&gt;googleEarth&lt;/gco:CharacterString&gt;
+      &lt;/cit:title&gt;
+   &lt;/dataSources&gt;
    &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
    &lt;labels&gt;
       &lt;type&gt;AI_SceneLabel&lt;/type&gt;
@@ -2432,7 +2629,9 @@ b)	&lt;gml:metaDataProperty&gt;
 <pre>&lt;type&gt;AI_AbstractTrainingData&lt;/type&gt;
 &lt;id&gt;airport_01&lt;/id&gt;
 &lt;dataSources&gt;
-   &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+   &lt;cit:title&gt;
+      &lt;gco:CharacterString&gt;googleEarth&lt;/gco:CharacterString&gt;
+   &lt;/cit:title&gt;
 &lt;/dataSources&gt;
 &lt;dataURL&gt;image/Airport/airport_01.jpg&lt;/dataURL&gt;
 &lt;labels&gt;
@@ -2535,14 +2734,26 @@ d) retraining</pre>
 <pre>&lt;type&gt;AI_EOTrainingData&lt;/type&gt;
 &lt;id&gt;airport_01&lt;/id&gt;
 &lt;dataSources&gt;
-   &lt;cit:title&gt;googleEarth&lt;/cit:title&gt;
+   &lt;cit:title&gt;
+      &lt;gco:CharacterString&gt;googleEarth&lt;/gco:CharacterString&gt;
+   &lt;/cit:title&gt;
 &lt;/dataSources&gt;
 &lt;extent&gt;
    &lt;gex:geographicElement&gt;
-      &lt;gex:westBoundLongitude&gt;-171.76409&lt;/gex:westBoundLongitude&gt;
-      &lt;gex:eastBoundLongitude&gt;-171.56578&lt;/gex:eastBoundLongitude&gt;
-      &lt;gex:southBoundLatitude&gt;-14.42443&lt;/gex:southBoundLatitude&gt;
-      &lt;gex:northBoundLatitude&gt;-14.32568&lt;/gex:northBoundLatitude&gt;
+      &lt;gex:EX_GeographicBoundingBox&gt;
+         &lt;gex:westBoundLongitude&gt;
+            &lt;gco:Decimal&gt;-171.76409&lt;/gco:Decimal&gt;
+         &lt;/gex:westBoundLongitude&gt;
+         &lt;gex:eastBoundLongitude&gt;
+            &lt;gco:Decimal&gt;-171.56578&lt;/gco:Decimal&gt;
+         &lt;/gex:eastBoundLongitude&gt;
+         &lt;gex:southBoundLatitude&gt;
+            &lt;gco:Decimal&gt;-14.42443&lt;/gco:Decimal&gt;
+         &lt;/gex:southBoundLatitude&gt;
+         &lt;gex:northBoundLatitude&gt;
+            &lt;gco:Decimal&gt;-14.32568&lt;/gco:Decimal&gt;
+         &lt;/gex:northBoundLatitude&gt;
+      &lt;/gex:EX_GeographicBoundingBox&gt;
    &lt;/gex:geographicElement&gt;
 &lt;/extent&gt;
 &lt;dataTime&gt;2002-05-30T09:30:10Z&lt;/dataTime&gt;
@@ -2965,7 +3176,6 @@ d) retraining</pre>
 <div class="literalblock">
 <div class="content">
 <pre>&lt;type&gt;AI_ObjectLabel&lt;/type&gt;
-&lt;class&gt;Pedestrian&lt;/class&gt;
 &lt;object&gt;
    &lt;gml:metaDataProperty&gt;
       &lt;gml:GenericMetaData&gt;
@@ -2990,7 +3200,8 @@ d) retraining</pre>
       &lt;/gml:GeometricComplex&gt;
    &lt;/gml:location&gt;
 &lt;/object&gt;
-&lt;bboxType&gt;Horizontal BBox&lt;/bboxType&gt;</pre>
+&lt;bboxType&gt;Horizontal BBox&lt;/bboxType&gt;
+&lt;class&gt;Pedestrian&lt;/class&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3073,11 +3284,15 @@ d) retraining</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Examples:
- a)	image/tiff; application=geotiff
- b)	application/x-netcdf
- c)	image/png
- d)   image/jp2</p>
+<p>Examples:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a)   image/tiff; application=geotiff
+b)   application/x-netcdf
+c)   image/png
+d)   image/jp2</pre>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -3202,10 +3417,16 @@ d) retraining</pre>
 <pre>&lt;type&gt;AI_Labeling&lt;/type&gt;
 &lt;id&gt;0&lt;/id&gt;
 &lt;scope&gt;
-   &lt;level&gt;dataset&lt;/level&gt;
-   &lt;levelDescription&gt;
-      &lt;dataset&gt;whu_rs19&lt;/dataset&gt;
-   &lt;/levelDescription&gt;
+   &lt;mcc:level&gt;
+     &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/&gt;
+   &lt;/mcc:level&gt;
+   &lt;mcc:levelDescription&gt;
+      &lt;mcc:MD_ScopeDescription&gt;
+         &lt;mcc:dataset&gt;
+             &lt;gco:CharacterString&gt;whu_rs19&lt;/gco:CharacterString&gt;
+         &lt;/mcc:dataset&gt;
+      &lt;/mcc:MD_ScopeDescription&gt;
+   &lt;/mcc:levelDescription&gt;
 &lt;/scope&gt;
 &lt;labelers&gt;...&lt;/labelers&gt;
 &lt;procedure&gt;...&lt;/procedure&gt;</pre>
@@ -3610,19 +3831,19 @@ d) retraining</pre>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">add</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Added training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">modify</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Modified training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">delete</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Deleted training samples.</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_TrainingData [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">AI_AbstractTrainingData [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Optional</p></td>
 </tr>
 </tbody>
@@ -3635,18 +3856,41 @@ d) retraining</pre>
 <pre>&lt;type&gt;AI_TDChangeset&lt;/type&gt;
 &lt;id&gt;changeset-dota_v1.5&lt;/id&gt;
 &lt;datasetId&gt;dota_v1.5&lt;/datasetId&gt;
-&lt;createdTime&gt;2019-01-01&lt;/createdTime&gt;
+&lt;createdTime&gt;2019-01-01T00:00:00&lt;/createdTime&gt;
 &lt;changeCount&gt;9&lt;/changeCount&gt;
 &lt;modify&gt;
    &lt;type&gt;EOTrainingData&lt;/type&gt;
    &lt;id&gt;P1228&lt;/id&gt;
    &lt;dataSources&gt;
-      &lt;cit:title&gt;GF&lt;/cit:title&gt;
+      &lt;cit:title&gt;
+         &lt;gco:CharacterString&gt;GF&lt;/gco:CharacterString&gt;
+      &lt;/cit:title&gt;
    &lt;/dataSources&gt;
    &lt;dataURL&gt;train/images/P1228.png&lt;/dataURL&gt;
    &lt;numberOfLabels&gt;50&lt;/numberOfLabels&gt;
    &lt;trainingType&gt;training&lt;/trainingType&gt;
-   &lt;labels&gt;...&lt;/labels&gt;
+   &lt;labels&gt;
+      &lt;type&gt;AI_ObjectLabel&lt;/type&gt;
+      &lt;object&gt;
+         &lt;gml:location&gt;
+            &lt;gml:GeometricComplex&gt;
+               &lt;gml:element&gt;
+                  &lt;gml:Polygon&gt;
+                     &lt;gml:exterior&gt;
+                        &lt;gml:LinearRing&gt;
+                           &lt;gml:posList&gt;
+                              2306.0 729.0 2330.0 729.0 2330.0 744.0 2306.0 744.0 2306.0 729.0
+                           &lt;/gml:posList&gt;
+                        &lt;/gml:LinearRing&gt;
+                     &lt;/gml:exterior&gt;
+                  &lt;/gml:Polygon&gt;
+               &lt;/gml:element&gt;
+            &lt;/gml:GeometricComplex&gt;
+         &lt;/gml:location&gt;
+      &lt;/object&gt;
+      &lt;bboxType&gt;Horizontal BBox&lt;/bboxType&gt;
+      &lt;class&gt;ship&lt;/class&gt;
+   &lt;/labels&gt;
 &lt;/modify&gt;</pre>
 </div>
 </div>

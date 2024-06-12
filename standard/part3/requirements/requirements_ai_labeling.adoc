@@ -36,10 +36,16 @@ Example:
    <type>AI_Labeling</type>
    <id>0</id>
    <scope>
-      <level>dataset</level>
-      <levelDescription>
-         <dataset>whu_rs19</dataset>
-      </levelDescription>
+      <mcc:level>
+        <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </mcc:level>
+      <mcc:levelDescription>
+         <mcc:MD_ScopeDescription>
+            <mcc:dataset>
+                <gco:CharacterString>whu_rs19</gco:CharacterString>
+            </mcc:dataset>
+         </mcc:MD_ScopeDescription>
+      </mcc:levelDescription>
    </scope>
    <labelers>...</labelers>
    <procedure>...</procedure>

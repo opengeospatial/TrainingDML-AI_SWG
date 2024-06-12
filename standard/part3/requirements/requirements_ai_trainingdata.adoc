@@ -42,7 +42,9 @@ Example:
    <type>AI_AbstractTrainingData</type>
    <id>airport_01</id>
    <dataSources>
-      <cit:title>googleEarth</cit:title>
+      <cit:title>
+         <gco:CharacterString>googleEarth</gco:CharacterString>
+      </cit:title>
    </dataSources>
    <dataURL>image/Airport/airport_01.jpg</dataURL>
    <labels>
@@ -90,14 +92,26 @@ Example:
    <type>AI_EOTrainingData</type>
    <id>airport_01</id>
    <dataSources>
-      <cit:title>googleEarth</cit:title>
+      <cit:title>
+         <gco:CharacterString>googleEarth</gco:CharacterString>
+      </cit:title>
    </dataSources>
    <extent>
       <gex:geographicElement>
-         <gex:westBoundLongitude>-171.76409</gex:westBoundLongitude>
-         <gex:eastBoundLongitude>-171.56578</gex:eastBoundLongitude>
-         <gex:southBoundLatitude>-14.42443</gex:southBoundLatitude>
-         <gex:northBoundLatitude>-14.32568</gex:northBoundLatitude>
+         <gex:EX_GeographicBoundingBox>
+            <gex:westBoundLongitude>
+               <gco:Decimal>-171.76409</gco:Decimal>
+            </gex:westBoundLongitude>
+            <gex:eastBoundLongitude>
+               <gco:Decimal>-171.56578</gco:Decimal>
+            </gex:eastBoundLongitude>
+            <gex:southBoundLatitude>
+               <gco:Decimal>-14.42443</gco:Decimal>
+            </gex:southBoundLatitude>
+            <gex:northBoundLatitude>
+               <gco:Decimal>-14.32568</gco:Decimal>
+            </gex:northBoundLatitude>
+         </gex:EX_GeographicBoundingBox>
       </gex:geographicElement>
    </extent>
    <dataTime>2002-05-30T09:30:10Z</dataTime>
