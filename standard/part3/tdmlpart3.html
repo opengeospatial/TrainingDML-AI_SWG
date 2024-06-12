@@ -1287,14 +1287,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	2002-05-30T09:00:00
-b)	2002-05-30T09:30:10.5
-c)	2002-05-30T09:30:10Z
-d)	2002-09-24
-e)	2002-09-24Z
-f)	09:30:10
-g)	09:30:10.5
-h)	09:30:10Z</pre>
+<pre>a)   2002-05-30T09:00:00
+b)   2002-05-30T09:30:10.5
+c)   2002-05-30T09:30:10Z
+d)   2002-09-24
+e)   2002-09-24Z
+f)   09:30:10
+g)   09:30:10.5
+h)   09:30:10Z</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1413,15 +1413,31 @@ b) /file.txt</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;mrc:name&gt;
-       &lt;mcc:code&gt;red&lt;/mcc:code&gt;
-    &lt;/mrc:name&gt;
-b)	&lt;mrc:name&gt;
-       &lt;mcc:code&gt;B4&lt;/mcc:code&gt;
-    &lt;/mrc:name&gt;
-c)  &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
-    &lt;mrc:boundMin&gt;630&lt;/mrc:boundMin&gt;
-    &lt;mrc:boundUnits&gt;nm&lt;/mrc:boundUnits&gt;</pre>
+<pre>a) &lt;mrc:name&gt;
+       &lt;mcc:MD_Identifier&gt;
+           &lt;mcc:code&gt;
+               &lt;gco:CharacterString&gt;red&lt;/gco:CharacterString&gt;
+           &lt;/mcc:code&gt;
+       &lt;/mcc:MD_Identifier&gt;
+   &lt;/mrc:name&gt;
+b) &lt;mrc:name&gt;
+       &lt;mcc:MD_Identifier&gt;
+           &lt;mcc:code&gt;
+               &lt;gco:CharacterString&gt;B4&lt;/gco:CharacterString&gt;
+           &lt;/mcc:code&gt;
+       &lt;/mcc:MD_Identifier&gt;
+   &lt;/mrc:name&gt;
+c) &lt;mrc:boundMax&gt;
+       &lt;gco:Real&gt;690&lt;/gco:Real&gt;
+   &lt;/mrc:boundMax&gt;
+   &lt;mrc:boundMin&gt;
+       &lt;gco:Real&gt;630&lt;/gco:Real&gt;
+   &lt;/mrc:boundMin&gt;
+   &lt;mrc:boundUnits&gt;
+       &lt;gml:UnitDefinition gml:id="ID"&gt;
+           &lt;gml:identifier codeSpace="http://www.example.com/"&gt;nm&lt;/gml:identifier&gt;
+       &lt;/gml:UnitDefinition&gt;
+   &lt;/mrc:boundUnits&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1446,7 +1462,7 @@ c)  &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;gex:geographicElement&gt;
+<pre>a) &lt;gex:geographicElement&gt;
        &lt;gex:EX_BoundingPolygon&gt;
            &lt;gex:polygon&gt;
                &lt;gml:Polygon&gt;
@@ -1461,7 +1477,7 @@ c)  &lt;mrc:boundMax&gt;690&lt;/mrc:boundMax&gt;
            &lt;/gex:polygon&gt;
        &lt;/gex:EX_BoundingPolygon&gt;
    &lt;/gex:geographicElement&gt;
-b)	&lt;gex:geographicElement&gt;
+b) &lt;gex:geographicElement&gt;
        &lt;gex:EX_GeographicBoundingBox&gt;
            &lt;gex:westBoundLongitude&gt;
                &lt;gco:Decimal&gt;-171.76409&lt;/gco:Decimal&gt;
@@ -1502,21 +1518,21 @@ b)	&lt;gex:geographicElement&gt;
 <div class="literalblock">
 <div class="content">
 <pre>&lt;cit:title&gt;
-       &lt;gco:CharacterString&gt;Open Geospatial Consortium&lt;/gco:CharacterString&gt;
-   &lt;/cit:title&gt;
-   &lt;cit:alternateTitle&gt;
-       &lt;gco:CharacterString&gt;OGC&lt;/gco:CharacterString&gt;
-   &lt;/cit:alternateTitle&gt;
-   &lt;cit:identifier&gt;
-       &lt;mcc:MD_Identifier&gt;
-           &lt;mcc:code&gt;
-               &lt;gco:CharacterString&gt;artifact_id=104605&lt;/gco:CharacterString&gt;
-           &lt;/mcc:code&gt;
-           &lt;mcc:version&gt;
-               &lt;gco:CharacterString&gt;1&lt;/gco:CharacterString&gt;
-           &lt;/mcc:version&gt;
-       &lt;/mcc:MD_Identifier&gt;
-   &lt;/cit:identifier&gt;</pre>
+    &lt;gco:CharacterString&gt;Open Geospatial Consortium&lt;/gco:CharacterString&gt;
+&lt;/cit:title&gt;
+&lt;cit:alternateTitle&gt;
+    &lt;gco:CharacterString&gt;OGC&lt;/gco:CharacterString&gt;
+&lt;/cit:alternateTitle&gt;
+&lt;cit:identifier&gt;
+    &lt;mcc:MD_Identifier&gt;
+        &lt;mcc:code&gt;
+            &lt;gco:CharacterString&gt;artifact_id=104605&lt;/gco:CharacterString&gt;
+        &lt;/mcc:code&gt;
+        &lt;mcc:version&gt;
+            &lt;gco:CharacterString&gt;1&lt;/gco:CharacterString&gt;
+        &lt;/mcc:version&gt;
+    &lt;/mcc:MD_Identifier&gt;
+&lt;/cit:identifier&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1541,7 +1557,7 @@ b)	&lt;gex:geographicElement&gt;
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>a)	&lt;mcc:level&gt;
+<pre>a) &lt;mcc:level&gt;
        &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/&gt;
    &lt;/mcc:level&gt;
    &lt;mcc:levelDescription&gt;
@@ -1551,7 +1567,7 @@ b)	&lt;gex:geographicElement&gt;
            &lt;/mcc:dataset&gt;
        &lt;/mcc:MD_ScopeDescription&gt;
    &lt;/mcc:levelDescription&gt;
-b)	&lt;mcc:level&gt;
+b) &lt;mcc:level&gt;
        &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="attribute"/&gt;
    &lt;/mcc:level&gt;
    &lt;mcc:levelDescription&gt;
@@ -1561,7 +1577,7 @@ b)	&lt;mcc:level&gt;
            &lt;/mcc:attributes&gt;
        &lt;/mcc:MD_ScopeDescription&gt;
    &lt;/mcc:levelDescription&gt;
-c)	&lt;mcc:level&gt;
+c) &lt;mcc:level&gt;
        &lt;mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="coverage"/&gt;
    &lt;/mcc:level&gt;
    &lt;mcc:extent&gt;
@@ -3582,11 +3598,15 @@ d)   image/jp2</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Examples:
-   a)	manual
-   b)	semi-automatic
-   c) automatic
-   d)	unknown</p>
+<p>Examples:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a)   manual
+b)   semi-automatic
+c)   automatic
+d)   unknown</pre>
+</div>
 </div>
 </div>
 <div class="sect2">
