@@ -9,44 +9,41 @@
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/mcc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd"/>
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/mrc/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd"/>
   <xs:import namespace="https://schemas.isotc211.org/19115/-1/gex/1.3" schemaLocation="https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTask.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTrainingData.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/namedValue.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_labeling.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_metricsInLiterature.xsd"/>
-  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_task.xsd"/>
+  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTask.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataQuality.xsd"/>
+  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTrainingData.xsd"/>
   <xs:element name="AI_EOTrainingDataset" type="AI_EOTrainingDataset"/>
   <xs:complexType name="AI_EOTrainingDataset">
-    <xs:complexContent>
-      <xs:sequence>
-        <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
-        <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
-        <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
-        <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="description" type="xs:string"/>
-        <xs:element name="doi" type="xs:string" minOccurs="0"/>
-        <xs:element name="id" type="xs:string"/>
-        <xs:element name="keywords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="license" type="xs:string" minOccurs="0"/>
-        <xs:element name="name" type="xs:string"/>
-        <xs:element name="numberOfClasses" type="xs:int" minOccurs="0"/>
-        <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="scope" type="mcc:MD_Scope_Type" minOccurs="0"/>
-        <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="updatedTime" type="xs:dateTime" minOccurs="0"/>
-        <xs:element name="version" type="xs:string" minOccurs="0"/>
-        <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="metricsInLIT" type="AI_MetricsInLiterature" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="tasks" type="AI_EOTask" maxOccurs="unbounded"/>
-        <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="data" type="AI_EOTrainingData" maxOccurs="unbounded"/>
-        <xs:element name="type" type="xs:string" fixed="AI_EOTrainingDataset"/>
-        <xs:element name="bands" type="mrc:MD_Band_Type" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0"/>
-        <xs:element name="imageSize" type="xs:string" minOccurs="0"/>
-      </xs:sequence>
-    </xs:complexContent>
+    <xs:sequence>
+      <xs:element name="type" type="xs:string" fixed="AI_EOTrainingDataset"/>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="doi" type="xs:string" minOccurs="0"/>
+      <xs:element name="scope" type="mcc:MD_Scope_Type" minOccurs="0"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="license" type="xs:string"/>
+      <xs:element name="version" type="xs:string" minOccurs="0"/>
+      <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
+      <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="updatedTime" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="keywords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="metricsInLIT" type="AI_MetricsInLiterature" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="numberOfClasses" type="xs:int" minOccurs="0"/>
+      <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
+      <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="extent" type="gex:EX_Extent_Type" minOccurs="0"/>
+      <xs:element name="bands" type="mrc:MD_Band_Type" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="imageSize" type="xs:string" minOccurs="0"/>
+      <xs:element name="tasks" type="AI_EOTask" maxOccurs="unbounded"/>
+      <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="data" type="AI_EOTrainingData" maxOccurs="unbounded"/>
+    </xs:sequence>
   </xs:complexType>
 </xs:schema>

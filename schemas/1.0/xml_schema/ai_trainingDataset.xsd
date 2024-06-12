@@ -12,29 +12,29 @@
     <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataQuality.xsd"/>
     <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_trainingData.xsd"/>
     <xs:element name="AI_AbstractTrainingDataset" type="AI_AbstractTrainingDataset"/>
-    <xs:complexType name="AI_AbstractTrainingDataset">
+    <xs:complexType name="AI_AbstractTrainingDataset" abstract="true">
         <xs:sequence>
             <xs:element name="type" type="xs:string" fixed="AI_AbstractTrainingDataset"/>
-            <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
-            <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
-            <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
-            <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="description" type="xs:string"/>
-            <xs:element name="doi" type="xs:string" minOccurs="0"/>
             <xs:element name="id" type="xs:string"/>
-            <xs:element name="keywords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="license" type="xs:string" minOccurs="0"/>
-            <xs:element name="name" type="xs:string"/>
-            <xs:element name="numberOfClasses" type="xs:int" minOccurs="0"/>
-            <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="doi" type="xs:string" minOccurs="0"/>
             <xs:element name="scope" type="mcc:MD_Scope_Type" minOccurs="0"/>
-            <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="updatedTime" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="license" type="xs:string"/>
             <xs:element name="version" type="xs:string" minOccurs="0"/>
-            <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="amountOfTrainingData" type="xs:int" minOccurs="0"/>
+            <xs:element name="createdTime" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="updatedTime" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="providers" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="keywords" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="metricsInLIT" type="AI_MetricsInLiterature" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="statisticsInfo" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="dataSources" type="cit:CI_Citation_Type" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="numberOfClasses" type="xs:int" minOccurs="0"/>
+            <xs:element name="classificationScheme" type="xs:string" minOccurs="0"/>
+            <xs:element name="classes" type="NamedValue" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="tasks" type="AI_AbstractTask" maxOccurs="unbounded"/>
+            <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="data" type="AI_AbstractTrainingData" maxOccurs="unbounded"/>
         </xs:sequence>
