@@ -111,7 +111,8 @@ Each AI_LabelingMethodCode value SHALL be a text string whose value is one of â€
 |===
 
 Examples:
-   a)	manual
-   b)	semi-automatic
-   c) automatic
-   d)	unknown
+
+ a)   manual
+ b)   semi-automatic
+ c)   automatic
+ d)   unknown

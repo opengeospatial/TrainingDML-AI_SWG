@@ -22,15 +22,31 @@ https://schemas.isotc211.org/19115/-1/mrc/1.3.0/content.xsd
 
 Examples:
 
- a)	<mrc:name>
-        <mcc:code>red</mcc:code>
-     </mrc:name>
- b)	<mrc:name>
-        <mcc:code>B4</mcc:code>
-     </mrc:name>
- c)  <mrc:boundMax>690</mrc:boundMax>
-     <mrc:boundMin>630</mrc:boundMin>
-     <mrc:boundUnits>nm</mrc:boundUnits>
+ a) <mrc:name>
+        <mcc:MD_Identifier>
+            <mcc:code>
+                <gco:CharacterString>red</gco:CharacterString>
+            </mcc:code>
+        </mcc:MD_Identifier>
+    </mrc:name>
+ b) <mrc:name>
+        <mcc:MD_Identifier>
+            <mcc:code>
+                <gco:CharacterString>B4</gco:CharacterString>
+            </mcc:code>
+        </mcc:MD_Identifier>
+    </mrc:name>
+ c) <mrc:boundMax>
+        <gco:Real>690</gco:Real>
+    </mrc:boundMax>
+    <mrc:boundMin>
+        <gco:Real>630</gco:Real>
+    </mrc:boundMin>
+    <mrc:boundUnits>
+        <gml:UnitDefinition gml:id="ID">
+            <gml:identifier codeSpace="http://www.example.com/">nm</gml:identifier>
+        </gml:UnitDefinition>
+    </mrc:boundUnits>
 
 
 An The EX_Extent is encoded as an XML element.
@@ -46,7 +62,7 @@ https://schemas.isotc211.org/19115/-1/gex/1.3.0/extent.xsd
 
 Examples:
 
- a)	<gex:geographicElement>
+ a) <gex:geographicElement>
         <gex:EX_BoundingPolygon>
             <gex:polygon>
                 <gml:Polygon>
@@ -61,7 +77,7 @@ Examples:
             </gex:polygon>
         </gex:EX_BoundingPolygon>
     </gex:geographicElement>
- b)	<gex:geographicElement>
+ b) <gex:geographicElement>
         <gex:EX_GeographicBoundingBox>
             <gex:westBoundLongitude>
                 <gco:Decimal>-171.76409</gco:Decimal>
@@ -91,7 +107,7 @@ https://schemas.isotc211.org/19115/-1/cit/1.3.0/citation.xsd
 
 Example:
 
-	<cit:title>
+    <cit:title>
         <gco:CharacterString>Open Geospatial Consortium</gco:CharacterString>
     </cit:title>
     <cit:alternateTitle>
@@ -121,7 +137,7 @@ https://schemas.isotc211.org/19115/-1/mcc/1.3.0/commonClasses.xsd
 
 Examples:
 
- a)	<mcc:level>
+ a) <mcc:level>
         <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset"/>
     </mcc:level>
     <mcc:levelDescription>
@@ -131,7 +147,7 @@ Examples:
             </mcc:dataset>
         </mcc:MD_ScopeDescription>
     </mcc:levelDescription>
- b)	<mcc:level>
+ b) <mcc:level>
         <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="attribute"/>
     </mcc:level>
     <mcc:levelDescription>
@@ -141,7 +157,7 @@ Examples:
             </mcc:attributes>
         </mcc:MD_ScopeDescription>
     </mcc:levelDescription>
- c)	<mcc:level>
+ c) <mcc:level>
         <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode" codeListValue="coverage"/>
     </mcc:level>
     <mcc:extent>

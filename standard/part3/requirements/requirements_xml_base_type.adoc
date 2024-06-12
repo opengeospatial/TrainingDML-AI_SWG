@@ -33,14 +33,14 @@ The specification of date and time in any XML encoding of training set data SHAL
 
 Examples:
 
- a)	2002-05-30T09:00:00
- b)	2002-05-30T09:30:10.5
- c)	2002-05-30T09:30:10Z
- d)	2002-09-24
- e)	2002-09-24Z
- f)	09:30:10
- g)	09:30:10.5
- h)	09:30:10Z
+ a)   2002-05-30T09:00:00
+ b)   2002-05-30T09:30:10.5
+ c)   2002-05-30T09:30:10Z
+ d)   2002-09-24
+ e)   2002-09-24Z
+ f)   09:30:10
+ g)   09:30:10.5
+ h)   09:30:10Z
 
 The NamedValue is encoded as an XML element with two elements named “key” and “value”. Typically, the "key" element represents a unique identifier or name for the value being described, while the "value" element contains the actual data associated with that identifier. The "key" element is an open field allowing for arbitrary keys to be used. The "value" element may be any types.
 
