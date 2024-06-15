@@ -16,7 +16,7 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2024-02-27>
+|Submission Date: <2024-06-15>
 |Approval Date: <yyyy-mm-dd>
 |Publication Date: <yyyy-mm-dd>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
