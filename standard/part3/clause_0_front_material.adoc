@@ -33,7 +33,7 @@ The following organizations submitted this Document to the Open Geospatial Conso
 * Laboratoire d'Informatique de Grenoble
 * Wuhan University of Technology
 * Hubei University
-* Chongqing Changan Automobile Co., Ltd
+* Chongqing Changan Zhitu Technology Co., Ltd
 
 
 [[submitters]]
@@ -56,7 +56,7 @@ All questions regarding this submission should be directed to the editors or the
 |Liangcun Jiang |Wuhan University of Technology
 |Lei Hu |Hubei University
 |Mingda Zhang |Hubei University
-|Kai Yan |Chongqing Changan Automobile Co., Ltd
+|Kai Yan |Chongqing Changan Zhitu Technology Co., Ltd
 |===
 
 [[acknowledgments]]
