@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+<AI_EOTrainingDataset
+        xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
-     <type>AI_EOTrainingDataset</type>
+        xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3"
+        xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"
+        xmlns:cit="https://schemas.isotc211.org/19115/-1/cit/1.3"
+        xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2">
+    <type>AI_EOTrainingDataset</type>
     <id>uit_hcd_california_2017</id>
     <name>UiT HCD California 2017</name>
     <description>This dataset is composed of two images and a label image.</description>
     <license>CC BY-SA 4.0</license>
     <version>1.0</version>
     <amountOfTrainingData>1</amountOfTrainingData>
-    <createdTime>2017-01-01</createdTime>
+    <createdTime>2017-01-01T00:00:00</createdTime>
     <providers>LP DAAC</providers>
     <providers>ESA</providers>
+    <numberOfClasses>2</numberOfClasses>
     <classes>
         <key>change</key>
         <value>1</value>
@@ -20,13 +25,60 @@
         <key>unchanged</key>
         <value>0</value>
     </classes>
-    <numberOfClasses>2</numberOfClasses>
-    <bands>red</bands>
-    <bands>green</bands>
-    <bands>blue</bands>
-    <bands>VH</bands>
-    <bands>VV</bands>
-    <bands>VV/VH</bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>red</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>green</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>blue</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>VH</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>VV</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>VV/VH</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
     <imageSize>2000x3500</imageSize>
     <tasks>
         <type>AI_EOTask</type>
@@ -37,13 +89,21 @@
     <data>
         <type>AI_EOTrainingData</type>
         <id>0</id>
-        <dataTime>2017-01-05</dataTime>
-        <dataTime>2017-02-18</dataTime>
+        <numberOfLabels>1</numberOfLabels>
+        <dataSources>
+            <cit:title>
+                <gco:CharacterString>Landsat-8</gco:CharacterString>
+            </cit:title>
+        </dataSources>
+        <dataSources>
+            <cit:title>
+                <gco:CharacterString>Sentinel-1A</gco:CharacterString>
+            </cit:title>
+        </dataSources>
+        <dataTime>2017-01-05T00:00:00</dataTime>
+        <dataTime>2017-02-18T00:00:00</dataTime>
         <dataURL>t1_L8.png</dataURL>
         <dataURL>t2_SAR.png</dataURL>
-        <dataSources>Landsat-8</dataSources>
-        <dataSources>Sentinel-1A</dataSources>
-        <numberOfLabels>1</numberOfLabels>
         <labels>
             <type>AI_PixelLabel</type>
             <imageURL>change_label.png</imageURL>

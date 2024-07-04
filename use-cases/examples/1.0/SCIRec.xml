@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <type>AI_TextTrainingDataset</type>
     <id>scirec</id>
     <name>Scientific Information Extractor</name>
@@ -11,18 +10,18 @@
     <license>CC BY 4.0</license>
     <version>1.0</version>
     <amountOfTrainingData>8089</amountOfTrainingData>
-    <createdTime>2018-08-29</createdTime>
-    <providers>University of Washington</providers>
-    <classes>Task</classes>
-    <classes>Method</classes>
-    <classes>Metric</classes>
-    <classes>Material</classes>
-    <classes>Other-ScientificTerm</classes>
-    <classes>Generic</classes>
-    <numberOfClasses>6</numberOfClasses>
+    <createdTime>2018-08-29T00:00:00</createdTime>
+<providers>University of Washington</providers>
+<numberOfClasses>6</numberOfClasses>
+    <classes><key>Task</key><value>1</value></classes>
+    <classes><key>Method</key><value>2</value></classes>
+    <classes><key>Metric</key><value>3</value></classes>
+    <classes><key>Material</key><value>4</value></classes>
+    <classes><key>Other-ScientificTerm</key><value>5</value></classes>
+    <classes><key>Generic</key><value>6</value></classes>
     <tasks>
-        <id>scirec-task</id>
         <type>AI_TextTask</type>
+<id>scirec-task</id>
         <description>Entities recognition</description>
     </tasks>
     <data>
