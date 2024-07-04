@@ -18,14 +18,33 @@
   ],
   "classes": [
     {
-      "building": 1
+      "key": "building",
+      "value": 1
     }
   ],
   "numberOfClasses": 1,
   "bands": [
-    "red",
-    "green",
-    "blue"
+    {
+      "name": [
+        {
+          "code": "red"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "green"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "blue"
+        }
+      ]
+    }
   ],
   "imageSize": "32507x15354",
   "tasks": [
@@ -58,8 +77,12 @@
       "labels": [
         {
           "type": "AI_PixelLabel",
-          "imageURL": "change label/change_label.tif",
-          "imageFormat": "image/tiff"
+          "imageURL": [
+            "change_label/change_label.tif"
+          ],
+          "imageFormat": [
+            "image/tiff"
+          ]
         }
       ]
     }

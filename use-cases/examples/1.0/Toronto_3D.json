@@ -12,42 +12,110 @@
   ],
   "classes": [
     {
-      "Ground": 1
+      "key": "Ground",
+      "value": 1
     },
     {
-      "Road_markings": 2
+      "key": "Road_markings",
+      "value": 2
     },
     {
-      "Natural": 3
+      "key": "Natural",
+      "value": 3
     },
     {
-      "Building": 4
+      "key": "Building",
+      "value": 4
     },
     {
-      "Utility_line": 5
+      "key": "Utility_line",
+      "value": 5
     },
     {
-      "Pole": 6
+      "key": "Pole",
+      "value": 6
     },
     {
-      "Car": 7
+      "key": "Car",
+      "value": 7
     },
     {
-      "Fence": 8
+      "key": "Fence",
+      "value": 8
     }
   ],
   "numberOfClasses": 8,
   "bands": [
-    "x",
-    "y",
-    "z",
-    "red",
-    "green",
-    "blue",
-    "scalar_Intensity",
-    "scalar_GPSTime",
-    "scalar_ScanAngleRank",
-    "scalar_Label"
+    {
+      "name": [
+        {
+          "code": "x"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "y"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "z"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "red"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "green"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "blue"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "scalar_Intensity"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "scalar_GPSTime"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "scalar_ScanAngleRank"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "scalar_Label"
+        }
+      ]
+    }
   ],
   "tasks": [
     {
@@ -61,7 +129,9 @@
     {
       "type": "AI_EOTrainingData",
       "id": "L001",
-      "dataURL": "data/L001.ply",
+      "dataURL": [
+        "data/L001.ply"
+      ],
       "labels": [
         {
           "type": "AI_PointLabel",
@@ -73,7 +143,9 @@
     {
       "type": "AI_EOTrainingData",
       "id": "L002",
-      "dataURL": "data/L002.ply",
+      "dataURL": [
+        "data/L002.ply"
+      ],
       "labels": [
         {
           "type": "AI_PointLabel",
@@ -85,7 +157,9 @@
     {
       "type": "AI_EOTrainingData",
       "id": "L003",
-      "dataURL": "data/L003.ply",
+      "dataURL": [
+        "data/L003.ply"
+      ],
       "labels": [
         {
           "type": "AI_PointLabel",
@@ -97,7 +171,9 @@
     {
       "type": "AI_EOTrainingData",
       "id": "L004",
-      "dataURL": "data/L004.ply",
+      "dataURL": [
+        "data/L004.ply"
+      ],
       "labels": [
         {
           "type": "AI_PointLabel",

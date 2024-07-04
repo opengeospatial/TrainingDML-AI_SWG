@@ -20,56 +20,89 @@
     ],
     "classes": [
         {
-            "storage_tank": "1"
+            "key": "storage_tank",
+            "value": "1"
         },
         {
-            "Large_Vehicle": "2"
+            "key": "Large_Vehicle",
+            "value": "2"
         },
         {
-            "Small_Vehicle": "3"
+            "key": "Small_Vehicle",
+            "value": "3"
         },
         {
-            "plane": "4"
+            "key": "plane",
+            "value": "4"
         },
         {
-            "ship": "5"
+            "key": "ship",
+            "value": "5"
         },
         {
-            "Swimming_pool": "6"
+            "key": "Swimming_pool",
+            "value": "6"
         },
         {
-            "Harbor": "7"
+            "key": "Harbor",
+            "value": "7"
         },
         {
-            "tennis_court": "8"
+            "key": "tennis_court",
+            "value": "8"
         },
         {
-            "Ground_Track_Field": "9"
+            "key": "Ground_Track_Field",
+            "value": "9"
         },
         {
-            "Soccer_ball_field": "10"
+            "key": "Soccer_ball_field",
+            "value": "10"
         },
         {
-            "baseball_diamond": "11"
+            "key": "baseball_diamond",
+            "value": "11"
         },
         {
-            "Bridge": "12"
+            "key": "Bridge",
+            "value": "12"
         },
         {
-            "basketball_court": "13"
+            "key": "basketball_court",
+            "value": "13"
         },
         {
-            "Roundabout": "14"
+            "key": "Roundabout",
+            "value": "14"
         },
         {
-            "Helicopter": "15"
+            "key": "Helicopter",
+            "value": "15"
         }
     ],
     "numberOfClasses": 15,
     "bands": [
-        "red",
-        "green",
-        "blue"
+        {
+            "name": [
+                {
+                    "code": "red"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "green"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "blue"
+                }
+            ]
+        }
     ],
     "tasks": [
         {
@@ -84,9 +117,13 @@
             "type": "AI_EOTrainingData",
             "id": "P0000",
             "dataSources": [
-                "GoogleEarth"
+                {
+                    "title": "GoogleEarth"
+                }
             ],
-            "dataURL": "train/images/P0000.png",
+            "dataURL": [
+                "train/images/P0000.png"
+            ],
             "numberOfLabels": 444,
             "trainingType": "training",
             "labels": [

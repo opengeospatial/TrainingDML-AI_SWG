@@ -13,20 +13,58 @@
   ],
   "classes": [
     {
-      "change": 1
+      "key": "change",
+      "value": 1
     },
     {
-      "unchanged": 0
+      "key": "unchanged",
+      "value": 0
     }
   ],
   "numberOfClasses": 2,
   "bands": [
-      "red",
-      "green",
-      "blue",
-      "VH",
-      "VV",
-      "VV/VH"
+    {
+      "name": [
+        {
+          "code": "red"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "green"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "blue"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "VH"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "VV"
+        }
+      ]
+    },
+    {
+      "name": [
+        {
+          "code": "VV/VH"
+        }
+      ]
+    }
   ],
   "imageSize": "2000x3500",
   "tasks": [
@@ -50,15 +88,20 @@
         "t2_SAR.png"
       ],
       "dataSources": [
-        "Landsat-8",
-        "Sentinel-1A"
+        {
+          "title": "Landsat-8"
+        }
       ],
       "numberOfLabels": 1,
       "labels": [
         {
           "type": "AI_PixelLabel",
-          "imageUrl": "change_label.png",
-          "imageFormat": "image/png"
+          "imageURL": [
+            "change_label.png"
+          ],
+          "imageFormat": [
+            "image/png"
+          ]
         }
       ]
     }
