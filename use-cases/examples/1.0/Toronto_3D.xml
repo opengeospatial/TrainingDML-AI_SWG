@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<AI_EOTrainingDataset xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
+<AI_EOTrainingDataset
+        xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema ../../../schemas/1.0/xml_schema/ai_eoTrainingDataset.xsd">
-     <type>AI_EOTrainingDataset</type>
+        xmlns:mcc="https://schemas.isotc211.org/19115/-1/mcc/1.3"
+        xmlns:mrc="https://schemas.isotc211.org/19115/-1/mrc/1.3"
+        xmlns:gco="https://schemas.isotc211.org/19103/-/gco/1.2">
+    <type>AI_EOTrainingDataset</type>
     <id>toronto_3d</id>
     <name>Toronto-3D</name>
     <description>The dataset is a large urban outdoor point cloud dataset for segmentation collected by the Mobile Laser
@@ -11,8 +14,9 @@
     <license>CC BY-SA 4.0</license>
     <version>1.0</version>
     <amountOfTrainingData>4</amountOfTrainingData>
-    <createdTime>2020-01-01</createdTime>
+    <createdTime>2020-01-01T00:00:00</createdTime>
     <providers>University of Waterloo</providers>
+    <numberOfClasses>8</numberOfClasses>
     <classes>
         <key>Ground</key>
         <value>1</value>
@@ -45,17 +49,96 @@
         <key>Fence</key>
         <value>8</value>
     </classes>
-    <numberOfClasses>8</numberOfClasses>
-    <bands>x</bands>
-    <bands>y</bands>
-    <bands>z</bands>
-    <bands>red</bands>
-    <bands>green</bands>
-    <bands>blue</bands>
-    <bands>scalar_Intensity</bands>
-    <bands>scalar_GPSTime</bands>
-    <bands>scalar_ScanAngleRank</bands>
-    <bands>scalar_Label</bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>x</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>y</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>z</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>red</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>green</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>blue</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>scalar_Intensity</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>scalar_GPSTime</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>scalar_ScanAngleRank</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
+    <bands>
+        <mrc:name>
+            <mcc:MD_Identifier>
+                <mcc:code>
+                    <gco:CharacterString>scalar_Label</gco:CharacterString>
+                </mcc:code>
+            </mcc:MD_Identifier>
+        </mrc:name>
+    </bands>
     <tasks>
         <type>AI_EOTask</type>
         <id>toronto_3d-task</id>
