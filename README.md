@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-04-03 16:34:40
+ * @LastEditTime: 2024-07-05 15:56:35
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -51,6 +51,7 @@ Implementations of TrainingDML-AI can be found at this [link](https://github.com
 
 Current implementations:
 - PyTDML
+  - The [tutorial of PyTDML](https://github.com/opengeospatial/TrainingDML-AI_SWG/tree/main/pytdml-tutorial) is online!
 - TrainingDML-AI STAC Extension
 - LuojiaSet TrainingDML-AI Server
 - PIE (Pixel Information Expert) Engine Online Dataset
