@@ -1,0 +1,334 @@
+
+
+== IO Module
+
+=== Reading - Dataset Encoding Input
+==== Local File Input (Reading TrainingDML-AI Encoding from Local Files)
+
+The local file input functionality is located in the tdml_readers.py file within the IO module. This module is primarily used for reading TrainingDML-AI encoded data from local files.
+
+(1) Function: read_from_json(file_path: str)
+
+====
+a) Functionality:
+
+* Reads a TDML JSON file from the specified path and returns a _TrainingDataset_ object.
+
+b) Parameter:
+
+* file_path (string): The path to the JSON file.
+====
+
+(2) Function: def parse_json(json_dict)
+
+====
+a) Functionality:
+
+* Parses a JSON dictionary and returns the corresponding training dataset object based on its type.
+
+b) Parameter:
+
+* json_dict (dictionary): The dictionary representation of the JSON data.
+====
+
+*Example:*
+
+Suppose we have a local file named data.json with the following content:
+
+----
+{
+    "type": "TrainingDataset",
+    "name": "example_dataset",
+    "description": "This is an example training dataset.",
+    "data": [
+        {
+            "id": "1",
+            "label": "cat",
+            "image": "cat1.jpg"
+        },
+        {
+            "id": "2",
+            "label": "dog",
+            "image": "dog1.jpg"
+        }
+    ]
+}
+----
+
+The user runs the following code:
+
+----
+# Import the reading function
+from tdml_reader import read_from_json
+
+# Specify the local file path
+file_path = "data.json"
+# Read the JSON file and parse it into a TrainingDataset object
+training_dataset = read_from_json(file_path)
+# Print the contents of the TrainingDataset object
+print(training_dataset)
+----
+
+After executing the above code, the data.json file will be read and its content will be parsed into a _TrainingDataset_ object. The detailed information of this object will then be printed.
+
+==== S3 Path Reading (Reading TrainingDML-AI Encoding from S3 Object Files)
+
+The S3 path reading functionality is located in the S3_reader.py file within the IO module. This module is primarily used to read TrainingDML-AI encoded data from S3 object storage.
+
+(1) Function parse_s3_path(s3_path)
+
+====
+a) Functionality:
+
+* Parses an S3 path to extract the bucket name and object key.
+
+b) Parameter:
+
+* s3_path (string): The S3 path.
+====
+
+(2) Class LibraryNotInstalledError
+
+====
+a) Functionality:
+
+* A custom exception class that is raised when a required library is not installed.
+====
+
+(3) Class S3Client
+
+====
+a) Functionality:
+
+* The S3 client class is used for interacting with the S3 service.
+
+b) Constructor Parameters
+
+* resource (string): The type of resource (e.g., 's3').
+
+* server (string): The S3 server address.
+
+* access_key (string): The access key.
+
+* secret_key (string): The secret key.
+
+c) Methods
+
+* list_buckets()
+
+    Functionality: Lists all buckets.
+    Return: A list of bucket names.
+
+* list_objects(bucket_name, prefix)
+
+    Functionality: Lists all objects in a specified bucket.
+    Parameters:
+        bucket_name (string): The name of the bucket.
+        prefix (string): The object prefix.
+    Return: A list of object keys.
+
+* get_object(bucket, key)
+
+    Functionality: Retrieves the content of a specified object.
+    Parameters:
+        bucket (string): The name of the bucket.
+        key (string): The object key.
+    Return: A BytesIO stream of the object's content.
+
+* download_file(bucket_name, object_key, file_path)
+
+    Functionality: Downloads a specified object to a local file.
+    Parameters:
+        bucket_name (string): The name of the bucket.
+        object_key (string): The object key.
+        file_path (string): The local file path.
+        Exception Handling: If an exception occurs during download, an error message will be printed.
+====
+
+*Example:*
+
+Suppose we have an S3 path s3://my-bucket/my-folder/my-object.json which stores TrainingDML-AI encoded data. The user can run the following code:
+
+----
+# Import necessary modules and classes
+from S3_reader import S3Client, parse_s3_path
+
+# S3 storage configuration
+resource = 's3'
+server = 'https://s3.amazonaws.com'  # Corresponding S3 service address
+access_key = 'your_access_key'
+secret_key = 'your_secret_key'
+s3_path = 's3://my-bucket/my-folder/my-object.json'
+
+# Create an S3 client
+s3_client = S3Client(resource, server, access_key, secret_key)
+
+# Parse the S3 path to get the bucket and key
+bucket_name, object_key = parse_s3_path(s3_path)
+
+# Retrieve the object content from S3
+s3_object = s3_client.get_object(bucket_name, object_key)
+
+# Read the object content and parse it as JSON
+import json
+json_dict = json.load(s3_object)
+# Print the JSON data
+print(json_dict)
+----
+
+In the above code, the user needs to provide S3 service configuration details, including the server address, access key, and secret key. Then, an S3Client instance is created using this information. The S3 path is parsed to obtain the bucket name and object key. The S3Client instance is then used to retrieve the object content from S3, which is parsed as JSON and printed.
+
+=== Organize and generate TrainingDML-AI code based on the local dataset
+
+Organizing and generating TrainingDML-AI code based on the local dataset requires two ways to obtain information: manual input and function calls, including the following steps:
+
+==== Organize the data and metadata information in the dataset to generate a TrainingData
+
+Introduce classes such as _TrainingData_ and _SceneLabel_, obtain information including data directory and file location and organize them into a _TrainingData_’s parameters.
+
+*Example:*
+
+----
+import os
+from pytdml.type import EOTrainingData, SceneLabel
+
+td_list = []
+image_path = r"TrainingDatasets\WHU-RS19\image"
+for root, dirs, files in os.walk(image_path):
+    for file in files:
+        tdml = EOTrainingData(
+            id=file.split(".")[0],
+            labels=[SceneLabel(label_class=os.path.relpath(root, image_path))],
+            data_url=os.path.join(root, file),
+            date_time="2010"
+        )
+        td_list.append(tdml)
+----
+
+==== Organize the TrainingData and other metadata information into a TrainingDataset
+
+Introduce classes such as _TrainingDataset_ and _Task_, input metadata information manually, and combine the _TrainingData_ from the previous step. Organize them into a _TrainingDataset_.
+
+*Example:*
+
+----
+from pytdml.type import EOTrainingDataset, EOTask
+
+whu_rs19 = EOTrainingDataset(
+    id='whu_rs19',
+    name='WHU_RS19',
+    description="WHU-RS19 has 19 classes of remote sensing images scenes obtained from Google Earth",
+    tasks=[EOTask(task_type="Scene Classification", description="Structural high-resolution satellite image indexing")],
+    data=td_list,
+    version="1.0",
+    amount_of_training_data=len(td_list),
+    created_time="2010",
+    updated_time="2010",
+    providers=["Wuhan University"],
+    keywords=["Remote Sensing", "Scene Classification"],
+    data_sources=["https://earth.google.com/"],
+    classes=["Airport", "Beach", "Bridge", "Commercial", "Desert", "Farmland", "footballField", "Forest", "Industrial", "Meadow", "Mountain", "Park", "Parking", "Pond", "Port", "railwayStation", "Residential", "River", "Viaduct"],
+    number_of_classes=19,
+    bands=["red", "green", "blue"],
+    image_size="600x600"
+)
+----
+
+==== Write a TrainingDataset as a JSON file and output it locally
+
+(1) Function: write_to_json(td: TrainingDataset, file_path: str, indent: Union[None, int, str] = 4)
+
+====
+a) Functionality:
+
+* Writes a _TrainingDataset_ to a JSON file.
+
+b) Parameter:
+
+* td: Basic training dataset type
+
+* file_path: The path where the file will be stored.
+
+* indent: If “indent” is a non-negative integer, then JSON array elements and object members will be pretty-printed with that indent level. An indent level of 0 will only insert newlines. “None” is the most compact representation.
+====
+
+*Example:*
+----
+from pytdml.io import write_to_json
+
+write_to_json(td, file_path)
+----
+
+=== Transform YAML to TDML
+
+YAML (Yet Another Markup Language) is a commonly used data serialization format aimed at providing a data serialization standard that is easy for humans to read and write. YAML configuration file schema is described in encoding YAML configuration file schema. Here is provided to convert the YAML file encoding of the dataset to TrainingDML-AI encoding.
+
+(1) Function: yaml_to_eo_tdml(yaml_path)
+
+====
+a) Functionality:
+
+* Convert the YAML file to _EOTrainingDataset_.
+
+b) Parameter:
+
+* yaml_path: The path where the YAML file stored.
+
+c) Return:
+
+* EOTrainingDataset: Extended training dataset type for EO training dataset.
+====
+
+*Example:*
+
+----
+from pytdml.yaml_to_tdml import yaml_to_eo_tdml
+
+training_datasets = yaml_to_eo_tdml(yaml_path)
+----
+
+=== Format conversion
+
+(1) Function: convert_coco_to_tdml(coco_dataset_path, output_json_path)
+
+====
+a) Functionality:
+
+* Object recognition task: Convert Coco format to TrainingDML-AI encoding. Reads data from a COCO-formatted JSON file and saves it after converting it to a new JSON document.
+
+b) Parameter:
+
+* coco_dataset_path: The path to the JSON file in COCO format.
+
+* output_json_path: The path to output the JSON file after conversion.
+====
+
+*Example:*
+
+----
+from pytdml.convert_utils import convert_coco_to_tdml
+
+convert_coco_to_tdml(coco_dataset_path, output_json_path)
+----
+
+(2) Function: convert_stac_to_tdml(stac_dataset_path, output_json_path)
+
+====
+a) Functionality:
+
+* Semantic segmentation task: Convert STAC format to TrainingDML-AI encoding. Reads JSON data in STAC format from a given path.
+
+b) Parameter:
+
+* stac_dataset_path: The path to the JSON file in STAC format.
+
+* output_json_path: The path to output the JSON file after conversion.
+====
+
+*Example:*
+
+----
+from pytdml.convert_utils import convert_coco_to_tdml
+
+convert_stac_to_tdml(stac_dataset_path, output_json_path)
+----

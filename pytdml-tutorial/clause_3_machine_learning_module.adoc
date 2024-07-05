@@ -1,0 +1,752 @@
+== Machine Learning Module
+
+=== Scene Classification Task
+==== Dataset Approach
+
+In the scene classification task, the _TorchSceneClassificationTD_ class is used to handle Earth Observation (EO) image scene classification training datasets. This class inherits from _VisionDataset_ and can load datasets in batches by index into the model. Below is a detailed introduction to this class, its functions, and specific parameters.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, class_map, transform=None)
+
+====
+a) Functionality:
+
+* Initializes the dataset object with the provided dataset entries, root directory, class map, and optional transformations.
+
+b) Parameters:
+
+* td_list: A list of dataset entries.
+
+* root: The root directory of the dataset.
+
+* class_map: A dictionary mapping class labels to numerical indices.
+
+* transform: Optional transformations to apply to the images.
+====
+
+(2) _load_img_label(self)
+
+====
+a) Functionality:
+
+* Extracts image paths and labels from td_list.
+
+b) Returns:
+
+* imgs: A list of image paths.
+
+* labels: A list of image labels.
+====
+
+(3) __len__(self)
+
+====
+a) Functionality:
+
+* Returns the size of the dataset.
+
+b) Returns:
+
+* The length of the dataset (i.e., the number of dataset entries).
+====
+
+(4) __getitem__(self, item)
+
+====
+a) Functionality:
+
+* Retrieves the image and label corresponding to the given index, applies necessary preprocessing and transformations.
+
+b) Parameters:
+
+* item: The index of the dataset entry.
+
+* Returns: The image and label.
+====
+
+(5) class_to_idx(self)
+
+====
+a) Functionality:
+
+* Returns the dictionary mapping classes to indices.
+
+b) Returns:
+
+* The class-to-index mapping dictionary.
+====
+
+*Example:*
+
+----
+import torch
+from torch.utils.data import DataLoader
+from torchvision.transforms import transforms
+from datalibrary.datasetcollection import EOTrainingDatasetCollection, Task
+from datalibrary.pipeline import PipeLine
+import pytdml.ml.object_transforms as transform_target
+from pytdml.ml.tdml_torch import TorchSceneClassificationTD
+
+# Define data transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.CenterCrop(224),
+    transforms.RandomCrop(224),
+    transforms.RandomHorizontalFlip(),
+    # Optional normalization
+    # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+
+# Define target transformations
+target_transform = transform_target.Compose([
+    transform_target.ToTensor(),
+    transform_target.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    transform_target.RandomResize((512, 512))
+])
+
+# Dataset root directory path
+path = "."
+
+def datasetsForSceneTask():
+# Load the EOTrainingDatasetCollection library
+ds_lib = EOTrainingDatasetCollection()
+ds_lib.dataset_list(Task.scene_classification, ["Airport"])
+
+    whurs19_ml = ds_lib["WHU-RS19"]
+    print("Load training dataset: " + str(whurs19_ml.name))
+    print("Number of training samples: " + str(whurs19_ml.amount_of_training_data))
+    print("Number of classes: " + str(whurs19_ml.number_of_classes))
+
+    # Load across datasets
+    rsd46_ml = ds_lib["RSD46-WHU"]
+    my_dataset_TD = ds_lib.training_data_collection(Task.scene_classification, [rsd46_ml, whurs19_ml], ["Airport"])
+
+    my_pipeline = PipeLine(my_dataset_TD, path)
+
+    # Load dataset using torch_dataset
+    my_dataset = my_pipeline.torch_dataset(download=False, transform=transform)
+
+    # Create DataLoader
+    dataloader = DataLoader(my_dataset, batch_size=4, num_workers=4, shuffle=True)
+
+    for batch in dataloader:
+        inputs, labels = batch
+        print(f"Inputs: {inputs.size()}, Labels: {labels}")
+
+# Run the dataset loading function
+datasetsForSceneTask()
+----
+
+==== Data Pipeline Approach
+
+In the scene classification task, the _TorchSceneClassificationDataPipe_ class implements an iterator-based method for loading datasets in batches into the model by inheriting from _IterDataPipe_. This method is suitable for handling large-scale datasets and enables efficient data loading and preprocessing. Below is a detailed introduction to this class, its functions, and specific parameters.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, cache_path, class_map, transform=None)
+
+====
+a) Parameters:
+
+* td_list: A list of dataset entries.
+
+* root: The root directory of the dataset.
+
+* cache_path: The path to the cache file.
+
+* class_map: A dictionary mapping class labels to numerical indices.
+
+* transform: Optional transformations to apply to the images.
+
+* Functionality: Initializes the dataset object and sets necessary attributes.
+====
+
+(2) __iter__(self)
+
+====
+a) Functionality:
+
+* Iteratively loads images and labels, applies necessary preprocessing and transformations.
+
+* If a cache file exists, data is loaded from the cache file.
+
+* If a cache file does not exist, images are loaded from remote or local sources, preprocessed, and cached.
+
+b) Returns:
+
+* A generator yielding images and labels.
+====
+
+*Example:*
+
+----
+import os
+import torch
+from torchdata.datapipes.iter import IterDataPipe
+from torch.utils.data import DataLoader
+from torchvision.transforms import transforms
+from datalibrary.pipeline import PipeLine
+from datalibrary.datasetcollection import EOTrainingDatasetCollection, Task
+import pytdml.ml.object_transforms as transform_target
+from pytdml.ml.ml_operators import collate_fn
+from pytdml.ml.tdml_torch_data_pipe import TorchSceneClassificationDataPipe
+
+# Define data transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.CenterCrop(224),
+    transforms.RandomCrop(224),
+    transforms.RandomHorizontalFlip(),
+    # Optional normalization
+    # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+
+# Define target transformations
+target_transform = transform_target.Compose([
+    transform_target.ToTensor(),
+    transform_target.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    transform_target.RandomResize((512, 512))
+])
+
+# Dataset root directory path
+path = "."
+
+def datasetsForSceneTask():
+    # Load the EOTrainingDatasetCollection library
+    ds_lib = EOTrainingDatasetCollection()
+    ds_lib.dataset_list(Task.scene_classification, ["Airport"])
+
+    whurs19_ml = ds_lib["WHU-RS19"]
+    print("Load training dataset: " + str(whurs19_ml.name))
+    print("Number of training samples: " + str(whurs19_ml.amount_of_training_data))
+    print("Number of classes: " + str(whurs19_ml.number_of_classes))
+
+    # Load across datasets
+    rsd46_ml = ds_lib["RSD46-WHU"]
+    my_dataset_TD = ds_lib.training_data_collection(Task.scene_classification, [rsd46_ml, whurs19_ml], ["Airport"])
+
+    my_pipeline = PipeLine(my_dataset_TD, path)
+
+    # Load data using torch_data_pipe
+    my_data_pipe = my_pipeline.torch_data_pipe(transform=transform)
+
+    # Create DataLoader
+    dataloader = DataLoader(my_data_pipe, batch_size=4, num_workers=4, collate_fn=collate_fn)
+
+    for batch in dataloader:
+        inputs, labels = batch
+        print(f"Inputs: {inputs.size()}, Labels: {labels}")
+
+# Run the dataset loading function
+datasetsForSceneTask()
+----
+
+=== Semantic Segmentation Task
+==== Dataset Approach
+
+_TorchSemanticSegmentationTD_ is a custom dataset class designed for semantic segmentation tasks, specifically for Earth Observation (EO) images. This class extends _VisionDataset_ and is compatible with PyTorch's data loading utilities. It handles the loading of image and label paths, applies transformations, and provides the data in a format suitable for training deep learning models.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, classes, transform=None)
+
+====
+a) Functionality:
+
+* Initializes the dataset with the provided parameters.
+
+b) Parameters:
+
+* td_list (list): List of training data objects, each containing URLs of images and labels.
+
+* root (str): Root directory for storing images and labels.
+
+* classes (list): List of class names for segmentation.
+
+* transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
+====
+
+(2) __len__(self)
+
+====
+a) Functionality:
+
+* Returns the number of items in the dataset.
+
+b) Returns:
+
+* int - The number of items in the dataset.
+====
+
+(3) __getitem__(self, item)
+
+====
+a) Functionality:
+
+* Retrieves the image and label at the specified index, applies any transformations, and returns them.
+
+b) Parameters:
+
+* item (int): Index of the item to retrieve.
+
+c) Returns:
+
+* image (PIL.Image or torch.Tensor): Transformed image.
+
+* label (PIL.Image or torch.Tensor): Transformed label.
+====
+
+(4) _load_data(self, td_list)
+
+====
+a) Functionality:
+
+* Loads data from the provided list. This method is used internally.
+
+b) Parameters:
+
+* td_list (list): List of training data objects.
+
+c) Returns:
+
+* list: The unchanged input list.
+====
+
+(5) _load_img_label(self, td_list)
+
+====
+a) Functionality:
+
+* Processes the provided list to extract image and label paths.
+
+b) Parameters:
+
+* td_list (list): List of training data objects.
+
+c) Returns:
+
+* tuple: A tuple containing two lists:
+
+* img_paths (list of str): Paths to images.
+
+* label_paths (list of str): Paths to labels.
+====
+
+*Usage:*
+
+To use this dataset, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files and provide a list of class names for segmentation. Optionally, you can apply transformations to the images and labels.
+
+----
+import torchvision.transforms as transforms
+
+# Define transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# List of training data objects
+td_list = [
+    # Example training data objects containing data_url and labels
+]
+
+# Initialize dataset
+dataset = TorchSemanticSegmentationTD(td_list, root='path/to/data', classes=['background', 'object'], transform=transform)
+
+# Access an item
+image, label = dataset[0]
+----
+
+This setup will load the data, apply the defined transformations, and prepare the images and labels for training a segmentation model.
+
+==== Data Pipeline Approach
+
+_TorchSemanticSegmentationDataPipe_ is a data pipeline class for semantic segmentation tasks, inheriting from _IterDataPipe_ and _ABC_. This class can load and preprocess Earth Observation (EO) images and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, cache_path, class_list=None, crop=None, transform=None)
+
+====
+a) Functionality:
+
+* Initializes the data pipeline with the provided parameters.
+
+b) Parameters:
+
+* td_list (list): List of training data objects, each containing URLs of images and labels.
+
+* root (str): Root directory for storing images and labels.
+
+* cache_path (str): Cache file path for saving and loading processed data.
+
+* class_list (list, optional): List of class names for segmentation. Default is None.
+
+* crop (tuple, optional): Crop parameters defining the size of the cropped images. Default is None.
+
+* transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
+====
+
+(2) __iter__(self)
+
+====
+a) Functionality:
+
+* Iterator method for iterating over each item in the data pipeline.
+
+b) Returns:
+
+* iterator - An iterator yielding transformed image and label pairs.
+====
+
+*Usage:*
+
+To use this data pipeline, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files, the cache file path, and provide a list of class names for segmentation and crop parameters. Optionally, you can apply transformations to the images and labels.
+
+----
+import torchvision.transforms as transforms
+
+# Define transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# List of training data objects
+td_list = [
+    # Example training data objects containing data_url and labels
+]
+
+# Initialize data pipeline
+data_pipe = TorchSemanticSegmentationDataPipe(
+    td_list,
+    root='path/to/data',
+    cache_path='path/to/cache.pkl',
+    class_list=['background', 'object'],
+    crop=(256, 256),
+    transform=transform
+)
+
+# Iterate over data
+for image, label in data_pipe:
+    # Process image and label
+----
+
+This configuration will load the data, apply the defined transformations, and prepare the images and labels for training a segmentation model. If crop parameters are specified, the images and labels will be cropped.
+
+=== Object Recognition task
+==== Dataset Approach
+
+_TorchObjectDetectionTD_ is a Torch Dataset for EO image object detection training dataset. This class inherits from _VisionDataset_ and is designed to be compatible with PyTorch's data loading tool.
+
+(1) __init__(self, td_list, root, class_map, transform=None)
+
+====
+a) Functionality:
+
+* Initialize the dataset using the provided parameters.
+
+b) Parameter:
+
+* td_list (list): A list of training data objects, each containing the URL of the image and label.
+
+* root (str): The root directory where images and labels are stored.
+
+* class_map (list): A list of category names used for segmentation.
+
+* transform (callable, optional): A function/transformation that inputs images and labels and returns the transformed version. The default value is None.
+====
+
+(2) __len__(self)
+
+====
+a) Functionality:
+
+* Returns the number of items in the dataset.
+
+b) Return:
+
+* length: Number of items in the dataset.
+====
+
+(3) __getitem__(self, index)
+
+====
+a) Functionality:
+
+* Retrieve the specified index of images and labels, apply any transformations, and return them.
+
+b) Parameter:
+
+* index(int): The index of the item to be obtained.
+
+c) Return:
+
+* image (PIL.Image or torch.Tensor): The transformed image.
+
+* targets (Dictionary): The transformed label.
+====
+
+*Example:*
+
+----
+from pytdml.ml.tdml_torch import TorchObjectDetectionTD
+import torchvision.transforms as transforms
+
+# Define transformation
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# Training Data Object List
+td_list = [
+    # Sample training data object containing data_URL and labels
+]
+
+# Initialize dataset
+dataset = TorchObjectDetectionTD(td_list, root='path/to/data', class_map=['background', 'object'], transform=transform)
+
+# Find the length of the dataset
+length = len(dataset)
+# Accessing a project
+image, label = dataset[0]
+----
+
+This configuration will load data, apply defined transformations, and prepare images and labels for training segmentation models.
+
+==== Data Pipeline Approach
+
+_TorchObjectDetectionDataPipe_ is a data pipeline class used for target recognition tasks, inherited from _IterDataPipe_. This class can load and preprocess Earth Observation (EO) images and provide data in the form of iterators. It supports loading data from cache and can crop and transform images as needed.
+
+(1) __init__(self, td_list, root, cache_path, class_map=None, crop=None, transform=None)
+
+====
+a) Functionality:
+
+* Initialize the function and initialize the data pipeline using the provided parameters.
+
+b) Parameter:
+
+* td_list (list): List of training data objects, each containing URLs of images before and after changes and labels.
+
+* root (str): Root directory for storing images and labels.
+
+* cache_path (str): Cache file path for saving and loading processed data.
+
+* crop (tuple, optional): Crop parameters defining the size of the cropped images. Default is None.
+
+* transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
+====
+
+(2) __iter__(self)
+
+====
+a) Functionality:
+
+* Iterator method for iterating over each item in the data pipeline.
+
+b) Returns:
+
+* iterator - An iterator yielding transformed image pairs and labels.
+====
+
+*Example:*
+
+----
+import torchvision.transforms as transforms
+from pytdml.ml.tdml_torch_data_pipe import TorchObjectDetectionDataPipe
+
+# Define transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# List of training data objects
+td_list = [
+    # # Example training data objects containing data_url and labels
+]
+
+# Initialize data pipeline
+data_pipe = TorchObjectDetectionDataPipe(
+    td_list,
+    root='path/to/data',
+    cache_path='path/to/cache.pkl',
+    class_list=['background', 'object'],
+    crop=(256, 256),
+    transform=transform
+)
+
+# Iterate over data
+for image, label in data_pipe:
+    # Process image pairs and labels
+----
+
+=== Change Detection Task
+==== Dataset Approach
+
+_TorchChangeDetectionTD_ is a dataset class designed for change detection tasks, extending _VisionDataset_. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide them for model training or evaluation. It supports applying transformations to images and labels.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, transform)
+
+====
+a) Functionality:
+
+* Initializes the dataset with the provided parameters.
+
+b) Returns:
+
+* td_list (list): List of training data objects, each containing URLs of images before and after changes and labels.
+
+* root (str): Root directory for storing images and labels.
+
+* transform (callable): A function/transform that takes in an image and a label and returns the transformed version.
+====
+
+(2) __len__(self)
+
+====
+a) Functionality:
+
+* Returns the number of samples in the dataset.
+
+b) Returns:
+
+* int - The number of samples in the dataset.
+====
+
+(3) __getitem__(self, index)
+
+====
+a) Functionality:
+
+* Retrieves the image pair and label at the specified index and applies any transformations.
+
+b) Parameters:
+
+* index (int): Index of the sample to retrieve.
+
+c) Returns:
+
+* tuple - A tuple containing the image before change, image after change, and label.
+====
+
+(4) _load_sample(self)
+
+====
+a) Functionality:
+
+* Loads sample data, generating paths for images before and after changes and label paths.
+
+b) Returns:
+
+* list - List of samples containing paths to images and labels.
+====
+
+*Example:*
+
+To use this dataset, you need a list of training data objects containing URLs of images before and after changes and labels. You also need to specify the root directory for storing these files and provide transformations.
+
+----
+import torchvision.transforms as transforms
+
+# List of training data objects
+td_list = [
+    {
+        'data_url': ['path/to/before_image.png', 'path/to/after_image.png'],
+        'labels': [{'image_url': 'path/to/label.png'}]
+    },
+    # More data objects
+]
+
+# Define transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# Initialize dataset
+dataset = TorchChangeDetectionTD(td_list=td_list, root='path/to/data', transform=transform)
+
+# Access a sample
+before_img, after_img, label = dataset[0]
+print(before_img.shape, after_img.shape, label.shape)
+----
+
+This approach allows the dataset to efficiently load and provide the images and labels needed for change detection tasks.
+
+==== Data Pipeline Approach
+
+_TorchChangeDetectionDataPipe_ is a data pipeline class for change detection tasks, inheriting from _IterDataPipe_ and _ABC_. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.
+
+*Methods:*
+
+(1) __init__(self, td_list, root, cache_path, crop=None, transform=None)
+
+====
+a) Functionality:
+
+* Initializes the data pipeline with the provided parameters.
+
+b) Parameters:
+
+* td_list (list): List of training data objects, each containing URLs of images before and after changes and labels.
+
+* root (str): Root directory for storing images and labels.
+
+* cache_path (str): Cache file path for saving and loading processed data.
+
+* crop (tuple, optional): Crop parameters defining the size of the cropped images. Default is None.
+
+* transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
+====
+
+(2) __iter__(self)
+
+====
+a) Functionality:
+
+* Iterator method for iterating over each item in the data pipeline.
+
+b) Returns:
+
+* iterator - An iterator yielding transformed image pairs and labels.
+====
+
+*Example:*
+
+To use this data pipeline, you need a list of training data objects containing URLs of images before and after changes and labels. You also need to specify the root directory for storing these files, the cache file path, and provide crop parameters. Optionally, you can apply transformations to the images and labels.
+
+----
+import torchvision.transforms as transforms
+
+# Define transformations
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# List of training data objects
+td_list = [
+    # Example training data objects containing data_url and labels
+]
+
+# Initialize data pipeline
+data_pipe = TorchChangeDetectionDataPipe(
+    td_list,
+    root='path/to/data',
+    cache_path='path/to/cache.pkl',
+    crop=(256, 256),
+    transform=transform
+)
+
+# Iterate over data
+for before_img, after_img, label in data_pipe:
+    # Process image pairs and labels
+----
+
+This configuration will load the data, apply the defined transformations, and prepare the image pairs and labels for training a change detection model. If crop parameters are specified, the images and labels will be cropped.
