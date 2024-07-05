@@ -2,9 +2,11 @@
   "type": "DataQuality",
   "scope": {
     "level": "dataset",
-    "levelDescription": {
-      "dataset": "whu_rs19"
-    }
+    "levelDescription": [
+      {
+        "dataset": "whu_rs19"
+      }
+    ]
   },
   "report": [
     {
