@@ -8,7 +8,7 @@ The Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) S
 
 === Main Functions of PyTDML
 
-PyTDML is a framework or library used for processing and managing training datasets. The following figure shows the organizational structure of abstract classes implemented by pytdml.
+PyTDML is a framework or library used for processing and managing training datasets. The following figure shows the organizational structure of abstract classes implemented by PyTDML.
 
 image::Implementation.png[]
 
