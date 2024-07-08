@@ -1,6 +1,6 @@
 == PyTDML Use Case
 
-Here we take the object detection dataset DOTA2.0 and RSOD dataset as examples to demonstrates the process of PyTDML.
+Here we take the object detection datasets DOTA 2.0 and RSOD as examples to demonstrate the process using PyTDML.
 
 DOTA2.0:
 
@@ -16,7 +16,7 @@ RSOD:
 - Image channels: 3
 - Image Size: 1044 * 915 to 1288 * 992
 
-The process of the case is shown in the following figure. It contains four steps: Loading of training data, Processing of training data, Transformation of training data and Iteration of training data.
+The process of the case is illustrated in the following figure, which includes four steps: Loading of training data, Processing of training data, Transformation of training data, and Iteration of training data.
 
 image::Algorithm.png[]
 

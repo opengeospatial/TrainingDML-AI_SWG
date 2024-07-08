@@ -1,18 +1,20 @@
 == Machine Learning Module
 
 === Scene Classification Task
+
 ==== Dataset Approach
 
-In the scene classification task, the _TorchSceneClassificationTD_ class is used to handle Earth Observation (EO) image scene classification training datasets. This class inherits from _VisionDataset_ and can load datasets in batches by index into the model. Below is a detailed introduction to this class, its functions, and specific parameters.
+In the scene classification task, the _TorchSceneClassificationTD_ inheriting from _VisionDataset_ is a custom dataset class used for handling Earth Observation (EO) image scene classification training datasets. This class can load datasets in batches by index into the model.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, class_map, transform=None)
+(1) pass:[__]init__
+(self, td_list, root, class_map, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
-* Initializes the dataset object with the provided dataset entries, root directory, class map, and optional transformations.
+* Initialize the dataset object with the provided dataset entries, root directory, class map, and optional transformations.
 
 b) Parameters:
 
@@ -28,9 +30,9 @@ b) Parameters:
 (2) _load_img_label(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Extracts image paths and labels from td_list.
+* Extract image paths and labels from td_list.
 
 b) Returns:
 
@@ -39,24 +41,24 @@ b) Returns:
 * labels: A list of image labels.
 ====
 
-(3) __len__(self)
+(3) pass:[__]len__(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Returns the size of the dataset.
+* Return the size of the dataset.
 
 b) Returns:
 
 * The length of the dataset (i.e., the number of dataset entries).
 ====
 
-(4) __getitem__(self, item)
+(4) pass:[__]getitem__(self, item)
 
 ====
-a) Functionality:
+a) Description:
 
-* Retrieves the image and label corresponding to the given index, applies necessary preprocessing and transformations.
+* Retrieve the image and label corresponding to the given index, apply necessary preprocessing and transformations.
 
 b) Parameters:
 
@@ -68,9 +70,9 @@ b) Parameters:
 (5) class_to_idx(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Returns the dictionary mapping classes to indices.
+* Return the dictionary mapping classes to indices.
 
 b) Returns:
 
@@ -140,14 +142,18 @@ datasetsForSceneTask()
 
 ==== Data Pipeline Approach
 
-In the scene classification task, the _TorchSceneClassificationDataPipe_ class implements an iterator-based method for loading datasets in batches into the model by inheriting from _IterDataPipe_. This method is suitable for handling large-scale datasets and enables efficient data loading and preprocessing. Below is a detailed introduction to this class, its functions, and specific parameters.
+In the scene classification task, the _TorchSceneClassificationDataPipe_ inheriting from _IterDataPipe_ is a custom dataset class that implements an iterator-based method for loading datasets in batches into the model. This class is suitable for handling large-scale datasets and enables efficient data loading and preprocessing.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, cache_path, class_map, transform=None)
+(1) pass:[__]init__(self, td_list, root, cache_path, class_map, transform=None)
 
 ====
-a) Parameters:
+a) Description:
+
+* Initialize the dataset object and set necessary attributes.
+
+b) Parameters:
 
 * td_list: A list of dataset entries.
 
@@ -158,16 +164,14 @@ a) Parameters:
 * class_map: A dictionary mapping class labels to numerical indices.
 
 * transform: Optional transformations to apply to the images.
-
-* Functionality: Initializes the dataset object and sets necessary attributes.
 ====
 
-(2) __iter__(self)
+(2) pass:[__]iter__(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Iteratively loads images and labels, applies necessary preprocessing and transformations.
+* Iteratively load images and labels, apply necessary preprocessing and transformations.
 
 * If a cache file exists, data is loaded from the cache file.
 
@@ -243,18 +247,19 @@ datasetsForSceneTask()
 ----
 
 === Semantic Segmentation Task
+
 ==== Dataset Approach
 
-_TorchSemanticSegmentationTD_ is a custom dataset class designed for semantic segmentation tasks, specifically for Earth Observation (EO) images. This class extends _VisionDataset_ and is compatible with PyTorch's data loading utilities. It handles the loading of image and label paths, applies transformations, and provides the data in a format suitable for training deep learning models.
+The _TorchSemanticSegmentationTD_ inheriting from _IterDataPipe_ is a custom dataset class designed for semantic segmentation tasks, specifically for Earth Observation (EO) images. This class is compatible with PyTorch's data loading utilities, handling the loading of image and label paths, applying transformations, and providing data in a format suitable for training deep learning models.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, classes, transform=None)
+(1) pass:[__]init__(self, td_list, root, classes, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
-* Initializes the dataset with the provided parameters.
+* Initialize the dataset with the provided parameters.
 
 b) Parameters:
 
@@ -267,24 +272,24 @@ b) Parameters:
 * transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
 ====
 
-(2) __len__(self)
+(2) pass:[__]len__(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Returns the number of items in the dataset.
+* Return the number of items in the dataset.
 
 b) Returns:
 
 * int - The number of items in the dataset.
 ====
 
-(3) __getitem__(self, item)
+(3) pass:[__]getitem__(self, item)
 
 ====
-a) Functionality:
+a) Description:
 
-* Retrieves the image and label at the specified index, applies any transformations, and returns them.
+* Retrieve the image and label at the specified index, apply any transformations, and returns them.
 
 b) Parameters:
 
@@ -300,9 +305,9 @@ c) Returns:
 (4) _load_data(self, td_list)
 
 ====
-a) Functionality:
+a) Description:
 
-* Loads data from the provided list. This method is used internally.
+* Load data from the provided list. This method is used internally.
 
 b) Parameters:
 
@@ -316,9 +321,9 @@ c) Returns:
 (5) _load_img_label(self, td_list)
 
 ====
-a) Functionality:
+a) Description:
 
-* Processes the provided list to extract image and label paths.
+* Processe the provided list to extract image and label paths.
 
 b) Parameters:
 
@@ -333,9 +338,9 @@ c) Returns:
 * label_paths (list of str): Paths to labels.
 ====
 
-*Usage:*
+*Example:*
 
-To use this dataset, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files and provide a list of class names for segmentation. Optionally, you can apply transformations to the images and labels.
+To use this dataset, you need a list of training data objects containing URLs of images and labels. Additionally, specify the root directory for storing these files and provide a list of class names for segmentation. Optionally, transformations can be applied to the images and labels.
 
 ----
 import torchvision.transforms as transforms
@@ -360,18 +365,19 @@ image, label = dataset[0]
 
 This setup will load the data, apply the defined transformations, and prepare the images and labels for training a segmentation model.
 
+
 ==== Data Pipeline Approach
 
-_TorchSemanticSegmentationDataPipe_ is a data pipeline class for semantic segmentation tasks, inheriting from _IterDataPipe_ and _ABC_. This class can load and preprocess Earth Observation (EO) images and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.
+The _TorchSemanticSegmentationDataPipe_ is a data pipeline class designed for semantic segmentation tasks. It inherits from _IterDataPipe_ and _ABC_. This class can load and preprocess Earth Observation (EO) images, providing the data as an iterator. It supports caching data for efficient loading and can perform image cropping and transformations as required.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, cache_path, class_list=None, crop=None, transform=None)
+(1) pass:[__]init__(self, td_list, root, cache_path, class_list=None, crop=None, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
-* Initializes the data pipeline with the provided parameters.
+* Initialize the data pipeline with the provided parameters.
 
 b) Parameters:
 
@@ -388,10 +394,10 @@ b) Parameters:
 * transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
 ====
 
-(2) __iter__(self)
+(2) pass:[__]iter__(self)
 
 ====
-a) Functionality:
+a) Description:
 
 * Iterator method for iterating over each item in the data pipeline.
 
@@ -400,7 +406,7 @@ b) Returns:
 * iterator - An iterator yielding transformed image and label pairs.
 ====
 
-*Usage:*
+*Example:*
 
 To use this data pipeline, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files, the cache file path, and provide a list of class names for segmentation and crop parameters. Optionally, you can apply transformations to the images and labels.
 
@@ -435,15 +441,16 @@ for image, label in data_pipe:
 
 This configuration will load the data, apply the defined transformations, and prepare the images and labels for training a segmentation model. If crop parameters are specified, the images and labels will be cropped.
 
-=== Object Recognition task
+=== Object Detection task
 ==== Dataset Approach
 
-_TorchObjectDetectionTD_ is a Torch Dataset for EO image object detection training dataset. This class inherits from _VisionDataset_ and is designed to be compatible with PyTorch's data loading tool.
+The _TorchObjectDetectionTD_ inheriting from _VisionDataset_ is a custom dataset for EO image object detection training
+dataset. This class is designed to be compatible with PyTorch's data loading tool.
 
-(1) __init__(self, td_list, root, class_map, transform=None)
+(1) pass:[__]init__(self, td_list, root, class_map, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
 * Initialize the dataset using the provided parameters.
 
@@ -458,22 +465,22 @@ b) Parameter:
 * transform (callable, optional): A function/transformation that inputs images and labels and returns the transformed version. The default value is None.
 ====
 
-(2) __len__(self)
+(2) pass:[__]len__(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Returns the number of items in the dataset.
+* Return the number of items in the dataset.
 
 b) Return:
 
 * length: Number of items in the dataset.
 ====
 
-(3) __getitem__(self, index)
+(3) pass:[__]getitem__(self, index)
 
 ====
-a) Functionality:
+a) Description:
 
 * Retrieve the specified index of images and labels, apply any transformations, and return them.
 
@@ -518,12 +525,14 @@ This configuration will load data, apply defined transformations, and prepare im
 
 ==== Data Pipeline Approach
 
-_TorchObjectDetectionDataPipe_ is a data pipeline class used for target recognition tasks, inherited from _IterDataPipe_. This class can load and preprocess Earth Observation (EO) images and provide data in the form of iterators. It supports loading data from cache and can crop and transform images as needed.
+The _TorchObjectDetectionDataPipe_ is a data pipeline class used for object detection tasks, inheriting from
+_IterDataPipe_. This class can load and preprocess Earth Observation (EO) images, provide data in the form of
+iterators, crop and transform images as needed.
 
-(1) __init__(self, td_list, root, cache_path, class_map=None, crop=None, transform=None)
+(1) pass:[__]init__(self, td_list, root, cache_path, class_map=None, crop=None, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
 * Initialize the function and initialize the data pipeline using the provided parameters.
 
@@ -540,10 +549,10 @@ b) Parameter:
 * transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
 ====
 
-(2) __iter__(self)
+(2) pass:[__]iter__(self)
 
 ====
-a) Functionality:
+a) Description:
 
 * Iterator method for iterating over each item in the data pipeline.
 
@@ -587,16 +596,17 @@ for image, label in data_pipe:
 === Change Detection Task
 ==== Dataset Approach
 
-_TorchChangeDetectionTD_ is a dataset class designed for change detection tasks, extending _VisionDataset_. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide them for model training or evaluation. It supports applying transformations to images and labels.
+The _TorchChangeDetectionTD_ is a custom dataset designed for change detection tasks, inheriting from _VisionDataset_.
+This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide them for model training or evaluation. It supports applying transformations to images and labels.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, transform)
+(1) pass:[__]init__(self, td_list, root, transform)
 
 ====
-a) Functionality:
+a) Description:
 
-* Initializes the dataset with the provided parameters.
+* Initialize the dataset with the provided parameters.
 
 b) Returns:
 
@@ -607,24 +617,24 @@ b) Returns:
 * transform (callable): A function/transform that takes in an image and a label and returns the transformed version.
 ====
 
-(2) __len__(self)
+(2) pass:[__]len__(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Returns the number of samples in the dataset.
+* Return the number of samples in the dataset.
 
 b) Returns:
 
 * int - The number of samples in the dataset.
 ====
 
-(3) __getitem__(self, index)
+(3) pass:[__]getitem__(self, index)
 
 ====
-a) Functionality:
+a) Description:
 
-* Retrieves the image pair and label at the specified index and applies any transformations.
+* Retrieve the image pair and label at the specified index and applies any transformations.
 
 b) Parameters:
 
@@ -638,9 +648,9 @@ c) Returns:
 (4) _load_sample(self)
 
 ====
-a) Functionality:
+a) Description:
 
-* Loads sample data, generating paths for images before and after changes and label paths.
+* Load sample data, generate paths for images before and after change and label paths.
 
 b) Returns:
 
@@ -681,16 +691,17 @@ This approach allows the dataset to efficiently load and provide the images and 
 
 ==== Data Pipeline Approach
 
-_TorchChangeDetectionDataPipe_ is a data pipeline class for change detection tasks, inheriting from _IterDataPipe_ and _ABC_. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.
+The _TorchChangeDetectionDataPipe_ is a data pipeline class for change detection tasks, inheriting from _IterDataPipe_
+and _ABC_. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.
 
 *Methods:*
 
-(1) __init__(self, td_list, root, cache_path, crop=None, transform=None)
+(1) pass:[__]init__(self, td_list, root, cache_path, crop=None, transform=None)
 
 ====
-a) Functionality:
+a) Description:
 
-* Initializes the data pipeline with the provided parameters.
+* Initialize the data pipeline with the provided parameters.
 
 b) Parameters:
 
@@ -705,10 +716,10 @@ b) Parameters:
 * transform (callable, optional): A function/transform that takes in an image and a label and returns the transformed version. Default is None.
 ====
 
-(2) __iter__(self)
+(2) pass:[__]iter__(self)
 
 ====
-a) Functionality:
+a) Description:
 
 * Iterator method for iterating over each item in the data pipeline.
 
@@ -719,7 +730,8 @@ b) Returns:
 
 *Example:*
 
-To use this data pipeline, you need a list of training data objects containing URLs of images before and after changes and labels. You also need to specify the root directory for storing these files, the cache file path, and provide crop parameters. Optionally, you can apply transformations to the images and labels.
+To use this data pipeline, you need a list of training data objects containing URLs of images before and after changes, along with labels. Additionally, specify the root directory for storing these files, the cache file path, and provide crop parameters. Optionally, transformations can be applied to the images and labels.
+
 
 ----
 import torchvision.transforms as transforms
@@ -749,4 +761,4 @@ for before_img, after_img, label in data_pipe:
     # Process image pairs and labels
 ----
 
-This configuration will load the data, apply the defined transformations, and prepare the image pairs and labels for training a change detection model. If crop parameters are specified, the images and labels will be cropped.
+This configuration will load the data, apply the defined transformations, and prepare the image pairs and labels for training a change detection model. If crop parameters are specified, the images and labels will be cropped accordingly.

@@ -528,15 +528,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_s3_path_reading_reading_trainingdml_ai_encoding_from_s3_object_files">2.1.2. S3 Path Reading (Reading TrainingDML-AI Encoding from S3 Object Files)</a></li>
 </ul>
 </li>
-<li><a href="#_organize_and_generate_trainingdml_ai_code_based_on_the_local_dataset">2.2. Organize and generate TrainingDML-AI code based on the local dataset</a>
+<li><a href="#_organizing_and_generating_trainingdml_ai_code_based_on_local_dataset">2.2. Organizing and Generating TrainingDML-AI Code Based on Local Dataset</a>
 <ul class="sectlevel3">
-<li><a href="#_organize_the_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata">2.2.1. Organize the data and metadata information in the dataset to generate a TrainingData</a></li>
-<li><a href="#_organize_the_trainingdata_and_other_metadata_information_into_a_trainingdataset">2.2.2. Organize the TrainingData and other metadata information into a TrainingDataset</a></li>
-<li><a href="#_write_a_trainingdataset_as_a_json_file_and_output_it_locally">2.2.3. Write a TrainingDataset as a JSON file and output it locally</a></li>
+<li><a href="#_organizing_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata">2.2.1. Organizing Data and Metadata Information in the Dataset to Generate a <em>TrainingData</em></a></li>
+<li><a href="#_organizing_the_trainingdata_and_other_metadata_information_into_a_trainingdataset">2.2.2. Organizing the <em>TrainingData</em> and Other Metadata Information into a <em>TrainingDataset</em></a></li>
+<li><a href="#_writing_a_trainingdataset_as_a_json_file_and_outputting_it_locally">2.2.3. Writing a <em>TrainingDataset</em> as a JSON File and Outputting it Locally</a></li>
 </ul>
 </li>
 <li><a href="#_transform_yaml_to_tdml">2.3. Transform YAML to TDML</a></li>
-<li><a href="#_format_conversion">2.4. Format conversion</a></li>
+<li><a href="#_format_conversion">2.4. Format Conversion</a></li>
 </ul>
 </li>
 <li><a href="#_machine_learning_module">3. Machine Learning Module</a>
@@ -553,7 +553,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_data_pipeline_approach_2">3.2.2. Data Pipeline Approach</a></li>
 </ul>
 </li>
-<li><a href="#_object_recognition_task">3.3. Object Recognition task</a>
+<li><a href="#_object_detection_task">3.3. Object Detection task</a>
 <ul class="sectlevel3">
 <li><a href="#_dataset_approach_3">3.3.1. Dataset Approach</a></li>
 <li><a href="#_data_pipeline_approach_3">3.3.2. Data Pipeline Approach</a></li>
@@ -577,18 +577,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>PyTDML is a pure python parser and encoder for training datasets based on OGC Training Data Markup Language for AI standard. Welcome to the PyTDML tutorial, your guide to work with Training Data Markup Language (TDML) for Artificial Intelligence using Python.</p>
+<p>PyTDML is a pure Python parser and encoder for training datasets based on the OGC Training Data Markup Language for AI standard. Welcome to the PyTDML tutorial, your guide to working with Training Data Markup Language (TDML) for Artificial Intelligence.</p>
 </div>
 <div class="sect2">
 <h3 id="_what_is_tdml"><a class="anchor" href="#_what_is_tdml"></a>1.1. What is TDML?</h3>
 <div class="paragraph">
-<p>The Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) SWG is chartered to develop the UML model and encodings for geospatial Machine Learning training data. In machine learning, training data is the dataset used for training and validation of machine learning models. The geospatial training data categories will include, but are not restricted to, remote sensing imagery, moving features (e.g., vehicle trajectories), and related spatial content. The SWG will define a UML model and encodings consistent with the OGC standards baseline to exchange and retrieve the training data in the Web environment. The SWG will start from the JSON implementation. Once the UML and JSON encoding are well accepted, the SWG will work on the XML encoding as the current OGC baseline. This standard will provide more detailed metadata for formalizing the information model of training data.</p>
+<p>The Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) SWG is chartered to develop the UML model and encodings for geospatial machine learning training data. In machine learning, training data is the dataset used for the training and validation of machine learning models. The geospatial training data categories will include, but are not limited to, remote sensing imagery, moving features (e.g., vehicle trajectories), and related spatial content. The SWG will define a UML model and encodings consistent with the OGC standards baseline to exchange and retrieve the training data in the web environment. The SWG will start with the JSON implementation. Once the UML and JSON encoding are well accepted, the SWG will work on the XML encoding as per the current OGC baseline. This standard will provide more detailed metadata for formalizing the information model of training data.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_main_functions_of_pytdml"><a class="anchor" href="#_main_functions_of_pytdml"></a>1.2. Main Functions of PyTDML</h3>
 <div class="paragraph">
-<p>PyTDML is a framework or library used for processing and managing training datasets. The following figure shows the organizational structure of abstract classes implemented by PyTDML.</p>
+<p>PyTDML is a framework or library used for processing and managing training datasets. The following figure shows the structure of classes implemented by PyTDML.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -601,28 +601,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Datasets definition and management: PyTDML allows users to organize and describe training datasets by defining classes such as <em>TrainingDataset</em> and <em>Task</em>. Users can manually input metadata information and integrate training data from different sources into a <em>TrainingDataset</em> object. This includes information such as the ID, name, description, task type, data list, version, creation and update time, provider, keywords, data source, and specific category of the dataset.</p>
+<p>Dataset Definition and Management: PyTDML allows users to organize and describe training datasets by defining classes such as  <em>TrainingDataset</em> and <em>Task</em>. Users can manually input metadata information, which can include the ID, name, description, task type, data list, version, creation and update time, provider, keywords, data source, and specific category of the dataset. This enables the integration of training data from different sources into a  <em>TrainingDataset</em> object.</p>
 </li>
 <li>
-<p>Task definition: In PyTDML, users can define different tasks including "Scene Classification" and "Semantic Segmentation", and provide detailed descriptions for these tasks. This helps to clarify the purpose and scenario of using the dataset, facilitating subsequent data processing and analysis.</p>
+<p>Task Definition: In PyTDML, users can define different tasks including "Scene Classification" and "Semantic Segmentation" and provide detailed descriptions for these tasks. This helps clarify the purpose and scenario of using the dataset, facilitating subsequent data processing and analysis.</p>
 </li>
 <li>
-<p>Data pipeline: PyTDML has designed specific data pipeline routes for different Earth observation missions. Each data pipeline is responsible for loading the dataset required for the corresponding task. Within the same task type, data pipelines can use standardized loading logic to parse and process different datasets, which is due to the shared training sample composition patterns among these datasets. Therefore, cross dataset training sample utilization becomes feasible as data pipelines can consistently process and interpret training samples.</p>
+<p>Data Pipeline: PyTDML has designed specific data pipeline routes for different Earth observation missions. Each data pipeline is responsible for loading the dataset required for the corresponding task. Within the same task type, data pipelines can use standardized loading logic to parse and process different datasets, thanks to the shared composition patterns of training samples among these datasets.</p>
 </li>
 <li>
-<p>Data annotation and classification: PyTDML supports annotation and classification of training data. For example,
-in remote sensing image datasets, specific categories such as "Airport", "Beach", "Bridge", etc. can be defined, and data can be organized through these categories.</p>
+<p>Data Annotation and Classification: PyTDML supports the annotation and classification of training data. For example, in remote sensing image datasets, specific categories such as "Airport," "Beach," "Bridge," etc., can be defined, and data can be organized through these categories.</p>
 </li>
 <li>
-<p>Data standardization: By defining a unified format for the dataset (such as image size, band information, etc.), PyTDML helps to standardize data processing, thereby improving data consistency and comparability.</p>
+<p>Data Standardization: By defining a unified format for the dataset (such as image size, band information, etc.), PyTDML helps to standardize data processing, thereby improving data consistency and comparability.</p>
 </li>
 <li>
-<p>Metadata management: PyTDML emphasizes the importance of metadata and provides convenience for the long-term storage and reuse of datasets by detailing the metadata of the dataset, such as data source, creator, update time, etc.</p>
+<p>Metadata Management: PyTDML emphasizes the importance of metadata and provides convenience for the long-term storage and reuse of datasets by detailing the metadata of the dataset, such as data source, creator, update time, etc.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Let&#8217;s dive in and start exploring the world of standardized geospatial training data with PyTDML!</p>
+<p>Let’s dive in and start exploring the world of standardized geospatial training data with PyTDML!</p>
 </div>
 </div>
 </div>
@@ -635,7 +634,7 @@ in remote sensing image datasets, specific categories such as "Airport", "Beach"
 <div class="sect3">
 <h4 id="_local_file_input_reading_trainingdml_ai_encoding_from_local_files"><a class="anchor" href="#_local_file_input_reading_trainingdml_ai_encoding_from_local_files"></a>2.1.1. Local File Input (Reading TrainingDML-AI Encoding from Local Files)</h4>
 <div class="paragraph">
-<p>The local file input functionality is located in the tdml_readers.py file within the IO module. This module is primarily used for reading TrainingDML-AI encoded data from local files.</p>
+<p>The functionality is located in tdml_readers.py within the IO module, primarily used for reading TrainingDML-AI encoded data from local files.</p>
 </div>
 <div class="paragraph">
 <p>(1) Function: read_from_json(file_path: str)</p>
@@ -643,7 +642,7 @@ in remote sensing image datasets, specific categories such as "Airport", "Beach"
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -658,26 +657,22 @@ in remote sensing image datasets, specific categories such as "Airport", "Beach"
 <div class="ulist">
 <ul>
 <li>
-<p>file_path (string): The path to the JSON file.</p>
+<p>file_path(string): The path to the JSON file.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) Function: def parse_json(json_dict)</p>
+<p>(2) Function: parse_json(json_dict)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Parses a JSON dictionary and returns the corresponding training dataset object based on its type.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Parses a JSON dictionary and returns the corresponding <em>TrainingDataset</em> object based on its type.</p>
 </div>
 <div class="paragraph">
 <p>b) Parameter:</p>
@@ -723,33 +718,28 @@ in remote sensing image datasets, specific categories such as "Airport", "Beach"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre># Import the reading function
-from tdml_reader import read_from_json
-
-# Specify the local file path
+<pre>from tdml_reader import read_from_json
 file_path = "data.json"
-# Read the JSON file and parse it into a TrainingDataset object
 training_dataset = read_from_json(file_path)
-# Print the contents of the TrainingDataset object
 print(training_dataset)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>After executing the above code, the data.json file will be read and its content will be parsed into a <em>TrainingDataset</em> object. The detailed information of this object will then be printed.</p>
+<p>After executing the above code, data.json will be read and its content will be parsed into a <em>TrainingDataset</em> object. The detailed information of this object will then be printed.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_s3_path_reading_reading_trainingdml_ai_encoding_from_s3_object_files"><a class="anchor" href="#_s3_path_reading_reading_trainingdml_ai_encoding_from_s3_object_files"></a>2.1.2. S3 Path Reading (Reading TrainingDML-AI Encoding from S3 Object Files)</h4>
 <div class="paragraph">
-<p>The S3 path reading functionality is located in the S3_reader.py file within the IO module. This module is primarily used to read TrainingDML-AI encoded data from S3 object storage.</p>
+<p>The functionality is located in S3_reader.py within the IO module, primarily used to read TrainingDML-AI encoded data from S3 object storage.</p>
 </div>
 <div class="paragraph">
-<p>(1) Function parse_s3_path(s3_path)</p>
+<p>(1) Function: parse_s3_path(s3_path)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -764,19 +754,19 @@ print(training_dataset)</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>s3_path (string): The S3 path.</p>
+<p>s3_path(string): The S3 path.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) Class LibraryNotInstalledError</p>
+<p>(2) Class <em>LibraryNotInstalledError</em></p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -788,17 +778,17 @@ print(training_dataset)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(3) Class S3Client</p>
+<p>(3) Class <em>S3Client</em></p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The S3 client class is used for interacting with the S3 service.</p>
+<p>The class is used for interacting with the S3 service.</p>
 </li>
 </ul>
 </div>
@@ -808,16 +798,16 @@ print(training_dataset)</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>resource (string): The type of resource (e.g., 's3').</p>
+<p>resource(string): The type of resource (e.g., 's3').</p>
 </li>
 <li>
-<p>server (string): The S3 server address.</p>
+<p>server(string): The S3 server address.</p>
 </li>
 <li>
-<p>access_key (string): The access key.</p>
+<p>access_key(string): The access key.</p>
 </li>
 <li>
-<p>secret_key (string): The secret key.</p>
+<p>secret_key(string): The secret key.</p>
 </li>
 </ul>
 </div>
@@ -880,30 +870,19 @@ Parameters:
 <p><strong>Example:</strong></p>
 </div>
 <div class="paragraph">
-<p>Suppose we have an S3 path s3://my-bucket/my-folder/my-object.json which stores TrainingDML-AI encoded data. The user can run the following code:</p>
+<p>Suppose we have an S3 path such as s3://my-bucket/my-folder/my-object.json which stores TrainingDML-AI encoded data. The user can run the following code:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre># Import necessary modules and classes
-from S3_reader import S3Client, parse_s3_path
-
-# S3 storage configuration
+<pre>from S3_reader import S3Client, parse_s3_path
 resource = 's3'
-server = 'https://s3.amazonaws.com'  # Corresponding S3 service address
+server = 'https://s3.amazonaws.com'
 access_key = 'your_access_key'
 secret_key = 'your_secret_key'
 s3_path = 's3://my-bucket/my-folder/my-object.json'
-
-# Create an S3 client
 s3_client = S3Client(resource, server, access_key, secret_key)
-
-# Parse the S3 path to get the bucket and key
 bucket_name, object_key = parse_s3_path(s3_path)
-
-# Retrieve the object content from S3
 s3_object = s3_client.get_object(bucket_name, object_key)
-
-# Read the object content and parse it as JSON
 import json
 json_dict = json.load(s3_object)
 # Print the JSON data
@@ -911,19 +890,19 @@ print(json_dict)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>In the above code, the user needs to provide S3 service configuration details, including the server address, access key, and secret key. Then, an S3Client instance is created using this information. The S3 path is parsed to obtain the bucket name and object key. The S3Client instance is then used to retrieve the object content from S3, which is parsed as JSON and printed.</p>
+<p>In the above code, the user needs to provide S3 service configuration details, including the server address, access key, and secret key. Then, an <em>S3Client</em> instance is created. The S3 path is parsed to obtain the bucket name and object key. The <em>S3Client</em> instance is then used to retrieve the object content from S3, which is parsed as JSON and printed.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_organize_and_generate_trainingdml_ai_code_based_on_the_local_dataset"><a class="anchor" href="#_organize_and_generate_trainingdml_ai_code_based_on_the_local_dataset"></a>2.2. Organize and generate TrainingDML-AI code based on the local dataset</h3>
+<h3 id="_organizing_and_generating_trainingdml_ai_code_based_on_local_dataset"><a class="anchor" href="#_organizing_and_generating_trainingdml_ai_code_based_on_local_dataset"></a>2.2. Organizing and Generating TrainingDML-AI Code Based on Local Dataset</h3>
 <div class="paragraph">
-<p>Organizing and generating TrainingDML-AI code based on the local dataset requires two ways to obtain information: manual input and function calls, including the following steps:</p>
+<p>Organizing and generating TrainingDML-AI code based on the local dataset requires two ways to obtain information: manual input and function calls. The specific steps are as follows:</p>
 </div>
 <div class="sect3">
-<h4 id="_organize_the_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata"><a class="anchor" href="#_organize_the_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata"></a>2.2.1. Organize the data and metadata information in the dataset to generate a TrainingData</h4>
+<h4 id="_organizing_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata"><a class="anchor" href="#_organizing_data_and_metadata_information_in_the_dataset_to_generate_a_trainingdata"></a>2.2.1. Organizing Data and Metadata Information in the Dataset to Generate a <em>TrainingData</em></h4>
 <div class="paragraph">
-<p>Introduce classes such as <em>TrainingData</em> and <em>SceneLabel</em>, obtain information including data directory and file location and organize them into a <em>TrainingData</em>’s parameters.</p>
+<p>Introduce classes such as <em>TrainingData</em> and <em>SceneLabel</em>, obtain information including data directory and file location, and organize them into <em>TrainingData</em>'s parameters.</p>
 </div>
 <div class="paragraph">
 <p><strong>Example:</strong></p>
@@ -932,7 +911,6 @@ print(json_dict)</pre>
 <div class="content">
 <pre>import os
 from pytdml.type import EOTrainingData, SceneLabel
-
 td_list = []
 image_path = r"TrainingDatasets\WHU-RS19\image"
 for root, dirs, files in os.walk(image_path):
@@ -948,7 +926,7 @@ for root, dirs, files in os.walk(image_path):
 </div>
 </div>
 <div class="sect3">
-<h4 id="_organize_the_trainingdata_and_other_metadata_information_into_a_trainingdataset"><a class="anchor" href="#_organize_the_trainingdata_and_other_metadata_information_into_a_trainingdataset"></a>2.2.2. Organize the TrainingData and other metadata information into a TrainingDataset</h4>
+<h4 id="_organizing_the_trainingdata_and_other_metadata_information_into_a_trainingdataset"><a class="anchor" href="#_organizing_the_trainingdata_and_other_metadata_information_into_a_trainingdataset"></a>2.2.2. Organizing the <em>TrainingData</em> and Other Metadata Information into a <em>TrainingDataset</em></h4>
 <div class="paragraph">
 <p>Introduce classes such as <em>TrainingDataset</em> and <em>Task</em>, input metadata information manually, and combine the <em>TrainingData</em> from the previous step. Organize them into a <em>TrainingDataset</em>.</p>
 </div>
@@ -981,14 +959,17 @@ whu_rs19 = EOTrainingDataset(
 </div>
 </div>
 <div class="sect3">
-<h4 id="_write_a_trainingdataset_as_a_json_file_and_output_it_locally"><a class="anchor" href="#_write_a_trainingdataset_as_a_json_file_and_output_it_locally"></a>2.2.3. Write a TrainingDataset as a JSON file and output it locally</h4>
+<h4 id="_writing_a_trainingdataset_as_a_json_file_and_outputting_it_locally"><a class="anchor" href="#_writing_a_trainingdataset_as_a_json_file_and_outputting_it_locally"></a>2.2.3. Writing a <em>TrainingDataset</em> as a JSON File and Outputting it Locally</h4>
+<div class="paragraph">
+<p>The functionality is located in tdml_writers.py within the IO module, primarily used to write a <em>TrainingDataset</em> as a JSON file and output it locally.</p>
+</div>
 <div class="paragraph">
 <p>(1) Function: write_to_json(td: TrainingDataset, file_path: str, indent: Union[None, int, str] = 4)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1021,7 +1002,6 @@ whu_rs19 = EOTrainingDataset(
 <div class="listingblock">
 <div class="content">
 <pre>from pytdml.io import write_to_json
-
 write_to_json(td, file_path)</pre>
 </div>
 </div>
@@ -1030,7 +1010,7 @@ write_to_json(td, file_path)</pre>
 <div class="sect2">
 <h3 id="_transform_yaml_to_tdml"><a class="anchor" href="#_transform_yaml_to_tdml"></a>2.3. Transform YAML to TDML</h3>
 <div class="paragraph">
-<p>YAML (Yet Another Markup Language) is a commonly used data serialization format aimed at providing a data serialization standard that is easy for humans to read and write. YAML configuration file schema is described in encoding YAML configuration file schema. Here is provided to convert the YAML file encoding of the dataset to TrainingDML-AI encoding.</p>
+<p>YAML (Yet Another Markup Language) is a commonly used data serialization format aimed at providing a data serialization standard that is easy for humans to read and write. The YAML configuration file schema is described in the YAML configuration file schema section. The functionality is located in yaml_to_tdml.py.</p>
 </div>
 <div class="paragraph">
 <p>(1) Function: yaml_to_eo_tdml(yaml_path)</p>
@@ -1038,12 +1018,12 @@ write_to_json(td, file_path)</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Convert the YAML file to <em>EOTrainingDataset</em>.</p>
+<p>Converts a YAML file to an <em>EOTrainingDataset</em>.</p>
 </li>
 </ul>
 </div>
@@ -1053,7 +1033,7 @@ write_to_json(td, file_path)</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>yaml_path: The path where the YAML file stored.</p>
+<p>yaml_path: The path where the YAML file is stored.</p>
 </li>
 </ul>
 </div>
@@ -1063,7 +1043,7 @@ write_to_json(td, file_path)</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>EOTrainingDataset: Extended training dataset type for EO training dataset.</p>
+<p><em>EOTrainingDataset</em>: Extended training dataset type for EO training dataset.</p>
 </li>
 </ul>
 </div>
@@ -1075,25 +1055,27 @@ write_to_json(td, file_path)</pre>
 <div class="listingblock">
 <div class="content">
 <pre>from pytdml.yaml_to_tdml import yaml_to_eo_tdml
-
 training_datasets = yaml_to_eo_tdml(yaml_path)</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_format_conversion"><a class="anchor" href="#_format_conversion"></a>2.4. Format conversion</h3>
+<h3 id="_format_conversion"><a class="anchor" href="#_format_conversion"></a>2.4. Format Conversion</h3>
+<div class="paragraph">
+<p>The functionality is located in convert_utils.py, primarily used to convert different formats to TrainingDML-AI encoding.</p>
+</div>
 <div class="paragraph">
 <p>(1) Function: convert_coco_to_tdml(coco_dataset_path, output_json_path)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Object recognition task: Convert Coco format to TrainingDML-AI encoding. Reads data from a COCO-formatted JSON file and saves it after converting it to a new JSON document.</p>
+<p>Converts COCO format to TrainingDML-AI encoding. Reads data from a COCO-formatted JSON file and saves it after converting it to a new JSON document.</p>
 </li>
 </ul>
 </div>
@@ -1118,7 +1100,6 @@ training_datasets = yaml_to_eo_tdml(yaml_path)</pre>
 <div class="listingblock">
 <div class="content">
 <pre>from pytdml.convert_utils import convert_coco_to_tdml
-
 convert_coco_to_tdml(coco_dataset_path, output_json_path)</pre>
 </div>
 </div>
@@ -1128,12 +1109,12 @@ convert_coco_to_tdml(coco_dataset_path, output_json_path)</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Semantic segmentation task: Convert STAC format to TrainingDML-AI encoding. Reads JSON data in STAC format from a given path.</p>
+<p>Converts STAC format to TrainingDML-AI encoding. Reads JSON data in STAC format from a given path.</p>
 </li>
 </ul>
 </div>
@@ -1158,7 +1139,6 @@ convert_coco_to_tdml(coco_dataset_path, output_json_path)</pre>
 <div class="listingblock">
 <div class="content">
 <pre>from pytdml.convert_utils import convert_coco_to_tdml
-
 convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 </div>
 </div>
@@ -1173,23 +1153,24 @@ convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 <div class="sect3">
 <h4 id="_dataset_approach"><a class="anchor" href="#_dataset_approach"></a>3.1.1. Dataset Approach</h4>
 <div class="paragraph">
-<p>In the scene classification task, the <em>TorchSceneClassificationTD</em> class is used to handle Earth Observation (EO) image scene classification training datasets. This class inherits from <em>VisionDataset</em> and can load datasets in batches by index into the model. Below is a detailed introduction to this class, its functions, and specific parameters.</p>
+<p>In the scene classification task, the <em>TorchSceneClassificationTD</em> inheriting from <em>VisionDataset</em> is a custom dataset class used for handling Earth Observation (EO) image scene classification training datasets. This class can load datasets in batches by index into the model.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, class_map, transform=None)</p>
+<p>(1) __init__
+(self, td_list, root, class_map, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Initializes the dataset object with the provided dataset entries, root directory, class map, and optional transformations.</p>
+<p>Initialize the dataset object with the provided dataset entries, root directory, class map, and optional transformations.</p>
 </li>
 </ul>
 </div>
@@ -1220,12 +1201,12 @@ convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Extracts image paths and labels from td_list.</p>
+<p>Extract image paths and labels from td_list.</p>
 </li>
 </ul>
 </div>
@@ -1245,17 +1226,17 @@ convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(3) <em>len</em>(self)</p>
+<p>(3) __len__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Returns the size of the dataset.</p>
+<p>Return the size of the dataset.</p>
 </li>
 </ul>
 </div>
@@ -1272,17 +1253,17 @@ convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(4) <em>getitem</em>(self, item)</p>
+<p>(4) __getitem__(self, item)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Retrieves the image and label corresponding to the given index, applies necessary preprocessing and transformations.</p>
+<p>Retrieve the image and label corresponding to the given index, apply necessary preprocessing and transformations.</p>
 </li>
 </ul>
 </div>
@@ -1307,12 +1288,12 @@ convert_stac_to_tdml(stac_dataset_path, output_json_path)</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Returns the dictionary mapping classes to indices.</p>
+<p>Return the dictionary mapping classes to indices.</p>
 </li>
 </ul>
 </div>
@@ -1395,18 +1376,28 @@ datasetsForSceneTask()</pre>
 <div class="sect3">
 <h4 id="_data_pipeline_approach"><a class="anchor" href="#_data_pipeline_approach"></a>3.1.2. Data Pipeline Approach</h4>
 <div class="paragraph">
-<p>In the scene classification task, the <em>TorchSceneClassificationDataPipe</em> class implements an iterator-based method for loading datasets in batches into the model by inheriting from <em>IterDataPipe</em>. This method is suitable for handling large-scale datasets and enables efficient data loading and preprocessing. Below is a detailed introduction to this class, its functions, and specific parameters.</p>
+<p>In the scene classification task, the <em>TorchSceneClassificationDataPipe</em> inheriting from <em>IterDataPipe</em> is a custom dataset class that implements an iterator-based method for loading datasets in batches into the model. This class is suitable for handling large-scale datasets and enables efficient data loading and preprocessing.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, cache_path, class_map, transform=None)</p>
+<p>(1) __init__(self, td_list, root, cache_path, class_map, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Parameters:</p>
+<p>a) Description:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Initialize the dataset object and set necessary attributes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>b) Parameters:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1425,25 +1416,22 @@ datasetsForSceneTask()</pre>
 <li>
 <p>transform: Optional transformations to apply to the images.</p>
 </li>
-<li>
-<p>Functionality: Initializes the dataset object and sets necessary attributes.</p>
-</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>iter</em>(self)</p>
+<p>(2) __iter__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Iteratively loads images and labels, applies necessary preprocessing and transformations.</p>
+<p>Iteratively load images and labels, apply necessary preprocessing and transformations.</p>
 </li>
 <li>
 <p>If a cache file exists, data is loaded from the cache file.</p>
@@ -1538,23 +1526,23 @@ datasetsForSceneTask()</pre>
 <div class="sect3">
 <h4 id="_dataset_approach_2"><a class="anchor" href="#_dataset_approach_2"></a>3.2.1. Dataset Approach</h4>
 <div class="paragraph">
-<p><em>TorchSemanticSegmentationTD</em> is a custom dataset class designed for semantic segmentation tasks, specifically for Earth Observation (EO) images. This class extends <em>VisionDataset</em> and is compatible with PyTorch&#8217;s data loading utilities. It handles the loading of image and label paths, applies transformations, and provides the data in a format suitable for training deep learning models.</p>
+<p>The <em>TorchSemanticSegmentationTD</em> inheriting from <em>IterDataPipe</em> is a custom dataset class designed for semantic segmentation tasks, specifically for Earth Observation (EO) images. This class is compatible with PyTorch&#8217;s data loading utilities, handling the loading of image and label paths, applying transformations, and providing data in a format suitable for training deep learning models.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, classes, transform=None)</p>
+<p>(1) __init__(self, td_list, root, classes, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Initializes the dataset with the provided parameters.</p>
+<p>Initialize the dataset with the provided parameters.</p>
 </li>
 </ul>
 </div>
@@ -1580,17 +1568,17 @@ datasetsForSceneTask()</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>len</em>(self)</p>
+<p>(2) __len__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Returns the number of items in the dataset.</p>
+<p>Return the number of items in the dataset.</p>
 </li>
 </ul>
 </div>
@@ -1607,17 +1595,17 @@ datasetsForSceneTask()</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(3) <em>getitem</em>(self, item)</p>
+<p>(3) __getitem__(self, item)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Retrieves the image and label at the specified index, applies any transformations, and returns them.</p>
+<p>Retrieve the image and label at the specified index, apply any transformations, and returns them.</p>
 </li>
 </ul>
 </div>
@@ -1652,12 +1640,12 @@ datasetsForSceneTask()</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Loads data from the provided list. This method is used internally.</p>
+<p>Load data from the provided list. This method is used internally.</p>
 </li>
 </ul>
 </div>
@@ -1689,12 +1677,12 @@ datasetsForSceneTask()</pre>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Processes the provided list to extract image and label paths.</p>
+<p>Processe the provided list to extract image and label paths.</p>
 </li>
 </ul>
 </div>
@@ -1727,10 +1715,10 @@ datasetsForSceneTask()</pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Usage:</strong></p>
+<p><strong>Example:</strong></p>
 </div>
 <div class="paragraph">
-<p>To use this dataset, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files and provide a list of class names for segmentation. Optionally, you can apply transformations to the images and labels.</p>
+<p>To use this dataset, you need a list of training data objects containing URLs of images and labels. Additionally, specify the root directory for storing these files and provide a list of class names for segmentation. Optionally, transformations can be applied to the images and labels.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1761,23 +1749,23 @@ image, label = dataset[0]</pre>
 <div class="sect3">
 <h4 id="_data_pipeline_approach_2"><a class="anchor" href="#_data_pipeline_approach_2"></a>3.2.2. Data Pipeline Approach</h4>
 <div class="paragraph">
-<p><em>TorchSemanticSegmentationDataPipe</em> is a data pipeline class for semantic segmentation tasks, inheriting from <em>IterDataPipe</em> and <em>ABC</em>. This class can load and preprocess Earth Observation (EO) images and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.</p>
+<p>The <em>TorchSemanticSegmentationDataPipe</em> is a data pipeline class designed for semantic segmentation tasks. It inherits from <em>IterDataPipe</em> and <em>ABC</em>. This class can load and preprocess Earth Observation (EO) images, providing the data as an iterator. It supports caching data for efficient loading and can perform image cropping and transformations as required.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, cache_path, class_list=None, crop=None, transform=None)</p>
+<p>(1) __init__(self, td_list, root, cache_path, class_list=None, crop=None, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Initializes the data pipeline with the provided parameters.</p>
+<p>Initialize the data pipeline with the provided parameters.</p>
 </li>
 </ul>
 </div>
@@ -1809,12 +1797,12 @@ image, label = dataset[0]</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>iter</em>(self)</p>
+<p>(2) __iter__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1836,7 +1824,7 @@ image, label = dataset[0]</pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Usage:</strong></p>
+<p><strong>Example:</strong></p>
 </div>
 <div class="paragraph">
 <p>To use this data pipeline, you need a list of training data objects containing URLs of images and labels. You also need to specify the root directory for storing these files, the cache file path, and provide a list of class names for segmentation and crop parameters. Optionally, you can apply transformations to the images and labels.</p>
@@ -1877,19 +1865,20 @@ for image, label in data_pipe:
 </div>
 </div>
 <div class="sect2">
-<h3 id="_object_recognition_task"><a class="anchor" href="#_object_recognition_task"></a>3.3. Object Recognition task</h3>
+<h3 id="_object_detection_task"><a class="anchor" href="#_object_detection_task"></a>3.3. Object Detection task</h3>
 <div class="sect3">
 <h4 id="_dataset_approach_3"><a class="anchor" href="#_dataset_approach_3"></a>3.3.1. Dataset Approach</h4>
 <div class="paragraph">
-<p><em>TorchObjectDetectionTD</em> is a Torch Dataset for EO image object detection training dataset. This class inherits from <em>VisionDataset</em> and is designed to be compatible with PyTorch&#8217;s data loading tool.</p>
+<p>The <em>TorchObjectDetectionTD</em> inheriting from <em>VisionDataset</em> is a custom dataset for EO image object detection training
+dataset. This class is designed to be compatible with PyTorch&#8217;s data loading tool.</p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, class_map, transform=None)</p>
+<p>(1) __init__(self, td_list, root, class_map, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1920,17 +1909,17 @@ for image, label in data_pipe:
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>len</em>(self)</p>
+<p>(2) __len__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Returns the number of items in the dataset.</p>
+<p>Return the number of items in the dataset.</p>
 </li>
 </ul>
 </div>
@@ -1947,12 +1936,12 @@ for image, label in data_pipe:
 </div>
 </div>
 <div class="paragraph">
-<p>(3) <em>getitem</em>(self, index)</p>
+<p>(3) __getitem__(self, index)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2021,15 +2010,17 @@ image, label = dataset[0]</pre>
 <div class="sect3">
 <h4 id="_data_pipeline_approach_3"><a class="anchor" href="#_data_pipeline_approach_3"></a>3.3.2. Data Pipeline Approach</h4>
 <div class="paragraph">
-<p><em>TorchObjectDetectionDataPipe</em> is a data pipeline class used for target recognition tasks, inherited from <em>IterDataPipe</em>. This class can load and preprocess Earth Observation (EO) images and provide data in the form of iterators. It supports loading data from cache and can crop and transform images as needed.</p>
+<p>The <em>TorchObjectDetectionDataPipe</em> is a data pipeline class used for object detection tasks, inheriting from
+<em>IterDataPipe</em>. This class can load and preprocess Earth Observation (EO) images, provide data in the form of
+iterators, crop and transform images as needed.</p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, cache_path, class_map=None, crop=None, transform=None)</p>
+<p>(1) __init__(self, td_list, root, cache_path, class_map=None, crop=None, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2063,12 +2054,12 @@ image, label = dataset[0]</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>iter</em>(self)</p>
+<p>(2) __iter__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2130,23 +2121,24 @@ for image, label in data_pipe:
 <div class="sect3">
 <h4 id="_dataset_approach_4"><a class="anchor" href="#_dataset_approach_4"></a>3.4.1. Dataset Approach</h4>
 <div class="paragraph">
-<p><em>TorchChangeDetectionTD</em> is a dataset class designed for change detection tasks, extending <em>VisionDataset</em>. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide them for model training or evaluation. It supports applying transformations to images and labels.</p>
+<p>The <em>TorchChangeDetectionTD</em> is a custom dataset designed for change detection tasks, inheriting from <em>VisionDataset</em>.
+This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide them for model training or evaluation. It supports applying transformations to images and labels.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, transform)</p>
+<p>(1) __init__(self, td_list, root, transform)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Initializes the dataset with the provided parameters.</p>
+<p>Initialize the dataset with the provided parameters.</p>
 </li>
 </ul>
 </div>
@@ -2169,17 +2161,17 @@ for image, label in data_pipe:
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>len</em>(self)</p>
+<p>(2) __len__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Returns the number of samples in the dataset.</p>
+<p>Return the number of samples in the dataset.</p>
 </li>
 </ul>
 </div>
@@ -2196,17 +2188,17 @@ for image, label in data_pipe:
 </div>
 </div>
 <div class="paragraph">
-<p>(3) <em>getitem</em>(self, index)</p>
+<p>(3) __getitem__(self, index)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Retrieves the image pair and label at the specified index and applies any transformations.</p>
+<p>Retrieve the image pair and label at the specified index and applies any transformations.</p>
 </li>
 </ul>
 </div>
@@ -2238,12 +2230,12 @@ for image, label in data_pipe:
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Loads sample data, generating paths for images before and after changes and label paths.</p>
+<p>Load sample data, generate paths for images before and after change and label paths.</p>
 </li>
 </ul>
 </div>
@@ -2299,23 +2291,24 @@ print(before_img.shape, after_img.shape, label.shape)</pre>
 <div class="sect3">
 <h4 id="_data_pipeline_approach_4"><a class="anchor" href="#_data_pipeline_approach_4"></a>3.4.2. Data Pipeline Approach</h4>
 <div class="paragraph">
-<p><em>TorchChangeDetectionDataPipe</em> is a data pipeline class for change detection tasks, inheriting from <em>IterDataPipe</em> and <em>ABC</em>. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.</p>
+<p>The <em>TorchChangeDetectionDataPipe</em> is a data pipeline class for change detection tasks, inheriting from <em>IterDataPipe</em>
+and <em>ABC</em>. This class can load and preprocess Earth Observation (EO) images, including pairs of images before and after changes, and provide the data as an iterator. It supports loading data from a cache and can crop and transform images as needed.</p>
 </div>
 <div class="paragraph">
 <p><strong>Methods:</strong></p>
 </div>
 <div class="paragraph">
-<p>(1) <em>init</em>(self, td_list, root, cache_path, crop=None, transform=None)</p>
+<p>(1) __init__(self, td_list, root, cache_path, crop=None, transform=None)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Initializes the data pipeline with the provided parameters.</p>
+<p>Initialize the data pipeline with the provided parameters.</p>
 </li>
 </ul>
 </div>
@@ -2344,12 +2337,12 @@ print(before_img.shape, after_img.shape, label.shape)</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>(2) <em>iter</em>(self)</p>
+<p>(2) __iter__(self)</p>
 </div>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>a) Functionality:</p>
+<p>a) Description:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2374,7 +2367,7 @@ print(before_img.shape, after_img.shape, label.shape)</pre>
 <p><strong>Example:</strong></p>
 </div>
 <div class="paragraph">
-<p>To use this data pipeline, you need a list of training data objects containing URLs of images before and after changes and labels. You also need to specify the root directory for storing these files, the cache file path, and provide crop parameters. Optionally, you can apply transformations to the images and labels.</p>
+<p>To use this data pipeline, you need a list of training data objects containing URLs of images before and after changes, along with labels. Additionally, specify the root directory for storing these files, the cache file path, and provide crop parameters. Optionally, transformations can be applied to the images and labels.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2406,7 +2399,7 @@ for before_img, after_img, label in data_pipe:
 </div>
 </div>
 <div class="paragraph">
-<p>This configuration will load the data, apply the defined transformations, and prepare the image pairs and labels for training a change detection model. If crop parameters are specified, the images and labels will be cropped.</p>
+<p>This configuration will load the data, apply the defined transformations, and prepare the image pairs and labels for training a change detection model. If crop parameters are specified, the images and labels will be cropped accordingly.</p>
 </div>
 </div>
 </div>
@@ -2416,7 +2409,7 @@ for before_img, after_img, label in data_pipe:
 <h2 id="_pytdml_use_case"><a class="anchor" href="#_pytdml_use_case"></a>4. PyTDML Use Case</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Here we take the object detection dataset DOTA2.0 and RSOD dataset as examples to demonstrates the process of PyTDML.</p>
+<p>Here we take the object detection datasets DOTA 2.0 and RSOD as examples to demonstrate the process using PyTDML.</p>
 </div>
 <div class="paragraph">
 <p>DOTA2.0:</p>
@@ -2457,7 +2450,7 @@ for before_img, after_img, label in data_pipe:
 </ul>
 </div>
 <div class="paragraph">
-<p>The process of the case is shown in the following figure. It contains four steps: Loading of training data, Processing of training data, Transformation of training data and Iteration of training data.</p>
+<p>The process of the case is illustrated in the following figure, which includes four steps: Loading of training data, Processing of training data, Transformation of training data, and Iteration of training data.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2508,7 +2501,7 @@ with torch.no_grad():
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-07-05 15:51:09 +0800
+Last updated 2024-07-08 19:29:25 +0800
 </div>
 </div>
 </body>
