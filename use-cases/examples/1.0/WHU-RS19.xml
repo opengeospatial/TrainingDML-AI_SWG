@@ -157,6 +157,91 @@
             <tools>ArcGIS 10.1</tools>
         </procedure>
     </labeling>
+    <quality>
+        <type>DataQuality</type>
+    <scope>
+        <mcc:level>
+            <mcc:MD_ScopeCode
+                    codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_ScopeCode"
+                    codeListValue="dataset"/>
+        </mcc:level>
+        <mcc:levelDescription>
+            <mcc:MD_ScopeDescription>
+                <mcc:dataset>
+                    <gco:CharacterString>whu_rs19</gco:CharacterString>
+                </mcc:dataset>
+            </mcc:MD_ScopeDescription>
+        </mcc:levelDescription>
+    </scope>
+    <report>
+        <type>FormatConsistency</type>
+        <measure>
+            <measureDescription>Percentage of training samples with inconsistent image format</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with
+                inconsistent format
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+    </report>
+    <report>
+        <type>CompletenessOmission</type>
+        <measure>
+            <measureDescription>Percentage of missing scene labels</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with missing
+                labels
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+    </report>
+    <report>
+        <type>ThematicClassificationCorrectness</type>
+        <measure>
+            <measureDescription>Percentage of error scene labels</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Full test method to calculate the percentage of training samples with incorrect
+                scene labels
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+    </report>
+    <report>
+        <type>AI_ClassBalanceDegree</type>
+        <measure>
+            <measureDescription>Balance degree of label classes</measureDescription>
+        </measure>
+        <evaluationMethod>
+            <evaluationMethodDescription>Counting the number of training samples belonging to each class and calculating
+                the balance degree
+            </evaluationMethodDescription>
+        </evaluationMethod>
+        <result>
+            <quantitativeResult>
+                <value/>
+                <valueUnit>%</valueUnit>
+            </quantitativeResult>
+        </result>
+    </report>
+    </quality>
     <data>
         <type>AI_EOTrainingData</type>
         <id>airport_01</id>

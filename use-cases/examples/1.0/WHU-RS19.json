@@ -121,6 +121,97 @@
       "taskType": "Scene Classification"
     }
   ],
+  "quality": [
+    {
+      "type": "DataQuality",
+      "scope": {
+        "level": "dataset",
+        "levelDescription": [
+          {
+            "dataset": "whu_rs19"
+          }
+        ]
+      },
+      "report": [
+        {
+          "type": "FormatConsistency",
+          "measure": {
+            "measureDescription": "Percentage of training samples with inconsistent image format"
+          },
+          "evaluationMethod": {
+            "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with inconsistent format"
+          },
+          "result": [
+            {
+              "quantitativeResult": {
+                "value": [
+                  0
+                ],
+                "valueUnit": "%"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CompletenessOmission",
+          "measure": {
+            "measureDescription": "Percentage of missing scene labels"
+          },
+          "evaluationMethod": {
+            "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with missing labels"
+          },
+          "result": [
+            {
+              "quantitativeResult": {
+                "value": [
+                  0
+                ],
+                "valueUnit": "%"
+              }
+            }
+          ]
+        },
+        {
+          "type": "ThematicClassificationCorrectness",
+          "measure": {
+            "measureDescription": "Percentage of error scene labels"
+          },
+          "evaluationMethod": {
+            "evaluationMethodDescription": "Full test method to calculate the percentage of training samples with incorrect scene labels"
+          },
+          "result": [
+            {
+              "quantitativeResult": {
+                "value": [
+                  0
+                ],
+                "valueUnit": "%"
+              }
+            }
+          ]
+        },
+        {
+          "type": "AI_ClassBalanceDegree",
+          "measure": {
+            "measureDescription": "Balance degree of label classes"
+          },
+          "evaluationMethod": {
+            "evaluationMethodDescription": "Counting the number of training samples belonging to each class and calculating the balance degree"
+          },
+          "result": [
+            {
+              "quantitativeResult": {
+                "value": [
+                  93.5
+                ],
+                "valueUnit": "%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "labeling": [
     {
       "type": "AI_Labeling",
