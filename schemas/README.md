@@ -2,12 +2,13 @@
  * @Author: RuixiangLiuWHU lrx_lucky@whu.edu.cn
  * @Date: 2023-09-08 15:54:48
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-07-13 11:32:42
+ * @LastEditTime: 2024-07-13 11:34:06
  * @FilePath: \TrainingDML-AI_SWG\schemas\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 # TrainingDML-AI Schema
 <font color=red>Important</font>
+
 You SHALL make your implementations based on the 1.0 version of the schemas, which is stable.
 The 1.1 version is under review for the next version of the Standards, which is not ready for the public. 
 ## 1. Abstract
