@@ -37,6 +37,7 @@
             <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="data" type="AI_AbstractTrainingData" maxOccurs="unbounded"/>
+            <xs:element name="changesets" type="AI_TDChangeset" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
