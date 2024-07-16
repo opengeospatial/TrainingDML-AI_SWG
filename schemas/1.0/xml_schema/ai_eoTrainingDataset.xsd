@@ -15,6 +15,7 @@
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTask.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/dataQuality.xsd"/>
   <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_eoTrainingData.xsd"/>
+  <xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_tdChangeset.xsd"/>
   <xs:element name="AI_EOTrainingDataset" type="AI_EOTrainingDataset"/>
   <xs:complexType name="AI_EOTrainingDataset">
     <xs:sequence>
@@ -44,6 +45,7 @@
       <xs:element name="labeling" type="AI_Labeling" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="quality" type="DataQuality" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="data" type="AI_EOTrainingData" maxOccurs="unbounded"/>
+      <xs:element name="changesets" type="AI_TDChangeset" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
