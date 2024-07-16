@@ -10,6 +10,6 @@
 2+|Abstract Test 9
 |Test ID |/conf/base/isoqualitytype/element
 |Requirement |/req/base/isoqualitytype/element
-|Test purpose |Verify that instance documents using the QualityElement JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/qualityElement.json.
+|Test purpose |Verify that instance documents using the QualityElement JSON objects validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/part2/1.0/qualityElement.json.
 |Test method |Validate the instance document against the qualityElement.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

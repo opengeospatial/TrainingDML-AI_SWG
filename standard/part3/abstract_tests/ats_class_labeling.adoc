@@ -12,7 +12,7 @@
 2+|Abstract Test 24
 |Test ID |/conf/ailabeling/labeling
 |Requirement |/req/ailabeling/labeling
-|Test purpose |Verify that instance documents using the AI_Labeling XML elements listed in Table 13 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labeling.xsd.
+|Test purpose |Verify that instance documents using the AI_Labeling XML elements listed in Table 13 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_labeling.xsd.
 |Test method |Validate the instance document against the ai_labeling.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -21,7 +21,7 @@
 2+|Abstract Test 25
 |Test ID |/conf/ailabeling/labeler
 |Requirement |/req/ailabeling/labeler
-|Test purpose |Verify that instance documents using the AI_Labeler XML elements listed in Table 14 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labeler.xsd.
+|Test purpose |Verify that instance documents using the AI_Labeler XML elements listed in Table 14 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_labeler.xsd.
 |Test method |Validate the instance document against the ai_labeler.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -30,7 +30,7 @@
 2+|Abstract Test 26
 |Test ID |/conf/ailabeling/labelingprocedure
 |Requirement |/req/ailabeling/labelingprocedure
-|Test purpose |Verify that instance documents using the AI_LabelingProcedure XML elements listed in Table 15 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingProcedure.xsd.
+|Test purpose |Verify that instance documents using the AI_LabelingProcedure XML elements listed in Table 15 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_labelingProcedure.xsd.
 |Test method |Validate the instance document against the ai_labelingProcedure.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -39,6 +39,6 @@
 2+|Abstract Test 27
 |Test ID |/conf/ailabeling/labelingmethodcode
 |Requirement |/req/ailabeling/labelingmethodcode
-|Test purpose |Verify that instance documents using the AI_LabelingMethodCode XML elements validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingMethodCode.xsd.
+|Test purpose |Verify that instance documents using the AI_LabelingMethodCode XML elements validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_labelingMethodCode.xsd.
 |Test method |Validate the instance document against the ai_labelingMethodCode.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===

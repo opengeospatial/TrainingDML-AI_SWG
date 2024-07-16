@@ -12,6 +12,6 @@
 2+|Abstract Test 29
 |Test ID |/conf/aitdchangeset/tdchangeset
 |Requirement |/req/aitdchangeset/tdchangeset
-|Test purpose |Verify that instance documents using the AI_TDChangeset JSON objects listed in Table 17 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_tdChangeset.json.
+|Test purpose |Verify that instance documents using the AI_TDChangeset JSON objects listed in Table 17 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_tdChangeset.json.
 |Test method |Validate the instance document against the ai_tdChangeset.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

@@ -11,7 +11,7 @@
 2+|Abstract Test 17
 |Test ID |/conf/aitask/task
 |Requirement |/req/aitask/task
-|Test purpose |Verify that instance documents using the AI_Task XML elements listed in Table 7 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_task.xsd.
+|Test purpose |Verify that instance documents using the AI_Task XML elements listed in Table 7 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_task.xsd.
 |Test method |Validate the instance document against the ai_task.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -20,6 +20,6 @@
 2+|Abstract Test 18
 |Test ID |/conf/aitask/eotask
 |Requirement |/req/aitask/eotask
-|Test purpose |Verify that instance documents using the AI_EOTask XML elements listed in Table 7 and Table 8 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_eoTask.xsd.
+|Test purpose |Verify that instance documents using the AI_EOTask XML elements listed in Table 7 and Table 8 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_eoTask.xsd.
 |Test method |Validate the instance document against the ai_eoTask.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===

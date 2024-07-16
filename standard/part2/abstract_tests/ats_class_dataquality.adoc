@@ -13,6 +13,6 @@
 2+|Abstract Test 28
 |Test ID |/conf/aidataquality/classbalancedegree
 |Requirement |/req/aidataquality/classbalancedegree
-|Test purpose |Verify that instance documents using the AI_ClassBalanceDegree JSON objects listed in Table 16 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_classBalanceDegree.json.
+|Test purpose |Verify that instance documents using the AI_ClassBalanceDegree JSON objects listed in Table 16 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_classBalanceDegree.json.
 |Test method |Validate the instance document against the ai_classBalanceDegree.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

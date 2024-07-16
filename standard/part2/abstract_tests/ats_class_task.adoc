@@ -11,7 +11,7 @@
 2+|Abstract Test 17
 |Test ID |/conf/aitask/task
 |Requirement |/req/aitask/task
-|Test purpose |Verify that instance documents using the AI_Task JSON objects listed in Table 7 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_task.json.
+|Test purpose |Verify that instance documents using the AI_Task JSON objects listed in Table 7 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_task.json.
 |Test method |Validate the instance document against the ai_task.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -20,6 +20,6 @@
 2+|Abstract Test 18
 |Test ID |/conf/aitask/eotask
 |Requirement |/req/aitask/eotask
-|Test purpose |Verify that instance documents using the AI_EOTask JSON objects listed in Table 7 and Table 8 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_eoTask.json.
+|Test purpose |Verify that instance documents using the AI_EOTask JSON objects listed in Table 7 and Table 8 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_eoTask.json.
 |Test method |Validate the instance document against the ai_eoTask.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

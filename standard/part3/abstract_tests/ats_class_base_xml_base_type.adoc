@@ -28,7 +28,7 @@
 2+|Abstract Test 3
 |Test ID |/conf/base/xmlbasetype/namedvalue
 |Requirement |/req/base/xmlbasetype/namedvalue
-|Test purpose |Verify that XML instance documents claiming conformance to this specification validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/namedValue.xsd.
+|Test purpose |Verify that XML instance documents claiming conformance to this specification validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/namedValue.xsd.
 |Test method |Validate the instance document against the namedValue.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 

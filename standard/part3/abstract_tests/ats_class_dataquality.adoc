@@ -13,6 +13,6 @@
 2+|Abstract Test 28
 |Test ID |/conf/aidataquality/classbalancedegree
 |Requirement |/req/aidataquality/classbalancedegree
-|Test purpose |Verify that instance documents using the AI_ClassBalanceDegree XML elements listed in Table 16 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_classBalanceDegree.xsd.
+|Test purpose |Verify that instance documents using the AI_ClassBalanceDegree XML elements listed in Table 16 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_classBalanceDegree.xsd.
 |Test method |Validate the instance document against the ai_classBalanceDegree.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===

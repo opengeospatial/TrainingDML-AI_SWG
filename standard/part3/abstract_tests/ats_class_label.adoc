@@ -12,7 +12,7 @@
 2+|Abstract Test 19
 |Test ID |/conf/ailabel/label
 |Requirement |/req/ailabel/label
-|Test purpose |Verify that instance documents using the AI_Label XML elements listed in Table 9 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_label.xsd.
+|Test purpose |Verify that instance documents using the AI_Label XML elements listed in Table 9 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_label.xsd.
 |Test method |Validate the instance document against the ai_label.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -21,7 +21,7 @@
 2+|Abstract Test 20
 |Test ID |/conf/ailabel/scenelabel
 |Requirement |/req/ailabel/scenelabel
-|Test purpose |VVerify that instance documents using the AI_SceneLabel XML elements listed in Table 10 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_sceneLabel.xsd.
+|Test purpose |VVerify that instance documents using the AI_SceneLabel XML elements listed in Table 10 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_sceneLabel.xsd.
 |Test method |Validate the instance document against the ai_sceneLabel.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -30,7 +30,7 @@
 2+|Abstract Test 21
 |Test ID |/conf/ailabel/objectlabel
 |Requirement |/req/ailabel/objectlabel
-|Test purpose |Verify that instance documents using the AI_ObjectLabel XML elements listed in Table 11 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_objectLabel.xsd.
+|Test purpose |Verify that instance documents using the AI_ObjectLabel XML elements listed in Table 11 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_objectLabel.xsd.
 |Test method |Validate the instance document against the ai_objectLabel.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 
@@ -39,7 +39,7 @@
 2+|Abstract Test 22
 |Test ID |/conf/ailabel/pixellabel
 |Requirement |/req/ailabel/pixellabel
-|Test purpose |Verify that instance documents using the AI_PixelLabel XML elements listed in Table 12 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_pixelLabel.xsd.
+|Test purpose |Verify that instance documents using the AI_PixelLabel XML elements listed in Table 12 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_pixelLabel.xsd.
 |Test method |Validate the instance document against the ai_pixelLabel.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===
 

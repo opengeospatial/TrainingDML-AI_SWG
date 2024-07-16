@@ -15,7 +15,7 @@
 2+|Abstract Test 14
 |Test ID |/conf/aitrainingdata/trainingdata
 |Requirement |/req/aitrainingdata/trainingdata
-|Test purpose |Verify that instance documents using the AI_TrainingData JSON objects listed in Table 5 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_trainingData.json.
+|Test purpose |Verify that instance documents using the AI_TrainingData JSON objects listed in Table 5 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_trainingData.json.
 |Test method |Validate the instance document against the ai_trainingData.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -24,7 +24,7 @@
 2+|Abstract Test 15
 |Test ID |/conf/aitrainingdata/trainingtypecode
 |Requirement |/req/aitrainingdata/trainingtypecode
-|Test purpose |Verify that instance documents using the AI_TrainingTypeCode JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_trainingTypeCode.json.
+|Test purpose |Verify that instance documents using the AI_TrainingTypeCode JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_trainingTypeCode.json.
 |Test method |Validate the instance document against the ai_trainingTypeCode.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -33,6 +33,6 @@
 2+|Abstract Test 16
 |Test ID |/conf/aitrainingdata/eotrainingdata
 |Requirement |/req/aitrainingdata/eotrainingdata
-|Test purpose |Verify that instance documents using the AI_EOTrainingData JSON objects listed in Table 5 and Table 6 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_eoTrainingData.json.
+|Test purpose |Verify that instance documents using the AI_EOTrainingData JSON objects listed in Table 5 and Table 6 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_eoTrainingData.json.
 |Test method |Validate the instance document against the ai_eoTrainingData.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===

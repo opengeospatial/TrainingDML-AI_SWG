@@ -12,6 +12,6 @@
 2+|Abstract Test 29
 |Test ID |/conf/aitdchangeset/tdchangeset
 |Requirement |/req/aitdchangeset/tdchangeset
-|Test purpose |Verify that instance documents using the AI_TDChangeset XML elements listed in Table 17 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_tdChangeset.xsd.
+|Test purpose |Verify that instance documents using the AI_TDChangeset XML elements listed in Table 17 validate against the XML schema specified in http://schemas.opengis.net/trainingdml-ai/part3/1.0/ai_tdChangeset.xsd.
 |Test method |Validate the instance document against the ai_tdChangeset.xsd schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the XML schema specification.
 |===

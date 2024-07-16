@@ -12,7 +12,7 @@
 2+|Abstract Test 19
 |Test ID |/conf/ailabel/label
 |Requirement |/req/ailabel/label
-|Test purpose |Verify that instance documents using the AI_Label JSON objects listed in Table 9 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_label.json.
+|Test purpose |Verify that instance documents using the AI_Label JSON objects listed in Table 9 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_label.json.
 |Test method |Validate the instance document against the ai_label.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -21,7 +21,7 @@
 2+|Abstract Test 20
 |Test ID |/conf/ailabel/scenelabel
 |Requirement |/req/ailabel/scenelabel
-|Test purpose |Verify that instance documents using the AI_SceneLabel JSON objects listed in Table 10 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_sceneLabel.json.
+|Test purpose |Verify that instance documents using the AI_SceneLabel JSON objects listed in Table 10 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_sceneLabel.json.
 |Test method |Validate the instance document against the ai_sceneLabel.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -30,7 +30,7 @@
 2+|Abstract Test 21
 |Test ID |/conf/ailabel/objectlabel
 |Requirement |/req/ailabel/objectlabel
-|Test purpose |Verify that instance documents using the AI_ObjectLabel JSON objects listed in Table 11 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_objectLabel.json.
+|Test purpose |Verify that instance documents using the AI_ObjectLabel JSON objects listed in Table 11 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_objectLabel.json.
 |Test method |Validate the instance document against the ai_objectLabel.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -39,7 +39,7 @@
 2+|Abstract Test 22
 |Test ID |/conf/ailabel/pixellabel
 |Requirement |/req/ailabel/pixellabel
-|Test purpose |Verify that instance documents using the AI_PixelLabel JSON objects listed in Table 12 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_pixelLabel.json.
+|Test purpose |Verify that instance documents using the AI_PixelLabel JSON objects listed in Table 12 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_pixelLabel.json.
 |Test method |Validate the instance document against the ai_pixelLabel.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 

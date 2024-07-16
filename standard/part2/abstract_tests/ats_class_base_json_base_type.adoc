@@ -28,7 +28,7 @@
 2+|Abstract Test 3
 |Test ID |/conf/base/jsonbasetype/namedvalue
 |Requirement |/req/base/jsonbasetype/namedvalue
-|Test purpose |Verify that JSON instance documents claiming conformance to this specification validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/1.0/namedValue.json.
+|Test purpose |Verify that JSON instance documents claiming conformance to this specification validate against the JSON schema specified in  http://schemas.opengis.net/trainingdml-ai/part2/1.0/namedValue.json.
 |Test method |Validate the instance document against the namedValue.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 

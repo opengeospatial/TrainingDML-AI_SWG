@@ -12,7 +12,7 @@
 2+|Abstract Test 24
 |Test ID |/conf/ailabeling/labeling
 |Requirement |/req/ailabeling/labeling
-|Test purpose |Verify that instance documents using the AI_Labeling JSON objects listed in Table 13 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labeling.json.
+|Test purpose |Verify that instance documents using the AI_Labeling JSON objects listed in Table 13 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_labeling.json.
 |Test method |Validate the instance document against the ai_labeling.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -21,7 +21,7 @@
 2+|Abstract Test 25
 |Test ID |/conf/ailabeling/labeler
 |Requirement |/req/ailabeling/labeler
-|Test purpose |Verify that instance documents using the AI_Labeler JSON objects listed in Table 14 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labeler.json.
+|Test purpose |Verify that instance documents using the AI_Labeler JSON objects listed in Table 14 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_labeler.json.
 |Test method |Validate the instance document against the ai_labeler.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -30,7 +30,7 @@
 2+|Abstract Test 26
 |Test ID |/conf/ailabeling/labelingprocedure
 |Requirement |/req/ailabeling/labelingprocedure
-|Test purpose |Verify that instance documents using the AI_LabelingProcedure JSON objects listed in Table 15 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingProcedure.json.
+|Test purpose |Verify that instance documents using the AI_LabelingProcedure JSON objects listed in Table 15 validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_labelingProcedure.json.
 |Test method |Validate the instance document against the ai_labelingProcedure.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
 
@@ -39,6 +39,6 @@
 2+|Abstract Test 27
 |Test ID |/conf/ailabeling/labelingmethodcode
 |Requirement |/req/ailabeling/labelingmethodcode
-|Test purpose |Verify that instance documents using the AI_LabelingMethodCode JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/1.0/ai_labelingMethodCode.json.
+|Test purpose |Verify that instance documents using the AI_LabelingMethodCode JSON objects validate against the JSON schema specified in http://schemas.opengis.net/trainingdml-ai/part2/1.0/ai_labelingMethodCode.json.
 |Test method |Validate the instance document against the ai_LabelingMethodCode.json schema to verify the above requirement. The process may be using an appropriate software tool for validation or be a manual process that checks all definitions from the JSON schema specification.
 |===
