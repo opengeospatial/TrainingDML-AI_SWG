@@ -59,7 +59,7 @@
     {
       "type": "AI_EOTrainingData",
       "id": "0",
-      "bbox": [
+      "extent": [
         1560160,
         5176338.4,
         1566661.4,

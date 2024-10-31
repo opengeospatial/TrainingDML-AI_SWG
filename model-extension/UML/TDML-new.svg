@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 TDML-new.svg TDML-new -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="12.9564in" height="12.1167in"
+		viewBox="0 0 932.864 872.401" xml:space="preserve" color-interpolation-filters="sRGB" class="st18">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:prompt="" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:url(#grad0-5);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#000000;font-family:Times New Roman;font-size:1.00001em;font-weight:bold}
+		.st3 {marker-end:url(#mrkr14-28);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st4 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st5 {fill:url(#grad0-33);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st6 {marker-start:url(#mrkr22-56);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st7 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st8 {fill:#000000;font-family:Times New Roman;font-size:1.00001em}
+		.st9 {fill:#93d05b;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st10 {fill:none;stroke:#000000;stroke-dasharray:7,5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st11 {fill:#5b9bd5}
+		.st12 {stroke:#5592c9;stroke-dasharray:1,0.5;stroke-linecap:butt;stroke-width:0.5}
+		.st13 {fill:#000000;font-family:Times New Roman;font-size:0.833336em}
+		.st14 {font-size:1em}
+		.st15 {marker-end:url(#mrkr12-209);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st16 {fill:#5b9bd5;fill-opacity:0}
+		.st17 {stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5;visibility:hidden}
+		.st18 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad0-5" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#85b6cc" stop-opacity="1"/>
+			<stop offset="0.74" stop-color="#a4c8d9" stop-opacity="1"/>
+			<stop offset="0.83" stop-color="#a4c8d9" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c2dae5" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="grad0-33" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(90 0.5 0.5)">
+			<stop offset="0" stop-color="#00b050" stop-opacity="1"/>
+			<stop offset="0" stop-color="#99cd84" stop-opacity="1"/>
+			<stop offset="1" stop-color="#92d050" stop-opacity="1"/>
+			<stop offset="1" stop-color="#00b050" stop-opacity="1"/>
+			<stop offset="1" stop-color="#c2dae5" stop-opacity="1"/>
+		</linearGradient>
+	</defs>
+	<defs id="Markers">
+		<g id="lend14">
+			<path d="M 3 -1 L 0 0 L 3 1 L 3 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr14-28" class="st4" v:arrowType="14" v:arrowSize="2" v:setback="10.56" refX="-10.56" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend14" transform="scale(-3.52,-3.52) "/>
+		</marker>
+		<g id="lend22">
+			<path d="M 0 0 L 2.25 -1.125 L 4.5 0 L 2.25 1.125 L 0 0 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr22-56" class="st4" v:arrowType="22" v:arrowSize="2" v:setback="15.48" refX="15.48" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend22" transform="scale(3.52) "/>
+		</marker>
+		<g id="lend12">
+			<path d="M 3 1 L 0 0 L 3 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr12-209" class="st4" v:arrowType="12" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend12" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="16" v:index="7" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>TDML-new</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="连接线" v:index="0"/>
+		<g id="group1000-1" transform="translate(322.867,-346.597)" v:mID="1000" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(4.8837470902478):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_AbstractDeepLearningModel)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1357</title>
+			<desc>AI_AbstractDeepLearningModel</desc>
+			<g id="shape1001-2" v:mID="1001" v:groupContext="shape">
+				<title>工作表.1001</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.51 872.4 L233.51 674.73 L0 674.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1002-6" v:mID="1002" v:groupContext="shape" transform="translate(0,-197.673)">
+				<title>工作表.1002</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_AbstractDeepLearningModel)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.51 872.4 L233.51 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1004-9" v:mID="1004" v:groupContext="shape" transform="translate(225.002,-229.077)">
+				<title>工作表.1004</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1000-10" v:mID="1000" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="116.753" cy="659.026" width="233.51" height="31.4037"/>
+				<text x="4" y="662.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_AbstractDeepLearningModel</text>			</g>
+		</g>
+		<g id="group1010-12" transform="translate(322.691,-107.957)" v:mID="1010" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(4.8837470902478):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_EODeepLearningModel)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1367</title>
+			<desc>AI_EODeepLearningModel</desc>
+			<g id="shape1011-13" v:mID="1011" v:groupContext="shape">
+				<title>工作表.1011</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 842.73 L0 842.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1012-16" v:mID="1012" v:groupContext="shape" transform="translate(0,-29.673)">
+				<title>工作表.1012</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_EODeepLearningModel)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1014-19" v:mID="1014" v:groupContext="shape" transform="translate(225.354,-61.0767)">
+				<title>工作表.1014</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1010-20" v:mID="1010" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="116.929" cy="827.026" width="233.86" height="31.4037"/>
+				<text x="4" y="830.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_EODeepLearningModel</text>			</g>
+		</g>
+		<g id="group1015-22" transform="translate(432.533,-169.034)" v:mID="1015" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.036992227104985):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-1.7763568394003E-15):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.036992227107708):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5707963267949):32"/>
+			</v:userDefs>
+			<title>继承.1372</title>
+			<g id="shape1015-23" v:mID="1015" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M7.09 872.4 L7.09 705.4" class="st3"/>
+			</g>
+		</g>
+		<g id="group1034-29" transform="translate(24.1949,-677.317)" v:mID="1034" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(2.3138770951306):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_AbstractTrainingDataset)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1406</title>
+			<desc>AI_AbstractTrainingDataset</desc>
+			<g id="shape1035-30" v:mID="1035" v:groupContext="shape">
+				<title>工作表.1035</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 863.9 L0 863.9 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1036-34" v:mID="1036" v:groupContext="shape" transform="translate(0,-8.50394)">
+				<title>工作表.1036</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_AbstractTrainingDataset)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1038-37" v:mID="1038" v:groupContext="shape" transform="translate(214.016,-39.9076)">
+				<title>工作表.1038</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1034-38" v:mID="1034" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="848.195" width="222.52" height="31.4037"/>
+				<text x="4" y="851.8" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_AbstractTrainingDataset</text>			</g>
+		</g>
+		<g id="group1046-40" transform="translate(31.0393,-430.136)" v:mID="1046" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(2.3138770951306):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_AbstractTask)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1418</title>
+			<desc>AI_AbstractTask</desc>
+			<g id="shape1047-41" v:mID="1047" v:groupContext="shape">
+				<title>工作表.1047</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 842.73 L0 842.73 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1048-44" v:mID="1048" v:groupContext="shape" transform="translate(0,-29.673)">
+				<title>工作表.1048</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_AbstractTask)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 841 L0 841 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1050-47" v:mID="1050" v:groupContext="shape" transform="translate(225.354,-61.0767)">
+				<title>工作表.1050</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1046-48" v:mID="1046" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="116.929" cy="827.026" width="233.86" height="31.4037"/>
+				<text x="4" y="830.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_AbstractTask</text>			</g>
+		</g>
+		<g id="group1051-50" transform="translate(322.867,-467.991)" v:mID="1051" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.01211198166158):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.00015337660638881):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.3821342784866):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(-0.0047542010807939):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-3.1289301171753):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(-3.12915211611):32"/>
+			</v:userDefs>
+			<title>聚合.1423</title>
+			<g id="shape1051-51" v:mID="1051" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-15.48 879.38 L-15.84 879.38 L-57.97 879.72" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1056-57" v:mID="1056" v:groupContext="shape" transform="translate(281.378,-434.393)">
+			<title>工作表.1056</title>
+			<desc>1..*</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1..*</text>		</g>
+		<g id="shape1057-60" v:mID="1057" v:groupContext="shape" transform="translate(268.545,-465.045)">
+			<title>工作表.1057</title>
+			<desc>+ tasks</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.8681" cy="862.401" width="57.74" height="20"/>
+			<rect x="0" y="852.401" width="57.7362" height="20" class="st7"/>
+			<text x="11.98" y="865.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ tasks</text>		</g>
+		<g id="group1058-63" transform="translate(652.219,-494.943)" v:mID="1058" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(5.1490135087048):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_AbstractModelQuality)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1430</title>
+			<desc>AI_AbstractModelQuality</desc>
+			<g id="shape1059-64" v:mID="1059" v:groupContext="shape">
+				<title>工作表.1059</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 794.73 L0 794.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1060-67" v:mID="1060" v:groupContext="shape" transform="translate(0,-77.6731)">
+				<title>工作表.1060</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_AbstractModelQuality)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1062-70" v:mID="1062" v:groupContext="shape" transform="translate(214.016,-109.077)">
+				<title>工作表.1062</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1058-71" v:mID="1058" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="779.026" width="222.52" height="31.4037"/>
+				<text x="4" y="782.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_AbstractModelQuality</text>			</g>
+		</g>
+		<g id="group1063-73" transform="translate(654.345,-0.375)" v:mID="1063" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(3.6190833939588):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_EOModelQuality)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1435</title>
+			<desc>AI_EOModelQuality</desc>
+			<g id="shape1064-74" v:mID="1064" v:groupContext="shape">
+				<title>工作表.1064</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 842.73 L0 842.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1065-77" v:mID="1065" v:groupContext="shape" transform="translate(0,-29.673)">
+				<title>工作表.1065</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_EOModelQuality)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1067-80" v:mID="1067" v:groupContext="shape" transform="translate(214.016,-61.0767)">
+				<title>工作表.1067</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1063-81" v:mID="1063" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="827.026" width="222.52" height="31.4037"/>
+				<text x="4" y="830.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_EOModelQuality</text>			</g>
+		</g>
+		<g id="group1073-83" transform="translate(882.888,-30.9133)" v:mID="1073" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.12347801254544):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-1.1102230246252E-16):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.12347801254572):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(2.1579026129206E-14):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(3.1415926535898):32"/>
+			</v:userDefs>
+			<title>继承.1445</title>
+			<g id="shape1073-84" v:mID="1073" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-6.02 872.4 L29.98 872.4 L29.98 353.83 L2.41 353.83" class="st3"/>
+			</g>
+		</g>
+		<g id="shape1078-89" v:mID="1078" v:groupContext="shape" transform="translate(615.685,-487.016)">
+			<title>工作表.1078</title>
+			<desc>0..1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..1</text>		</g>
+		<g id="shape1079-92" v:mID="1079" v:groupContext="shape" transform="translate(560.926,-487.016)">
+			<title>工作表.1079</title>
+			<desc>+ quality</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.4126" cy="862.401" width="52.83" height="20"/>
+			<rect x="0" y="852.401" width="52.8252" height="20" class="st7"/>
+			<text x="4.86" y="865.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ quality</text>		</g>
+		<g id="group1080-95" transform="translate(31.6848,-107.957)" v:mID="1080" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(2.3138770951306):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_EOTask)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#93d05b)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1452</title>
+			<desc>AI_EOTask</desc>
+			<g id="shape1081-96" v:mID="1081" v:groupContext="shape">
+				<title>工作表.1081</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 842.73 L0 842.73 L0 872.4 Z" class="st9"/>
+			</g>
+			<g id="shape1082-98" v:mID="1082" v:groupContext="shape" transform="translate(0,-29.673)">
+				<title>工作表.1082</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_EOTask)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L233.86 872.4 L233.86 841 L0 841 L0 872.4 Z" class="st9"/>
+			</g>
+			<g id="shape1084-100" v:mID="1084" v:groupContext="shape" transform="translate(225.354,-61.0767)">
+				<title>工作表.1084</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1080-101" v:mID="1080" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+				<v:textRect cx="116.929" cy="827.026" width="233.86" height="31.4037"/>
+				<text x="4" y="830.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_EOTask</text>			</g>
+		</g>
+		<g id="group1085-103" transform="translate(155.378,-169.034)" v:mID="1085" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.00013449323513237):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.054396209092108):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.00013449323512704):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.054396209089767):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5732687961695):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5732687961695):32"/>
+			</v:userDefs>
+			<title>继承.1457</title>
+			<g id="shape1085-104" v:mID="1085" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-6.76 872.4 L-7.38 621.86" class="st3"/>
+			</g>
+		</g>
+		<g id="shape1090-109" v:mID="1090" v:groupContext="shape" transform="translate(0.25,-717.146)">
+			<title>工作表.1090</title>
+			<desc>From TrainingDML-AI</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="76.5355" cy="862.401" width="153.08" height="20"/>
+			<rect x="0" y="852.401" width="153.071" height="20" class="st7"/>
+			<text x="15.37" y="866" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>From TrainingDML-AI</text>		</g>
+		<g id="group1091-112" transform="translate(556.373,-461.135)" v:mID="1091" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.038598446980137):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.00011166102084825):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.39017789052073):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.82408205621444):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(0.0028928808823983):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.1285973115992):32"/>
+			</v:userDefs>
+			<title>聚合.1463</title>
+			<g id="shape1091-113" v:mID="1091" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M15.48 872.4 L15.84 872.4 L67.5 872.4 L67.5 784.05 L95.85 784.05" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1126-118" v:mID="1126" v:groupContext="shape" transform="translate(11.9055,-416.15)">
+			<title>矩形.1498</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 872.4 L263.62 872.4 L263.62 778.86 L0 778.86 L0 872.4 Z" class="st10"/>
+		</g>
+		<g id="shape1139-120" v:mID="1139" v:groupContext="shape" transform="translate(27.0295,-680.152)">
+			<title>分隔符.1511</title>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Separator)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="ItemIndex" v:prompt="" v:val="VT0(-1):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="ItemIndex" v:prompt="" v:val="VT0(1):26"/>
+			</v:userDefs>
+			<path d="M0 870.98 L216.85 870.98 L0 870.98 Z" class="st11"/>
+			<path d="M0 870.98 L216.85 870.98" class="st12"/>
+		</g>
+		<g id="shape1140-123" v:mID="1140" v:groupContext="shape" transform="translate(7.65356,-487.016)">
+			<title>工作表.1140</title>
+			<desc>From TrainingDML-AI</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="70.1575" cy="860.314" width="140.32" height="24.1732"/>
+			<rect x="0" y="848.228" width="140.315" height="24.1732" class="st7"/>
+			<text x="8.99" y="863.91" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>From TrainingDML-AI</text>		</g>
+		<g id="group1209-126" transform="translate(556.549,-138.496)" v:mID="1209" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.043037944176287):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.00011166102111781):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.33205439569154):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(-1.0293177220977):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(0.00259447268466):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(-1.2587397557794):32"/>
+			</v:userDefs>
+			<title>聚合.1209</title>
+			<g id="shape1209-127" v:mID="1209" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M15.48 872.4 L15.84 872.4 L74.14 872.4 L74.14 979.98 L97.8 979.98" class="st6"/>
+			</g>
+		</g>
+		<g id="group1215-132" transform="translate(322.691,-131.409)" v:mID="1215" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.011975644116335):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.00011204001228671):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.37783214743911):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(-0.0035097489861609):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-3.1322372700731):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(-3.1323037456328):32"/>
+			</v:userDefs>
+			<title>聚合.1215</title>
+			<g id="shape1215-133" v:mID="1215" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-15.48 865.31 L-15.84 865.31 L-57.15 865.31" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1220-138" v:mID="1220" v:groupContext="shape" transform="translate(271.749,-106.382)">
+			<title>工作表.1220</title>
+			<desc>1..*</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1..*</text>		</g>
+		<g id="shape1221-141" v:mID="1221" v:groupContext="shape" transform="translate(263.469,-144.729)">
+			<title>工作表.1221</title>
+			<desc>+ tasks</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="25.3999" cy="862.401" width="50.8" height="20"/>
+			<rect x="0" y="852.401" width="50.7998" height="20" class="st7"/>
+			<text x="8.52" y="865.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ tasks</text>		</g>
+		<g id="shape1237-144" v:mID="1237" v:groupContext="shape" transform="translate(368.754,-589.847)">
+			<title>工作表.1237</title>
+			<desc>+ optimization</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.8019" cy="862.401" width="67.61" height="20"/>
+			<rect x="0" y="852.401" width="67.6037" height="20" class="st7"/>
+			<text x="4.46" y="864.9" class="st13" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ optimization</text>		</g>
+		<g id="shape1238-147" v:mID="1238" v:groupContext="shape" transform="translate(435.459,-589.847)">
+			<title>工作表.1238</title>
+			<desc>0..1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="10.83" y="865.4" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..1</text>		</g>
+		<g id="group1314-150" transform="translate(326.234,-629.592)" v:mID="1314" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(5.1490135087048):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_Optimization)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1314</title>
+			<desc>AI_Optimization</desc>
+			<g id="shape1315-151" v:mID="1315" v:groupContext="shape">
+				<title>工作表.1315</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L224.35 872.4 L224.35 770.73 L0 770.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1316-154" v:mID="1316" v:groupContext="shape" transform="translate(0,-101.673)">
+				<title>工作表.1316</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_Optimization)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L224.35 872.4 L224.35 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1318-157" v:mID="1318" v:groupContext="shape" transform="translate(215.851,-133.077)">
+				<title>工作表.1318</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1314-158" v:mID="1314" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="112.177" cy="755.026" width="224.36" height="31.4037"/>
+				<text x="4" y="758.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_Optimization</text>			</g>
+		</g>
+		<g id="group1320-160" transform="translate(446.27,-575.674)" v:mID="1320" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.00029449723790975):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.011296997314775):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.0092914020086861):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.35642080823254):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5968590535584):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5968590535546):32"/>
+			</v:userDefs>
+			<title>聚合.1320</title>
+			<g id="shape1320-161" v:mID="1320" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-6.9 856.92 L-6.91 856.56 L-7.52 818.48" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1335-166" v:mID="1335" v:groupContext="shape" transform="translate(577.617,-70.9493)">
+			<title>工作表.1335</title>
+			<desc>+ quality</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.4126" cy="862.401" width="52.83" height="20"/>
+			<rect x="0" y="852.401" width="52.8252" height="20" class="st7"/>
+			<text x="4.86" y="865.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ quality</text>		</g>
+		<g id="shape1336-169" v:mID="1336" v:groupContext="shape" transform="translate(631.049,-70.9493)">
+			<title>工作表.1336</title>
+			<desc>0..1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..1</text>		</g>
+		<g id="shape1449-172" v:mID="1449" v:groupContext="shape" transform="translate(7.33661,-604.02)">
+			<title>矩形.1449</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 872.4 L264.41 872.4 L264.41 741.05 L0 741.05 L0 872.4 Z" class="st10"/>
+		</g>
+		<g id="shape1450-174" v:mID="1450" v:groupContext="shape" transform="translate(264.086,-703.233)">
+			<title>工作表.1450</title>
+			<desc>+ training datasets</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.8019" cy="862.401" width="67.61" height="20"/>
+			<rect x="0" y="852.401" width="67.6037" height="20" class="st7"/>
+			<text x="14.18" y="859.9" class="st13" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ training <tspan
+						x="17.97" dy="1em" class="st14">datasets</tspan></text>		</g>
+		<g id="shape1451-178" v:mID="1451" v:groupContext="shape" transform="translate(283.715,-664.886)">
+			<title>工作表.1451</title>
+			<desc>0..*</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="10.83" y="865.4" class="st13" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..*</text>		</g>
+		<g id="group1455-181" transform="translate(326.234,-810.949)" v:mID="1455" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(5.1490135087048):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_ModelDeveloper)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1455</title>
+			<desc>AI_ModelDeveloper</desc>
+			<g id="shape1456-182" v:mID="1456" v:groupContext="shape">
+				<title>工作表.1456</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L224.35 872.4 L224.35 842.73 L0 842.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1457-185" v:mID="1457" v:groupContext="shape" transform="translate(0,-29.673)">
+				<title>工作表.1457</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_ModelDeveloper)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L224.35 872.4 L224.35 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1459-188" v:mID="1459" v:groupContext="shape" transform="translate(215.851,-61.0767)">
+				<title>工作表.1459</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1455-189" v:mID="1455" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="112.177" cy="827.026" width="224.36" height="31.4037"/>
+				<text x="4" y="830.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_ModelDeveloper</text>			</g>
+		</g>
+		<g id="group1461-191" transform="translate(431.325,-762.669)" v:mID="1461" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-5.7002475712942E-05):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.010087979295907):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.0017149343253529):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.3182762316529):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5764468012243):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5761844694167):32"/>
+			</v:userDefs>
+			<title>聚合.1461</title>
+			<g id="shape1461-192" v:mID="1461" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M7.09 856.92 L7.09 856.56 L7.09 824.12" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1466-197" v:mID="1466" v:groupContext="shape" transform="translate(368.754,-777.595)">
+			<title>工作表.1466</title>
+			<desc>+ developer</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.1728" cy="862.401" width="66.35" height="20"/>
+			<rect x="0" y="852.401" width="66.3456" height="20" class="st7"/>
+			<text x="4.63" y="865.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ developer</text>		</g>
+		<g id="shape1467-200" v:mID="1467" v:groupContext="shape" transform="translate(436.66,-778.949)">
+			<title>工作表.1467</title>
+			<desc>0..*</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..*</text>		</g>
+		<g id="group1468-203" transform="translate(246.715,-703.787)" v:mID="1468" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.016566606662761):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.00023768651559308):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.016566606662747):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(-0.00023768651559486):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-0.014346342224646):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(-0.014346342224765):32"/>
+			</v:userDefs>
+			<title>直接关联.1468</title>
+			<g id="shape1468-204" v:mID="1468" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M0 878.92 L79.52 880.06" class="st15"/>
+			</g>
+		</g>
+		<g id="group1478-210" transform="translate(654.345,-326.537)" v:mID="1478" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(5.1490135087048):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_AbstractUsageSpecification)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1240</title>
+			<desc>AI_AbstractUsageSpecification</desc>
+			<g id="shape1479-211" v:mID="1479" v:groupContext="shape">
+				<title>工作表.1479</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 794.73 L0 794.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1480-214" v:mID="1480" v:groupContext="shape" transform="translate(0,-77.6731)">
+				<title>工作表.1480</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_AbstractUsageSpecification)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1482-217" v:mID="1482" v:groupContext="shape" transform="translate(214.016,-109.077)">
+				<title>工作表.1482</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1478-218" v:mID="1478" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="779.026" width="222.52" height="31.4037"/>
+				<text x="4" y="782.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_AbstractUsageSpecification</text>			</g>
+		</g>
+		<g id="group1483-220" transform="translate(655.053,-156.458)" v:mID="1483" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(5.1490135087048):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_EOUsageSpecification)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1393</title>
+			<desc>AI_EOUsageSpecification</desc>
+			<g id="shape1484-221" v:mID="1484" v:groupContext="shape">
+				<title>工作表.1484</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 830.73 L0 830.73 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1485-224" v:mID="1485" v:groupContext="shape" transform="translate(0,-41.673)">
+				<title>工作表.1485</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_EOUsageSpecification)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st1"/>
+			</g>
+			<g id="shape1487-227" v:mID="1487" v:groupContext="shape" transform="translate(214.016,-73.0767)">
+				<title>工作表.1487</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1483-228" v:mID="1483" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="815.026" width="222.52" height="31.4037"/>
+				<text x="4" y="818.63" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_EOUsageSpecification</text>			</g>
+		</g>
+		<g id="group1490-230" transform="translate(556.373,-461.135)" v:mID="1490" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.037307404741758):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.00011166102084292):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.42675135604541):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(-0.75382196716703):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(0.0029929899491901):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(-1.0556635562343):32"/>
+			</v:userDefs>
+			<title>聚合.1490</title>
+			<g id="shape1490-231" v:mID="1490" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M15.48 872.4 L15.84 872.4 L67.5 872.4 L67.5 952.46 L97.97 952.46" class="st6"/>
+			</g>
+		</g>
+		<g id="group1495-236" transform="translate(556.549,-138.496)" v:mID="1495" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.03011811023622):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.030118110236221):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.03206300850729):24"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.00011166102085469):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.33505883946582):24"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.67300770935035):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(0.0034825356271495):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.1088678730054):32"/>
+			</v:userDefs>
+			<title>聚合.1495</title>
+			<g id="shape1495-237" v:mID="1495" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M15.48 872.4 L15.84 872.4 L74.13 872.4 L74.13 817.9 L98.5 817.9" class="st6"/>
+			</g>
+		</g>
+		<g id="shape1500-242" v:mID="1500" v:groupContext="shape" transform="translate(544.819,-420.323)">
+			<title>工作表.1500</title>
+			<desc>+ usage Specification</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="42.5197" cy="862.401" width="85.04" height="20"/>
+			<rect x="0" y="852.401" width="85.0394" height="20" class="st7"/>
+			<text x="23.97" y="859.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ usage <tspan
+						x="10.86" dy="1em" class="st14">Specification</tspan></text>		</g>
+		<g id="shape1501-246" v:mID="1501" v:groupContext="shape" transform="translate(615.685,-420.323)">
+			<title>工作表.1501</title>
+			<desc>0..1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..1</text>		</g>
+		<g id="shape1502-249" v:mID="1502" v:groupContext="shape" transform="translate(557.774,-164.65)">
+			<title>工作表.1502</title>
+			<desc>+ usage Specification</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.7512" cy="862.401" width="75.51" height="20"/>
+			<rect x="0" y="852.401" width="75.5024" height="20" class="st7"/>
+			<text x="19.21" y="859.4" class="st8" v:langID="2052"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>+ usage <tspan
+						x="6.1" dy="1em" class="st14">Specification</tspan></text>		</g>
+		<g id="shape1503-253" v:mID="1503" v:groupContext="shape" transform="translate(626.587,-168.823)">
+			<title>工作表.1503</title>
+			<desc>0..1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.3346" cy="862.401" width="36.67" height="20"/>
+			<rect x="0" y="852.401" width="36.6693" height="20" class="st7"/>
+			<text x="9.33" y="866" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>0..1</text>		</g>
+		<g id="group1504-256" transform="translate(773.045,-229.535)" v:mID="1504" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(-0.0001476387318089):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.020208756228715):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(-0.00014763873180712):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.020208756228641):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.5781018780905):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5781018780906):32"/>
+			</v:userDefs>
+			<title>继承.1504</title>
+			<g id="shape1504-257" v:mID="1504" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M-6.73 872.4 L-7.36 785.96" class="st3"/>
+			</g>
+		</g>
+		<g id="group1510-262" transform="translate(23.6359,-611.107)" v:mID="1510" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(List)"/>
+				<v:ud v:nameU="msvSDContainerResize" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDContainerNoRibbon" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="msvSDListAlignment" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="msvSDListDirection" v:prompt="" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvSDListItemMaster1" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster2" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListItemMaster3" v:prompt="" v:val="VT0(254):26"/>
+				<v:ud v:nameU="msvSDListRequiredCategories" v:prompt="" v:val="VT4(Member;Separator)"/>
+				<v:ud v:nameU="msvSDContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="msvSDListSpacing" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+				<v:ud v:nameU="TextOffset" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(类名)"/>
+				<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#f2f2f2)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="AdjustWidthIfNoMemberPresent" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(2.3138770951306):1"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(AI_EOTrainingDataset)"/>
+				<v:ud v:nameU="BackGrnd" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#000000)"/>
+			</v:userDefs>
+			<title>类.1510</title>
+			<desc>AI_EOTrainingDataset</desc>
+			<g id="shape1511-263" v:mID="1511" v:groupContext="shape">
+				<title>工作表.1511</title>
+				<v:userDefs>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="HdrHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 863.9 L0 863.9 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1512-266" v:mID="1512" v:groupContext="shape" transform="translate(0,-8.50394)">
+				<title>工作表.1512</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Heading)"/>
+					<v:ud v:nameU="msvSDContainerHeadingEdge" v:prompt="" v:val="VT4(Bottom)"/>
+					<v:ud v:nameU="StereoType" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.22227273084852):1"/>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="TemplateParmHgt" v:prompt="" v:val="VT0(0):1"/>
+					<v:ud v:nameU="EmblOffset" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
+					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(类名)"/>
+					<v:ud v:nameU="StereoTypeHgt" v:prompt="" v:val="VT0(0.45636832546658):1"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(AI_EOTrainingDataset)"/>
+				</v:userDefs>
+				<path d="M0 872.4 L222.52 872.4 L222.52 841 L0 841 L0 872.4 Z" class="st5"/>
+			</g>
+			<g id="shape1514-269" v:mID="1514" v:groupContext="shape" transform="translate(214.016,-39.9076)">
+				<title>工作表.1514</title>
+				<desc>参数</desc>
+				<v:userDefs>
+					<v:ud v:nameU="TemplateParm" v:prompt="" v:val="VT0(0):5"/>
+					<v:ud v:nameU="DOPS" v:prompt="" v:val="VT0(1):27"/>
+					<v:ud v:nameU="Rounding" v:prompt="" v:val="VT0(0.11811023622047):24"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(参数)"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="0" cy="872.401" width="0" height="0"/>
+			</g>
+			<g id="shape1510-270" v:mID="1510" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="111.26" cy="848.195" width="222.52" height="31.4037"/>
+				<text x="4" y="851.8" class="st2" v:langID="2052"><v:paragraph/><v:tabList/>AI_EOTrainingDataset</text>			</g>
+		</g>
+		<g id="shape1515-272" v:mID="1515" v:groupContext="shape" transform="translate(26.4705,-613.941)">
+			<title>分隔符.1515</title>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Separator)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="ItemIndex" v:prompt="" v:val="VT0(-1):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="ItemIndex" v:prompt="" v:val="VT0(1):26"/>
+			</v:userDefs>
+			<path d="M0 870.98 L216.85 870.98 L0 870.98 Z" class="st11"/>
+			<path d="M0 870.98 L216.85 870.98" class="st12"/>
+		</g>
+		<g id="group1516-275" transform="translate(128.089,-651.014)" v:mID="1516" v:groupContext="group" v:layerMember="0">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="RelationshipName" v:prompt="" v:val="VT4()"/>
+				<v:ud v:nameU="ShowMulti" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="Identifying" v:prompt="" v:val="VT0(1):26"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(-0.029527559055118):1"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.029527559055118):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0):1"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(-1.5707963267949):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(0):32"/>
+				<v:ud v:nameU="DXBegin" v:prompt="" v:val="VT0(0.00011646167742918):1"/>
+				<v:ud v:nameU="DYBegin" v:prompt="" v:val="VT0(0.0054797498953896):24"/>
+				<v:ud v:nameU="DXEnd" v:prompt="" v:val="VT0(0.00011646167744095):1"/>
+				<v:ud v:nameU="DYEnd" v:prompt="" v:val="VT0(0.005479749895942):24"/>
+				<v:ud v:nameU="BeginAngle" v:prompt="" v:val="VT0(1.549546424997):32"/>
+				<v:ud v:nameU="EndAngle" v:prompt="" v:val="VT0(1.5495464249969):32"/>
+			</v:userDefs>
+			<title>继承.1516</title>
+			<g id="shape1516-276" v:mID="1516" v:groupContext="groupContent" v:layerMember="0">
+				<path d="M6.81 872.4 L7.14 856.66" class="st3"/>
+			</g>
+		</g>
+		<g id="shape1162-281" v:mID="1162" v:groupContext="shape" transform="translate(325.702,-349.431)">
+			<title>成员.1513</title>
+			<desc>+ id: CharacterString + name: CharacterString + providers [0....</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ id: CharacterString&#10;+ name: CharacterString&#10;+ providers [0..*]: CharacterString&#10;+ deepLearningFramework [1..*]: CharacterString&#10;+ architecture [0..*]: CharacterString&#10;+ numberofParameters [0..1]: Integer&#10;+ version [0..1]: CharacterString&#10;+ createdTime [0..1]: DateTime&#10;+ updatedTime [0..*]: DateTime&#10;+ saveFormat [1..*]: CharacterString&#10;+ modelRuntime [1..*]: ModelRuntime&#10;+ references [0..*]: CI_Citation&#10;+ citations [0..*]: CI_Citation&#10;+ resources [0..*]: CI_Citation&#10;+ license: CharacterString&#10;+ description [0..*]: CharacterString)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197"/>
+			<v:textRect cx="113.918" cy="776.399" width="227.84" height="192.004"/>
+			<rect x="0" y="680.397" width="227.837" height="192.004" class="st16"/>
+			<rect x="0" y="680.397" width="227.837" height="192.004" class="st17"/>
+			<text x="8.5" y="689.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ id: CharacterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ name: CharacterString<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ providers [0..*]: CharacterString<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ deepLearningFramework [1..*]: CharacterString<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ architecture [0..*]: CharacterString<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ numberofParameters [0..1]: Integer<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ version [0..1]: CharacterString<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ createdTime [0..1]: DateTime<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ updatedTime [0..*]: DateTime<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ saveFormat [1..*]: CharacterString<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ modelRuntime [1..*]: ModelRuntime<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ references [0..*]: CI_Citation<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ c</tspan><tspan class="st14" v:langID="1033">itation</tspan>s [0..*]: CI_Citation<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ </tspan><tspan class="st14" v:langID="1033">resources</tspan> [0..*]<tspan
+						class="st14" v:langID="1033">: </tspan>CI_Citation<v:newlineChar/><tspan x="8.5" dy="1.2em" class="st14">+ license: CharacterString<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ description [0..*]: CharacterString</tspan></text>		</g>
+		<g id="shape1164-303" v:mID="1164" v:groupContext="shape" transform="translate(325.526,-110.792)">
+			<title>成员.1515</title>
+			<desc>+ inputs [0..*]: AI_EOIOType + outputs [0..*]: AI_EOIOType</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(+ inputs [0..*]: AI_EOIOType&#10;+ outputs [0..*]: AI_EOIOType)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197"/>
+			<v:textRect cx="114.094" cy="860.399" width="228.19" height="24.0037"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st16"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st17"/>
+			<text x="8.5" y="857.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ inputs [0..*]: AI_EOIOType<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ outputs [0..*]: AI_EOIOType</tspan></text>		</g>
+		<g id="shape1166-308" v:mID="1166" v:groupContext="shape" transform="translate(33.8739,-432.97)">
+			<title>成员.1519</title>
+			<desc>+id: ChracterString +description [0..1]: CharacterString</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(+id: ChracterString&#10;+description [0..1]: CharacterString)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#5b9bd5)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197"/>
+			<v:textRect cx="114.094" cy="860.399" width="228.19" height="24.0037"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st16"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st17"/>
+			<text x="8.5" y="857.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+id: ChracterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+description [0..1]: CharacterString</tspan></text>		</g>
+		<g id="shape1167-313" v:mID="1167" v:groupContext="shape" transform="translate(655.053,-497.778)">
+			<title>成员.1520</title>
+			<desc>+ performanceMetrics [0..*]: QualityElement + computationalCo...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ performanceMetrics [0..*]: QualityElement&#10;+ computationalComplexity [0..*]: QualityElement&#10;+ generalization [0..*]: QualityElement&#10;+ robustness [0..*]: QualityElement&#10;+ fairness [0..*]: QualityElement&#10;+ explainability [0..*]: QualityElement)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="108.425" cy="836.399" width="216.86" height="72.0038"/>
+			<rect x="0" y="800.397" width="216.85" height="72.0038" class="st16"/>
+			<rect x="0" y="800.397" width="216.85" height="72.0038" class="st17"/>
+			<text x="8.5" y="809.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ performanceMetrics [0..*]: QualityElement<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ computationalComplexity [0..*]: QualityElement<v:newlineChar/><v:paragraph/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ generalization [0..*]: QualityElement<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ robustness [0..*]: QualityElement<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ fairness [0..*]: QualityElement<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ explainability [0..*]: QualityElement</tspan></text>		</g>
+		<g id="shape1168-322" v:mID="1168" v:groupContext="shape" transform="translate(657.179,-3.20965)">
+			<title>成员.1521</title>
+			<desc>+ spatialGeneralization [0..*]: QualityElement + temporalGene...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ spatialGeneralization [0..*]: QualityElement&#10;+ temporalGeneralization [0..*]: QualityElement)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197"/>
+			<v:textRect cx="108.425" cy="860.399" width="216.86" height="24.0037"/>
+			<rect x="0" y="848.397" width="216.85" height="24.0037" class="st16"/>
+			<rect x="0" y="848.397" width="216.85" height="24.0037" class="st17"/>
+			<text x="8.5" y="857.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ spatialGeneralization [0..*]: QualityElement<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ temporalGeneralization [0..*]: QualityElement</tspan></text>		</g>
+		<g id="shape1171-327" v:mID="1171" v:groupContext="shape" transform="translate(34.5195,-110.792)">
+			<title>成员.1524</title>
+			<desc>+taskType: ChracterString +classes [0..*]: NamedValue</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(+taskType: ChracterString&#10;+classes [0..*]: NamedValue)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#93d05b)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197"/>
+			<v:textRect cx="114.094" cy="860.399" width="228.19" height="24.0037"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st16"/>
+			<rect x="0" y="848.397" width="228.189" height="24.0037" class="st17"/>
+			<text x="8.5" y="857.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+taskType: ChracterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+classes [0..*]: NamedValue</tspan></text>		</g>
+		<g id="shape1319-332" v:mID="1319" v:groupContext="shape" transform="translate(329.069,-632.426)">
+			<title>成员.1319</title>
+			<desc>+ optimizer: CharacterString + objectiveFunctions [1..*]: Cha...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ optimizer: CharacterString&#10;+ objectiveFunctions [1..*]: CharacterString&#10;+ numberOfEpoches [0..1]: Integer&#10;+ batchSize [0..1]: Integer&#10;+ learningRate [0..1]: CharacterString&#10;+ hardwareDependencies [0..*]: CharacterString&#10;+ referenceModels [0..1]: CharacterString&#10;+ hyperparameters [0..*]: CharacterString)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="109.343" cy="824.399" width="218.69" height="96.0039"/>
+			<rect x="0" y="776.397" width="218.685" height="96.0039" class="st16"/>
+			<rect x="0" y="776.397" width="218.685" height="96.0039" class="st17"/>
+			<text x="8.5" y="785.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ optimizer: CharacterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ objectiveFunctions [1..*]: CharacterString<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ numberOfEpoches [0..1]: Integer<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ batchSize [0..1]: Integer<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ learningRate [0..1]: CharacterString<v:newlineChar/></tspan><tspan x="8.5" dy="1.2em"
+						class="st14">+ hardwareDependencies [0..*]: CharacterString<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ referenceModels [0..1]: CharacterString<v:newlineChar/></tspan><tspan x="8.5"
+						dy="1.2em" class="st14">+ hyperparameters [0..*]: CharacterString</tspan></text>		</g>
+		<g id="shape1460-343" v:mID="1460" v:groupContext="shape" transform="translate(329.069,-813.784)">
+			<title>成员.1460</title>
+			<desc>+ id: CharacterString + name: CharacterString</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(+ id: CharacterString&#10;+ name: CharacterString)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="109.343" cy="860.399" width="218.69" height="24.0037"/>
+			<rect x="0" y="848.397" width="218.685" height="24.0037" class="st16"/>
+			<rect x="0" y="848.397" width="218.685" height="24.0037" class="st17"/>
+			<text x="8.5" y="857.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ id: CharacterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ name: CharacterString</tspan></text>		</g>
+		<g id="shape1488-348" v:mID="1488" v:groupContext="shape" transform="translate(657.179,-329.372)">
+			<title>成员.1245</title>
+			<desc>+ targetUseCases [0..*]: CharacterString + targetAudience [0....</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ targetUseCases [0..*]: CharacterString&#10;+ targetAudience [0..*]: CharacterString&#10;+ impactFactors [0..*]: CharacterString&#10;+ decisionThresholds [0..*]: CharacterString&#10;+ moralImplications [0..*]: CharacterString&#10;+ isPretrainedModel [0..1]: Boolean)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="108.425" cy="836.399" width="216.86" height="72.0038"/>
+			<rect x="0" y="800.397" width="216.85" height="72.0038" class="st16"/>
+			<rect x="0" y="800.397" width="216.85" height="72.0038" class="st17"/>
+			<text x="8.5" y="809.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ targetUseCases [0..*]: CharacterString<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ targetAudience [0..*]: CharacterString<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ impactFactors [0..*]: CharacterString<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ decisionThresholds [0..*]: CharacterString<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ m</tspan><tspan class="st14" v:langID="1033">oral</tspan>I<tspan
+						class="st14" v:langID="1033">mplications</tspan> [0..*]: CharacterString<v:newlineChar/><tspan x="8.5"
+						dy="1.2em" class="st14">+ isPretrainedModel [0..1]: Boolean</tspan></text>		</g>
+		<g id="shape1489-359" v:mID="1489" v:groupContext="shape" transform="translate(657.888,-159.293)">
+			<title>成员.1398</title>
+			<desc>+ applicationScope [0..*]: MD_Scope + applicationTemporal [0....</desc>
+			<v:userDefs>
+				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Member)"/>
+				<v:ud v:nameU="MemberName" v:prompt="" v:val="VT4(-成员名)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="UserWidth" v:prompt="" v:val="VT0(1.8897637795276):24"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(1)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(0)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="MemberName" v:prompt=""
+						v:val="VT4(+ applicationScope [0..*]: MD_Scope&#10;+ applicationTemporal [0..*]: DateTime&#10;+ applicationResolution [0..*]: Vecctor)"/>
+				<v:ud v:nameU="ContainerMargin" v:prompt="" v:val="VT0(0.039370078740157):24"/>
+				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(0):26"/>
+				<v:ud v:nameU="DarkerColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="DarkColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="BackFillColor" v:prompt="" v:val="VT5(#0070c0)"/>
+				<v:ud v:nameU="BackLineColor" v:prompt="" v:val="VT5(#000000)"/>
+				<v:ud v:nameU="IsInstance" v:prompt="" v:val="VT0(1):5"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,8.50394)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="108.425" cy="854.399" width="216.86" height="36.0037"/>
+			<rect x="0" y="836.397" width="216.85" height="36.0037" class="st16"/>
+			<rect x="0" y="836.397" width="216.85" height="36.0037" class="st17"/>
+			<text x="8.5" y="845.4" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>+ applicationScope [0..*]: MD_Scope<v:newlineChar/><tspan
+						x="8.5" dy="1.2em" class="st14">+ applicationTemporal [0..*]: DateTime<v:newlineChar/></tspan><tspan
+						x="8.5" dy="1.2em" class="st14">+ applicationResolution [0..*]: Vecctor</tspan></text>		</g>
+	</g>
+</svg>
