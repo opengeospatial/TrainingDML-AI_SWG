@@ -1,0 +1,133 @@
+{
+    "type": "AI_EOTrainingDataset",
+    "id": "uit_hcd_california_2017_with_crs",
+    "name": "UiT HCD California 2017",
+    "description": "This dataset is composed of two images and a label image. All images have coordinate systems.",
+    "license": "CC BY-SA 4.0",
+    "version": "1.0",
+    "amountOfTrainingData": 1,
+    "createdTime": "2017-01-01",
+    "providers": [
+      "LP DAAC",
+      "ESA"
+    ],
+    "classes": [
+      {
+        "key": "change",
+        "value": 1
+      },
+      {
+        "key": "unchanged",
+        "value": 0
+      }
+    ],
+    "numberOfClasses": 2,
+    "bands": [
+      {
+        "name": [
+          {
+            "code": "red"
+          }
+        ]
+      },
+      {
+        "name": [
+          {
+            "code": "green"
+          }
+        ]
+      },
+      {
+        "name": [
+          {
+            "code": "blue"
+          }
+        ]
+      },
+      {
+        "name": [
+          {
+            "code": "VH"
+          }
+        ]
+      },
+      {
+        "name": [
+          {
+            "code": "VV"
+          }
+        ]
+      },
+      {
+        "name": [
+          {
+            "code": "VV/VH"
+          }
+        ]
+      }
+    ],
+    "imageSize": "2000x3500",
+    "tasks": [
+      {
+        "type": "AI_EOTask",
+        "id": "uit_hcd_california_2017-task",
+        "description": "Multi-source images change detection",
+        "taskType": "http://demo#change_detection"
+      }
+    ],
+    "data": [
+      {
+        "type": "AI_EOTrainingData",
+        "id": "0",
+        "dataTime": [
+          "2017-01-05",
+          "2017-02-18"
+        ],
+        "dataURL": [
+          "t1_L8.tif",
+          "t2_SAR.tif"
+        ],
+        "dataSources": [
+          {
+            "title": "Landsat-8",
+            "onlineResource":[
+              {
+                "linkage": "https://doi.org/10.5066/P9OGBGM6",
+                "protocol": "https",
+                "name":"Landsat 8-9 Operational Land Imager / Thermal Infrared Sensor Level-2, Collection 2"
+              }
+            ]
+          },
+          {
+            "title": "WGS 84 Coordinate Reference System",
+            "identifier":[
+              {
+                "code":"EPSG:4326",
+                "codeSpace": "EPSG",
+                "description": "WGS84"
+              }
+            ],
+            "onlineResource":[
+              {
+                "linkage": "https://spatialreference.org/ref/epsg/4326/",
+                "protocol": "https",
+                "name":"EPSG:4326 WGS84"
+              }
+            ]
+          }
+        ],
+        "numberOfLabels": 1,
+        "labels": [
+          {
+            "type": "AI_PixelLabel",
+            "imageURL": [
+              "change_label.tif"
+            ],
+            "imageFormat": [
+              "image/tiff"
+            ]
+          }
+        ]
+      }
+    ]
+  }
