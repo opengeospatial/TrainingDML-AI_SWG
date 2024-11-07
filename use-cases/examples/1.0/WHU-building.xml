@@ -85,9 +85,11 @@
         <dataURL>before/before.tif</dataURL>
         <dataURL>after/after.tif</dataURL>
         <labels>
-            <type>AI_PixelLabel</type>
-            <imageURL>change label/change_label.tif</imageURL>
-            <imageFormat>image/tiff</imageFormat>
+            <AI_PixelLabel>
+                <type>AI_PixelLabel</type>
+                <imageURL>change label/change_label.tif</imageURL>
+                <imageFormat>image/tiff</imageFormat>
+            </AI_PixelLabel>
         </labels>
     </data>
 </AI_EOTrainingDataset>

@@ -105,9 +105,11 @@
         <dataURL>t1_L8.png</dataURL>
         <dataURL>t2_SAR.png</dataURL>
         <labels>
-            <type>AI_PixelLabel</type>
-            <imageURL>change_label.png</imageURL>
-            <imageFormat>image/png</imageFormat>
+            <AI_PixelLabel>
+                <type>AI_PixelLabel</type>
+                <imageURL>change_label.png</imageURL>
+                <imageFormat>image/png</imageFormat>
+            </AI_PixelLabel>
         </labels>
     </data>
 </AI_EOTrainingDataset>
