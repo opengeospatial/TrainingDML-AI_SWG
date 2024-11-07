@@ -150,9 +150,11 @@
         <id>L001</id>
         <dataURL>data/L001.ply</dataURL>
         <labels>
-            <type>AI_PointLabel</type>
-            <pointLabelURL>data/L001.ply</pointLabelURL>
-            <pointLabelField>scalar_Label</pointLabelField>
+            <AI_PointLabel>
+                <type>AI_PointLabel</type>
+                <pointLabelURL>data/L001.ply</pointLabelURL>
+                <pointLabelField>scalar_Label</pointLabelField>
+            </AI_PointLabel>
         </labels>
     </data>
     <data>
@@ -160,9 +162,11 @@
         <id>L002</id>
         <dataURL>data/L002.ply</dataURL>
         <labels>
-            <type>AI_PointLabel</type>
-            <pointLabelURL>data/L002.ply</pointLabelURL>
-            <pointLabelField>scalar_Label</pointLabelField>
+            <AI_PointLabel>
+                <type>AI_PointLabel</type>
+                <pointLabelURL>data/L002.ply</pointLabelURL>
+                <pointLabelField>scalar_Label</pointLabelField>
+            </AI_PointLabel>
         </labels>
     </data>
     <data>
@@ -170,9 +174,11 @@
         <id>L003</id>
         <dataURL>data/L003.ply</dataURL>
         <labels>
-            <type>AI_PointLabel</type>
-            <pointLabelURL>data/L003.ply</pointLabelURL>
-            <pointLabelField>scalar_Label</pointLabelField>
+            <AI_PointLabel>
+                <type>AI_PointLabel</type>
+                <pointLabelURL>data/L003.ply</pointLabelURL>
+                <pointLabelField>scalar_Label</pointLabelField>
+            </AI_PointLabel>
         </labels>
     </data>
     <data>
@@ -180,9 +186,11 @@
         <id>L004</id>
         <dataURL>data/L004.ply</dataURL>
         <labels>
-            <type>AI_PointLabel</type>
-            <pointLabelURL>data/L004.ply</pointLabelURL>
-            <pointLabelField>scalar_Label</pointLabelField>
+            <AI_PointLabel>
+                <type>AI_PointLabel</type>
+                <pointLabelURL>data/L004.ply</pointLabelURL>
+                <pointLabelField>scalar_Label</pointLabelField>
+            </AI_PointLabel>
         </labels>
     </data>
 </AI_EOTrainingDataset>
