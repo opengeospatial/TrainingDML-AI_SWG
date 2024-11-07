@@ -1,0 +1,4442 @@
+{
+    "type": "AI_EOTrainingDataset",
+    "id": "39",
+    "name": "MBD",
+    "description": "The Massachusetts Buildings Dataset consists of 151 aerial images of the Boston area, with each of the images being 1500 × 1500 pixels for an area of 2.25 square kilometers. Hence, the entire dataset covers roughly 340 square kilometers. The data is split into a training set of 137 images, a test set of 10 images and a validation set of 4 images.",
+    "version": "1.0",
+    "amountOfTrainingData": 151,
+    "createdTime": "2013-01-01T00:00:00",
+    "license": "CC BY-SA 4.0",
+    "providers": [
+        "University of Toronto"
+    ],
+    "classes": [
+        {
+            "key": "Building Area",
+            "value": null
+        }
+    ],
+    "classificationSchema": "LuojiaSET Classification Schema",
+    "tasks": [
+        {
+            "type": "AI_EOTask",
+            "datasetId": "39",
+            "id": "MBD-task",
+            "taskType": "Semantic Segmentation"
+        }
+    ],
+    "data": [
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30782",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0384813029896,
+                42.4150307991716,
+                -71.0201548091075,
+                42.4284600556924
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_1.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_1.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30783",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0756546904519,
+                42.3071391555948,
+                -71.0573673213319,
+                42.3205746589794
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_2.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_2.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30784",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1664777508355,
+                42.3344474385224,
+                -71.1482017829511,
+                42.3478973089858
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_3.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_3.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30785",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.075382985674,
+                42.3476514630506,
+                -71.0570838472125,
+                42.3610868049193
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_4.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_4.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30786",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0569892751363,
+                42.3745907727841,
+                -71.0386784330163,
+                42.3880231047903
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_5.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_5.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30787",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0935008737533,
+                42.3612212868443,
+                -71.0752016578732,
+                42.3746594705838
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_6.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_6.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30788",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1661928312353,
+                42.3884637007612,
+                -71.1479011868017,
+                42.4019133605186
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_7.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_7.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30789",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0021397756131,
+                42.4013751013138,
+                -70.9838095221183,
+                42.4147986151454
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_8.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_8.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30790",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0931534651855,
+                42.4152370186928,
+                -71.0748385330673,
+                42.4286749759617
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_9.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_9.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30791",
+            "dataSetId": "39",
+            "trainingType": "test",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1667621844693,
+                42.2804305462374,
+                -71.1485018662872,
+                42.2938806153716
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD2_10.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD2_10.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30792",
+            "dataSetId": "39",
+            "trainingType": "validation",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0576504328299,
+                42.2800621652773,
+                -71.0393670639398,
+                42.2934948784176
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD1_1.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD1_1.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30793",
+            "dataSetId": "39",
+            "trainingType": "validation",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1485018662872,
+                42.2938806153716,
+                -71.1302337905841,
+                42.307327744187
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD1_2.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD1_2.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30794",
+            "dataSetId": "39",
+            "trainingType": "validation",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0751109327353,
+                42.3881634092604,
+                -71.0568000097744,
+                42.4015985828377
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD1_3.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD1_3.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30795",
+            "dataSetId": "39",
+            "trainingType": "validation",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0927183664329,
+                42.4827556883381,
+                -71.0743837510155,
+                42.4961933455646
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD1_4.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD1_4.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30796",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0572728702844,
+                42.3340787472664,
+                -71.0389738125087,
+                42.3475112471323
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_1.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_1.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30797",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1666911215522,
+                42.2939348257499,
+                -71.1484268934576,
+                42.3073848463442
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_2.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_2.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30798",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0754735925848,
+                42.3341473997033,
+                -71.0571783789199,
+                42.3475827961632
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_3.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_3.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30799",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0750201709377,
+                42.4016673075509,
+                -71.0567053164368,
+                42.4151024235248
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_4.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_4.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30800",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0573673213319,
+                42.3205746589794,
+                -71.0390721883012,
+                42.3340072132927
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_5.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_5.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30801",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.130312642991,
+                42.293823525233,
+                -71.1120407213551,
+                42.307267761671
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_6.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_6.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30802",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0749293703563,
+                42.4151711627003,
+                -71.0566105826269,
+                42.4286062203173
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_7.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_7.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30803",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0387769348932,
+                42.3745191936317,
+                -71.0204622454491,
+                42.3879486266195
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_8.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_8.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30804",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0568946626656,
+                42.3880946990072,
+                -71.0385798890574,
+                42.401526973554
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_9.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_9.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30805",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.112454030718,
+                42.2397463681914,
+                -71.094193914012,
+                42.2531879086009
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_10.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_10.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30806",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.093847687426,
+                42.3072048988041,
+                -71.0755641608359,
+                42.3206432969679
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_11.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_11.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30807",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9671794553721,
+                42.225659166327,
+                -70.9488926182042,
+                42.2390776131427
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_12.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_12.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30808",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0755641608359,
+                42.3206432969679,
+                -71.0572728702844,
+                42.3340787472664
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_13.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_13.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30809",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0933272436641,
+                42.3882292375445,
+                -71.0750201730377,
+                42.401667309555
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_14.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_14.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30810",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1121234533179,
+                42.2937635553418,
+                -71.093847687426,
+                42.3072048988041
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_15.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_15.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30811",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1117923135771,
+                42.3477801503582,
+                -71.093500871654,
+                42.3612212848405
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_16.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_16.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30812",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1113775950592,
+                42.4152999874854,
+                -71.0930665202408,
+                42.4287408438076
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_17.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_17.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30813",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9661559834595,
+                42.3471962297725,
+                -70.9478337958374,
+                42.3606141794761
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_18.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_18.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30814",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1292849333537,
+                42.4693752042816,
+                -71.1109619874117,
+                42.4828187254084
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_19.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_19.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30815",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0745657817981,
+                42.4691861388677,
+                -71.056231244247,
+                42.4826209555206
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_20.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_20.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30816",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.002458617464,
+                42.3608634644366,
+                -70.9841401731361,
+                42.3742871561319
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_21.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_21.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30817",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0574617320881,
+                42.3070705320521,
+                -71.0391705221193,
+                42.3205031400602
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_22.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_22.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30818",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0926312375094,
+                42.4962592847365,
+                -71.0742926803541,
+                42.5096968796929
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_23.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_23.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30819",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1479763839872,
+                42.3884094104574,
+                -71.1296808804794,
+                42.4018561741765
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_24.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_24.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30820",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1299180442949,
+                42.3613442336891,
+                -71.1116265315911,
+                42.3747882100637
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_25.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_25.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30821",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.092892516719,
+                42.4557483573588,
+                -71.0745657796958,
+                42.4691861368636
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_26.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_26.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30822",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1486517160602,
+                42.2668720427879,
+                -71.1303914617749,
+                42.2803192691476
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_27.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_27.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30823",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0200522448086,
+                42.4419637790885,
+                -71.0017140190308,
+                42.4553900115329
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_28.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_28.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30824",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1487265930445,
+                42.2533677026763,
+                -71.1304702469572,
+                42.2668149766807
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_29.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_29.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30825",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0022461016254,
+                42.3878712645047,
+                -70.9839197862109,
+                42.4012948383778
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_30.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_30.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30826",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.094193914012,
+                42.2531879086009,
+                -71.0759260498328,
+                42.2666265091528
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_31.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_31.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30827",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0759260498328,
+                42.2666265091528,
+                -71.0576504349254,
+                42.2800621672818
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_32.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_32.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30828",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1665489047547,
+                42.3209432726424,
+                -71.14827685181,
+                42.3343931939015
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_33.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_33.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30829",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1108787591882,
+                42.4963223330643,
+                -71.0925440691943,
+                42.5097628307319
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_34.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_34.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30830",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.985568112846,
+                42.1987334286507,
+                -70.9672929322846,
+                42.212154871144
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_35.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_35.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30831",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0393670660352,
+                42.2934948804224,
+                -71.0210759399075,
+                42.3069246460087
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_36.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_36.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30832",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1116265336914,
+                42.3747882120672,
+                -71.0933272436641,
+                42.3882292375445
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_37.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_37.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30833",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1291263164849,
+                42.4963824925438,
+                -71.1107954953466,
+                42.5098258923232
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_38.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_38.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30834",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1300759848148,
+                42.3343360677012,
+                -71.1117923135771,
+                42.3477801503582
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_39.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_39.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30835",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0941074132398,
+                42.2666922108565,
+                -71.0758356359739,
+                42.2801307619395
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_40.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_40.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30836",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9853489466639,
+                42.2257420885916,
+                -70.9670659321957,
+                42.2391634301102
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_41.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_41.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30837",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.075201655774,
+                42.3746594685797,
+                -71.0568946626656,
+                42.3880946990072
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_42.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_42.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30838",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1488014381213,
+                42.2398633276841,
+                -71.1305489985595,
+                42.2533106485817
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_43.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_43.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30839",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1292056418823,
+                42.4828788722342,
+                -71.1108787591882,
+                42.4963223330643
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_44.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_44.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30840",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0390721883012,
+                42.3340072132927,
+                -71.0207692880988,
+                42.3474368159676
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_45.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_45.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30841",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0936743535448,
+                42.3342131705938,
+                -71.075382985674,
+                42.3476514630506
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_46.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_46.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30842",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1662641067628,
+                42.3749596968946,
+                -71.1479763839872,
+                42.3884094104574
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_47.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_47.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30843",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1484268934576,
+                42.3073848463442,
+                -71.1301549045325,
+                42.3208319252598
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_48.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_48.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30844",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1485768071479,
+                42.2803763472696,
+                -71.130312642991,
+                42.293823525233
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_49.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_49.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30845",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0203598104495,
+                42.4014524797093,
+                -71.0020334041667,
+                42.4148788949717
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_50.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_50.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30846",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1481266820413,
+                42.3614013839403,
+                -71.1298390234494,
+                42.3748482557348
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_51.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_51.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30847",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0748385309663,
+                42.4286749739576,
+                -71.0565158083187,
+                42.4421099724641
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_52.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_52.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30848",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9669523585423,
+                42.2526676577322,
+                -70.9486576775103,
+                42.2660859993476
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_53.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_53.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30849",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9841401731361,
+                42.3742871561319,
+                -70.9658139518546,
+                42.3877078884853
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_54.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_54.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30850",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0935876311125,
+                42.3477172477852,
+                -71.0752923400786,
+                42.3611554862596
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_55.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_55.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30851",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1122888114344,
+                42.2667550320329,
+                -71.0940208734868,
+                42.2801964754722
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_56.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_56.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30852",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1117094423792,
+                42.3612842026566,
+                -71.0934140772455,
+                42.374725283013
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_57.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_57.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30853",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1304702469572,
+                42.2668149766807,
+                -71.1122061500035,
+                42.2802593118791
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_58.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_58.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30854",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.038875394715,
+                42.3610152408288,
+                -71.0205646367052,
+                42.3744447311321
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_59.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_59.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30855",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1480515490602,
+                42.3749054180143,
+                -71.1297599688514,
+                42.3883522361475
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_60.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_60.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30856",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1118751515073,
+                42.3342760599293,
+                -71.0935876311125,
+                42.3477172477852
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_61.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_61.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30857",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.14827685181,
+                42.3343931939015,
+                -71.1299970314095,
+                42.3478401707611
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_62.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_62.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30858",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1844093089343,
+                42.3885151070515,
+                -71.1661215252571,
+                42.4019676622478
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_63.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_63.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30859",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1298390234494,
+                42.3748482557348,
+                -71.1115435874898,
+                42.3882921778392
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_64.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_64.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30860",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1848804071318,
+                42.2939861563605,
+                -71.1666200283205,
+                42.3074390681349
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_65.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_65.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30861",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1845440520886,
+                42.3615070360577,
+                -71.1662641067628,
+                42.3749596968946
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_66.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_66.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30862",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1110451779367,
+                42.469315068104,
+                -71.0927183664329,
+                42.4827556883381
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_67.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_67.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30863",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1120407213551,
+                42.307267761671,
+                -71.0937610389748,
+                42.3207090540167
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_68.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_68.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30864",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1306277166031,
+                42.2398062856003,
+                -71.112371437633,
+                42.2532507165526
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_69.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_69.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30865",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1848131935174,
+                42.3074904095516,
+                -71.1665489047547,
+                42.3209432726424
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_70.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_70.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30866",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1296808825812,
+                42.4018561761795,
+                -71.1113775950592,
+                42.4152999874854
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_71.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_71.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30867",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0747476548443,
+                42.4421787425755,
+                -71.0564209955876,
+                42.4556136812183
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_72.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_72.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30868",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0575561025789,
+                42.2935663672348,
+                -71.0392688139899,
+                42.3069990281851
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_73.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_73.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30869",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0757451814577,
+                42.293634976334,
+                -71.0574617320881,
+                42.3070705320521
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_74.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_74.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30870",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.983699212997,
+                42.4283023500137,
+                -70.9653572294753,
+                42.4417228382543
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_75.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_75.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30871",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1844766948968,
+                42.3750110923683,
+                -71.1661928312353,
+                42.3884637007612
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_76.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_76.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30872",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1293641909208,
+                42.4558714894378,
+                -71.1110451800402,
+                42.4693150701075
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_77.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_77.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30873",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1303914617749,
+                42.2803192691476,
+                -71.1121234533179,
+                42.2937635553418
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_78.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_78.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30874",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0928054601961,
+                42.4692520462962,
+                -71.0744747848222,
+                42.4826897650388
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_79.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_79.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30875",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1666200283205,
+                42.3074390681349,
+                -71.1483518886387,
+                42.3208890394375
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_80.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_80.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30876",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0566105826269,
+                42.4286062203173,
+                -71.0382840044188,
+                42.4420383179649
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_81.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_81.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30877",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0746567377628,
+                42.4556824637947,
+                -71.0563261402054,
+                42.4691173418195
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_82.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_82.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30878",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1482017829511,
+                42.3478973089858,
+                -71.1299180442949,
+                42.3613442336891
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_83.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_83.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30879",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1483518886387,
+                42.3208890394375,
+                -71.1300759848148,
+                42.3343360677012
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_84.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_84.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30880",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0383826747857,
+                42.4285345808923,
+                -71.020052242709,
+                42.4419637770834
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_85.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_85.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30881",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.185014748398,
+                42.2669775393507,
+                -71.1667621844693,
+                42.2804305462373
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_86.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_86.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30882",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0565158104196,
+                42.4421099744685,
+                -71.0381852939626,
+                42.4555420116426
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_87.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_87.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30883",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1847459512242,
+                42.320994624867,
+                -71.1664777508355,
+                42.3344474385224
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_88.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_88.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30884",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0937610389748,
+                42.3207090540167,
+                -71.0754735925848,
+                42.3341473997033
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_89.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_89.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30885",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1109619853078,
+                42.482818723405,
+                -71.0926312354056,
+                42.4962592827327
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_90.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_90.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30886",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1112945445831,
+                42.4288038258507,
+                -71.0929795381274,
+                42.4422446242813
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_91.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_91.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30887",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0940208734868,
+                42.2801964754722,
+                -71.0757451814577,
+                42.293634976334
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_92.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_92.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30888",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0204622454491,
+                42.3879486266195,
+                -71.0021397756131,
+                42.4013751013138
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_93.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_93.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30889",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1299970314095,
+                42.3478401707611,
+                -71.1117094402793,
+                42.3612842006532
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_94.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_94.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30890",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1115435895906,
+                42.3882921798427,
+                -71.0932403729854,
+                42.4017331496881
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_95.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_95.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30891",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9670659301044,
+                42.2391634281041,
+                -70.9487751718454,
+                42.2525818226956
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_96.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_96.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30892",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0934140772455,
+                42.374725283013,
+                -71.0751109348349,
+                42.3881634112645
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_97.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_97.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30893",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.112371437633,
+                42.2532507165526,
+                -71.0941074111436,
+                42.2666922088527
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_98.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_98.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30894",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1664065665435,
+                42.3479515650246,
+                -71.1481266820413,
+                42.3614013839403
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_99.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_99.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30895",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0758356338779,
+                42.2801307599353,
+                -71.0575561025789,
+                42.2935663672348
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_100.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_100.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30896",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0570838472125,
+                42.3610868049193,
+                -71.0387769348932,
+                42.3745191936317
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_101.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_101.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30897",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0567053164368,
+                42.4151024235248,
+                -71.0383826747857,
+                42.4285345808923
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_102.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_102.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30898",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1849475920859,
+                42.2804818660436,
+                -71.1666911215522,
+                42.2939348257499
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_103.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_103.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30899",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0386784330163,
+                42.3880231047903,
+                -71.0203598104495,
+                42.4014524797093
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_104.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_104.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30900",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0205646367052,
+                42.3744447311321,
+                -71.0022461016254,
+                42.3878712645047
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_105.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_105.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30901",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0382840044188,
+                42.4420383179649,
+                -71.0199496324546,
+                42.4554674530724
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_106.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_106.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30902",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1479011889041,
+                42.4019133625214,
+                -71.1296017604139,
+                42.4153600710739
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_107.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_107.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30903",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1846786802339,
+                42.3344988015566,
+                -71.1664065665435,
+                42.3479515650246
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_108.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_108.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30904",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1119579540924,
+                42.3207719301168,
+                -71.0936743535448,
+                42.3342131705938
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_109.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_109.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30905",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0394652740908,
+                42.2799906935122,
+                -71.0211780692894,
+                42.2934205118971
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_110.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_110.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30906",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9672929322846,
+                42.212154871144,
+                -70.949010014527,
+                42.2255733694317
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_111.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_111.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30907",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1488762513108,
+                42.2263589185608,
+                -71.1306277166031,
+                42.2398062856003
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_112.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_112.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30908",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0023523822327,
+                42.3743673852954,
+                -70.9840300032067,
+                42.3877910184563
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_113.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_113.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30909",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1122061500035,
+                42.2802593118792,
+                -71.0939342989221,
+                42.2937007057059
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_114.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_114.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30910",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0202573316783,
+                42.4149562896506,
+                -71.001926987257,
+                42.4283826447275
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_115.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_115.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30911",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0391705242155,
+                42.320503142065,
+                -71.0208715503884,
+                42.3339327997966
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_116.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_116.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30912",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1846113805282,
+                42.3480029388703,
+                -71.166335351859,
+                42.3614556513989
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_117.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_117.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30913",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0020334041667,
+                42.4148788949717,
+                -70.9836992108989,
+                42.428302348008
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_118.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_118.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30914",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0939342989221,
+                42.2937007057059,
+                -71.0756546904519,
+                42.3071391555948
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_119.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_119.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30915",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.166335351859,
+                42.3614556513989,
+                -71.1480515490602,
+                42.3749054180143
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_120.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_120.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30916",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1301549045325,
+                42.3208319252598,
+                -71.1118751515073,
+                42.3342760599293
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_121.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_121.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30917",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0571783789199,
+                42.3475827961632,
+                -71.038875394715,
+                42.3610152408288
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_122.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_122.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30918",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0930665181393,
+                42.4287408418038,
+                -71.0747476527429,
+                42.4421787405714
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_123.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_123.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30919",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1302337905841,
+                42.307327744187,
+                -71.1119579540924,
+                42.3207719301168
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_124.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_124.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30920",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9854585520476,
+                42.2122377739453,
+                -70.9671794553721,
+                42.225659166327
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_125.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_125.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30921",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9674063608727,
+                42.1986505433041,
+                -70.9491273608459,
+                42.2120690923118
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_126.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_126.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30922",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1305489985595,
+                42.2533106485817,
+                -71.1122888114344,
+                42.2667550320329
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_127.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_127.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30923",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0582155728338,
+                42.1990362175708,
+                -71.0399556868982,
+                42.2124692280591
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_128.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_128.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30924",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0385798890574,
+                42.401526973554,
+                -71.0202573316783,
+                42.4149562896506
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_129.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_129.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30925",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -70.9842502960291,
+                42.3607832521553,
+                -70.9659280110759,
+                42.3742040436525
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_130.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_130.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30926",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1668332170912,
+                42.2669262303471,
+                -71.1485768071479,
+                42.2803763472696
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_131.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_131.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30927",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1297599709528,
+                42.3883522381506,
+                -71.1114606100541,
+                42.4017961052324
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_132.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_132.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30928",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0932403729854,
+                42.4017331496881,
+                -71.0749293724568,
+                42.4151711647044
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_133.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_133.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30929",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0395634402794,
+                42.2664864702091,
+                -71.0212801551233,
+                42.2799163406403
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_134.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_134.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30930",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0568000097744,
+                42.4015985828377,
+                -71.0384813029896,
+                42.4150307991716
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_135.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_135.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30931",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.1307064032056,
+                42.226301890489,
+                -71.112454030718,
+                42.2397463681914
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_136.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_136.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "30932",
+            "dataSetId": "39",
+            "trainingType": "training",
+            "numberOfLabels": 1,
+            "extent": [
+                -71.0752923400786,
+                42.3611554862596,
+                -71.0569892751363,
+                42.3745907727841
+            ],
+            "dataURL": [
+                "land-cover/MBD/image/MBD0_137.tif"
+            ],
+            "labels": [
+                {
+                    "type": "AI_PixelLabel",
+                    "isNegative": false,
+                    "confidence": 1.0,
+                    "imageURL": [
+                        "land-cover/MBD/label/MBD0_137.png"
+                    ],
+                    "imageFormat": [
+                        "image/png"
+                    ]
+                }
+            ]
+        }
+    ],
+    "bands": [
+        {
+            "name": [
+                {
+                    "code": "red"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "green"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "blue"
+                }
+            ]
+        }
+    ],
+    "numberOfClasses": 1,
+    "imageSize": "1500×1500",
+    "scope": {
+        "level": "DATASET",
+        "levelDescription": [
+            {
+                "dataset": "MBD"
+            }
+        ]
+    }
+}
