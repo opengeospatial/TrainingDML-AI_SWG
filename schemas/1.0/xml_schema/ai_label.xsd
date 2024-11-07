@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified">
+	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schemas.opengis.net/gml/3.2.1/feature.xsd"/>
+	<xs:include schemaLocation="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema/ai_imageFormatCode.xsd"/>
 	<xs:element name="AI_AbstractLabel" type="AI_AbstractLabel"/>
-	<xs:complexType name="AI_AbstractLabel" abstract="true">
+	<xs:complexType name="AI_AbstractLabelType" abstract="true">
 		<xs:sequence>
-			<xs:element name="type" type="xs:string" fixed="AI_AbstractLabel"/>
+			<xs:element name="type" type="xs:string" default="AI_AbstractLabel"/>
 			<xs:element name="isNegative" type="xs:boolean" default="false" minOccurs="0"/>
 			<xs:element name="confidence" default="1.0" minOccurs="0">
 				<xs:simpleType>
@@ -15,5 +17,54 @@
 				</xs:simpleType>
 			</xs:element>
 		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="_Labels" type="AI_AbstractLabelType" abstract="true" />
+	<xs:complexType name="AI_AbstractLabel">
+	  <xs:sequence>
+		  <xs:element ref="_Labels"/>
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:element name="AI_ObjectLabel" type="AI_ObjectLabel" substitutionGroup="_Labels"/>
+	<xs:complexType name="AI_ObjectLabel">
+		<xs:complexContent>
+			<xs:extension base="AI_AbstractLabelType">
+			<xs:sequence>
+				<xs:element name="object" type="Feature"/>
+				<xs:element name="bboxType" type="xs:string" minOccurs="0"/>
+				<xs:element name="class" type="xs:string"/>
+				<xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+			</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Feature">
+		<xs:complexContent>
+			<xs:extension base="gml:AbstractFeatureType">
+				<xs:sequence>
+					<!-- Additional elements specific to MyFeatureType can be added here -->
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="AI_PixelLabel" type="AI_PixelLabel"  substitutionGroup="_Labels"/>
+	<xs:complexType name="AI_PixelLabel" >
+		<xs:complexContent>
+			<xs:extension base="AI_AbstractLabelType">
+			<xs:sequence>
+				<xs:element name="imageURL" type="xs:anyURI" maxOccurs="unbounded"/>
+				<xs:element name="imageFormat" type="AI_ImageFormatCode" maxOccurs="unbounded"/>
+			</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="AI_SceneLabel" type="AI_SceneLabel"  substitutionGroup="_Labels"/>
+	<xs:complexType name="AI_SceneLabel" >
+		<xs:complexContent>
+			<xs:extension base="AI_AbstractLabelType">
+			<xs:sequence>
+				<xs:element name="class" type="xs:string"/>
+			</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 </xs:schema>
