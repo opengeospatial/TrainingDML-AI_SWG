@@ -17,6 +17,14 @@
     <amountOfTrainingData>1013</amountOfTrainingData>
     <createdTime>2010-01-01T00:00:00</createdTime>
     <providers>Wuhan University</providers>
+    <metricsInLIT>
+        <doi>10.1109/TGRS.2019.2917161</doi>
+        <algorithm>FACNN</algorithm>
+        <metrics>
+            <key>Overall Accuracy</key>
+            <value>0.9861</value>
+        </metrics>
+    </metricsInLIT>
     <numberOfClasses>19</numberOfClasses>
     <classes>
         <key>Airport</key>
