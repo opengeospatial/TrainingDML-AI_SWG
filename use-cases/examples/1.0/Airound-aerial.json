@@ -1,7 +1,7 @@
 {
     "type": "AI_EOTrainingDataset",
     "id": "65",
-    "name": "Airound-aerial",
+    "name": "AiRound-aerial",
     "description": "AiRound is composed of 11,753 images distributed among 11 classes, including: airport, bridge, church, forest, lake, river, skyscraper, stadium, statue, tower, and urban park.\r\nEach sample is composed by a triplet, that contains images in 3 distinct points of view: (i) a ground perspective image; (ii) a high resolution RGB aerial image; and (iii) a multi-spectral image taken from the Sentinel-2 satellite.\r\nAll images are paired and were manually checked to guarantee their correctness.",
     "version": "1.0",
     "amountOfTrainingData": 1165,
@@ -9,6 +9,88 @@
     "license": "CC BY-SA 4.0",
     "providers": [
         "Federal University of Minas Gerais"
+    ],
+    "metricsInLIT": [
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "AlexNet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.7
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "VGG",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.69
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "Inception",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.7
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "ResNet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.72
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "DenseNet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.68
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "SqueezeNet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.62
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "SENet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.69
+                }
+            ]
+        },
+        {
+            "doi": "10.1109/JSTARS.2020.3033424",
+            "algorithm": "SKNet",
+            "metrics": [
+                {
+                    "key": "F1 Score",
+                    "value": 0.67
+                }
+            ]
+        }
     ],
     "classes": [
         {

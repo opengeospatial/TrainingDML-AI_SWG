@@ -10,16 +10,18 @@
   "providers": [
     "Wuhan University"
   ],
-  "metricsInLIT": {
-    "doi": "10.1109/TGRS.2019.2917161",
-    "algorithm": "FACNN",
-    "metrics": [
-      {
-        "key": "Overall Accuracy",
-        "value": 0.9861
-      }
-    ]
-  },
+  "metricsInLIT": [
+    {
+      "doi": "10.1109/TGRS.2019.2917161",
+      "algorithm": "FACNN",
+      "metrics": [
+        {
+          "key": "Overall Accuracy",
+          "value": 0.9861
+        }
+      ]
+    }
+  ],
   "classes": [
     {
       "key": "Airport",

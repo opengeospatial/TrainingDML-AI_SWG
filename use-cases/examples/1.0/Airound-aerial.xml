@@ -13,7 +13,7 @@
         <mcc:levelDescription>
             <mcc:MD_ScopeDescription>
                 <mcc:dataset>
-                    <gco:CharacterString>Airound-aerial</gco:CharacterString>
+                    <gco:CharacterString>AiRound-aerial</gco:CharacterString>
                 </mcc:dataset>
             </mcc:MD_ScopeDescription>
         </mcc:levelDescription>
@@ -25,6 +25,70 @@
     <amountOfTrainingData>1165</amountOfTrainingData>
     <createdTime>2020-07-22T00:00:00</createdTime>
     <providers>Federal University of Minas Gerais</providers>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>AlexNet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.7</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>VGG</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.69</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>Inception</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.7</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>ResNet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.72</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>DenseNet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.68</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>SqueezeNet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.62</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>SENet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.69</value>
+        </metrics>
+    </metricsInLIT>
+    <metricsInLIT>
+        <doi>10.1109/JSTARS.2020.3033424</doi>
+        <algorithm>SKNet</algorithm>
+        <metrics>
+            <key>F1 Score</key>
+            <value>0.67</value>
+        </metrics>
+    </metricsInLIT>
     <numberOfClasses>11</numberOfClasses>
     <classificationScheme>LuojiaSET Classification Schema</classificationScheme>
     <classes>
