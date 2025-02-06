@@ -1,7 +1,7 @@
 [[abstract]]
 [big]*i.     Abstract*
 
-The OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 3: XML Encoding Standard defines requirements for encoding AI training datasets as XML. Extensible Markup Language (XML) is a widely utilized format for encoding data in various applications. It employs a markup structure where data is enclosed in tags represented by opening and closing elements. These elements can have attributes and may contain nested elements, allowing for a hierarchical representation of structured information. TrainingDML-AI Part 3 is based on the OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard.
+The OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 3: XML Encoding Standard defines requirements for encoding AI training datasets as Extensible Markup Language (XML). XML is a widely utilized format for encoding data in various applications. It employs a markup structure where data is enclosed in tags represented by opening and closing elements. These elements can have attributes and may contain nested elements, allowing for a hierarchical representation of structured information. TrainingDML-AI Part 3 is based on the OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) Part 1: Conceptual Model Standard.
 
 [[keywords]]
 [big]*ii.    Keywords*

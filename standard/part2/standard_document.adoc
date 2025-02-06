@@ -16,12 +16,12 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2024-06-15>
-|Approval Date: <yyyy-mm-dd>
+|Submission Date: 2024-06-15
+|Approval Date: 2024-08-27
 |Publication Date: <yyyy-mm-dd>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document: 24-006r1
-|Version: 1.0.0
+|Version: 1.0
 |Editor: Peng Yue, Ruixiang Liu, Boyi Shangguan
 |===
 
@@ -33,7 +33,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) 2024 Open Geospatial Consortium
+|Copyright (C) 2025 Open Geospatial Consortium
 |To obtain additional rights of use, visit https://www.ogc.org/ogc/Document.
 |===
 
@@ -48,10 +48,10 @@ Recipients of this document are invited to submit, with their comments, notifica
 
 [width = "50%", grid = "none"]
 |===
-|Document type:   OGC® Standard
-|Document subtype:   if applicable
-|Document stage:   Draft
-|Document language:   English
+|Document type: OGC® Standard
+|Document subtype:
+|Document stage: Approved
+|Document language: English
 |===
 
 <<<
