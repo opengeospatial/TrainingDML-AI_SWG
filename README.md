@@ -2,7 +2,7 @@
  * @Author: lrx lrx_lucky@whu.edu.cn
  * @Date: 2023-03-07 14:44:21
  * @LastEditors: RuixiangLiuWHU lrx_lucky@whu.edu.cn
- * @LastEditTime: 2024-08-31 10:15:29
+ * @LastEditTime: 2025-02-17 15:33:15
  * @FilePath: \TrainingDML-AI_SWG\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -32,18 +32,18 @@ The Main Branch is the latest version of the Standard, currently V1.0:
 - PDF [TrainingDML-AI Part1: Conceptual Model Standard](https://docs.ogc.org/is/23-008r3/23-008r3.pdf)
 
 #### Part 2
-The Main Branch is the latest version of the draft Standard:
+The Main Branch is the latest version of the Standard, currently V1.0:
 
 - DOCX [TrainingDML-AI Part2: JSON Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part2/tdmlpart2.docx)
-- HTML [TrainingDML-AI Part2: JSON Encoding Standard](https://htmlpreview.github.io/?https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part2/tdmlpart2.html)
-- PDF [TrainingDML-AI Part2: JSON Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part2/tdmlpart2.pdf)
+- HTML [TrainingDML-AI Part2: JSON Encoding Standard](https://docs.ogc.org/is/24-006r1/24-006r1.html)
+- PDF [TrainingDML-AI Part2: JSON Encoding Standard](https://docs.ogc.org/is/24-006r1/24-006r1.pdf)
 
 #### Part 3 
-The Main Branch is the latest version of the draft Standard:
+The Main Branch is the latest version of the Standard, currently V1.0:
 
 - DOCX [TrainingDML-AI Part3: XML Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part3/tdmlpart3.docx)
-- HTML [TrainingDML-AI Part3: XML Encoding Standard](https://htmlpreview.github.io/?https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part3/tdmlpart3.html)
-- PDF [TrainingDML-AI Part3: XML Encoding Standard](https://github.com/opengeospatial/TrainingDML-AI_SWG/blob/main/standard/part3/tdmlpart3.pdf)
+- HTML [TrainingDML-AI Part3: XML Encoding Standard](https://docs.ogc.org/is/24-007r1/24-007r1.html)
+- PDF [TrainingDML-AI Part3: XML Encoding Standard](https://docs.ogc.org/is/24-007r1/24-007r1.pdf)
 
 ### Implementations
 
@@ -60,7 +60,10 @@ Current implementations:
 - The First Institute of Photogrammetry and Remote Sensing, MNR: Deployment of PyTDML and Sample Database for Classification Task
 - Flame and Smoke Detection Dataset (FASDD) Implementation
 - OSM2TDML Implementation
-
+- ISO 19178 Series
+- National Standard in SAC (Standardization Administration of China)
+- Land Satellite Remote Sensing Application Center, MNR Implementation
+- AI4QC Training Data Platform
 
 ### Working Items
 - Coordination with STAC extensions ([#59](https://gitlab.ogc.org/ogc/TrainingDML-AI/-/wikis/Meetings/2024-08-30))
