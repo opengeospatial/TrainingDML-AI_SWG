@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" targetNamespace="https://raw.githubusercontent.com/opengeospatial/TrainingDML-AI_SWG/main/schemas/1.0/xml_schema" elementFormDefault="qualified">
+	xmlns="http://www.opengis.net/trainingdml-ai/part3/1.0" targetNamespace="http://www.opengis.net/trainingdml-ai/part3/1.0"
+	elementFormDefault="qualified" version="1.0.0">
+	<xs:annotation>
+		<xs:documentation>
+			OGC Training Data Markup Language for Artificial Intelligence (TrainingDML-AI) is an OGC Standard.
+			Copyright (c) 2025 Open Geospatial Consortium.
+			To obtain additional rights of use, visit https://www.ogc.org/legal/ .
+		</xs:documentation>
+	</xs:annotation>
 	<xs:element name="NamedValue" type="NamedValue"/>
 	<xs:complexType name="NamedValue">
 		<xs:sequence>
